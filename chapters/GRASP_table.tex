@@ -1,0 +1,136 @@
+\begin{longtable}[]{@{}ll@{}}
+\caption{Patterns (principes) GRASP}\label{tableGRASP}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.15\columnwidth}\raggedright
+Pattern\strut
+\end{minipage} & \begin{minipage}[b]{0.77\columnwidth}\raggedright
+Description\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\begin{minipage}[b]{0.15\columnwidth}\raggedright
+Pattern\strut
+\end{minipage} & \begin{minipage}[b]{0.77\columnwidth}\raggedright
+Description\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.15\columnwidth}\raggedright
+Expert en information\label{tab_GRASPExpert}\strut
+\end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+Un principe g\'en\'eral de conception d'objets et d'affectation des
+responsabilit\'es.\newline
+\newline
+Affecter une responsabilit\'e \`a l'expert -- la classe qui poss\`ede les
+informations n\'ecessaires pour s'en acquitter.\strut
+\end{minipage}\tabularnewline
+\hline
+\begin{minipage}[t]{0.15\columnwidth}\raggedright
+Cr\'eateur\label{tab_GRASPCreateur}\strut
+\end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+Qui cr\'ee~? (Notez que Fabrique Concr\`ete est une solution de rechange
+courante.)\newline
+\newline
+Affectez \`a la classe B la responsabilit\'e de cr\'eer une instance de la
+classe A si l'une des assertions suivantes est vraie:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  B contient A
+\item
+  B agr\`ege A
+\item
+  B a les donn\'ees pour initialiser A
+\item
+  B enregistre A
+\item
+  B utilise \'etroitement A
+\end{enumerate}\strut
+\end{minipage}\tabularnewline
+\hline
+\begin{minipage}[t]{0.15\columnwidth}\raggedright
+Contr\^oleur\label{tab_GRASPControleur}\strut
+\end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+Quel est le premier objet en dehors de la couche pr\'{e}sentation qui re\c{c}oit
+et coordonne (\guillemotleft~contr\^ole~\guillemotright) les op\'erations syst\`eme~?\newline
+\newline
+Affectez une responsabilit\'e \`a la classe qui correspond \`a l'une de ces
+d\'efinitions :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Elle repr\'esente le syst\`eme global, un \guillemotleft~objet racine~\guillemotright, un \'equipement
+  ou un sous-syst\`eme (\emph{contr\^oleur de fa\c{c}ade}).
+\item
+  Elle repr\'esente un sc\'enario de cas d'utilisation dans lequel
+  l'op\'eration syst\`eme se produit (\emph{contr\^oleur de session} ou
+  \emph{contr\^oleur de cas d'utilisation}). On la nomme \emph{GestionnaireX} où \emph{X} est le nom du cas d'utilisation.
+\end{enumerate}\strut
+\end{minipage}\tabularnewline
+
+\hline
+\begin{minipage}[t]{0.15\columnwidth}\raggedright
+  Faible Couplage (évaluation)\strut
+  \end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+  Comment minimiser les dépendances?\newline
+  \newline
+  Affectez les responsabilités de sorte que le couplage (inutile) demeure faible. Employez ce principe pour évaluer les alternatives.\strut
+  \end{minipage}\tabularnewline
+
+  \hline
+  \begin{minipage}[t]{0.15\columnwidth}\raggedright
+    Forte Cohésion (évaluation)\strut
+    \end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+      Comment conserver les objets cohésifs, compréhensibles, gérables et, en conséquence, obtenir un Faible Couplage~?\newline
+    \newline
+    Affectez les responsabilités de sorte que les classes demeurent cohésives. Employez ce principe pour évaluer les différentes solutions.\strut
+    \end{minipage}\tabularnewline
+  
+    \hline
+    \begin{minipage}[t]{0.15\columnwidth}\raggedright
+      Polymorphisme\strut
+      \end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+        Qui est responsable quand le comportement varie selon le type~?\newline
+      \newline
+      Lorsqu'un comportement varie selon le type (classe), affectez la responsabilité de ce comportement - avec des opérations polymorphes - aux types pour lesquels le comportement varie.
+
+\strut
+      \end{minipage}\tabularnewline
+    
+      \hline
+      \begin{minipage}[t]{0.15\columnwidth}\raggedright
+        Fabrication Pure\strut
+        \end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+          En cas de situation désespérée, que faire quand vous ne voulez pas transgresser les principes de faible couplage et de forte cohésion~?\newline
+        \newline
+        Affectez un ensemble très cohésif de responsabilités à une classe \guillemotleft~comportementale~\guillemotright\  artificielle qui ne représente pas un concept du domaine - une entité fabriquée pour augmenter la cohésion, diminuer le couplage et faciliter la réutilisation.
+\strut
+        \end{minipage}\tabularnewline
+      
+        \hline
+        \begin{minipage}[t]{0.15\columnwidth}\raggedright
+          Indirection\strut
+          \end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+            Comment affecter les responsabilités pour éviter le couplage direct~?\newline
+            \newline
+            Affectez la responsabilité à un objet qui sert d'intermédiaire avec les autres composants ou services.\strut
+          \end{minipage}\tabularnewline
+        
+          \hline
+          \begin{minipage}[t]{0.15\columnwidth}\raggedright
+            Protection des variations
+\strut
+            \end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+              Comment affecter les responsabilités aux objets, sous-systèmes et systèmes de sorte que les variations ou l'instabilité de ces éléments n'aient pas d'impact négatif sur les autres~?\newline
+            \newline
+            Identifiez les points de variation ou d'instabilité prévisibles et affectez les responsabilités afin de créer une \guillemotleft~interface~\guillemotright\ stable autour d'eux.
+\strut
+            \end{minipage}\tabularnewline
+          
+  \bottomrule
+\end{longtable}

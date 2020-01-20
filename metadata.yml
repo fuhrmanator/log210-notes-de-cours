@@ -1,10 +1,23 @@
 ---
-title: My book title
-author: Daniel Herzog
 rights: MIT License
-language: en-US
-tags: [book, my-book, etc]
-abstract: |
-  Your summary.
-mainfont: DejaVu Sans
+language: fr-CA
+tags: [LOG210, analyse, conception, logiciel, GRASP, modularité]
+title: "LOG210 Analyse et conception de logiciels"
+subtitle: "Notes de cours"
+graphics: true
+subject: "LOG210 Analyse et conception de logiciels"
+author: 
+- Christopher Fuhrman
+- Yvan Ross
+date: \today
+# the logo is hard-coded in the default.latex template
+etstitlelogo: true
+numbersections: true
+mainfont: Book Antiqua
+header-includes:
+- \usepackage[style=french]{csquotes}
+- \usepackage{fontawesome}
+- \usepackage{tcolorbox}
+- \newtcolorbox{myquote}{colback=red!5!white, colframe=red!75!black}
+- \renewenvironment{quote}{\begin{myquote}}{\end{myquote}}
 ---
