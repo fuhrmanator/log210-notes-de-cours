@@ -4,10 +4,9 @@ This is the first paragraph of the introduction chapter.
 
 ## First
 
-This is the first subsection. Please, admire the gloriousnes of Figure \nameref{seagull_image}.
+This is the first subsection. Please, admire the gloriousnes of \nameref{seagull_image}.
 
-
-![A cool seagull.\label{seagull_image}](images/seagull.png)
+![A cool seagull.](images/seagull.png){#seagull_image}
 
 ## Second
 
