@@ -57,4 +57,5 @@ $(BUILD)/html/$(OUTPUT_FILENAME).html:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CSS
 $(BUILD)/pdf/$(OUTPUT_FILENAME).pdf:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CSS_FILE) $(IMAGES)
 	mkdir -p $(BUILD)/pdf
 	pandoc $(ARGS) $(PDF_ARGS) -o $@ $(CHAPTERS)
+	cp $(BUILD)/pdf/$(OUTPUT_FILENAME).pdf docs/
 	@echo "$@ was built"
