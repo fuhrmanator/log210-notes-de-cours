@@ -13,11 +13,14 @@ date: \today
 # the logo is hard-coded in the default.latex template
 etstitlelogo: true
 numbersections: true
-mainfont: Book Antiqua
+mainfont: Bell MT
+sansfont: Roboto
 header-includes:
 - \usepackage[style=french]{csquotes}
 - \usepackage{fontawesome}
 - \usepackage{tcolorbox}
 - \newtcolorbox{myquote}{colback=red!5!white, colframe=red!75!black}
 - \renewenvironment{quote}{\begin{myquote}}{\end{myquote}}
+# Need this because we use raw LaTeX needing longtable
+tables: true
 ---
