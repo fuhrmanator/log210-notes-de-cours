@@ -88,3 +88,4 @@ c -> s : ...
 note over c, s : selon la RDCU
 @enduml
 ```
+> \faWarning&nbsp;La figure&nbsp;\ref{DSS-details} est à titre d'information seulement. Les DSS sont censés être simples (sans rentrer dans les détails). C'est de la conception à haut niveau. 
