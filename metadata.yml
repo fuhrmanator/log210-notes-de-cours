@@ -1,6 +1,7 @@
 ---
 rights: MIT License
 language: fr-CA
+csquotes: true
 tags: [LOG210, analyse, conception, logiciel, GRASP, modularité]
 title: "LOG210 Analyse et conception de logiciels"
 subtitle: "Notes de cours"
@@ -13,9 +14,11 @@ date: \today
 # the logo is hard-coded in the default.latex template
 etstitlelogo: true
 numbersections: true
-mainfont: Bell MT
-sansfont: Roboto
-header-includes:
+mainfont: Linux Libertine O
+mainfontoptions:
+- Ligatures=TeX
+sansfont: Arial Rounded MT Bold
+header-includes: 
 - \usepackage[style=french]{csquotes}
 - \usepackage{fontawesome}
 - \usepackage{tcolorbox}
