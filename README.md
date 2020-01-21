@@ -32,6 +32,13 @@ To export to PDF files, make sure to install the following packages:
 sudo apt-get install texlive-fonts-recommended texlive-xetex
 ```
 
+#### PlantUML filters
+
+- Must install [pandocfilters](https://github.com/jgm/pandocfilters)
+- Must install dependencies for local PlantUML (including GraphViz)
+- This repo contains [`.jar` files for PDF with PlantUML](https://plantuml.com/pdf)
+
+
 ### Folder structure
 
 Here's a folder structure for a Pandoc book:
