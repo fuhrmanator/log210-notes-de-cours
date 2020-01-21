@@ -24,7 +24,7 @@ def plantuml(key, value, format, _):
             filename = get_filename4code("plantuml", code)
             filetype = get_extension(format, "png", html="svg", latex="pdf")
 
-            src = filename + '.uml'
+            src = filename + '.puml'
             dest = filename + '.' + filetype
 
             if not os.path.isfile(dest):
