@@ -18,7 +18,7 @@ CSS_ARG = --css=$(CSS_FILE)
 METADATA_ARG = --metadata-file=$(METADATA)
 PLANTUML_FILTER = --filter filters/plantuml/plantuml.py
 ARGS = $(TOC) $(MATH_FORMULAS) $(CSS_ARG) $(METADATA_ARG) $(PLANTUML_FILTER)
-PDF_ARGS = -V geometry:margin=1in -V documentclass=scrbook --pdf-engine=xelatex --template=$(TEMPLATES_FOLDER)/default.latex
+PDF_ARGS = -V geometry:margin=1in --pdf-engine=pdflatex --template=$(TEMPLATES_FOLDER)/default.latex
 
 ####################################################################################################
 # Basic actions

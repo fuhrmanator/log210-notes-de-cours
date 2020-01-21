@@ -13,11 +13,22 @@ author:
 date: \today
 # the logo is hard-coded in the default.latex template
 etstitlelogo: true
-numbersections: true
-mainfont: Linux Libertine O
-mainfontoptions:
-- Ligatures=TeX
-sansfont: Arial Rounded MT Bold
+numbersections: true 
+documentclass: scrbook
+papersize: letter
+geometry: portrait
+# XeTeX options only...
+# mainfont: Linux Libertine O
+# mainfontoptions:
+# - Ligatures=TeX
+# sansfont: Arial Rounded MT Bold
+fontfamily: libertinus
+#fontfamily: cochineal
+fontfamilyoptions: 
+- osf
+- p
+- tt=false
+fontsize: 11pt
 header-includes: 
 - \usepackage[style=french]{csquotes}
 - \usepackage{fontawesome}
@@ -26,4 +37,7 @@ header-includes:
 - \renewenvironment{quote}{\begin{myquote}}{\end{myquote}}
 # Need this because we use raw LaTeX needing longtable
 tables: true
+colorlinks: true
+linkcolor: blue
+pagestyle: headings
 ---

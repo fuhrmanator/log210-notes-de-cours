@@ -38,10 +38,6 @@ $endfor$
 %\usepackage{cmap}
 %\input{glyphtounicode}
 %\pdfgentounicode=1
-% allow fontawesome if variable...
-$if(usefontawesome)$
-\usepackage{fontawesome}
-$endif$
 
 $if(beamer)$
 $if(background-image)$
@@ -283,7 +279,7 @@ $if(graphics)$
 \usepackage{graphicx}
 % https://tex.stackexchange.com/a/358175/17868
 $if(etstitlelogo)$
-\usepackage{titling}
+\usepackage{transparent}
 $endif$
 % --- end https://tex.stackexchange.com/a/358175/17868
 \makeatletter
@@ -391,24 +387,27 @@ $endif$
 % CPF : I could not get the value of $etstitlelogo$ to pass properly...
 % https://tex.stackexchange.com/a/358175/17868
 $if(etstitlelogo)$
-\renewcommand\maketitlehooka{%
+% see http://ctan.math.utah.edu/ctan/tex-archive/macros/latex/contrib/koma-script/doc/scrguien.pdf
+\titlehead{
+  \vspace*{2\baselineskip}
+  \includegraphics[width=0.2\textwidth]{images/logo_ets_red_centered.pdf}
   \begin{center}
-    \includegraphics[width=1.0\textwidth]{images/LOG210wordle_ordre_alph.png}\\
-    \vspace{1cm}
-    \includegraphics[width=0.2\textwidth]{images/logo_ets_red_centered.pdf}
+    \transparent{0.4}\includegraphics[width=1.0\textwidth]{images/LOG210wordle_ordre_alph.png}\\
   \end{center}%
 }
-$endif$
+$endif$ %etstitlelogo
 % --- end https://tex.stackexchange.com/a/358175/17868
 
 $if(subtitle)$
 $if(beamer)$
 $else$
-\usepackage{etoolbox}
 \makeatletter
-\providecommand{\subtitle}[1]{% add subtitle to \maketitle
-  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
-}
+\def\subtitle#1{\gdef\@subtitle{#1}}
+\patchcmd\maketitle
+  {{\LARGE \@title \par}}
+  {{\LARGE \@title \par}%
+   \vskip 1.5em
+   {\LARGE \@subtitle \par}}
 \makeatother
 $endif$
 \subtitle{$subtitle$}
