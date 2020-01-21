@@ -1,6 +1,6 @@
 # Modèle du domaine (MDD, modèle conceptuel)
 
-Les MDD sont expliqués en détail dans le chapitre 9 du livre du cours, mais voici des points importants pour LOG210:
+Les MDD sont expliqués en détail dans le chapitre 9&nbsp;\faBook&nbsp;du livre du cours, mais voici des points importants pour LOG210:
 
 - Les classes conceptuelles ne sont pas des classes logicielles. Ainsi, selon la méthodologie de Larman, *elles n'ont pas de méthodes*.
 - Les classes ont des noms commençant avec une lettre majuscule, par exemple `Joueur` et elles ne sont jamais au pluriel, par exemple <del>`Joueurs`</del>.
@@ -15,7 +15,7 @@ Il y a trois stratégies pour identifier les classes conceptuelles:
 
 ### Catégories pour identifier des classes conceptuelles
 
-:Extrait du tableau 9.1 du livre du cours.
+:Extrait du tableau 9.1&nbsp;\faBook&nbsp;du livre du cours.
 
 Catégorie | Exemples
 :----------|:----------
@@ -39,7 +39,7 @@ Catégorie | Exemples
 
 ## Attributs
 
-Les attributs sont le sujet de la section **9.16** du livre. 
+Les attributs sont le sujet de la section 9.16&nbsp;\faBook&nbsp;du livre. 
 Comme c'est le cas pour les classes et les associations, on fait figurer les attributs *quand les cas d'utilisation suggèrent la nécessité de mémoriser des informations*.
 
 Pour l'UML, la syntaxe complète d'un attribut est&nbsp;:
@@ -51,14 +51,14 @@ Voici des points importants:
 
 - *Le type d'un attribut est important et il faut les spécifier dans un MDD*, même si dans le livre du cours il y a plusieurs exemples sans type.
 - On ne se soucie pas de la visibilité des attributs dans un MDD.
-- Faites attention à l'attribut qui devrait être une classe. Si on ne pense pas un attribut *X* en termes alphanumériques dans le monde réel, alors il s'agit probablement d'une classe conceptuelle. Voir la section **9.12** du livre.
+- Faites attention à l'attribut qui devrait être une classe. Si on ne pense pas un attribut *X* en termes alphanumériques dans le monde réel, alors il s'agit probablement d'une classe conceptuelle. Voir la section 9.12&nbsp;\faBook&nbsp;du livre.
 - De la même manière, faites attention aux informations qui sont mieux modélisées par des associations, par exemple dans la figure&nbsp;\ref{MDD-jeu-de-risk} la classe `Pays` n'a pas un *attribut* `joueur:Joueur` (qui contrôle le Pays), mais elle a plutôt une *association* avec la classe `Joueur` et un verbe `contrôle`. 
 
 > \faWarning &nbsp;Il est vrai que dans un langage de programmation, les associations doivent être les attributs dans les classes. Cependant, dans un modèle du domaine on cherche à éviter des attributs si une association peut mieux décrire la relation. La relation relie visuellement les deux classes et elle est décrite avec un verbe.
 
 ## Associations
 
-Les associations dans le MDD sont le sujet de la **Section 9.14** du livre du cours.
+Les associations dans le MDD sont le sujet de la Section 9.14&nbsp;\faBook&nbsp;du livre du cours.
 Il faut se référer au contenu du livre pour les détails.
 Une association est une relation entre des classes (ou des instances de classes).
 Elle indique une connexion significative ou intéressante.
@@ -76,7 +76,7 @@ Pensez à la **mémorabilité** d'une association dans le contexte du logiciel �
   - Les extrémités des associations ont une expression de la multiplicité indiquant une relation numérique entre les instances des classes.
   Vous pouvez en trouver plusieurs exemples dans la figure&nbsp;\ref{MDD-jeu-de-risk}.
 
-:Extrait du tableau 9.2 du livre du cours.\label{Tableau_associations_courantes}
+:Extrait du tableau 9.2&nbsp;\faBook&nbsp;du livre du cours.\label{Tableau_associations_courantes}
 
 **Catégorie** | **Exemple**
 :----------|:----------

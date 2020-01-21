@@ -1,6 +1,6 @@
 # Contrats d'opération
 
-Les contrats d'opération sont le sujet du **Chapitre 11** du livre.
+Les contrats d'opération sont le sujet du chapitre 11&nbsp;\faBook&nbsp;du livre du cours.
 Voici les points importants pour le cours:
 
 - Pour simplifier les choses, on ne spécifie pas les préconditions dans les contrats.

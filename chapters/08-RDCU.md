@@ -1,6 +1,6 @@
 # Réalisations de cas d'utilisation (RDCU)
 
-Les réalisations de cas d'utilisation (RDCU) sont le sujet du **chapitre F17/A18**. 
+Les réalisations de cas d'utilisation (RDCU) sont le sujet du chapitre F17/A18&nbsp;\faBook&nbsp;du livre du cours. 
 Voici les points importants pour le cours:
 
 - Une RDCU est une synthèse des informations spécifiées dans le MDD, le DSS et les contrats d'opération.
@@ -86,7 +86,7 @@ Par exemple dans la figure&nbsp;\ref{RDCU_Visibilite1}, la référence à *b* pe
   - passée comme un argument dans un message antérieur, ou
   - affectée dans une variable locale de la méthode où `unMessage()` sera envoyé.
 
-Pour plus de détails, voir le **chapitre du livre sur la Visibilité**.
+Pour plus de détails, voir le chapitre sur la Visiblilté&nbsp;\faBook&nbsp;du livre du cours.
 
 ```{.plantuml caption="L'objet *b* doit être visible à l'objet *a* si *a* veut lui envoyer un message" #RDCU_Visibilite1}
 @startuml
@@ -108,7 +108,7 @@ Pour initialiser les références nécessaires pour la bonne visibilité, Larman
 La directive d'utiliser les types primitifs pour les opérations système nous mène à un problème récurrent dans les RDCU : transformer un identifiant (souvent de type `String` ou `int`) en objet.
 Larman vous propose un idiome (pas vraiment un pattern) nommé **Transformer identifiant en objet** qui sert à repérer la référence d'un objet qui correspond à l'identifiant.
 
-Il y a un exemple à la figure&nbsp;\ref{RDCU_ID_en_objets} provenant du chapitre du livre sur **l'Application des patterns GoF (Figure 23.18)**.
+Il y a un exemple à la figure&nbsp;\ref{RDCU_ID_en_objets} provenant du chapitre sur **l'Application des patterns GoF (Figure 23.18)**&nbsp;\faBook&nbsp;du livre du cours.
 Un autre exemple du livre du cours est l'identifiant `codeArticle` transformé en objet `DescriptionProduit` par la méthode `CatalogueProduits.getDescProduit(codeArticle:String):DescriptionProduit`.
 
 ```{.plantuml caption="Un identifiant idClient:String est transformé en objet c:Client" #RDCU_ID_en_objets}
@@ -128,9 +128,9 @@ La section \ref{UtilisationMap} explique comment implémenter la transformation 
 
 ## Utilisation de tableau associatif (`Map<clé, objet>`) {#UtilisationMap}
 
-Pour *transformer ID en objets*, il est pratique d'utiliser un [tableau associatif (aussi appelé dictionnaire ou map en anglais)\faWikipediaW](https://fr.wikipedia.org/wiki/Tableau_associatif). L'exemple du livre concerne le problème de repérer une `Case` Monopoly à partir de son nom (`String`). C'est la figure A17.7 ou F17.7 du livre. Voir les détails dans le livre.
+Pour *transformer ID en objets*, il est pratique d'utiliser un [tableau associatif (aussi appelé dictionnaire ou map en anglais)\faWikipediaW](https://fr.wikipedia.org/wiki/Tableau_associatif). L'exemple du livre du cours concerne le problème de repérer une `Case` Monopoly à partir de son nom (`String`). C'est la figure A17.7 ou F17.7&nbsp;\faBook&nbsp;du livre du cours. Voir les détails dans le livre.
 
-Notez que les exemples du livre ne montrent qu'un seul type dans le tableau associatif, par exemple `Map<Case>`, tandis que normalement il faut spécifier le type de la clé aussi, par exemple `Map<String, Case>`.
+Notez que les exemples du livre ne montrent qu'un seul *type* dans le tableau associatif, par exemple `Map<Case>`, tandis que normalement il faut spécifier aussi le type de la clé, par exemple `Map<String, Case>`.
 
 Un tableau associatif fournit une méthode `get` ou `find` pour rechercher un objet à partir de sa clé (son identifiant). La figure&nbsp;\ref{Map_Case_Monopoly} en est un exemple.
 
@@ -153,7 +153,7 @@ Dans la section suivante, l'initialisation des éléments utilisés dans les RDC
 ## RDCU pour l'initialisation, le scénario Démarrer {#RDCU_Demarrer}
 
 Le lancement de l'application correspond à la RDCU "Démarrer".
-La section **Initialisation et cas d'utilisation Démarrer** (Sec. 17.4, p.345 dans le livre en français) ou **Initialization and the 'Start Up' Use Case** (Sec. 18.4, p.274 dans le livre en anglais) traite ce sujet important. C'est dans cette conception où il faut mettre en place tous les éléments importants pour les hypothèses faites dans les autres RDCU, par exemple les classes de collection (Map), les références pour la visibilité, l'initialisation des contrôleurs, etc.
+La section **Initialisation et cas d'utilisation Démarrer** (Sec. 17.4, p.345 dans le livre en français) ou **Initialization and the 'Start Up' Use Case** (Sec. 18.4, p.274 dans le livre en anglais)&nbsp;\faBook&nbsp;traite ce sujet important. C'est dans cette conception où il faut mettre en place tous les éléments importants pour les hypothèses faites dans les autres RDCU, par exemple les classes de collection (Map), les références pour la visibilité, l'initialisation des contrôleurs, etc.
 
 Voici quelques points importants:
 

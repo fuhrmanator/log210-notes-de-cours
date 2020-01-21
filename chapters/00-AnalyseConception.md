@@ -14,9 +14,15 @@ Voici le descriptif du cours, selon le plan de cours:
 
 ![Nuage de mots importants du plan de cours de LOG210](images/LOG210wordle_ordre_alph.png)
 
+## Livre obligatoire
+
+Le livre obligatoire pour ce cours est indiqué dans le plan de cours. **Le présent document n'est pas un substitut pour le livre obligatoire.**
+
+Les références au livre obligatoire seront indiquées par l'icône du livre&nbsp;\faBook.
+
 ## Analyse vs Conception
 
-Ce sujet est abordé en détail dans le chapitre 1 du livre du cours.
+Ce sujet est abordé en détail dans le chapitre 1&nbsp;\faBook&nbsp;du livre du cours.
 
 L'**analyse** met l'accent sur une investigation du problème et des besoins plutôt que sur la recherche d'une solution.
 
@@ -28,7 +34,7 @@ Dans LOG210, c'est une modélisation objet qui est utilisée et pour l'analyse (
 
 Plus une solution (conception) ressemble à une description du problème, plus elle est facile à comprendre.
 La distance entre la représentation d'un problème et la représentation de sa solution s'appelle le *décalage des représentations*.
-Pour des explications de Larman, lisez la section 9.3 du livre du cours.
+Pour des explications de Larman, lisez la section 9.3&nbsp;\faBook&nbsp;du livre du cours.
 
 Imaginez un jeu qui est joué dans la vraie vie avec un dé à six faces. Ensuite, on veut construire un logiciel pour ce jeu et donc on peut spécifier un besoin de générer un nombre aléatoire entre 1 et 6 (comme un dé à six faces). On peut aussi modéliser ce besoin (un élément du problème) par une classe conceptuelle `Dé` ayant un attribut `face` dont sa valeur est un type `int`. Les personnes travaillant sur un projet vont facilement comprendre ce modèle, car les gens comprennent les objets qui représentent des aspects de la vraie vie.
 
