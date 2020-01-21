@@ -109,7 +109,8 @@ La directive d'utiliser les types primitifs pour les opérations système nous m
 Larman vous propose un idiome (pas vraiment un pattern) nommé **Transformer identifiant en objet** qui sert à repérer la référence d'un objet qui correspond à l'identifiant.
 
 Il y a un exemple à la figure&nbsp;\ref{RDCU_ID_en_objets} provenant du chapitre sur **l'Application des patterns GoF (Figure 23.18)**&nbsp;\faBook&nbsp;du livre du cours.
-Un autre exemple du livre du cours est l'identifiant `codeArticle` transformé en objet `DescriptionProduit` par la méthode `CatalogueProduits.getDescProduit(codeArticle:String):DescriptionProduit`.
+Un autre exemple du livre du cours est l'identifiant `codeArticle` transformé en objet `DescriptionProduit` par la méthode  
+`CatalogueProduits.getDescProduit(codeArticle:String):DescriptionProduit`.
 
 ```{.plantuml caption="Un identifiant idClient:String est transformé en objet c:Client" #RDCU_ID_en_objets}
 !include ../forme.pumlinclude
