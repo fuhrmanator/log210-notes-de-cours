@@ -89,3 +89,9 @@ Il se peut que dans un avenir proche le réusinage (l'amélioration du design) d
 Pour plus d'activités de réusinage, il y a le catalogue du site [refactoring.com](https://refactoring.com/catalog/).
 
 Voir [cette page web pour savoir comment les activités de réusinage sont faites dans Visual Studio Code](https://code.visualstudio.com/docs/editor/refactoring). D'autres automatisations sont implémentées par des extensions.
+
+## Impropriété
+
+Si quelqu'un dit que son code est cassé pendant plusieurs jours parce qu'il fait du réusinage, ce n'est pas la bonne utilisation du terme [selon Martin Fowler](https://martinfowler.com/bliki/RefactoringMalapropism.html). Il s'agit de la *restructuration* dans ce cas. 
+
+Le réusinage est basé sur les petites transformations qui ne changent pas le comportement du logiciel. 
