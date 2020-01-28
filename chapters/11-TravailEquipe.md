@@ -53,7 +53,7 @@ Une personne humble pense ainsi:
 
 ![["Missing"](https://www.flickr.com/photos/smkybear/2705041322/) ([CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)) par [smkybear](https://www.flickr.com/people/smkybear/)](https://farm4.static.flickr.com/3135/2705041322_d1e23d37d6_b.jpg){width="200px"}
 
-```{.plantuml caption="Un coéquipier humble va accepter une décision prise par l'équipe, même s'il n'était pas en accord à 100%." align="center"}
+```{.plantuml hide-image=true plantuml-filename=build/images/diag_moi_inf_equipe.pdf}
 @startuml
 skinparam defaultfontname Cooper Black
 skinparam rectangleBorderColor transparent
@@ -63,6 +63,8 @@ skinparam shadowing false
 rectangle "<size:50>Moi < Équipe</size>" #ffbbbb|bbffbb
 @enduml
 ```
+
+![Un coéquipier humble va accepter une décision prise par l'équipe, même s'il n'était pas en accord à 100%.](build/images/diag_moi_inf_equipe.pdf)
 
 Quelques exemples concrets d'humilité dans le développement:
 

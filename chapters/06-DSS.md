@@ -16,7 +16,7 @@ Les DSS sont expliqués en détail dans le chapitre 10&nbsp;\faBook&nbsp;du livr
 
 La figure&nbsp;\ref{DSS-attaquer-un-pays} est un exemple de DSS pour le cas d'utilisation *Attaquer un pays*. Vous pouvez noter tous les détails (titre, arguments, types).
 
-```{.plantuml caption="Diagramme de séquence système pour « Attaquer un pays »" #DSS-attaquer-un-pays}
+```{.plantuml hide-image=true plantuml-filename=build/images/diag_DSS.pdf}
 @startuml
 !include ../forme.pumlinclude
 scale 1.3
@@ -34,6 +34,8 @@ c->s : terminerAttaque()
 @enduml
 ```
 
+![Diagramme de séquence système pour *Attaquer un pays*](build/images/diag_DSS.pdf){#DSS-attaquer-un-pays}
+
 ## DSS fait abstraction de la couche présentation
 
 Le but du DSS est de se concentrer sur l'API (les opérations système) de la solution.
@@ -42,7 +44,7 @@ Le "Système" est modélisé comme une boîte noire.
 Par exemple, dans la figure&nbsp;\ref{DSS-abstraction} il y a l'acteur, le Système et une opération système.
 On ne rentre pas dans les détails, bien qu'ils existent et sont importants.
 
-```{.plantuml caption="Une opération système dans un DSS. C'est une abstraction." #DSS-abstraction}
+```{.plantuml hide-image=true plantuml-filename=build/images/diag_OS_DSS.pdf}
 @startuml
 !include ../forme.pumlinclude
 scale 1.3
@@ -53,6 +55,9 @@ c->s : démarrerAttaque(...)
 @enduml
 ```
 
+![Une opération système dans un DSS. C'est une abstraction.](build/images/diag_OS_DSS.pdf){#DSS-abstraction}
+
+
 Plus tard, lorsque c'est le moment d'implémenter le code, les détails importants seront à respecter.
 Il faut faire attention aux principes de la séparation des couches présentation et domaine.
 Par exemple, la figure&nbsp;\ref{DSS-details} rentre dans les détails de ce qui se passe réellement dans une opération système quand la solution fonctionne avec un service web:
@@ -62,7 +67,7 @@ Par exemple, la figure&nbsp;\ref{DSS-details} rentre dans les détails de ce qui
 - Un routeur transforme l'appel REST en une opération système envoyée à un contrôleur GRASP. Notez que c'est un **objet du domaine qui reçoit l'opération système** -- c'est l'essence du principe GRASP Contrôleur;
 - Le contrôleur GRASP dirige la suite, selon la solution proposée dans la réalisation de cas d'utilisation (RDCU).
 
-```{.plantuml caption="Une opération système est envoyée par la couche présentation et elle est reçue dans la couche domaine par son contrôleur GRASP. Ceci est un exemple avec un navigateur web, mais d'autres possibilités existent pour la couche présentation." #DSS-details}
+```{.plantuml hide-image=true plantuml-filename=build/images/diag_couches_DSS.pdf}
 @startuml
 !include ../forme.pumlinclude
 scale 1.3
@@ -88,4 +93,7 @@ c -> s : ...
 note over c, s : selon la RDCU
 @enduml
 ```
+
+![Une opération système est envoyée par la couche présentation et elle est reçue dans la couche domaine par son contrôleur GRASP. Ceci est un exemple avec un navigateur web, mais d'autres possibilités existent pour la couche présentation.](build/images/diag_couches_DSS.pdf){#DSS-details}
+
 > \faWarning&nbsp;La figure&nbsp;\ref{DSS-details} est à titre d'information seulement. Les DSS sont censés être simples (sans rentrer dans les détails). C'est de la conception à haut niveau. 

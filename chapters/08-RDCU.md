@@ -54,7 +54,7 @@ Pour les postconditions où il faut modifier un attribut, c'est assez évident. 
 
 Lorsque l'attribut d'un objet doit être modifié juste après la création de ce dernier, ça peut se faire dans le constructeur, comme on voit dans la figure&nbsp;\ref{RDCU_Constructeur_Modification}.
 
-```{.plantuml #RDCU_Constructeur_Modification caption="Combiner la création d'instance et une modification de son attribut dans un constructeur"}
+```{.plantuml hide-image=true plantuml-filename=build/images/diag_constructeur_modification.pdf}
 @startuml
 !include ../forme.pumlinclude
 scale 1.3
@@ -67,6 +67,8 @@ p ->> c : create(nom)
 end loop
 @enduml
 ```
+
+![Combiner la création d'instance et une modification de son attribut dans un constructeur](build/images/diag_constructeur_modification.pdf){#RDCU_Constructeur_Modification}
 
 ## Visibilité {#Visibilite}
 
@@ -88,7 +90,7 @@ Par exemple dans la figure&nbsp;\ref{RDCU_Visibilite1}, la référence à *b* pe
 
 Pour plus de détails, voir le chapitre sur la Visiblilté&nbsp;\faBook&nbsp;du livre du cours.
 
-```{.plantuml caption="L'objet *b* doit être visible à l'objet *a* si *a* veut lui envoyer un message" #RDCU_Visibilite1}
+```{.plantuml hide-image=true plantuml-filename=build/images/diag_visibilite_RDCU.pdf}
 @startuml
 !include ../forme.pumlinclude
 scale 1.3
@@ -101,6 +103,8 @@ B -> : ...
 @enduml
 ```
 
+![L'objet *b* doit être visible à l'objet *a* si *a* veut lui envoyer un message](build/images/diag_visibilite_RDCU.pdf){#RDCU_Visibilite1}
+
 Pour initialiser les références nécessaires pour la bonne visibilité, Larman vous propose de faire ça dans la \nameref{RDCU_Demarrer}.
 
 ## Transformer identifiants en objets {#TransformerIDenObjets}
@@ -112,7 +116,7 @@ Il y a un exemple à la figure&nbsp;\ref{RDCU_ID_en_objets} provenant du chapitr
 Un autre exemple du livre du cours est l'identifiant `codeArticle` transformé en objet `DescriptionProduit` par la méthode  
 `CatalogueProduits.getDescProduit(codeArticle:String):DescriptionProduit`.
 
-```{.plantuml caption="Un identifiant idClient:String est transformé en objet c:Client" #RDCU_ID_en_objets}
+```{.plantuml hide-image=true plantuml-filename=build/images/diag_transformer_id_objet_RDCU.pdf}
 !include ../forme.pumlinclude
 scale 1.1
 skinparam sequenceMessageAlign center
@@ -122,8 +126,10 @@ participant "v:Vente" as v
 -> R : saisirClientPourRemise(idClient)
 R -> M : c = getClient(idClient)
 note right: Selon Expert et\n**les ID en objets**
-R -> v : saisirClientPourRemise(c : Client)
+R -> v : saisirClientPourRemise(c:Client)
 ```
+
+![Un identifiant `idClient:String` est transformé en objet `c:Client`, qui est ensuite envoyé à la Vente en cours](build/images/diag_transformer_id_objet_RDCU.pdf){#RDCU_ID_en_objets}
 
 La section \ref{UtilisationMap} explique comment implémenter la transformation avec les dictionnaires (map).
 
@@ -135,7 +141,7 @@ Notez que les exemples du livre ne montrent qu'un seul *type* dans le tableau as
 
 Un tableau associatif fournit une méthode `get` ou `find` pour rechercher un objet à partir de sa clé (son identifiant). La figure&nbsp;\ref{Map_Case_Monopoly} en est un exemple.
 
-```{.plantuml #Map_Case_Monopoly caption="Exemple de l'utilisation de tableau associatif pour trouver une Case Monopoly à partir de son nom"}
+```{.plantuml hide-image=true plantuml-filename=build/images/diag_map_monopoly_RDCU.pdf}
 @startuml
 !include ../forme.pumlinclude
 scale 1.1
@@ -148,6 +154,8 @@ note right : Plateau agrège toutes les\nCases et en possède un Map\navec nom c
 P -> m : c = get(nom) : Case
 @enduml
 ```
+
+![Exemple de l'utilisation de tableau associatif pour trouver une Case Monopoly à partir de son nom](build/images/diag_map_monopoly_RDCU.pdf){#Map_Case_Monopoly}
 
 Dans la section suivante, l'initialisation des éléments utilisés dans les RDCU (comme des tableaux associatifs) est expliquée.
 
@@ -163,7 +171,7 @@ Voici quelques points importants:
 - Il faut choisir l'objet du domaine initial, qui est souvent l'objet racine, mais ça dépend du domaine. Cet objet aura la responsabilité, lors de sa création, de générer ses "enfants" directs, puis chaque enfant aura à faire la même chose selon la structure. Par exemple, selon le MDD pour le jeu de Risk à la figure&nbsp;\ref{MDD-jeu-de-risk}, `JeuRisk` pourrait être l'objet racine, qui devra créer l'objet `PlateauRisk` et les cinq instances de `Dé`. L'objet `PlateauRisk`, lors de son initialisation, pourra instancier les 42 objets `Pays` et les six objets `Continent`, en passant à chaque `Continent` leurs objets `Pays` lors de son initialisation. Si `PlateauRisk` fournit une méthode `getPays(nom)` qui dépend d'un tableau associatif selon \nameref{TransformerIDenObjets}, alors c'est dans l'initialisation de cette classe où l'instance de `Map<String,Pays>` sera créée.
 - Selon l'application, les objets peuvent être chargés en mémoire à partir d'un système de persistance, par exemple une base de données ou un fichier. Pour l'exemple de Risk, `PlateauRisk` pourrait charger, à partir d'un fichier JSON, des données pour initialiser toutes les instances de `Pays`. Pour une application d'inscription de cours à l'université, peut-être toutes les descriptions de cours seront chargées en mémoire à partir d'une base de données. Une base de données amène un lot d'avantages et d'inconvénients, et elle n'est pas toujours nécessaire. Dans LOG210, on n'aborde pas le problème de base de données (c'est le sujet pour un autre cours).
 
-```{.plantuml #DemarrerRisk caption="Exemple de l'initialisation partielle du jeu de Risk" }
+```{.plantuml hide-image=true plantuml-filename=build/images/diag_initialisation_RDCU.pdf }
 @startuml
 !include ../forme.pumlinclude
 scale 1.1
@@ -201,3 +209,5 @@ end loop
 end loop
 @enduml
 ```
+
+![Exemple de l'initialisation partielle du jeu de Risk](build/images/diag_initialisation_RDCU.pdf){#DemarrerRisk}

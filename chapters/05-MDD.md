@@ -111,7 +111,7 @@ Pensez à la **mémorabilité** d'une association dans le contexte du logiciel �
 
 ## Exemple de MDD pour le jeu de Risk
 
-```{.plantuml #MDD-jeu-de-risk caption="Modèle du domaine du jeu de Risk"}
+```{.plantuml hide-image=true plantuml-filename=build/images/diag_MDD.pdf}
 @startuml
 !include ../forme.pumlinclude
 scale 1
@@ -159,3 +159,4 @@ Joueur "1" -- "1,2,3" Dé : Jette >
 @enduml
 ```
 
+![Modèle du domaine du jeu de Risk](build/images/diag_MDD.pdf){#MDD-jeu-de-risk}

@@ -32,7 +32,7 @@ Selon "Risk". 2019. Wikipédia. https://fr.wikipedia.org/w/index.php?title=Risk&
 
 ### Diagramme de cas d'utilisation
 
-```{.plantuml #uml-uc caption="Diagramme de cas d'utilisation"}
+```{.plantuml hide-image=true plantuml-filename=build/images/diag_UC.pdf}
 @startuml
 !include ../forme.pumlinclude
 scale 1
@@ -48,6 +48,8 @@ rectangle "Système" {
 }
 @enduml
 ```
+
+![Diagramme de cas d'utilisation](build/images/diag_UC.pdf){#uml-uc}
 
 Notes:
 

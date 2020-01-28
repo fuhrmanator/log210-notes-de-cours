@@ -29,7 +29,7 @@ L'exécution de test peut être même faite à chaque commit du code dans un dé
 
 Il est possible de mesurer la [couverture de code \faWikipediaW](https://fr.wikipedia.org/wiki/Couverture_de_code) atteinte par les tests (mais ce sujet commence à sortir du cadre de la matière du cours). Les deux versions du squelette utilisent [Coveralls](https://coveralls.io/) pour ce faire.
 
-```{.plantuml #TDD_states caption="États du développement piloté par les tests"}
+```{.plantuml hide-image=true plantuml-filename=build/images/diag_etats_TDD.pdf}
 @startuml
 hide empty description
 skinparam style strictuml
@@ -58,6 +58,8 @@ un bogue). Dans ce cas, on corrige le code du test.
 end legend
 @enduml
 ```
+
+![États du développement piloté par les tests](build/images/diag_etats_TDD.pdf){#TDD_states}
 
 Les activités de réusinage sont expliquées dans la section \nameref{Refactoring}.  
 
