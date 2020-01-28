@@ -28,6 +28,14 @@ def plantuml(key, value, format, _):
             src = filename + '.puml'
             plantuml_output = filename + '.' + filetype
 
+            dest_spec = ""
+            # Key to specify final destination the file
+            for ind, keyval in enumerate(keyvals):
+                if keyval[0] == 'plantuml-filename':
+                    dest_spec = keyval[1]
+                    keyvals.pop(ind)
+                    break
+
             # Generate image only once
             if not os.path.isfile(plantuml_output):
                 txt = code.encode(sys.getfilesystemencoding())
@@ -39,17 +47,11 @@ def plantuml(key, value, format, _):
                 with open('plantUMLErrors.log', "w") as log_file:
                     call(["java", "-jar", "filters/plantuml/plantuml.jar", "-t"+filetype, src], stdout=log_file)
                 sys.stderr.write('Created image ' + plantuml_output + '\n')
-            
-            # Move the file to the specified destination
-            for ind, keyval in enumerate(keyvals):
-                if keyval[0] == 'plantuml-filename':
-                    dest_spec = keyval[1]
-                    keyvals.pop(ind)
+                if not dest_spec == "": 
                     sys.stderr.write('Copying image from ' + plantuml_output + ' to ' + dest_spec + '\n')
-
                     shutil.copy2(plantuml_output, dest_spec)
                     plantuml_output = dest_spec
-                    break
+
 
             for ind, keyval in enumerate(keyvals):
                 if keyval[0] == 'hide-image':
