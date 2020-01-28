@@ -44,11 +44,13 @@ pdf:	$(BUILD)/pdf/$(OUTPUT_FILENAME).pdf
 $(BUILD)/epub/$(OUTPUT_FILENAME).epub:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CSS_FILE) $(IMAGES) \
 		$(COVER_IMAGE)
 	mkdir -p $(BUILD)/epub
+	mkdir -p $(BUILD)/images
 	pandoc $(ARGS) --epub-cover-image=$(COVER_IMAGE) -o $@ $(CHAPTERS)
 	@echo "$@ was built"
 
 $(BUILD)/html/$(OUTPUT_FILENAME).html:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CSS_FILE) $(IMAGES)
 	mkdir -p $(BUILD)/html
+	mkdir -p $(BUILD)/images
 	pandoc $(ARGS) --standalone --to=html5 -o $@ $(CHAPTERS)
 	cp -R $(IMAGES_FOLDER)/ $(BUILD)/html/$(IMAGES_FOLDER)/
 	cp $(CSS_FILE) $(BUILD)/html/$(CSS_FILE)
@@ -56,6 +58,7 @@ $(BUILD)/html/$(OUTPUT_FILENAME).html:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CSS
 
 $(BUILD)/pdf/$(OUTPUT_FILENAME).pdf:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CSS_FILE) $(IMAGES)
 	mkdir -p $(BUILD)/pdf
+	mkdir -p $(BUILD)/images
 	pandoc $(ARGS) $(PDF_ARGS) -o $@ $(CHAPTERS)
 	cp $(BUILD)/pdf/$(OUTPUT_FILENAME).pdf docs/
 	@echo "$@ was built"

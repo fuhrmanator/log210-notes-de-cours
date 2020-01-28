@@ -8,6 +8,7 @@ Needs `plantuml.jar` from http://plantuml.com/.
 """
 
 import os
+import shutil
 import sys
 from subprocess import call
 
@@ -25,19 +26,38 @@ def plantuml(key, value, format, _):
             filetype = get_extension(format, "png", html="svg", latex="pdf")
 
             src = filename + '.puml'
-            dest = filename + '.' + filetype
+            plantuml_output = filename + '.' + filetype
 
-            if not os.path.isfile(dest):
+            # Generate image only once
+            if not os.path.isfile(plantuml_output):
                 txt = code.encode(sys.getfilesystemencoding())
                 if not txt.startswith("@start"):
                     txt = "@startuml\n" + txt + "\n@enduml\n"
                 with open(src, "w") as f:
                     f.write(txt)
-                with open('plantUMLErrors.log', "w") as outfile:
-                    call(["java", "-jar", "filters/plantuml/plantuml.jar", "-t"+filetype, src], stdout=outfile)
-                sys.stderr.write('Created image ' + dest + '\n')
+                # Must not let messages go to stdout, as it will corrupt JSON in filter
+                with open('plantUMLErrors.log', "w") as log_file:
+                    call(["java", "-jar", "filters/plantuml/plantuml.jar", "-t"+filetype, src], stdout=log_file)
+                sys.stderr.write('Created image ' + plantuml_output + '\n')
+            
+            # Move the file to the specified destination
+            for ind, keyval in enumerate(keyvals):
+                if keyval[0] == 'plantuml-filename':
+                    dest_spec = keyval[1]
+                    keyvals.pop(ind)
+                    sys.stderr.write('Copying image from ' + plantuml_output + ' to ' + dest_spec + '\n')
 
-            return Para([Image([ident, [], keyvals], caption, [dest, typef])])
+                    shutil.copy2(plantuml_output, dest_spec)
+                    plantuml_output = dest_spec
+                    break
+
+            for ind, keyval in enumerate(keyvals):
+                if keyval[0] == 'hide-image':
+                    if keyval[1] == 'true':
+                        sys.stderr.write('Not showing image ' + plantuml_output + '\n')
+                        return [] # surpress image in JSON
+
+            return Para([Image([ident, [], keyvals], caption, [plantuml_output, typef])])
 
 if __name__ == "__main__":
     toJSONFilter(plantuml)
