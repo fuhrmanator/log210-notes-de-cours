@@ -56,7 +56,7 @@ def plantuml(key, value, format, _):
             for ind, keyval in enumerate(keyvals):
                 if keyval[0] == 'hide-image':
                     if keyval[1] == 'true':
-                        sys.stderr.write('Not showing image ' + plantuml_output + '\n')
+                        sys.stderr.write('INFO: Not showing image ' + plantuml_output + '\n')
                         return [] # surpress image in JSON
 
             return Para([Image([ident, [], keyvals], caption, [plantuml_output, typef])])
