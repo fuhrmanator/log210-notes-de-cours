@@ -97,3 +97,9 @@ note over c, s : selon la RDCU
 ![Une opération système est envoyée par la couche présentation et elle est reçue dans la couche domaine par son contrôleur GRASP. Ceci est un exemple avec un navigateur web, mais d'autres possibilités existent pour la couche présentation.](build/images/diag_couches_DSS.pdf){#DSS-details}
 
 > \faWarning&nbsp;La figure&nbsp;\ref{DSS-details} est à titre d'information seulement. Les DSS sont censés être simples (sans rentrer dans les détails). C'est de la conception à haut niveau. 
+
+## FAQ DSS
+
+**Q:** Comment faire si un cas d'utilisation a des scénarios alternatifs? Est-ce qu'on fait plusieurs DSS (un pour chaque scénario) ou on utilise la notation UML (des blocs `opt` et `alt`) pour montrer des flots différents dans le même DSS?
+
+**R:** Un objectif de faire un DSS est de **définir les opérations système**. Donc, on peut se poser la question suivante: les scénarios alternatifs impliquent-ils une ou plusieurs opérations système n'ayant pas encore été définies? Si la réponse est non, on peut ignorer les scénarios alternatifs dans le DSS. Par contre, si la réponse est oui, il est essentiel de définir ces opérations système dans un DSS. Quant au choix de faire des DSS séparés ou d'utiliser la notation UML pour montrer les flots différents sur le même DSS, ça dépend de la complexité de la logique des flots. Un DSS devrait être *facile à comprendre*. C'est à vous de juger si votre DSS avec des `opt` ou `alt` est assez simple ou fait du spaghetti. Utilisez un autre DSS (ou plusieurs) ayant le nom des scénarios alternatifs si cela vous semble plus clair. 
