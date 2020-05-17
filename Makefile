@@ -10,6 +10,7 @@ CHAPTERS = chapters/*.md
 TOC = --toc --toc-depth=2
 IMAGES_FOLDER = images
 IMAGES = $(IMAGES_FOLDER)/*
+PLANTUML_IMAGES = plantuml-images
 COVER_IMAGE = $(IMAGES_FOLDER)/cover.png
 TEMPLATES_FOLDER = templates
 MATH_FORMULAS = --webtex
@@ -29,7 +30,7 @@ all:	book
 book:	epub html pdf
 
 clean:
-	rm -r $(BUILD)
+	rm -r $(BUILD) $(PLANTUML_IMAGES)
 
 ####################################################################################################
 # File builders
