@@ -29,7 +29,10 @@ fontfamilyoptions:
 - p
 - tt=false
 fontsize: 11pt
+# Note the \input{glyphtounicode} and \pdfgentounicode=1 are needed to allow PDF to be searchable despite ligatures `ff`, `fi`, etc.
 header-includes: 
+- \input{glyphtounicode}
+- \pdfgentounicode=1
 - \usepackage[style=french]{csquotes}
 - \usepackage{fontawesome}
 - \usepackage{tcolorbox}
