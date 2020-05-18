@@ -235,4 +235,10 @@ Joueur "1" -- "1..*" Pays : Contrôle >
 ![Classe d'association dans le MDD Jeu de Risk](build/images/classe_association_MDD.pdf){#MDD-classe-association}
 
 
+## FAQ MDD
 
+**Question:** Est-ce qu'il y a un MDD pour chaque cas d'utilisation?
+
+**Réponse:** Selon la méthodologie du livre du cours, il n'y a qu'un seul MDD pour un domaine d'application. Une application peut avoir plein de fonctionnalités (cas d'utilisation), mais il y a un seul MDD.
+
+Ceci étant dit, la notion d'une *version* de MDD existe (par exemple, une version pour chaque itération). Le MDD évoluera normalement après chaque nouvelle analyse. Le MDD au début d'un projet est plus simple, puisqu'il porte sur seulement les cas d'utilisation ciblés à la première itération. Au fur et à mesure qu'on rajoute des fonctionnalités au logiciel, le MDD devient plus riche.
