@@ -207,7 +207,7 @@ Lorsqu'un Joueur contrôle un Pays, il doit y avoir des armées dans ce dernier.
 Le MDD pourrait avoir un attribut `nbRégiments` dans la classe Pays. 
 Cependant, l'attribut `nbRégiments` est lié à l'association entre le Joueur et le Pays qu'il contrôle, alors on décide d'utiliser une classe d'association. 
 
-Si un Joueur invahit un Pays, la nouvelle instance de la classe d'association Occupation sera créée (avec la nouvelle association). 
+Si un Joueur envahit un Pays, la nouvelle instance de la classe d'association Occupation sera créée (avec la nouvelle association). 
 Pourtant, cette instance d'Occupation sera détruite si un autre Joueur arrive à prendre le contrôle du Pays. 
 Alors, la durée de vie de cette instance dépend de l'association. 
 
@@ -239,6 +239,6 @@ Joueur "1" -- "1..*" Pays : Contrôle >
 
 **Question:** Est-ce qu'il y a un MDD pour chaque cas d'utilisation?
 
-**Réponse:** Selon la méthodologie du livre du cours, il n'y a qu'un seul MDD pour un domaine d'application. Une application peut avoir plein de fonctionnalités (cas d'utilisation), mais il y a un seul MDD.
+**Réponse:** Selon la méthodologie du livre du cours, il n'y a qu'un seul MDD pour un domaine d'application. Une application peut avoir beaucoup de fonctionnalités (cas d'utilisation), mais il y a un seul MDD.
 
 Ceci étant dit, la notion d'une *version* de MDD existe (par exemple, une version pour chaque itération). Le MDD évoluera normalement après chaque nouvelle analyse. Le MDD au début d'un projet est plus simple, puisqu'il porte sur seulement les cas d'utilisation ciblés à la première itération. Au fur et à mesure qu'on rajoute des fonctionnalités au logiciel, le MDD devient plus riche.
