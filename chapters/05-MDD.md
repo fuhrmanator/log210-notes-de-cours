@@ -161,6 +161,35 @@ Joueur "1" -- "1,2,3" Dé : Jette >
 
 ![Modèle du domaine du jeu de Risk](build/images/diag_MDD.pdf){#MDD-jeu-de-risk}
 
+## Attributs dérivés
+
+Les attributs dérivés sont expliqués en détail dans la section 9.16&nbsp;\faBook&nbsp; du livre du cours. 
+Il s'agit des attributs qui sont calculés à partir d'autres informations reliées à la classe.
+Ils sont indiqués par le symbole `/` devant leur nom.
+L'exemple à la figure&nbsp;\ref{MDD-attribut-derive} s'applique à la règle du jeu de Risk spécifiant qu'un joueur reçoit un certain nombre de renforts selon le nombre de pays occupés. La classe Joueur pourrait avoir un attribut dérivé `/nbPaysOccupés` qui est calculé selon le nombre de Pays contrôlés par le joueur.
+
+```{.plantuml hide-image=true plantuml-filename=build/images/attributs_derives_MDD.pdf}
+@startuml
+!include ../forme.pumlinclude
+scale 1
+hide empty members
+class Joueur {
+  nom : String
+  <color:blue>/nbPaysOccupés : int</color>
+}
+class Pays {
+  nom : String
+}
+class Occupation {
+  nbRégiments : int
+}
+Joueur "1" -- "1..*" Pays : Contrôle >
+(Joueur, Pays) .. Occupation
+@enduml
+```
+
+![Classe d'association dans le MDD Jeu de Risk](build/images/attributs_derives_MDD.pdf){#MDD-attribut-derive}
+
 ## Classes d'association
 
 Les classes d'association dans le MDD sont le sujet de la Section 32.10&nbsp;\faBook&nbsp;du livre du cours (Section 26.10 de la version française).
