@@ -167,7 +167,7 @@ Les classes d'association dans le MDD sont le sujet de la Section 32.10&nbsp;\fa
 
 > Une classe d'association permet de traiter une association comme une classe, et de la modéliser avec des attributs...
 
-Il pourrait être utile d'utiliser une classe d'association dans un MDD si:
+Il pourrait être utile d'avoir une classe d'association dans un MDD si:
 
 - un attribut est lié à une association;
 - la durée de vie des instances de la classe d'association dépend de l'association;
