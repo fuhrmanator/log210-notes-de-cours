@@ -3,10 +3,11 @@
 Les contrats d'opération sont le sujet du chapitre 11&nbsp;\faBook&nbsp;du livre du cours.
 Voici les points importants pour le cours:
 
-- Pour simplifier les choses, on ne spécifie pas les préconditions dans les contrats.
-- Notez que les postconditions d'un contrat d'opération et d'un cas d'utilisation ne sont pas la même chose.
-- Une postconditions décrit les modifications de l'état des objets dans le modèle du domaine après une opération système.
-- Le vocabulaire pour les postconditions provient du modèle du domaine.
+- On ne spécifie pas les préconditions dans les contrats.
+- Un contrat d'opération correspond à une opération système provenant d'un DSS.
+- Ne pas confondre les postconditions d'un contrat d'opération et d'un cas d'utilisation. Ce sont deux choses différentes.
+- Une postcondition décrit les modifications de l'état des objets dans le modèle du domaine après une opération système.
+- Le vocabulaire pour les postconditions provient du modèle du domaine. Il s'agit des noms de classes, d'attributs et d'associations qu'on trouve dans le MDD.
 - Chaque postcondition doit avoir la bonne forme:
   - création (ou suppression) d'instances;
   - modification des valeurs des attributs;
