@@ -55,3 +55,9 @@ Sinon, la solution devient moins évidente par rapport à son problème.
 Cette notion est aussi reliée à la facilité de la traçabilité.
 C'est-à-dire que chaque élément de la solution devrait être facilement traçable au problème.
 La méthodologie enseignée dans LOG210 cherche à réduire le décalage des représentations, car c'est un bénéfice des langages orientés objet si on fait attention.
+
+## Survol de la méthodologie
+
+La figure&nbsp;\ref{SurvolMethodologie} présente la méthode d'analyse et de conception enseignée dans le cours. C'est une adaptation de plusieurs figures présentées dans le livre du cours.
+
+![Survol de la méthodologie](images/FigA.1-avec-contrats.svg){#SurvolMethodologie}
