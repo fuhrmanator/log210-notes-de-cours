@@ -143,20 +143,67 @@ class Occupation {
 PR "1" *-- "42" Pays : Contient >
 PR "1" *-- "6" Continent : Est-\ndivisé-\nen >
 Continent "1" *-- "4,6,\n7,9,\n12" Pays : Groupe >
-Pays "1" -- "*" Pays : Est-voisin-de >
+Pays "1" -- "1..*" Pays : Est-voisin-de >
 JeuRisk "1" -l- "1" PR : Est-joué-sur >
 JeuRisk "1" -d- "5" Dé : Inclut >
 ' ligne suivante contient un espace large ( )
 Joueur "2:6" -l- "1" JeuRisk : Joue >
-Joueur "1" -- "*" Pays : Contrôle >
+Joueur "1" -- "1..*" Pays : Contrôle >
 (Joueur, Pays) .. Occupation
 'Joueur "1" -- "*" Régiment : Contrôle >
 'Pays "1" -l- "*" Régiment : < Protège-\nou-\nattaque
-Pays "1" -l- "*" Attaque : Lance >
-Pays "1" -- "*" Attaque : Défend-contre >
+Pays "1" -l- "1..*" Attaque : Lance >
+Pays "1" -- "1..*\n" Attaque : Défend-contre >
 Joueur "1" -- "1,2,3" Dé : Jette >
 
 @enduml
 ```
 
 ![Modèle du domaine du jeu de Risk](build/images/diag_MDD.pdf){#MDD-jeu-de-risk}
+
+## Classes d'association
+
+Les classes d'association dans le MDD sont le sujet de la Section 32.10&nbsp;\faBook&nbsp;du livre du cours (Section 26.10 de la version française).
+
+> Une classe d'association permet de traiter une association comme une classe, et de la modéliser avec des attributs...
+
+Il pourrait être utile d'utiliser une classe d'association dans un MDD si:
+
+- un attribut est lié à une association;
+- la durée de vie des instances de la classe d'association dépend de l'association;
+- il y a une association $N$-$N$ entre deux concepts et des informations liées a l'association elle-même.
+
+Dans l'exemple à la figure&nbsp;\ref{MDD-classe-association}, voici pourquoi il y a une classe d'association Occupation. 
+Lorsqu'un Joueur contrôle un Pays, il doit y avoir des armées dans ce dernier. 
+Le MDD pourrait avoir un attribut `nbRégiments` dans la classe Pays. 
+Cependant, l'attribut `nbRégiments` est lié à l'association entre le Joueur et le Pays qu'il contrôle, alors on décide d'utiliser une classe d'association. 
+
+Si un Joueur invahit un Pays, la nouvelle instance de la classe d'association Occupation sera créée (avec la nouvelle association). 
+Pourtant, cette instance d'Occupation sera détruite si un autre Joueur arrive à prendre le contrôle du Pays. 
+Alors, la durée de vie de cette instance dépend de l'association. 
+
+Voir le livre obligatoire pour plus d'exemples.
+
+```{.plantuml hide-image=true plantuml-filename=build/images/classe_association_MDD.pdf}
+@startuml
+!include ../forme.pumlinclude
+scale 1
+hide empty members
+class Joueur {
+  nom : String
+}
+class Pays {
+  nom : String
+}
+class Occupation {
+  nbRégiments : int
+}
+Joueur "1" -- "1..*" Pays : Contrôle >
+(Joueur, Pays) .. Occupation
+@enduml
+```
+
+![Classe d'association dans le MDD Jeu de Risk](build/images/classe_association_MDD.pdf){#MDD-classe-association}
+
+
+
