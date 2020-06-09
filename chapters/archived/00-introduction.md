@@ -53,6 +53,8 @@ Check these unicode characters: ǽß¢ð€đŋμ
 See [(this is a link to whatever)](#whatever) for an example with options `{.plantuml #whatever caption="this is the caption" width=65%}`
 
 ```{.plantuml #whatever caption="this is the caption" width=65%}
+@startuml
 Alice -> Bob: Authentication Request
 Bob --> Alice: Authentication Response
+@enduml
 ```
