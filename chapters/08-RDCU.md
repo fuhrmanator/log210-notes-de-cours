@@ -35,11 +35,7 @@ note right: appliquer GRASP Contrôleur\n(voir les détails au livre)
 :rappeler le contrat; 
 note right: les postconditions, p.ex.,\n-Une instance <i>v</i> de Vente a été créée\n-<i>v</i> a été associée au Registre\n-Des attributs de <i>v</i> ont été initialisés 
 repeat 
-:concevoir (raffiner) un diagramme d'interaction
-de l'opération système satisfaisant toutes
-les postconditions du contrat d'opération et 
-retournant l'information du message de retour
-le cas échéant; 
+:concevoir (raffiner) un diagramme d'interaction\nde l'opération système satisfaisant toutes\nles postconditions du contrat d'opération et\nretournant l'information du message de retour\nle cas échéant; 
 note right: voir le chapitre F15/A16 
 repeat while (reste des postconditions insatisfaites\nou infos pas encore retournées) 
 repeat while (reste des opérations système) 
