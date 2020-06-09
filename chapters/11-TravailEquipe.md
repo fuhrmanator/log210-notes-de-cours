@@ -89,7 +89,7 @@ Une personne démontrant la confiance pense ainsi:
 - Je crois que les autres coéquipiers sont compétents et qu'ils feront la bonne chose.
 - Je suis à l’aise lorsqu'ils prennent le volant, le cas échéant.
 
-Le dernier point peut être extremement difficile si vous avez déjà été déçu par une personne incompétente à qui vous avez délégué une tâche.
+Le dernier point peut être extrêmement difficile si vous avez déjà été déçu par une personne incompétente à qui vous avez délégué une tâche.
 
 ## Redondance des compétences dans l'équipe (Bus Factor) {#Bus_Factor}
 
@@ -100,13 +100,13 @@ C'est le nombre minimum de coéquipiers à perdre (heurtés par un bus) pour arr
 Par exemple, dans un projet de stage, si c'est vous qui écrivez tout le code, alors c'est un *bus factor* de 1.
 Si vous n'êtes plus présent, le projet s'arrête.
 
-Un coéquipier peut être absent (ou moins disponible) pour des raisons moins graves, par exemple, il part en vacances, il tombe malade, il prend un congé parental, il change de boulot ou il abondonne le cours.
+Un coéquipier peut être absent (ou moins disponible) pour des raisons moins graves, par exemple, il part en vacances, il tombe malade, il prend un congé parental, il change de boulot ou il abandonne le cours.
 Cherchez à répartir les responsabilités dans l'équipe afin d'avoir un *bus factor* d'au moins 2.
 Partagez des compétences pour maintenir une équipe robuste.
 Vous pouvez également garder votre solution *simple* et de garder la documentation de votre conception à jour.
 
 > \faWarning&nbsp;Si un coéquipier quitte en cours de la session, il n'est pas facile de maintenir le même rythme.
-Cependant, les enseignants et les chargés de laboratoire de LOG210 s'attendront à ce que vous ayez pensé à un plan B avant de perdre le coéquipier. Au moins un autre coéquipier doit être au courant de ce que faisait celui qui quitte, pour que le projet ne soit pas complètement arrété.
+Cependant, les enseignants et les chargés de laboratoire de LOG210 s'attendront à ce que vous ayez pensé à un plan B avant de perdre le coéquipier. Au moins un autre coéquipier doit être au courant de ce que faisait celui qui quitte, pour que le projet ne soit pas complètement arrêté.
 
 ## Mentorat
 
@@ -141,5 +141,5 @@ Voici des situations qui risquent d'arriver dans une session de LOG210:
 - un coéquipier se trouve à être le seul à faire de la programmation.
   - il fait ne fait plus confiance à ses coéquipiers, car leur code est trop bogué.
   - il croit qu'ils auraient dû apprendre mieux à programmer dans le cours préalables.
-- un coéquipier dit qu'il a "fait ses 3 heures de contribution" chaque dimanche chez lui et que ça devrait suffir pour sa partie (il a un emploi et n'a pas beaucoup de temps disponible pour l'équipe).
+- un coéquipier dit qu'il a "fait ses 3 heures de contribution" chaque dimanche chez lui et que ça devrait suffire pour sa partie (il a un emploi et n'a pas beaucoup de temps disponible pour l'équipe).
 - un ou deux membres d'une équipe abandonne le cours après l'examen intra, à cause du double-seuil du cours

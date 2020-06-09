@@ -25,7 +25,7 @@ Pour cette raison, il vaut mieux pratiquer dessiner les modèles en mode esquiss
 ![PlantUML Gizmo pour Google Docs et Google Slides](images/PlantUMLGizmoSlides.png){#PlantUMLGizmo}
 
 Pour un débutant, le langage PlantUML peut sembler plus compliqué que utiliser un outil graphique comme Lucidcharts.
-Cependant, pour beaucoup de diagrammes (p.ex. diagrammes de séquence), ça peut étre plus long à créer ou à modifier.
+Cependant, pour beaucoup de diagrammes (p.ex. diagrammes de séquence), ça peut être plus long à créer ou à modifier.
 Bien que ces éditeurs aient des gabarits ou des modes "UML", ceux-ci ne sont pas toujours conviviaux ou complets.
 C'est souvent des objets groupés et le vrai sens de la notation UML n'est pas considéré (p.ex. une ligne de vie dans un diagramme de séquence est toujours verticale).
 Ça peut prend beaucoup de clics pour effectuer une modification et on peut obtenir des résultats intermédiaires qui n'ont aucun sens en UML (p.ex. la figure&nbsp;\ref{LucidchartUML}).
