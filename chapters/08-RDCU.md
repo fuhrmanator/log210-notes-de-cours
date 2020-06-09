@@ -20,6 +20,35 @@ Faire des changements à un diagramme est aussi plus facile que changer tout le 
 Ceci étant dit, *le codage dans un langage de programmation est la seule manière de valider une RDCU*. Évidemment la programmation prend beaucoup plus de temps et n'est pas triviale.
 Une RDCU est comme un plan d'un architecte pour un bâtiment et la programmation est comme la construction d'un bâtiment.
 
+Tout ce processus de conception peut être visualisé comme un diagramme d'activités, comme dans la figure&nbsp;\ref{RDCU_Aide_Memoire}.
+
+```{.plantuml hide-image=true plantuml-filename=build/images/rdcu-aide-memoire.pdf}
+@startuml 
+skinparam shadowing false
+skinparam BackgroundColor hidden
+start 
+repeat 
+:revoir opération système; 
+note right: p.ex. <i>créerNouvelleVente()</i>
+:déterminer contrôleur; 
+note right: appliquer GRASP Contrôleur\n(voir les détails au livre) 
+:rappeler le contrat; 
+note right: les postconditions, p.ex.,\n-Une instance <i>v</i> de Vente a été créée\n-<i>v</i> a été associée au Registre\n-Des attributs de <i>v</i> ont été initialisés 
+repeat 
+:concevoir (raffiner) un diagramme d'interaction
+de l'opération système satisfaisant toutes
+les postconditions du contrat d'opération et 
+retournant l'information du message de retour
+le cas échéant; 
+note right: voir le chapitre F15/A16 
+repeat while (reste des postconditions insatisfaites\nou infos pas encore retournées) 
+repeat while (reste des opérations système) 
+stop 
+@enduml
+```
+
+![Aide mémoire pour faire une RDCU](build/images/rdcu-aide-memoire.pdf){#RDCU_Aide_Memoire}
+
 ## Spécifier le contrôleur
 
 Pour commencer une RDCU, on spécifie le contrôleur selon GRASP. 
@@ -117,6 +146,7 @@ Un autre exemple du livre du cours est l'identifiant `codeArticle` transformé e
 `CatalogueProduits.getDescProduit(codeArticle:String):DescriptionProduit`.
 
 ```{.plantuml hide-image=true plantuml-filename=build/images/diag_transformer_id_objet_RDCU.pdf}
+@startuml
 !include ../forme.pumlinclude
 scale 1.1
 skinparam sequenceMessageAlign center
@@ -127,6 +157,7 @@ participant "v:Vente" as v
 R -> M : c = getClient(idClient)
 note right: Selon Expert et\n**les ID en objets**
 R -> v : saisirClientPourRemise(c:Client)
+@enduml
 ```
 
 ![Un identifiant `idClient:String` est transformé en objet `c:Client`, qui est ensuite envoyé à la Vente en cours](build/images/diag_transformer_id_objet_RDCU.pdf){#RDCU_ID_en_objets}
