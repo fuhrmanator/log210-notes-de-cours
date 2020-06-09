@@ -39,9 +39,9 @@ def plantuml(key, value, format, _):
             # Generate image only once
             if not os.path.isfile(plantuml_output):
                 txt = code.encode(sys.getfilesystemencoding())
-                if not txt.startswith("@start"):
-                    txt = "@startuml\n" + txt + "\n@enduml\n"
-                with open(src, "w") as f:
+                if not txt.startswith(b"@start"):
+                    txt = b"@startuml\n" + txt + b"\n@enduml\n"
+                with open(src, "wb") as f:
                     f.write(txt)
                 # Must not let messages go to stdout, as it will corrupt JSON in filter
                 with open('plantUMLErrors.log', "w") as log_file:
