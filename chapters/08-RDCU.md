@@ -20,10 +20,11 @@ Faire des changements à un diagramme est aussi plus facile que changer tout le 
 Ceci étant dit, *le codage dans un langage de programmation est la seule manière de valider une RDCU*. Évidemment, la programmation prend beaucoup plus de temps et n'est pas triviale.
 Une RDCU est comme un plan d'un architecte pour un bâtiment et la programmation est comme la construction d'un bâtiment.
 
-Tout ce processus de conception peut être visualisé comme un diagramme d'activités, comme dans la figure&nbsp;\ref{RDCU_Aide_Memoire}.
+Tout le processus de proposer une solution (RDCU) peut être visualisé comme un diagramme d'activités, comme dans la figure&nbsp;\ref{RDCU_Aide_Memoire}.
 
 ```{.plantuml hide-image=true plantuml-filename=build/images/rdcu-aide-memoire.pdf}
 @startuml 
+'!include ../forme.pumlinclude
 skinparam shadowing false
 skinparam BackgroundColor hidden
 skinparam DefaultTextAlignment center
@@ -33,9 +34,9 @@ repeat
 :Revoir l'opération système; 
 note right: ex. ""**créerNouvelleVente()**""
 #ddffdd:Déterminer le contrôleur;
-note right: appliquer **GRASP Contrôleur**\n(Chapitre F16.13/A17.13) 
+note right: Appliquer **GRASP Contrôleur**\n(Chapitre F16.13/A17.13) 
 :Rappeler le contrat d'opération; 
-note right: les **postconditions**, ex.,\n -Une instance <i>v</i> de Vente a été créée\n -<i>v</i> a été associée au Registre\n -Des attributs de <i>v</i> ont été initialisés 
+note right: Les **postconditions**, ex.,\n -Une instance <i>v</i> de Vente a été créée\n -<i>v</i> a été associée au Registre\n -Des attributs de <i>v</i> ont été initialisés 
 repeat
 #ffdddd:Concevoir (et raffiner) un diagramme d'interaction
 pour l'opération système, **satisfaisant toutes**
@@ -43,11 +44,9 @@ pour l'opération système, **satisfaisant toutes**
 **retournant l'information selon le message de**
 **retour** du DSS, le cas échéant;
 note right
-appliquer **GRASP Créateur**
-et **Expert** et éventuellement
-**Faible Couplage et**
-**Forte Cohésion**.
-Chapitre F16.8/A17.8
+Appliquer **GRASP Créateur**, 
+**GRASP Expert**, **ID en objets**,
+etc. Chapitre F16.8/A17.8
 end note
 repeat while (reste des postconditions insatisfaites\nou infos pas encore retournées) 
 repeat while (reste des opérations système) 
@@ -60,7 +59,7 @@ endlegend
 @enduml
 ```
 
-![Aide mémoire pour faire une RDCU](build/images/rdcu-aide-memoire.pdf){#RDCU_Aide_Memoire}
+![Aide mémoire pour faire une RDCU. L'étape en rouge nécessite beaucoup de pratique, selon la complexité des postconditions. Vous pouvez vous attendre à ne pas la réussir du premier coup.](build/images/rdcu-aide-memoire.pdf){#RDCU_Aide_Memoire}
 
 ## Spécifier le contrôleur
 
