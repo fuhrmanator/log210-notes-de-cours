@@ -17,7 +17,7 @@ Si vous n'avez pas bien compris ces autres éléments, il est difficile de réus
 - Faire des RDCU est plus agile que coder, car dans un diagramme on peut voir le flux de plusieurs messages à travers plusieurs classes.
 Dans le code source, il serait nécessaire d'ouvrir plusieurs fichiers en même temps et on ne peut pas voir toute la dynamique de la même manière.
 Faire des changements à un diagramme est aussi plus facile que changer tout le code source.
-Ceci étant dit, *le codage dans un langage de programmation est la seule manière de valider une RDCU*. Évidemment la programmation prend beaucoup plus de temps et n'est pas triviale.
+Ceci étant dit, *le codage dans un langage de programmation est la seule manière de valider une RDCU*. Évidemment, la programmation prend beaucoup plus de temps et n'est pas triviale.
 Une RDCU est comme un plan d'un architecte pour un bâtiment et la programmation est comme la construction d'un bâtiment.
 
 Tout ce processus de conception peut être visualisé comme un diagramme d'activités, comme dans la figure&nbsp;\ref{RDCU_Aide_Memoire}.
@@ -26,20 +26,37 @@ Tout ce processus de conception peut être visualisé comme un diagramme d'activ
 @startuml 
 skinparam shadowing false
 skinparam BackgroundColor hidden
+skinparam DefaultTextAlignment center
+skinparam NoteTextAlignment left
 start 
 repeat 
-:revoir opération système; 
-note right: p.ex. <i>créerNouvelleVente()</i>
-:déterminer contrôleur; 
-note right: appliquer GRASP Contrôleur\n(voir les détails au livre) 
-:rappeler le contrat; 
-note right: les postconditions, p.ex.,\n-Une instance <i>v</i> de Vente a été créée\n-<i>v</i> a été associée au Registre\n-Des attributs de <i>v</i> ont été initialisés 
-repeat 
-:concevoir (raffiner) un diagramme d'interaction\nde l'opération système satisfaisant toutes\nles postconditions du contrat d'opération et\nretournant l'information du message de retour\nle cas échéant; 
-note right: voir le chapitre F15/A16 
+:Revoir l'opération système; 
+note right: ex. ""**créerNouvelleVente()**""
+#ddffdd:Déterminer le contrôleur;
+note right: appliquer **GRASP Contrôleur**\n(Chapitre F16.13/A17.13) 
+:Rappeler le contrat d'opération; 
+note right: les **postconditions**, ex.,\n -Une instance <i>v</i> de Vente a été créée\n -<i>v</i> a été associée au Registre\n -Des attributs de <i>v</i> ont été initialisés 
+repeat
+#ffdddd:Concevoir (et raffiner) un diagramme d'interaction
+pour l'opération système, **satisfaisant toutes**
+**les postconditions** du contrat d'opération et
+**retournant l'information selon le message de**
+**retour** du DSS, le cas échéant;
+note right
+appliquer **GRASP Créateur**
+et **Expert** et éventuellement
+**Faible Couplage et**
+**Forte Cohésion**.
+Chapitre F16.8/A17.8
+end note
 repeat while (reste des postconditions insatisfaites\nou infos pas encore retournées) 
 repeat while (reste des opérations système) 
-stop 
+stop
+legend top
+Note: Une solution détaillée est faite pour chaque opération système. 
+Donc, il faut utiliser le DSS, les contrats d'opération, le MDD et les
+principes GRASP pour ce travail.
+endlegend
 @enduml
 ```
 
@@ -60,7 +77,7 @@ Pour initialiser les liens entre la couche présentation et les contrôleurs GRA
 
 Certaines postconditions concernent la création d'une instance.
 Dans votre RDCU, vous devez respecter le GRASP Créateur.
-Référez-vous à la définition dans \nameref{tab_GRASPCreateur}.
+Référez-vous à la définition dans le \nameref{tab_GRASPCreateur}.
 
 > \faWarning &nbsp;Une erreur potentielle est de donner la responsabilité de créer à un contrôleur, puisqu'*il a les données pour initialiser* l'objet. Bien que ce soit justifiable par le principe GRASP Créateur, il vaut mieux favoriser une classe qui *agrège* l'objet à créer, le cas échéant. 
 
@@ -69,7 +86,8 @@ Référez-vous à la définition dans \nameref{tab_GRASPCreateur}.
 Pour les postconditions où il faut former une association entre un objet *a* et *b*, il y a plusieurs façons de faire.
 
 - S'il y a une agrégation entre les objets, il s'agit probablement d'une méthode `add()` sur l'objet qui agrège.
-- S'il y a une association simple, il faut considérer la navigabilité de l'association. Est-ce qu'il faut pouvoir retrouver l'objet *a* à partir de l'objet *b* ou vice-versa? Il s'agira d'une méthode `setB(b)` sur l'objet `a` (pour trouver *b* à partir de *a*), etc. 
+- S'il y a une association simple, il faut considérer la navigabilité de l'association. Est-ce qu'il faut pouvoir retrouver l'objet *a* à partir de l'objet *b* ou vice-versa? Il s'agira d'une méthode `setB(b)` sur l'objet `a` (pour trouver *b* à partir de *a*), etc.
+- S'il faut former une association entre un objet et un autre "sur une base de correspondance avec" un identifiant passé comme argument, alors il faut repérer le bon objet d'abord. Voir la section \nameref{TransformerIDenObjets}.
 
 Dans la plupart des cas, la justification GRASP pour former une association est Expert, défini dans \nameref{tab_GRASPExpert}. \faLowVision &nbsp;Il faut faire attention à la \nameref{Visibilite}.
 
@@ -158,7 +176,7 @@ R -> v : saisirClientPourRemise(c:Client)
 
 ![Un identifiant `idClient:String` est transformé en objet `c:Client`, qui est ensuite envoyé à la Vente en cours](build/images/diag_transformer_id_objet_RDCU.pdf){#RDCU_ID_en_objets}
 
-La section \ref{UtilisationMap} explique comment implémenter la transformation avec les dictionnaires (map).
+La section \ref{UtilisationMap} explique comment implémenter la transformation avec un tableau associatif.
 
 ## Utilisation de tableau associatif (`Map<clé, objet>`) {#UtilisationMap}
 
