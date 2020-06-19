@@ -9,23 +9,29 @@ Pour pallier ce problème, le développement piloté par les tests propose de tr
 Ça fait moins d'ouvrage de codage entre les validations et c'est possiblement même plus stimulant pour les développeurs.
 
 Ainsi, il y a toujours des tests pour les fonctionnalités et le développement se fait en petits incréments qui sont validés par les tests.
-Faire les petits pas réduit le risque associé à de gros changements dans un logiciel sans validation intermédiaire.
+Faire les *petits pas* réduit le risque associé à de gros changements dans un logiciel sans validation intermédiaire.
 Au fur et à mesure qu'on développe un logiciel, on développe également des tests de ce dernier.
 Puisque les tests sont automatiques, ils sont aussi faciles à exécuter que le compilateur.
 
-Il y a une discipline imposée dans le TDD qui nécessite d'écrire un *test en premier*, avant d'écrire le code.
+Il y a une discipline imposée dans le TDD qui nécessite d'écrire un *test en premier*, c'est-à-dire *avant* d'écrire le code.
 La démarche est illustrée par la figure&nbsp;\ref{TDD_states}.
-Plusieurs chercheurs ont essayé de voir si tester en premier avait un vrai bénéfice.
-Les résultats de leurs expériences n'ont pas montré toujours que c'est le cas.
-Faire un petit test après avoir écrit le code a aussi un bénéfice en termes de qualité.
-Cependant, des chercheurs sont d'accord que le fait de travailler en petit pas apporte toujours un avantage en termes de qualité.
+Beaucoup d'outils (IDE) favorisent ce genre de développement.
+Nous pouvons écrire un test qui appelle à une fonction qui n'existe pas encore et l'IDE va nous proposer un squelette de la méthode, avec les arguments et une valeur de retour même.
+Un puriste du TDD insistera que le test soit écrit toujours en premier!
+Cette discipline est parfois culturelle. 
+
+Plusieurs chercheurs ont mené des expériences ([celle-ci par exemple](https://ieeexplore.ieee.org/document/8405634)) pour voir si tester en premier avait un vrai bénéfice.
+Les résultats de leurs analyses n'ont pas toujours montré que c'est le cas (ce genre d'expérience est difficile de faire, en partie parce qu'il n'y a pas beaucoup de développeurs en industrie qui le pratiquent).
+Les chercheurs ont trouvé que faire un petit test *après* avoir écrit le code a aussi un bénéfice sur le plan de la qualité.
+Dans tous les cas, des chercheurs ont trouvé que le fait de travailler en *petit pas* apporte *toujours* un avantage sur le plan de la qualité.
+Travailler en *petit pas* est utile, même sans faire du TDD.
 
 Sachez qu'il existe beaucoup d'intergiciels (anglais *frameworks*) pour faciliter l'exécution automatique des tests réalisés dans le cadre du TDD.
 En Java, il y a JUnit, mais il y en a pour pratiquement tous les langages et environnements.
 En ce qui concerne le squelette pour le laboratoire de LOG210, la version TypeScript utilise [Mocha](https://mochajs.org/index.html) avec [Chai](https://www.chaijs.com/).
 La version Python utilise [PyTest](https://docs.pytest.org/en/latest/).
 
-L'exécution de test peut être même faite à chaque commit du code dans un dépôt comme GitHub. Le squelette de LOG210 utilise [Travis](https://travis-ci.org/) pour cela, et dans la version TypeScript et dans la version Python.
+L'exécution de test peut être même faite à chaque commit du code dans un dépôt comme GitHub. Le squelette de LOG210 utilise [Travis](https://travis-ci.org/) pour cela.
 
 Il est possible de mesurer la [couverture de code \faWikipediaW](https://fr.wikipedia.org/wiki/Couverture_de_code) atteinte par les tests (mais ce sujet commence à sortir du cadre de la matière du cours). Les deux versions du squelette utilisent [Coveralls](https://coveralls.io/) pour ce faire.
 
@@ -65,9 +71,25 @@ Les activités de réusinage sont expliquées dans la section \nameref{Refactori
 
 ## Kata TDD
 
-Pour apprendre à faire du développement piloté par les tests (et pour apprendre les cadriciels supportant l'automatisation des tests), il existe une activité nommée "Kata TDD". *Kata* est un terme japonais désignant une séquence de techniques réalisée dans le vide dans les arts martiaux japonais. C'est un outil de transmission de techniques, mais aussi de principes, de combat.
+Pour apprendre à faire du développement piloté par les tests (et pour apprendre les cadriciels supportant l'automatisation des tests), il existe une activité nommée "kata TDD". 
+*Kata* est un terme japonais désignant une séquence de techniques réalisée dans le vide dans les arts martiaux japonais. 
+[En voici une vidéo \faYoutube](https://www.youtube.com/watch?v=DmPk_A-RU50).
+C'est un outil de transmission de techniques et de principes de combat.
 
-Alors, le "kata TDD" a été proposé par Dave Thomas et le but est de développer la fluidité avec le développement piloté par les tests. Un kata TDD se pratique avec un IDE (environnement de développement logiciel) et un support pour les tests (par exemple JUnit). Pratiquer le même kata peut améliorer votre habileté de programmation. On peut pratiquer le même kata dans un langage différent ou avec un IDE ou environnement de test différent.
+![Étudiante de karate faisant le kata *Basai Dai* (photo ["Karate"](https://www.flickr.com/photos/the-consortium/4507180302/) [(CC BY-SA 2.0)](https://creativecommons.org/licenses/by-sa/2.0/) par [The Consortium](https://www.flickr.com/people/the-consortium/))](images/karate.jpg){width=40%}
+
+Alors, le "kata TDD" a été proposé par Dave Thomas et le but est de développer la fluidité avec le développement piloté par les tests. 
+Un kata TDD se pratique avec un IDE (environnement de développement logiciel) et un support pour les tests (par exemple JUnit). 
+Pratiquer le même kata peut améliorer votre habileté de programmation. 
+On peut pratiquer le même kata dans un langage différent ou avec un IDE ou environnement de test différent. 
+Le kata vous permet d'avoir une facilité avec les aspects techniques de développement dans plusieurs dimensions (complétion de code pour test et pour l'application, API de l'environnement de test, etc.).
+
+En plus, les activités de réusinage sont normalement intégrées dans un kata. 
+Le fait de travailler en *petit pas* peut faire en sorte que la dette technique s'accumule.
+Les IDE facilitent l'application des activités de réusinage. 
+Un langage fortement typé comme Java permet d'avoir plus de fonctionnalités automatisées de réusinage dans un IDE qu'un langage dynamique comme JavaScript ou Python. 
+Une activité de base de réusinage est le renommage d'une variable ou d'une fonction. 
+Le réusinage rend le code plus facile à comprendre et à maintenir.
 
 ### Exemple de Kata TDD FizzBuzz
 
@@ -97,31 +119,31 @@ FizzBuzz
 Fizz
 19
 Buzz
-... etc jusqu’à 100
+... etc jusqu'à 100
 ```
 
 #### Préalables
 
-Il faut installer un IDE qui supporte le réusinage (refactorings) comme VisualStudio Code, Eclipse, IntelliJ, etc. puis un framework de test unitaire (JUnit, Mocha/Chai, unittest, etc.).
-Pour un exemple qui fonctionne en TypeScript, vous pouvez cloner le code à https://github.com/profcfuhrmanets/code-kata-typescript
+Il faut installer un IDE qui supporte les activités de réusinage (refactorings) comme VisualStudio Code, Eclipse, IntelliJ, etc. puis un framework de test (JUnit, Mocha/Chai, unittest, etc.).
+Pour un exemple qui fonctionne en TypeScript, vous pouvez cloner le code à [ce dépôt](https://github.com/profcfuhrmanets/code-kata-typescript).
 
 #### Déroulement
 
 Cet exercice peut se faire individuellement ou en équipe de deux.
-En équipe, une personne écrit le test et l’autre écrit le code pour passer le test (c’est la variante ping-pong).
-Chacun réfléchit au réusinage lorsque le projet est dans l’état vert.
-On peut changer de rôle plus tard.
+En équipe, une personne écrit le test et l'autre écrit le code pour passer le test (c'est la variante ping-pong).
+Chacun réfléchit aux activités de réusinage éventuelles lorsque le projet est dans l'état vert (Figure&nbsp;\ref{TDD_states}).
+Les membres de l'équipe peuvent changer de rôle (testeur, codeur) après un certain nombre d'étapes, ou après avoir terminé le kata entier.
 
-Pour respecter la philosophie de petits pas, il vaut mieux:
+Pour respecter la philosophie de *petits pas,* il vaut mieux:
 
-- Ne lire que l’étape courante.
-- Ne travailler que sur l’étape courante.
-- Ne faire que les tests avec les entrées valides.
+- ne lire que l'étape courante;
+- ne travailler que sur l'étape courante;
+- ne faire que les tests avec les entrées valides.
 
 #### Kata pour FizzBuzz
 
 Les étapes sont simples et précises.
-Il s’agit de créer une classe ayant une méthode acceptant un entier et retournant une valeur selon les exigences de FizzBuzz décrite plus haut.
+Il s'agit de créer une classe ayant une méthode acceptant un entier et retournant une valeur selon les exigences de FizzBuzz décrite plus haut.
 
 1. Un argument de 1 retourne `1`.
 2. Un argument de 2 retourne `2`
@@ -136,4 +158,5 @@ Il s’agit de créer une classe ayant une méthode acceptant un entier et retou
     a. Il faut imprimer Fizz au lieu du nombre si le nombre est un multiple de 3 ou contient un 3 (p.ex. 13 → `Fizz`).
     b. Il faut imprimer Buzz au lieu du nombre si le nombre est un multiple de 5 ou contient un 5 (p.ex. 51 → `Fizz`).
     c. Il faut imprimer FizzBuzz si le nombre est un multiple de 5 et de 3 ou contient un 5 et un 3 (p.ex. 53 → `FizzBuzz`).
+
 
