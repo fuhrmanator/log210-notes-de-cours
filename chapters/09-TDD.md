@@ -125,7 +125,7 @@ Buzz
 #### Préalables
 
 Il faut installer un IDE qui supporte les activités de réusinage (refactorings) comme VisualStudio Code, Eclipse, IntelliJ, etc. puis un framework de test (JUnit, Mocha/Chai, unittest, etc.).
-Pour un exemple qui fonctionne en TypeScript, vous pouvez cloner le code à [ce dépôt](https://github.com/profcfuhrmanets/code-kata-typescript).
+Pour un exemple qui fonctionne en TypeScript, vous pouvez cloner le code à [ce dépôt](https://github.com/profcfuhrmanets/typescript-tdd-kata).
 
 #### Déroulement
 
