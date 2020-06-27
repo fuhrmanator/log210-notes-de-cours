@@ -4,21 +4,28 @@ Les réalisations de cas d'utilisation (RDCU) sont le sujet du chapitre F17/A18&
 Voici les points importants pour le cours:
 
 - Une RDCU est une synthèse des informations spécifiées dans le MDD, le DSS et les contrats d'opération.
-Si vous n'avez pas bien compris ces autres éléments, il est difficile de réussir les RDCU. Mais, d'une autre part, c'est aussi une étape pour valider votre compréhension. Il est normal de ne pas tout comprendre au début.
+Si vous n'avez pas bien compris ces autres éléments, il est difficile de réussir les RDCU. 
+Mais, d'une autre part, c'est aussi une étape pour valider votre compréhension. 
+Il est normal de ne pas tout comprendre au début.
 - De manière générale, toute bonne RDCU doit faire les choses suivantes:
   - spécifier un contrôleur (pour la première opération système dans un DSS, qui sera le même pour le reste des opérations dans le DSS);
   - satisfaire les postconditions du contrat d'opération correspondant;
   - rechercher les informations qui sont éventuellement rendues à l'acteur dans le DSS.
-- Il s'agit d'un diagramme de séquence en UML. Il faut alors maîtriser la notation UML pour ces diagrammes, mais c'est agile:
-  - Il n'est pas nécessaire de faire les boîtes d'activation.
+- Il s'agit d'un diagramme de séquence en UML. 
+Il faut alors maîtriser la notation UML pour ces diagrammes, mais on applique la notation de manière agile:
+  - Il n'est pas nécessaire de faire les boîtes d'activation, car ça prend du temps à les faire correctement lorsqu'on dessine à la main un diagramme.
   - On doit se servir des annotations pour documenter les choix (GRASP).
-  - Il vaut mieux apprendre à dessiner à la main des diagrammes, car c'est comme ça à l'examen (et c'est plus rapide qu'un outil).
+  - On dessine à la main des diagrammes puisqu'on peut faire ça en équipe à un tableau blanc. Mais aussi, à l'examen vous devez faire des diagrammes à la main.
+  - Au lieu d'un message pointillé indiquant le retour d'une valeur à la fin de l'exécution d'une méthode, on utilise l'affectation sur le message (comme dans la programmation), par exemple `c = getClient(...)` à la figure&nbsp;\ref{RDCU_ID_en_objets}
 - Le livre présente quelques RDCU qui sont des *diagrammes de communication*. Cette notation n'est pas utilisée dans le cours, car elle est plus complexe à utiliser et elle est comparable à la notation des diagrammes de séquence.
 - Faire des RDCU est plus agile que coder, car dans un diagramme on peut voir le flux de plusieurs messages à travers plusieurs classes.
 Dans le code source, il serait nécessaire d'ouvrir plusieurs fichiers en même temps et on ne peut pas voir toute la dynamique de la même manière.
 Faire des changements à un diagramme est aussi plus facile que changer tout le code source.
-Ceci étant dit, *le codage dans un langage de programmation est la seule manière de valider une RDCU*. Évidemment, la programmation prend beaucoup plus de temps et n'est pas triviale.
-Une RDCU est comme un plan d'un architecte pour un bâtiment et la programmation est comme la construction d'un bâtiment.
+On peut également se servir des structures (`List`, `Array`, `Map`, etc.) avant que celles-ci ne soient créées. 
+- Faire des RDCU est une activité créative, mais *le codage dans un langage de programmation est la seule manière de valider une RDCU*. 
+Évidemment, la programmation prend beaucoup plus de temps et n'est pas triviale.
+Faire une RDCU est comme faire un *plan* pour un bâtiment tandis que faire de la programmation est comme la *construction* du bâtiment.
+Si un plan contient des erreurs de conception, on va les savoir lors de la construction.
 
 Tout le processus de proposer une solution (RDCU) peut être visualisé comme un diagramme d'activités, comme dans la figure&nbsp;\ref{RDCU_Aide_Memoire}.
 
