@@ -85,3 +85,11 @@ Les "variations ou l'instabilité" sont les calculateurs de taxes qui ne sont pa
 
 Quant aux "responsabilités" à affecter, c'est la fonctionnalité commune de tous les calculateurs de taxes, soit le calcul de taxes. Pour ce qui est de "l'interface stable", il s'agit de la méthode `getTaxes()` qui ne changera jamais. Elle est définie dans le type-interface IAdaptateurCalculTaxes. Cette définition isole (protège) la classe Vente des modifications (ajout de nouveaux calculateurs ou changements de leur API). 
 
+## GRASP et réusinage
+
+Il y a des liens entre les GRASP et les activités de réusinage. 
+Alors, un IDE qui automatise les refactorings peut vous aider à appliquer les GRASP:
+
+- GRASP Polymorphisme est relié à [Replace conditional with polymorphism](https://refactoring.com/catalog/replaceConditionalWithPolymorphism.html) -- attention, il vaut mieux l'appliquer lorsqu'il y des instructions conditionnelles (`switch`) répétées à plusieurs endroits dans le code.
+- GRASP Fabrication pure est relié à [Extract class](https://refactoring.com/catalog/extractClass.html).
+- GRASP Indirection est relié à [Extract function](https://refactoring.com/catalog/extractFunction.html) et [Move function](https://refactoring.com/catalog/moveFunction.html).
