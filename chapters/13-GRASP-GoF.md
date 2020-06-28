@@ -90,6 +90,6 @@ Quant aux "responsabilités" à affecter, c'est la fonctionnalité commune de to
 Il y a des liens entre les GRASP et les activités de réusinage. 
 Alors, un IDE qui automatise les refactorings peut vous aider à appliquer les GRASP:
 
-- GRASP Polymorphisme est relié à [Replace conditional with polymorphism](https://refactoring.com/catalog/replaceConditionalWithPolymorphism.html) -- attention, il vaut mieux l'appliquer lorsqu'il y des instructions conditionnelles (`switch`) répétées à plusieurs endroits dans le code.
+- GRASP Polymorphisme est relié à [Replace Type Code with Subclasses](https://refactoring.com/catalog/replaceTypeCodeWithSubclasses.html) et [Replace conditional with polymorphism](https://refactoring.com/catalog/replaceConditionalWithPolymorphism.html) -- attention, il vaut mieux appliquer ce dernier seulement quand il y a des instructions conditionnelles (`switch`) répétées à plusieurs endroits dans le code.
 - GRASP Fabrication pure est relié à [Extract class](https://refactoring.com/catalog/extractClass.html).
 - GRASP Indirection est relié à [Extract function](https://refactoring.com/catalog/extractFunction.html) et [Move function](https://refactoring.com/catalog/moveFunction.html).
