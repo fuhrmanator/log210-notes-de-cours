@@ -73,8 +73,8 @@ Speculative Generality | Collapse Hierarchy, Inline Function, Inline Class, Chan
 Temporary Field | Extract Class, Move Function, Introduce Special Case
 Message Chains | Hide Delegate, Extract Function, Move Function
 Middle Man | Remove Middle Man, Inline Function, Replace Superclass with Delegate, Replace Subclass with Delegate
-Insider Trading | Move Function, Move Field, Hide Delegate, Replace Sublcass with Delegate, Replace Superclass with Delegate
-Large Class | Extract Class, Extract Superclass, Replace Type Code with Superclass
+Insider Trading | Move Function, Move Field, Hide Delegate, Replace Subclass with Delegate, Replace Superclass with Delegate
+Large Class | Extract Class, Extract Superclass, Replace Type Code with Subclasses
 Alternative Classes with\newline Different Interfaces | Change Function Declaration, Move Function, Extract Superclass
 Data Class | Encapsulate Record, Remove Setting Method, Move Function, Extract Function, Split Phase
 Refused Bequest | Push Down Method, Push Down Field, Replace Subclass with Delegate, Replace Superclass with Delegate
