@@ -12,7 +12,7 @@ Voici le descriptif du cours, selon le plan de cours:
 >
 > Séances de laboratoire axées sur l'application des notions d'analyse, de conception et de programmation orientées objet vues en classe. Mise en œuvre d'un modèle d'objet à partir d'une spécification de logiciel et à l'aide d'un langage orienté objet contemporain. Conception d'applications utilisant les outils UML ainsi que des techniques et des outils utiles au génie logiciel, tels qu'un environnement de développement intégré, la compilation automatique et les tests automatiques.
 
-![Nuage de mots importants du plan de cours de LOG210](images/LOG210wordle_ordre_alph.png)
+![Nuage de mots importants du plan de cours de LOG210.](images/LOG210wordle_ordre_alph.png)
 
 ## Livre obligatoire
 
@@ -60,4 +60,4 @@ La méthodologie enseignée dans LOG210 cherche à réduire le décalage des rep
 
 La figure&nbsp;\ref{SurvolMethodologie} présente la méthode d'analyse et de conception enseignée dans le cours. C'est une adaptation de plusieurs figures présentées dans le livre du cours.
 
-![Survol de la méthodologie](images/FigA.1-avec-contrats.svg){#SurvolMethodologie}
+![Survol de la méthodologie.](images/FigA.1-avec-contrats.svg){#SurvolMethodologie}

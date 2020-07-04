@@ -159,7 +159,7 @@ Joueur "1" -- "1,2,3" Dé : Jette >
 @enduml
 ```
 
-![Modèle du domaine du jeu de Risk](build/images/diag_MDD.pdf){#MDD-jeu-de-risk}
+![Modèle du domaine du jeu de Risk.](build/images/diag_MDD.pdf){#MDD-jeu-de-risk}
 
 ## Attributs dérivés
 
@@ -188,7 +188,7 @@ Joueur "1" -- "1..*" Pays : Contrôle >
 @enduml
 ```
 
-![Classe d'association dans le MDD Jeu de Risk](build/images/attributs_derives_MDD.pdf){#MDD-attribut-derive}
+![Classe d'association dans le MDD Jeu de Risk.](build/images/attributs_derives_MDD.pdf){#MDD-attribut-derive}
 
 ## Classes d'association
 
@@ -232,7 +232,7 @@ Joueur "1" -- "1..*" Pays : Contrôle >
 @enduml
 ```
 
-![Classe d'association dans le MDD Jeu de Risk](build/images/classe_association_MDD.pdf){#MDD-classe-association}
+![Classe d'association dans le MDD Jeu de Risk.](build/images/classe_association_MDD.pdf){#MDD-classe-association}
 
 
 ## FAQ MDD

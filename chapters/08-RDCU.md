@@ -117,7 +117,7 @@ end loop
 @enduml
 ```
 
-![Combiner la création d'instance et une modification de son attribut dans un constructeur](build/images/diag_constructeur_modification.pdf){#RDCU_Constructeur_Modification}
+![Combiner la création d'instance et une modification de son attribut dans un constructeur.](build/images/diag_constructeur_modification.pdf){#RDCU_Constructeur_Modification}
 
 ## Visibilité {#Visibilite}
 
@@ -152,7 +152,7 @@ B -> : ...
 @enduml
 ```
 
-![L'objet *b* doit être visible à l'objet *a* si *a* veut lui envoyer un message](build/images/diag_visibilite_RDCU.pdf){#RDCU_Visibilite1}
+![L'objet *b* doit être visible à l'objet *a* si *a* veut lui envoyer un message.](build/images/diag_visibilite_RDCU.pdf){#RDCU_Visibilite1}
 
 Pour initialiser les références nécessaires pour la bonne visibilité, Larman vous propose de faire ça dans la \nameref{RDCU_Demarrer}.
 
@@ -180,7 +180,7 @@ R -> v : saisirClientPourRemise(c:Client)
 @enduml
 ```
 
-![Un identifiant `idClient:String` est transformé en objet `c:Client`, qui est ensuite envoyé à la Vente en cours](build/images/diag_transformer_id_objet_RDCU.pdf){#RDCU_ID_en_objets}
+![Un identifiant `idClient:String` est transformé en objet `c:Client`, qui est ensuite envoyé à la Vente en cours.](build/images/diag_transformer_id_objet_RDCU.pdf){#RDCU_ID_en_objets}
 
 La section \ref{UtilisationMap} explique comment implémenter la transformation avec un tableau associatif.
 
@@ -206,7 +206,7 @@ P -> m : c = get(nom) : Case
 @enduml
 ```
 
-![Exemple de l'utilisation de tableau associatif pour trouver une Case Monopoly à partir de son nom](build/images/diag_map_monopoly_RDCU.pdf){#Map_Case_Monopoly}
+![Exemple de l'utilisation de tableau associatif pour trouver une Case Monopoly à partir de son nom.](build/images/diag_map_monopoly_RDCU.pdf){#Map_Case_Monopoly}
 
 Dans la section suivante, l'initialisation des éléments utilisés dans les RDCU (comme des tableaux associatifs) est expliquée.
 
@@ -261,4 +261,4 @@ end loop
 @enduml
 ```
 
-![Exemple de l'initialisation partielle du jeu de Risk](build/images/diag_initialisation_RDCU.pdf){#DemarrerRisk}
+![Exemple de l'initialisation partielle du jeu de Risk.](build/images/diag_initialisation_RDCU.pdf){#DemarrerRisk}

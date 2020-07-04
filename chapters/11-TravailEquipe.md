@@ -33,7 +33,7 @@ Les auteurs le disent et c'est un fait: si nous sommes tous plus ou moins compé
 L'humilité, le respect et la confiance (voir la figure&nbsp;\ref{HRC_venn}) sont les qualités de base pour le bon travail en équipe.
 Cette section présente ces aspects en détail.
 
-![Pratiquement tout conflit social est dû à un manque d’humilité, de respect ou de confiance](images/HRC_venn.pdf){#HRC_venn}
+![Pratiquement tout conflit social est dû à un manque d’humilité, de respect ou de confiance.](images/HRC_venn.pdf){#HRC_venn}
 
 ### Humilité
 
@@ -49,9 +49,9 @@ Une personne humble pense ainsi:
 
 > \faWarning &nbsp;L'humilité ne veut pas dire "je n'ai pas de valeur" ou "j'accepte d'être mal traité par les autres".
 
-![Éviter d'être le ["Centre de l'univers"](https://www.flickr.com/photos/diamondduste/466060240/) ([CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)) par [Diamondduste](https://www.flickr.com/people/diamondduste/)](https://farm1.static.flickr.com/171/466060240_0f1914cbb3_b.jpg){width="200px"}
+![Éviter d'être le ["Centre de l'univers"](https://www.flickr.com/photos/diamondduste/466060240/) ([CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)) par [Diamondduste](https://www.flickr.com/people/diamondduste/).](https://farm1.static.flickr.com/171/466060240_0f1914cbb3_b.jpg){width="200px"}
 
-![["Missing"](https://www.flickr.com/photos/smkybear/2705041322/) ([CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)) par [smkybear](https://www.flickr.com/people/smkybear/)](https://farm4.static.flickr.com/3135/2705041322_d1e23d37d6_b.jpg){width="200px"}
+![["Missing"](https://www.flickr.com/photos/smkybear/2705041322/) ([CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)) par [smkybear](https://www.flickr.com/people/smkybear/).](https://farm4.static.flickr.com/3135/2705041322_d1e23d37d6_b.jpg){width="200px"}
 
 ```{.plantuml hide-image=true plantuml-filename=build/images/diag_moi_inf_equipe.pdf}
 @startuml
@@ -132,7 +132,7 @@ Voici quelques conseils pour le mentorat:
 
 Selon TeamGeek, le dernier point est important parce que si vous donnez trop d'information, la personne peut vous ignorer plutôt que vous dire gentiment qu'elle a compris.
 
-![Encadrer les coéquipiers est une habileté à mettre sur son CV ["CultureTECH BT Monster Dojo"](https://www.flickr.com/photos/24498081@N06/10081683216/) ([CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)) par [connor2nz](https://www.flickr.com/people/24498081@N06/)](https://farm8.static.flickr.com/7459/10081683216_2b02836f82_b.jpg){width="400px"}
+![Encadrer les coéquipiers est une habileté à mettre sur son CV ["CultureTECH BT Monster Dojo"](https://www.flickr.com/photos/24498081@N06/10081683216/) ([CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)) par [connor2nz](https://www.flickr.com/people/24498081@N06/).](https://farm8.static.flickr.com/7459/10081683216_2b02836f82_b.jpg){width="400px"}
 
 ## Scénarios
 

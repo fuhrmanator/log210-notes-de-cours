@@ -12,7 +12,7 @@ Dans LOG210, le sujet de comment écrire les cas d'utilisation ne fait pas parti
 
 L'exemple suivant concerne le jeu de Risk.
 
-![Cinq dés utilisés dans le jeu de Risk[^riskdice]](images/Risk-dice-example.jpg){width="300px"}
+![Cinq dés utilisés dans le jeu de Risk[^riskdice].](images/Risk-dice-example.jpg){width="300px"}
 
 [^riskdice]: By Val42 - [https://en.wikipedia.org/wiki/Image:Risk-dice-example.jpg](http://en.wikipedia.org/wiki/Image:Risk-dice-example.jpg), [CC By-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/ "Creative Commons Attribution-Share Alike 3.0") [Link](https://commons.wikimedia.org/w/index.php?curid=3272090)
 
@@ -49,7 +49,7 @@ rectangle "Système" {
 @enduml
 ```
 
-![Diagramme de cas d'utilisation](build/images/diag_UC.pdf){#uml-uc}
+![Diagramme de cas d'utilisation.](build/images/diag_UC.pdf){#uml-uc}
 
 Notes:
 

@@ -65,7 +65,7 @@ end legend
 @enduml
 ```
 
-![États du développement piloté par les tests](build/images/diag_etats_TDD.pdf){#TDD_states}
+![États du développement piloté par les tests.](build/images/diag_etats_TDD.pdf){#TDD_states}
 
 Les activités de réusinage sont expliquées dans la section \nameref{Refactoring}.  
 
@@ -76,7 +76,7 @@ Pour apprendre à faire du développement piloté par les tests (et pour apprend
 [En voici une vidéo \faYoutube](https://www.youtube.com/watch?v=DmPk_A-RU50).
 C'est un outil de transmission de techniques et de principes de combat.
 
-![Étudiante de karate faisant le kata *Basai Dai* (photo ["Karate"](https://www.flickr.com/photos/the-consortium/4507180302/) [(CC BY-SA 2.0)](https://creativecommons.org/licenses/by-sa/2.0/) par [The Consortium](https://www.flickr.com/people/the-consortium/))](images/karate.jpg){width=40%}
+![Étudiante de karate faisant le kata *Basai Dai* (photo ["Karate"](https://www.flickr.com/photos/the-consortium/4507180302/) [(CC BY-SA 2.0)](https://creativecommons.org/licenses/by-sa/2.0/) par [The Consortium](https://www.flickr.com/people/the-consortium/)).](images/karate.jpg){width=40%}
 
 Alors, le "kata TDD" a été proposé par Dave Thomas et le but est de développer la fluidité avec le développement piloté par les tests. 
 Un kata TDD se pratique avec un IDE (environnement de développement logiciel) et un support pour les tests (par exemple JUnit). 

@@ -6,7 +6,7 @@ Craig Larman a proposé les GRASP pour faciliter la compréhension des forces es
 
 Le chapitre A26/F23&nbsp;\faBook&nbsp;du livre du cours présente l'exemple du pattern Adaptateur pour les calculateurs de taxes (figure&nbsp;\ref{Fig23-1} tirée du livre de Larman, Figure A26.3/F23.3). 
 
-![Le pattern Adaptateur](images/Fig23.1.png "Figure A26.1/F23.1 du livre de Larman"){#Fig23-1}
+![Le pattern Adaptateur.](images/Fig23.1.png "Figure A26.1/F23.1 du livre de Larman"){#Fig23-1}
 
 ## Imaginer le code sans le pattern GoF
 
@@ -32,7 +32,7 @@ Elle est responsable de connaître tous les détails (l'API distinct et immuable
 
 Le pattern Adaptateur comprend les principes GRASP Faible couplage, Forte cohésion, Polymorphisme, Indirection, Fabrication pure et Protection des variations. La figure&nbsp;\ref{Fig23-3} (tirée du livre de Larman, Figure A26.3/F23.3) démontre la relation entre ces principes dans le cas d'Adaptateur.
 
-![Adaptateur et principes GRASP](images/Fig23.3.png "Figure A26.3/F23.3 du livre de Larman"){#Fig23-3}
+![Adaptateur et principes GRASP.](images/Fig23.3.png "Figure A26.3/F23.3 du livre de Larman"){#Fig23-3}
 
 On peut donc voir le pattern adaptateur comme *une spécialisation* de plusieurs principes GRASP:
 

@@ -34,7 +34,7 @@ c->s : terminerAttaque()
 @enduml
 ```
 
-![Diagramme de séquence système pour *Attaquer un pays*](build/images/diag_DSS.pdf){#DSS-attaquer-un-pays}
+![Diagramme de séquence système pour *Attaquer un pays*.](build/images/diag_DSS.pdf){#DSS-attaquer-un-pays}
 
 ## DSS fait abstraction de la couche présentation
 
