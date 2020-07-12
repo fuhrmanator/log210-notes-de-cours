@@ -83,6 +83,23 @@ Etc.
 Dans le bilan il faut *constater les faits* et *proposer des solutions* pour éviter des écarts importants dans les prochaines itérations. 
 Ainsi, vous gérez les problèmes de manière plus proactive.
 
+### FAQ pour gitinspector
+
+Q: Comment fusionner le travail réalisé par le même coéquipier mais avec plusieurs comptes (courriels) différents?
+
+R: La solution est avec le fichier `.mailmap`. Vous pouvez rapidement générer un fichier de base avec la commande:  
+&nbsp;&nbsp;`git log --pretty="%an %ae" | sort | uniq > .mailmap`  
+Ensuite, vous modifiez le fichier `.mailmap` pour que les deux (ou plusieurs) courriels du même auteur aient le même nom. 
+Le nom que vous mettez sera celui qui apparaît dans les rapports la prochaine fois qu'ils seront générés.
+
+Q: Comment exclure le travail réalisé par un chargé de laboratoire (par exemple le clone initial dans GitHub Classroom)?
+
+R: La solution est d'ajouter le nom de l'auteur dans le tableau du script `contributions.sh` à la ligne suivante (attention - il n'y a pas de `,` entre les éléments des tableaux en bash):
+
+```
+authorsToExcludeArray=("Benjamin Le" "Yvan Ross")
+```
+
 ## TODO
 
 - modifier le squelette pour aussi utiliser `PUT` (REST)
