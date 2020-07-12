@@ -80,7 +80,8 @@ Est-ce que tout le monde met au moins 6 heures de travail en dehors des séances
 Est-ce que tout le monde est présent pendant les séances? 
 Etc. 
 
-Dans le bilan il faut constater les faits et proposer des solutions pour éviter des écarts importants dans les prochaines itérations. Ainsi, vous gérez les problèmes de manière plus proactive.
+Dans le bilan il faut *constater les faits* et *proposer des solutions* pour éviter des écarts importants dans les prochaines itérations. 
+Ainsi, vous gérez les problèmes de manière plus proactive.
 
 ## TODO
 
