@@ -94,7 +94,10 @@ Le nom que vous mettez sera celui qui apparaît dans les rapports la prochaine f
 
 Q: Comment exclure le travail réalisé par un chargé de laboratoire (par exemple le clone initial dans GitHub Classroom)?
 
-R: La solution est d'ajouter le nom de l'auteur dans le tableau du script `contributions.sh` à la ligne suivante (attention - il n'y a pas de `,` entre les éléments des tableaux en bash):
+R: La solution est d'ajouter le nom de l'auteur dans le tableau du script `contributions.sh` à la ligne suivante avec `authorsToExcludeArray`. Attention:
+
+- Il n'y a pas de `,` entre les éléments des tableaux en bash. 
+- Le nom d'un auteur ayant un accent ne sera pas reconnu. Il faut changer le nom dans le `.mailmap` pour qu'il n'y ait pas d'accents, ou utiliser une chaîne partielle comme `"Benjamin Le"` pour exclure les contributions de `"Benjamin Le Dû"`.
 
 ```
 authorsToExcludeArray=("Benjamin Le" "Yvan Ross")
