@@ -85,16 +85,16 @@ Ainsi, vous gérez les problèmes de manière plus proactive.
 
 ### FAQ pour gitinspector
 
-Q: Comment fusionner le travail réalisé par le même coéquipier mais avec plusieurs comptes (courriels) différents?
+**Q: Comment fusionner le travail réalisé par le même coéquipier mais avec plusieurs comptes (courriels) différents?**
 
-R: La solution est avec le fichier `.mailmap`. Vous pouvez rapidement générer un fichier de base avec la commande:  
+**R:** La solution est avec le fichier `.mailmap`. Vous pouvez rapidement générer un fichier de base avec la commande:  
 &nbsp;&nbsp;`git log --pretty="%an %ae" | sort | uniq > .mailmap`  
 Ensuite, vous modifiez le fichier `.mailmap` pour que les deux (ou plusieurs) courriels du même auteur aient le même nom. 
 Le nom que vous mettez sera celui qui apparaît dans les rapports la prochaine fois qu'ils seront générés.
 
-Q: Comment exclure le travail réalisé par un chargé de laboratoire (par exemple le clone initial dans GitHub Classroom)?
+**Q: Comment exclure le travail réalisé par un chargé de laboratoire (par exemple le clone initial dans GitHub Classroom)?**
 
-R: La solution est d'ajouter le nom de l'auteur dans le tableau du script `contributions.sh` à la ligne suivante avec `authorsToExcludeArray`. Attention:
+**R:** La solution est d'ajouter le nom de l'auteur dans le tableau du script `contributions.sh` à la ligne suivante avec `authorsToExcludeArray`. Attention:
 
 - Il n'y a pas de `,` entre les éléments des tableaux en bash. 
 - Le nom d'un auteur ayant un accent ne sera pas reconnu. Il faut changer le nom dans le `.mailmap` pour qu'il n'y ait pas d'accents, ou utiliser une chaîne partielle comme `"Benjamin Le"` pour exclure les contributions de `"Benjamin Le Dû"`.
@@ -102,6 +102,10 @@ R: La solution est d'ajouter le nom de l'auteur dans le tableau du script `contr
 ```
 authorsToExcludeArray=("Benjamin Le" "Yvan Ross")
 ```
+
+**Q: J'ai une autre question...**
+
+**R:** Il y a aussi une [FAQ sur le dépôt de gitinspector](https://github.com/ejwa/gitinspector/wiki/FAQ).
 
 ## TODO
 
