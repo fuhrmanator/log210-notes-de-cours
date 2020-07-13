@@ -95,11 +95,11 @@ Pour les postconditions où il faut former une association entre un objet *a* et
 - S'il y a une association simple, il faut considérer la navigabilité de l'association. Est-ce qu'il faut pouvoir retrouver l'objet *a* à partir de l'objet *b* ou vice-versa? Il s'agira d'une méthode `setB(b)` sur l'objet `a` (pour trouver *b* à partir de *a*), etc.
 - S'il faut former une association entre un objet et un autre "sur une base de correspondance avec" un identifiant passé comme argument, alors il faut repérer le bon objet d'abord. Voir la section \nameref{TransformerIDenObjets}.
 
-Dans la plupart des cas, la justification GRASP pour former une association est Expert, défini dans \nameref{tab_GRASPExpert}. \faLowVision &nbsp;Il faut faire attention à la \nameref{Visibilite}.
+Dans la plupart des cas, la justification GRASP pour former une association est Expert, défini dans le \nameref{tab_GRASPExpert}. \faLowVision &nbsp;Il faut faire attention à la \hyperref[Visibilite]{visibilité}.
 
 ### Modifier un attribut
 
-Pour les postconditions où il faut modifier un attribut, c'est assez évident. Il suffit de suivre le principe GRASP Expert, défini dans \nameref{tab_GRASPExpert}. Très souvent, c'est une méthode `setX(valeur)` où `X` correspond à l'attribut qui sera modifié à `valeur`. \faLowVision &nbsp;Attention à la \nameref{Visibilite}.
+Pour les postconditions où il faut modifier un attribut, c'est assez évident. Il suffit de suivre le principe GRASP Expert, défini dans le \nameref{tab_GRASPExpert}. Très souvent, c'est une méthode `setX(valeur)` où `X` correspond à l'attribut qui sera modifié à `valeur`. \faLowVision &nbsp;Attention à la \hyperref[Visibilite]{visibilité}.
 
 Lorsque l'attribut d'un objet doit être modifié juste après la création de ce dernier, ça peut se faire dans le constructeur, comme on voit dans la figure&nbsp;\ref{RDCU_Constructeur_Modification}.
 
@@ -159,7 +159,7 @@ Pour initialiser les références nécessaires pour la bonne visibilité, Larman
 ## Transformer identifiants en objets {#TransformerIDenObjets}
 
 La directive d'utiliser les types primitifs pour les opérations système nous mène à un problème récurrent dans les RDCU : transformer un identifiant (souvent de type `String` ou `int`) en objet.
-Larman vous propose un idiome (pas vraiment un pattern) nommé **Transformer identifiant en objet** qui sert à repérer la référence d'un objet qui correspond à l'identifiant.
+Larman vous propose un idiome (pas vraiment un patron) nommé **Transformer identifiant en objet** qui sert à repérer la référence d'un objet qui correspond à l'identifiant.
 
 Il y a un exemple à la figure&nbsp;\ref{RDCU_ID_en_objets} provenant du chapitre sur **l'Application des patterns GoF (Figure 23.18)**&nbsp;\faBook&nbsp;du livre du cours.
 Un autre exemple du livre du cours est l'identifiant `codeArticle` transformé en objet `DescriptionProduit` par la méthode  
@@ -186,7 +186,7 @@ La section \ref{UtilisationMap} explique comment implémenter la transformation 
 
 ## Utilisation de tableau associatif (`Map<clé, objet>`) {#UtilisationMap}
 
-Pour *transformer ID en objets*, il est pratique d'utiliser un [tableau associatif (aussi appelé dictionnaire ou map en anglais)\faWikipediaW](https://fr.wikipedia.org/wiki/Tableau_associatif). L'exemple du livre du cours concerne le problème de repérer une `Case` Monopoly à partir de son nom (`String`). C'est la figure A17.7 ou F17.7&nbsp;\faBook&nbsp;du livre du cours. Voir les détails dans le livre.
+Pour *transformer un ID en objets*, il est pratique d'utiliser un [tableau associatif (aussi appelé dictionnaire ou map en anglais)\faWikipediaW](https://fr.wikipedia.org/wiki/Tableau_associatif). L'exemple du livre du cours concerne le problème de repérer une `Case` Monopoly à partir de son nom (`String`). C'est la figure A17.7 ou F17.7&nbsp;\faBook&nbsp;du livre du cours. Voir les détails dans le livre.
 
 Notez que les exemples du livre ne montrent qu'un seul *type* dans le tableau associatif, par exemple `Map<Case>`, tandis que normalement il faut spécifier aussi le type de la clé, par exemple `Map<String, Case>`.
 
@@ -200,7 +200,7 @@ skinparam sequenceMessageAlign center
 participant ":Plateau" as P
 participant "cMap\n:Map<String,Case>" as m
 -> P : s = getCase(nom)
-note right : Plateau agrège toutes les\nCases et en possède un Map\navec nom comme clé.
+note right : Plateau agrège toutes les\nCases et possède un Map\navec nom comme clé.
 'P -> P : cMap = getToutesCases
 P -> m : c = get(nom) : Case
 @enduml
@@ -220,12 +220,12 @@ Voici quelques points importants:
 - Le lancement d'une application dépend du langage de programmation et du système d'exploitation.
 - À chaque nouvelle RDCU, on doit possiblement actualiser la RDCU "Démarrer" pour tenir compte des hypothèses faites dans la dernière RDCU. Elle est assez "instable" pour cette raison. Larman recommande de faire sa conception en dernier lieu.
 - Il faut choisir l'objet du domaine initial, qui est souvent l'objet racine, mais ça dépend du domaine. Cet objet aura la responsabilité, lors de sa création, de générer ses "enfants" directs, puis chaque enfant aura à faire la même chose selon la structure. Par exemple, selon le MDD pour le jeu de Risk à la figure&nbsp;\ref{MDD-jeu-de-risk}, `JeuRisk` pourrait être l'objet racine, qui devra créer l'objet `PlateauRisk` et les cinq instances de `Dé`. L'objet `PlateauRisk`, lors de son initialisation, pourra instancier les 42 objets `Pays` et les six objets `Continent`, en passant à chaque `Continent` leurs objets `Pays` lors de son initialisation. Si `PlateauRisk` fournit une méthode `getPays(nom)` qui dépend d'un tableau associatif selon \nameref{TransformerIDenObjets}, alors c'est dans l'initialisation de cette classe où l'instance de `Map<String,Pays>` sera créée.
-- Selon l'application, les objets peuvent être chargés en mémoire à partir d'un système de persistance, par exemple une base de données ou un fichier. Pour l'exemple de Risk, `PlateauRisk` pourrait charger, à partir d'un fichier JSON, des données pour initialiser toutes les instances de `Pays`. Pour une application d'inscription de cours à l'université, peut-être toutes les descriptions de cours seront chargées en mémoire à partir d'une base de données. Une base de données amène un lot d'avantages et d'inconvénients, et elle n'est pas toujours nécessaire. Dans LOG210, on n'aborde pas le problème de base de données (c'est le sujet pour un autre cours).
+- Selon l'application, les objets peuvent être chargés en mémoire à partir d'un système de persistance, par exemple une base de données ou un fichier. Pour l'exemple de Risk, `PlateauRisk` pourrait charger, à partir d'un fichier JSON, des données pour initialiser toutes les instances de `Pays`. Pour une application d'inscription de cours à l'université, il se peut que toutes les descriptions de cours soient chargées en mémoire à partir d'une base de données. Une base de données amène un lot d'avantages et d'inconvénients, et elle n'est pas toujours nécessaire. Dans LOG210, on n'aborde pas le problème de base de données (c'est le sujet d'un autre cours).
 
 ```{.plantuml hide-image=true plantuml-filename=build/images/diag_initialisation_RDCU.pdf }
 @startuml
 !include ../forme.pumlinclude
-scale 1.1
+'scale 1.1
 skinparam sequenceMessageAlign center
 participant ":ObjetMain" as outside
 participant ":JeuRisk" as jr
@@ -240,20 +240,25 @@ note right: JeuRisk est l'objet racine
 loop i<5
 create d
 jr -->> d : dés[i] = create
+note over jr,d: par Créateur\nJeuRisk agrège Dé
 end loop
 create pr
 jr -->> pr : create
+note over jr,pr: par Créateur\nJeuRisk agrège PlateauRisk
 create m
 pr -->> m : pMap = create
+note over pr,m: par Créateur: PlateauRisk agrège Map<String,Pays>
 pr -> pr : continentsAvecPays[] =\nchargerContinentsAvecPays
 note right : Charger les données\nd'un fichier JSON
 ' continents
 loop i<continentsAvecPays.size
 create c
 pr -->> c : create(continentsAvecPays[i].nom, ...)
+note over pr,c: par Créateur: PlateauRisk agrège Continent
 loop j<continentsAvecPays[i].pays.size
 create p
 pr -->> p : p = create(continentsAvecPays[i].pays[j].nom, ...)
+note over pr,p: par Créateur: PlateauRisk agrège Pays
 pr -> m : add(p)
 pr -> c : add(p)
 end loop

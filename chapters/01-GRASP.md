@@ -74,7 +74,7 @@ Pourtant le coût pour produire des logiciels certifiés est énorme.
 
 Le spectre de la conception est très important pour LOG210, parce que c'est le contexte de l'entreprise pour laquelle vous travaillez qui déterminera combien d'effort à mettre sur la conception.
 Si vous négligez complètement la conception, vous pouvez peut-être produire du code qui fonctionne plus vite à court terme. Mais il faudra repayer la dette technique un jour.
-Un moyen de gérer cette dette technique est avec le réusinage (anglais refactoring).
+Un moyen de gérer cette dette technique est de *réusiner* (anglais refactor).
 
 ## Tableau des principes GRASP {#GRASPTable}
 

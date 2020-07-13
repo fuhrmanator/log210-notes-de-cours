@@ -28,7 +28,7 @@ Catégorie | Exemples
 **Lieu de la transaction; lieu du service**\newline \newline | *Magasin*, *Aéroport*, *Avion*, *Siège*, *LocalCours*
 **Événements notables, à mémoriser**\newline \newline | *Vente*, *Paiement*, *JeuDeMonopoly*, *Vol*
 **Objets physiques**\newline \newline Important surtout lorsqu'il s'agit d'un logiciel de contrôle d'équipements ou de simulation. \newline | *Article*, *Caisse*, *Plateau*, *Pion*, *Dé*, *Vélo*
-**Description d'entités**\newline \newline Voir section 9.13 pour plus d'informations.\newline | *DescriptionProduit*, *DescriptionVol*, *Livre* (en opposition avec *Exemplaire*), *Cours* (en opposition avec *Livre*)
+**Description d'entités**\newline \newline Voir section 9.13 pour plus d'informations.\newline | *DescriptionProduit*, *DescriptionVol*, *Livre* (en opposition avec *Exemplaire*), *Cours* (en opposition avec *CoursGroupe*)
 **Catalogues**\newline \newline Les descriptions se trouvent souvent dans des catalogues \newline | *CatalogueProduits*, *CatalogueVols*, *CatalogueLivres*, *CatalogueCours*
 **Conteneurs**\newline \newline Un conteneur peut contenir des objets physiques ou des informations. \newline | *Magasin*, *Rayonnage*, *Plateau*, *Avion*, *Bibliothèque*
 **Contenu d'un conteneur**\newline \newline | *Article*, *Case (sur un Plateau de jeu)*, *Passager*, *Exemplaire*
@@ -70,8 +70,8 @@ Pensez à la **mémorabilité** d'une association dans le contexte du logiciel �
   - Il n'y a pas d'association entre `JeuRisk` et `Attaque`, même si les attaques font partie du jeu. Il n'est pas essentiel de mémoriser l'historique de toutes les attaques réalisées dans le jeu.
 - Il y a des associations dérivées de la liste des associations courantes. Voir le tableau&nbsp;\ref{Tableau_associations_courantes}.
 - En UML les associations sont représentées par des lignes entre classes.
-  - Elles sont nommées (avec des capitales).
-  - Des noms simples comme "A", "Utilise", "Possède", "Contient", etc. sont généralement de choix médiocres, car ils n'aident pas notre compréhension du domaine. Essayez de trouver des noms plus riches, si possible.
+  - Elles sont nommées (avec un verbe commençant par une lettre majuscule).
+  - Des noms simples comme "A", "Utilise", "Possède", "Contient", etc. sont généralement des choix médiocres, car ils n'aident pas notre compréhension du domaine. Essayez de trouver des noms plus riches, si possible.
   - Une flèche (triangle) de "sens de lecture" optionnelle indique la direction dans laquelle lire l'association. Si la flèche est absente, on lit l'association de gauche à droite ou de haut en bas.
   - Les extrémités des associations ont une expression de la multiplicité indiquant une relation numérique entre les instances des classes.
   Vous pouvez en trouver plusieurs exemples dans la figure&nbsp;\ref{MDD-jeu-de-risk}.

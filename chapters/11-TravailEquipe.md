@@ -3,8 +3,8 @@
 Le développement de logiciels se fait souvent en équipe.
 Cependant, il y a des défis pour travailler en équipe.
 Souvent, avant l'université on apprend comment s'organiser en équipe, faire des rencontres, répartir le travail, planifier, etc.
-Pourtant, il y a d'autres défis de ce travail, des défis sur le plan humain.
-C'est le sujet du livre "Team Geek" ecrit par Brian W. Fitzpatrick (anciennement de Google) et Ben Collins-Sussman (Subversion, Google).
+Pourtant, il y a d'autres défis dans ce travail, des défis sur le plan humain.
+C'est le sujet du livre "Team Geek" écrit par Brian W. Fitzpatrick (anciennement de Google) et Ben Collins-Sussman (Subversion, Google).
 
 Aujourd'hui la demande pour le talent en technologies de l'information est importante.
 Les technologies évoluent constamment.
@@ -20,13 +20,13 @@ Par exemple, un développeur n'a pas toujours envie de montrer son code source �
 - Il a peur que quelqu'un vole son idée.
 
 Dans tous ces cas, il s'agit de l'insécurité et c'est tout à fait normal.
-Par contre, ce genre de comportement augmentent certains risques dans le développement:
+Par contre, ce genre de comportement augmente certains risques dans le développement:
 
 - de faire des erreurs dans la conception initiale;
 - de "réinventer la roue";
 - de terminer le travail plus tard que son compétiteur, qui, lui, a collaboré avec son équipe.
 
-Les auteurs le disent et c'est un fait: si nous sommes tous plus ou moins compétents sur le plan technique, ce qui va faire la grosse différence dans une carière est notre habileté de collaborer avec les autres.
+Les auteurs le disent et c'est un fait: si nous sommes tous plus ou moins compétents sur le plan technique, ce qui va faire la grosse différence dans une carrière est notre habileté à collaborer avec les autres.
 
 ## Humilité, Respect, Confiance
 
@@ -37,7 +37,7 @@ Cette section présente ces aspects en détail.
 
 ### Humilité
 
-Voici la définition de *humilité* selon Antidote:
+Voici la définition d'*humilité* selon Antidote:
 
 > *Disposition à s'abaisser volontairement, par sentiment de sa propre faiblesse.*
 
@@ -68,7 +68,7 @@ rectangle "<size:50>Moi < Équipe</size>" #ffbbbb|bbffbb
 
 Quelques exemples concrets d'humilité dans le développement:
 
-- Un coéquipier qui n'est pas fort en (JavaScript, Git, etc.) va le reconnaître et va même faire des exercices sur (Internet) pour s'améliorer.
+- Un coéquipier qui n'est pas fort en (JavaScript, git, etc.) va le reconnaître et va même faire des exercices sur Internet pour s'améliorer.
 - Un coéquipier (même le chef d'équipe) qui a pris une mauvaise décision (technique ou autre) va l'avouer. Il sait que les autres ne sont pas là pour l'attaquer (ils le respectent).
 - Un coéquipier va travailler fort pour que *son équipe* réussisse.
 - Un coéquipier qui reçoit une critique ne va pas la prendre personnellement.
@@ -103,7 +103,7 @@ Si vous n'êtes plus présent, le projet s'arrête.
 Un coéquipier peut être absent (ou moins disponible) pour des raisons moins graves, par exemple, il part en vacances, il tombe malade, il prend un congé parental, il change de boulot ou il abandonne le cours.
 Cherchez à répartir les responsabilités dans l'équipe afin d'avoir un *bus factor* d'au moins 2.
 Partagez des compétences pour maintenir une équipe robuste.
-Vous pouvez également garder votre solution *simple* et de garder la documentation de votre conception à jour.
+Vous pouvez également garder votre solution *simple* et garder la documentation de votre conception à jour.
 
 > \faWarning&nbsp;Si un coéquipier quitte en cours de la session, il n'est pas facile de maintenir le même rythme.
 Cependant, les enseignants et les chargés de laboratoire de LOG210 s'attendront à ce que vous ayez pensé à un plan B avant de perdre le coéquipier. Au moins un autre coéquipier doit être au courant de ce que faisait celui qui quitte, pour que le projet ne soit pas complètement arrêté.

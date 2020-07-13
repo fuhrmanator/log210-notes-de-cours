@@ -5,7 +5,7 @@
 Considérez l'histoire suivante, provenant de la 2e édition du livre *Refactoring* de Martin Fowler (2019):
 
 > Il était une fois, un consultant qui a rendu visite à un projet de développement afin de regarder une partie du code qui avait été écrit.
-En parcourant la hiérarchie des classes au centre du système, le consultant l'a trouvé plutôt désordonné.
+En parcourant la hiérarchie des classes au centre du système, le consultant l'a trouvée plutôt désordonnée.
 Les classes de niveau supérieur ont émis certaines hypothèses sur la façon dont les classes fonctionneraient, hypothèses incorporées dans le code hérité. Ce code n'était pas cohérent avec toutes les sous-classes, cependant, et a été redéfini à beaucoup d'endroits.
 De légères modifications à la superclasse auraient considérablement réduit la nécessité de la redéfinir.
 À d'autres endroits, l'intention de la superclasse n'avait pas été bien comprise et le comportement présent dans la superclasse était dupliqué.
@@ -49,7 +49,7 @@ Alors, si vous observez ce problème (smell) dans un logiciel, vous n'avez qu'à
 Un autre exemple serait que vous avez un programme assez complexe, mais avec seulement une ou deux classes.
 Ces classes ont beaucoup d'attributs et de méthodes.
 Alors, ce "smell" s'appelle "Large class" et la solution est d'appliquer des activités de réusinage [Extract Class](https://refactoring.com/catalog/extractClass.html), ou éventuellement [Extract Superclass](https://refactoring.com/catalog/extractSuperclass.html) ou [Replace Type Code with Subclasses](https://refactoring.com/catalog/replaceTypeCodeWithSubclasses.html).
-Avec un IDE dominant et un langage populaire, vous risquez d'avoir des fonctionnalités pour supporter l'automatisation de ces activités de réusinage.
+Avec un IDE dominant et un langage populaire, vous aurez probablement des fonctionnalités pour supporter l'automatisation de ces activités de réusinage.
 
 Certaines activités traitent des sujets avancés en conception, mais c'est très intéressant pour ceux qui aiment le bon design. Voici la liste complète des "smells" ainsi que les activités de réusinage à appliquer (voir le catalogue sur le site web pour les détails).
 

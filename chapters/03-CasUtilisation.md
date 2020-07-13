@@ -6,7 +6,7 @@ Le cas d'utilisation décrit plusieurs scénarios, mais en général il y a un s
 
 La notation UML inclut les diagrammes de cas d'utilisation, qui sont comme une table des matières pour les fonctionnalités d'un système.
 
-Dans LOG210, le sujet de comment écrire les cas d'utilisation ne fait pas partie du cours; c'est un élément expliqué dans un autre cours (*LOG410 Analyse de besoins et spécifications*).
+Dans LOG210, la théorie sur comment écrire les cas d'utilisation ne fait pas partie du cours; c'est un élément expliqué dans un autre cours (*LOG410 Analyse de besoins et spécifications*).
 
 ## Exemple: jeu de Risk
 
@@ -16,7 +16,7 @@ L'exemple suivant concerne le jeu de Risk.
 
 [^riskdice]: By Val42 - [https://en.wikipedia.org/wiki/Image:Risk-dice-example.jpg](http://en.wikipedia.org/wiki/Image:Risk-dice-example.jpg), [CC By-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/ "Creative Commons Attribution-Share Alike 3.0") [Link](https://commons.wikimedia.org/w/index.php?curid=3272090)
 
-Selon "Risk". 2019. Wikipédia. https://fr.wikipedia.org/w/index.php?title=Risk&oldid=164264587 (December 9, 2019):
+Selon "Risk". 2019. Wikipédia. https://fr.wikipedia.org/w/index.php?title=Risk&oldid=164264587 (9 décembre 2019):
 
 > L'attaquant jette un à trois dés suivant le nombre de régiments qu'il désire engager (avec un maximum de trois régiments engagés, et en considérant qu'un régiment au moins doit rester libre d'engagements sur le territoire attaquant) et le défenseur deux dés (un s'il n'a plus qu'un régiment). On compare le dé le plus fort de l'attaquant au dé le plus fort du défenseur et le deuxième dé le plus fort de l'attaquant au deuxième dé du défenseur. Chaque fois que le dé du défenseur est supérieur ou égal à celui de l'attaquant, l'attaquant perd un régiment; dans le cas contraire, c'est le défenseur qui en perd un.
 

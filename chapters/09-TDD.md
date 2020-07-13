@@ -5,12 +5,12 @@ Le développement piloté par les tests (anglais, *test-driven development, TDD*
 Il s'agit d'écrire des logiciels avec un composant d'autovalidation (des tests automatisés).
 Mais, écrire beaucoup de tests n'est pas toujours une tâche agréable pour des développeurs.
 Historiquement, si on attend la fin d'un projet pour écrire des tests, il ne reste plus beaucoup de temps et l'équipe laisse tomber les tests.
-Pour pallier ce problème, le développement piloté par les tests propose de travailler **en petit pas**. C'est-à-dire écrire un test simple (en premier), puis écrire la partie du logiciel pour passer le test de manière simple (le plus simple).
-Ça fait moins d'ouvrage de codage entre les validations et c'est possiblement même plus stimulant pour les développeurs.
+Pour pallier ce problème, le développement piloté par les tests propose de travailler **en petits pas**. C'est-à-dire écrire un test simple (en premier), puis écrire la partie du logiciel pour passer le test de manière simple (le plus simple).
+Ça fait moins de codage entre les validations et c'est possiblement même plus stimulant pour les développeurs.
 
 Ainsi, il y a toujours des tests pour les fonctionnalités et le développement se fait en petits incréments qui sont validés par les tests.
 Faire les *petits pas* réduit le risque associé à de gros changements dans un logiciel sans validation intermédiaire.
-Au fur et à mesure qu'on développe un logiciel, on développe également des tests de ce dernier.
+Au fur et à mesure qu'on développe un logiciel, on développe également quelques tests de ce dernier.
 Puisque les tests sont automatiques, ils sont aussi faciles à exécuter que le compilateur.
 
 Il y a une discipline imposée dans le TDD qui nécessite d'écrire un *test en premier*, c'est-à-dire *avant* d'écrire le code.
@@ -23,15 +23,15 @@ Cette discipline est parfois culturelle.
 Plusieurs chercheurs ont mené des expériences ([celle-ci par exemple](https://ieeexplore.ieee.org/document/8405634)) pour voir si tester en premier avait un vrai bénéfice.
 Les résultats de leurs analyses n'ont pas toujours montré que c'est le cas (ce genre d'expérience est difficile de faire, en partie parce qu'il n'y a pas beaucoup de développeurs en industrie qui le pratiquent).
 Les chercheurs ont trouvé que faire un petit test *après* avoir écrit le code a aussi un bénéfice sur le plan de la qualité.
-Dans tous les cas, des chercheurs ont trouvé que le fait de travailler en *petit pas* apporte *toujours* un avantage sur le plan de la qualité.
-Travailler en *petit pas* est utile, même sans faire du TDD.
+Dans tous les cas, des chercheurs ont trouvé que le fait de travailler en *petits pas* apporte *toujours* un avantage sur le plan de la qualité.
+Travailler en *petits pas* est utile, même sans faire du TDD.
 
 Sachez qu'il existe beaucoup d'intergiciels (anglais *frameworks*) pour faciliter l'exécution automatique des tests réalisés dans le cadre du TDD.
-En Java, il y a JUnit, mais il y en a pour pratiquement tous les langages et environnements.
+Pour Java il y a JUnit, mais il y en a pour pratiquement tous les langages et environnements.
 En ce qui concerne le squelette pour le laboratoire de LOG210, la version TypeScript utilise [Mocha](https://mochajs.org/index.html) avec [Chai](https://www.chaijs.com/).
 La version Python utilise [PyTest](https://docs.pytest.org/en/latest/).
 
-L'exécution de test peut être même faite à chaque commit du code dans un dépôt comme GitHub. Le squelette de LOG210 utilise [Travis](https://travis-ci.org/) pour cela.
+L'exécution de tests peut être même faite à chaque commit du code dans un dépôt comme GitHub. Le squelette de LOG210 utilise [Travis](https://travis-ci.org/) pour cela. Cependant, pour un dépôt privé, Travis nécessite un compte payant.
 
 Il est possible de mesurer la [couverture de code \faWikipediaW](https://fr.wikipedia.org/wiki/Couverture_de_code) atteinte par les tests (mais ce sujet commence à sortir du cadre de la matière du cours). Les deux versions du squelette utilisent [Coveralls](https://coveralls.io/) pour ce faire.
 
@@ -85,7 +85,7 @@ On peut pratiquer le même kata dans un langage différent ou avec un IDE ou env
 Le kata vous permet d'avoir une facilité avec les aspects techniques de développement dans plusieurs dimensions (complétion de code pour test et pour l'application, API de l'environnement de test, etc.).
 
 En plus, les activités de réusinage sont normalement intégrées dans un kata. 
-Le fait de travailler en *petit pas* peut faire en sorte que la dette technique s'accumule.
+Le fait de travailler en *petits pas* peut faire en sorte que la dette technique s'accumule.
 Les IDE facilitent l'application des activités de réusinage. 
 Un langage fortement typé comme Java permet d'avoir plus de fonctionnalités automatisées de réusinage dans un IDE qu'un langage dynamique comme JavaScript ou Python. 
 Une activité de base de réusinage est le renommage d'une variable ou d'une fonction. 

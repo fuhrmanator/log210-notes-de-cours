@@ -60,4 +60,4 @@ La méthodologie enseignée dans LOG210 cherche à réduire le décalage des rep
 
 La figure&nbsp;\ref{SurvolMethodologie} présente la méthode d'analyse et de conception enseignée dans le cours. C'est une adaptation de plusieurs figures présentées dans le livre du cours.
 
-![Survol de la méthodologie.](images/FigA.1-avec-contrats.svg){#SurvolMethodologie}
+![Survol de la méthodologie.](images/FigA.1-avec-contrats.png){#SurvolMethodologie}

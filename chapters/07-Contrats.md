@@ -25,7 +25,7 @@ Dans la figure&nbsp;\ref{ContratExempleCreerNouvelleVente}, l'opération systèm
 
 Un contrat d'opération permet de spécifier tous les changements dans le MDD qui doivent avoir lieu lors de l'opération système. Les postconditions du contrat saisissent l'évolution du MDD.
 
-![Pendant l'opération système `créerNouvelleVente`, une instance de Vente doit être créée. Le contrat d'opération le spécifie dans une postcondition.](images/SurvolContrats.svg){#ContratExempleCreerNouvelleVente}
+![Pendant l'opération système `créerNouvelleVente`, une instance de Vente doit être créée. Le contrat d'opération le spécifie dans une postcondition.](images/SurvolContrats.pdf){#ContratExempleCreerNouvelleVente}
 
 
 ## Exemple: Contrats d'opération pour Attaquer un pays
@@ -36,9 +36,9 @@ Un contrat d'opération permet de spécifier tous les changements dans le MDD qu
 
 ##### Postconditions
 
-- une nouvelle instance a de Attaque a été créé
-- a a été associé au Pays sur une base de correspondance avec paysAttaquant
-- a a été associé au Pays sur une base de correspondance avec paysDéfenseur
+- une nouvelle instance *a* de Attaque a été créée
+- *a* a été associée au Pays sur une base de correspondance avec paysAttaquant
+- *a* a été associée au Pays sur une base de correspondance avec paysDéfenseur
 
 #### Opération: `annoncerAttaque(nbRégimentsAttaquant:int)`
 
