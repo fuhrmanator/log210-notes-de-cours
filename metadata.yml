@@ -1,6 +1,8 @@
 ---
 rights: MIT License
-language: fr-CA
+#language: fr-CA
+lang: fr
+babel-lang: french
 csquotes: true
 tags: [LOG210, analyse, conception, logiciel, GRASP, modularité]
 title: "LOG210 Analyse et conception de logiciels"
@@ -38,8 +40,12 @@ header-includes:
 - \usepackage{tcolorbox}
 - \newtcolorbox{myquote}{colback=red!5!white, colframe=red!75!black}
 - \renewenvironment{quote}{\begin{myquote}}{\end{myquote}}
+- \usepackage{longtable,booktabs}
+# https://tex.stackexchange.com/questions/553408/table-captions-not-in-babel-language
+babel-newcommands:
+- \addto\captionsfrench{\def\tablename{Tableau}} 
 # Need this because we use raw LaTeX needing longtable
-tables: true
+# tables: true  # I put this in the header-includes above, since I think order makes babel not work?
 colorlinks: true
 linkcolor: blue
 pagestyle: headings
