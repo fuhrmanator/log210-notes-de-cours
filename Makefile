@@ -7,6 +7,7 @@ MAKEFILE = Makefile
 OUTPUT_FILENAME = LOG210-notes-de-cours
 METADATA = metadata.yml
 CHAPTERS = chapters/*.md
+CHAPTERS_DEP = chapters/*.tex
 TOC = --toc --toc-depth=2
 IMAGES_FOLDER = images
 IMAGES = $(IMAGES_FOLDER)/*
@@ -42,7 +43,7 @@ html:	$(BUILD)/html/$(OUTPUT_FILENAME).html
 
 pdf:	$(BUILD)/pdf/$(OUTPUT_FILENAME).pdf
 
-$(BUILD)/epub/$(OUTPUT_FILENAME).epub:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CSS_FILE) $(IMAGES) \
+$(BUILD)/epub/$(OUTPUT_FILENAME).epub:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CHAPTERS_DEP) templates/default.latex $(CSS_FILE) $(IMAGES) \
 		$(COVER_IMAGE)
 	mkdir -p $(BUILD)/epub
 	mkdir -p $(BUILD)/images
