@@ -31,6 +31,8 @@ fontfamilyoptions:
 - p
 - tt=false
 fontsize: 11pt
+# https://stackoverflow.com/a/59860833/1168342 -- show listings labels correctly
+codeBlockCaptions: true
 # Note the \input{glyphtounicode} and \pdfgentounicode=1 are needed to allow PDF to be searchable despite ligatures `ff`, `fi`, etc.
 header-includes: 
 - \input{glyphtounicode}
@@ -41,6 +43,11 @@ header-includes:
 - \newtcolorbox{myquote}{colback=red!5!white, colframe=red!75!black}
 - \renewenvironment{quote}{\begin{myquote}}{\end{myquote}}
 - \usepackage{longtable,booktabs}
+# https://tex.stackexchange.com/a/142319/17868
+- \usepackage{courier}
+- \lstset{basicstyle=\ttfamily\footnotesize,breaklines=true}
+- \renewcommand\lstlistingname{Bloc}
+
 # https://tex.stackexchange.com/questions/553408/table-captions-not-in-babel-language
 babel-newcommands:
 - \addto\captionsfrench{\def\tablename{Tableau}} 

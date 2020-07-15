@@ -20,7 +20,7 @@ CSS_ARG = --css=$(CSS_FILE)
 METADATA_ARG = --metadata-file=$(METADATA)
 PLANTUML_FILTER = --filter filters/plantuml/plantuml.py
 ARGS = $(TOC) $(MATH_FORMULAS) $(CSS_ARG) $(METADATA_ARG) $(PLANTUML_FILTER)
-PDF_ARGS = -V geometry:margin=1in --pdf-engine=pdflatex --template=$(TEMPLATES_FOLDER)/default.latex
+PDF_ARGS = --listing -V geometry:margin=1in --pdf-engine=pdflatex --template=$(TEMPLATES_FOLDER)/default.latex
 
 ####################################################################################################
 # Basic actions
@@ -64,3 +64,8 @@ $(BUILD)/pdf/$(OUTPUT_FILENAME).pdf:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CSS_F
 	pandoc $(ARGS) $(PDF_ARGS) -o $@ $(CHAPTERS)
 	cp $(BUILD)/pdf/$(OUTPUT_FILENAME).pdf docs/
 	@echo "$@ was built"
+
+pdfdebug:	debug.tex
+debug.tex:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CSS_FILE) $(IMAGES)
+	pandoc $(ARGS) $(PDF_ARGS) -o $@ $(CHAPTERS)
+

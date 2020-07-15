@@ -17,6 +17,33 @@ Pour la modélisation de flot de données, il existe une notation pour les [diag
 
 Un exemple de diagramme d'activité utilisé dans le cadre du cours de LOG210 est dans la figure&nbsp;\ref{GitHubClassroomActivities}. Ce diagramme qui explique comment GitHub Classrooms permet à l'étudiant qui accepte un devoir (*assignment* en anglais) sur GitHub Classrooms de choisir son identité universitaire, mais seulement si l'enseignant a téléversé la liste de classe *avant* d'envoyer les invitations aux étudiants. 
 
+```{#GitHubClassroomActivitiesSource .puml frame=single caption="Code source PlantUML pour la figure&nbsp;\ref{GitHubClassroomActivities}"}
+@startuml
+skinparam style strictuml
+skinparam backgroundcolor transparent
+skinparam DefaultTextAlignment center
+title Enchaînement d'activités pour chaque //Classroom// (groupe-cours)
+|Enseignant.e|
+start
+:Créer Classroom;
+#ffdddd:Importer liste de classe
+(Identifiants Moodle);
+:Créer Assignment
+(Individual/Team);
+:Partager (courriel) l'URL d'invitation;
+|#ddffdd|Étudiant.e|
+:Open URL;
+#ffdddd:Choisir identifiant Moodle;
+:Choisir équipe (ou créer équipe);
+|GitHub|
+:Dupliquer (fork) le dépôt
+(au besoin, avec le compte
+d'un membre de l'organisation);
+stop
+@enduml
+```
+
+
 ```{.plantuml hide-image=true plantuml-filename=build/images/GitHubClassroomActivity.pdf}
 @startuml
 skinparam style strictuml
