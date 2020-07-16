@@ -46,7 +46,7 @@ header-includes:
 # https://tex.stackexchange.com/a/142319/17868
 - \usepackage{courier}
 - \lstset{basicstyle=\ttfamily\footnotesize,breaklines=true}
-- \renewcommand\lstlistingname{Bloc}
+- \renewcommand\lstlistingname{Code}
 
 # https://tex.stackexchange.com/questions/553408/table-captions-not-in-babel-language
 babel-newcommands:

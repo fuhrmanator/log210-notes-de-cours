@@ -66,7 +66,7 @@ endlegend
 @enduml
 ```
 
-![Aide mémoire pour faire une RDCU. L'étape en rouge nécessite beaucoup de pratique, selon la complexité des postconditions. Vous pouvez vous attendre à ne pas la réussir du premier coup.](build/images/rdcu-aide-memoire.pdf){#RDCU_Aide_Memoire}
+![Aide mémoire pour faire une RDCU. L'étape en rouge nécessite beaucoup de pratique, selon la complexité des postconditions. Vous pouvez vous attendre à ne pas la réussir du premier coup. [(PlantUML)](http://www.plantuml.com/plantuml/uml/TLHDJnin4BtxLqp3WMILBaALMXGG8YLjLQb55RGzSJ7hsOsBrtOzTg3_gBdt7-mVwtYJG8BWubtPy_7clMUVKPGXfjQ0s7-bRMMIGYZBWzg55alF1-jDGRVQUXba2pINojrfsq0j3MsVl9VLRHDSikhS6HTWhfL2knKmmrec4x_ZVPmQtTWMROIA5mnRKHSkucw8mJgA7Yg8W1ubVoUNk70wWDbtlbi66RMpG7yeTdzRF0PXkGe4tSpZ1F2-XC6WAAhGBJ5SkBH0O_1dRZmS5SLW8FQKgckb9hDkoM1QRP4h8rJEnj3zCvZ2yKx5gVT6_quSLHIVBgTNt-3yCRGehktmV2wzZW7Xu-7Ryl3DmVJm7Nz66RZq7irM0nv7RKtn1FmN96xY7KKELZf7K56Cyr3ZQmklVrW4RPaTMo6SwDF5oO4-1TQndmyay4ZT4lBiF7tEU0ZQd4aYLsa-1PdW4XjD33n7phYtZ37ecnGfrtn8PTphP6qPapIQkYLjv15xcKtcarcfLZeDCKAGTPsf7K6oeBHiMEuMUNYTBI2hF9lmBhsWwfXv8DwYMcgI322w597944LX6EbJZa2bPma6Z9mHaDE3pNKC0yYMNxT3mokBqoAHR1WVzYrM2QkoiwkhSQ-V9AQXcdTBhhDj4V6CGrW16Nj_Z45iTZ_SUmmnRnN5vncW1NVp2sEMM62iIjWnqb7leoE1La5kjhaETtFDQ8O1AMQyJxd81baJnuHTMvSWJynXZ1zjvRZycWzs0OtWnRgFBDA3BXnEqNbXiCcuyc--mnF8rYHdKa-hOhj8RKos6PU37WlqQbTpoKp1CvAN86PieJ5emmaf0jTYgwqkpre4seXCEoht-doTCQNv0I7X0xzbsdFuYlXLPmJEN32kCdEwca2SyS9ltty0)](build/images/rdcu-aide-memoire.pdf){#RDCU_Aide_Memoire}
 
 ## Spécifier le contrôleur
 
@@ -117,7 +117,7 @@ end loop
 @enduml
 ```
 
-![Combiner la création d'instance et une modification de son attribut dans un constructeur.](build/images/diag_constructeur_modification.pdf){#RDCU_Constructeur_Modification}
+![Combiner la création d'instance et une modification de son attribut dans un constructeur. [(PlantUML)](http://www.plantuml.com/plantuml/uml/VL9DRy8m3BrNuZzON833fg7TEA0XD4riJ48hsyvUQjgegTCvhXZ_VYuxhEA053aVxyL-Vib3KXJjcf2bsdEBWWqaFGMoADxro6W0VQ6hIuaT5ow6AA22d0mYrb4s0Qry0Xi85N9n5AzA38V82fxXqtCHZyc8_maBEc0NjASmDWGlubD_PxDV6szVKIA8Mf4a237MK0hXELd-yGJJ1ciJsWbPPJfDRFPi3OL0XLKLM6sty9u_lkM3yZ2_cmrRkbIGiEm3NzUvuHgUOoUCuIhlftO5v4vygrTvEpAh90s53IrKwIXB3krTvhVtmxUYxuxOqIkbNlWg-98Xq44pmzKxtwAPFrxi0YfXDmPCq5vWQqnq1bnc7hUPwpqcsxLmiro2WmNy7KqvDhECk80pxy5MzZz-0G00)](build/images/diag_constructeur_modification.pdf){#RDCU_Constructeur_Modification}
 
 ## Visibilité {#Visibilite}
 
@@ -152,7 +152,7 @@ B -> : ...
 @enduml
 ```
 
-![L'objet *b* doit être visible à l'objet *a* si *a* veut lui envoyer un message.](build/images/diag_visibilite_RDCU.pdf){#RDCU_Visibilite1}
+![L'objet *b* doit être visible à l'objet *a* si *a* veut lui envoyer un message. [(PlantUML)](http://www.plantuml.com/plantuml/uml/VLB1JiCm3BrNsZzOksmSg9YuxO3M8eG6Gq9imDbBlJPgwWmdqTZVumua2eT9aIFxlTZFTXOXeiJKkIoqblSes468HqTgnPeU6GsWBPgs5f-uCjvvWIZ8GI7YECec41iRG0z2WrmTnCP833lF4Ip3k-NA7u8IVnDMjCFaOazXx0WUnOR-pN9pgxnDGu70nuOaWFE-XLe8JydMR_SmxR1LeKb8AzDnehTbRSWvghIgGB5QmUlwxcKzA0-pgujXI_yL1Anxm-TrBhc51v-4qPtbVRQcWhKHkuzdUS-aev8m53OSOPH4MJ2eUvdbryDTqKSYDlH4eHTUE5ipEDh5JF5eZTsZ3d-Cys8C6A3u6zxEorEup2vle80vv7cU5Q1EgKxYdwpJYwpiWz_uWhZIR_45)](build/images/diag_visibilite_RDCU.pdf){#RDCU_Visibilite1}
 
 Pour initialiser les références nécessaires pour la bonne visibilité, Larman vous propose de faire ça dans la \nameref{RDCU_Demarrer}.
 
@@ -180,7 +180,7 @@ R -> v : saisirClientPourRemise(c:Client)
 @enduml
 ```
 
-![Un identifiant `idClient:String` est transformé en objet `c:Client`, qui est ensuite envoyé à la Vente en cours.](build/images/diag_transformer_id_objet_RDCU.pdf){#RDCU_ID_en_objets}
+![Un identifiant `idClient:String` est transformé en objet `c:Client`, qui est ensuite envoyé à la Vente en cours. [(PlantUML)](http://www.plantuml.com/plantuml/uml/VLB1Qjn03BqRyWyYboGBBTsheIKX2MNRB0GxJI-zJCQAhNgisKho9ldxohk4ke4i33CmxytJqzESgmMnSKY5ziIR8640jPU4lWl52JcQGGyXzgtaaPkOKnOm2QmE8TjHSGBMaOAl05tWvad831aUCniGmq_Y9Z-f4_y9DlWOncGJXSE0y5r8fpUhkqldtNMe2Daw58MKSm-jODY9rVTVuNG8lHiT1RqolfpuIUmDfOIDLnMukBc17_LrLS_Am_BJsRobjmuqjDF6Xtskk8TlUHGEwI3lkOyDr55eOmTvj-XHYSwDpICq6R7G67mkou_B-QpmpuWSSOqw6Rz8r3947mTAuGoZI9lWyH-N5ROUhU0n18Ng3RWERL3Y7RR-7zkMzvFS3jeM7xv01QNdGqfocSYXMu-Xme4KJwdPNvqL5JXpxSm8dw55sz_F29mDGQZjh8GQKsQuVjwW6A3zuiKYeSBg2hpr_F0RJHUBlUJs_UAnVDK-Hsxyu_u5)](build/images/diag_transformer_id_objet_RDCU.pdf){#RDCU_ID_en_objets}
 
 La section \ref{UtilisationMap} explique comment implémenter la transformation avec un tableau associatif.
 
@@ -206,7 +206,7 @@ P -> m : c = get(nom) : Case
 @enduml
 ```
 
-![Exemple de l'utilisation de tableau associatif pour trouver une Case Monopoly à partir de son nom.](build/images/diag_map_monopoly_RDCU.pdf){#Map_Case_Monopoly}
+![Exemple de l'utilisation de tableau associatif pour trouver une Case Monopoly à partir de son nom. [(PlantUML)](http://www.plantuml.com/plantuml/uml/VLBBQjn04BmB_0-DBsj3OhpN9J4s9WI_G4IRvE9BPzIM1erwvEcUEFuZvplsnz8Z6wBai21QYAgfggdMkIWcpMEePF0yOS8HH9y3sKpU5UHW0Vr0DtGfPcvT33619cGnY5WFgXLexmNiGUYHswVaLOdX8RA2P_ZkkOrFOiI_WYqzO0vQA8mZmKtoKivSRI-Dj-r92ABsb0H2Z0DqYN0MQxvzXgCH1mkQ4vapFQ_ixTak50ArvfhWulOMlZQVlZGBUrYV7Y-lz7y2mQuCtf_pYWUuZZanXhsyNuDheN79JxgNLvDLbMGPR5cXfaoLEBIzh4_MortHOoPsT4TIWby4tp4uMmUboXZgdP_GwZ_Sr06LC1y22jJ_OkuEftlUsFpGsDQvUtU9GcSpTQpUdq4D6n3u21rfGOuuZiSLHoL8lklLq3Trm2xjNgn0ZLd9TaPop-M802bCKMJtqX9aXjaIVv834mCNHol1XTtlasfLmvjboVNgkftbPg5gXiS2ls9p6liiQ7LEtDe_-mS0)](build/images/diag_map_monopoly_RDCU.pdf){#Map_Case_Monopoly}
 
 Dans la section suivante, l'initialisation des éléments utilisés dans les RDCU (comme des tableaux associatifs) est expliquée.
 
@@ -266,4 +266,4 @@ end loop
 @enduml
 ```
 
-![Exemple de l'initialisation partielle du jeu de Risk.](build/images/diag_initialisation_RDCU.pdf){#DemarrerRisk}
+![Exemple de l'initialisation partielle du jeu de Risk. [(PlantUML)](http://www.plantuml.com/plantuml/uml/ZLLDJzj04BrRuZ-Ck2H88Ig7NYoAG6bLGQ4WGji3uR3i3lR6zknsTqrBVr7pE_B7EdPYnvYF8aKRP-VDcpTlHiwX3yA5iiWZdscomea2V7Z8aK-dPHNPweHkXSmIPqfIqkJ6GN22F8UGmbOqW91g3_mHa0fIlvmE0Gdk30NG13yqAVFBCt13gF1Eb7ce82GAX2zE-ohd-6h2kAiKFO89AJeFkJ4P90v5JJRz_Xc6XSXOQEcGA-F3WByrSKDvZeghEZWwFOLlqq-Nqqvvs7ktqssfhy2Bf3heTPt7bC69AHs9_5NSxqmgc4gdRNWLTu5ibVDTOLqBWokHqwNWmUoDzxh3mfybaiGpz9Noermd19BdWIvYHD1IMy7-RyVdjtCCPqBJDWWFfWnUA-nXJh2yr3wh4VC-mSVbeWwetlr5BWAAJQBj9qwuIqsigGxBnr4RNuW7lqhiHSw4dL7Cv_wKbv6IqOmgx44DBY9PxG9MEjVDmExkmG7_XXXMiOWC0vnEqX33kZT07o0VcCeDS4Aoi8XNouBUVzzGgeX9QZB5N6gvyDVw1ZuyOZNtwBZMICN0gc7YbWkEbMv6JI6HkELVNYRsBK9IrGBRfW9xr9ImVRqDitN_fUvOtp0NaLqJ5ynRUVYSSEj6HOyzxhAr5JhkrzxNx8tePgx-w1vb5RvcbsOaK-4IT9CduSuyE7soWa6El5E6QBb0FoCrAFcLeMMgENGoFV_AxvLDeMPKJqkFlVw3ZGcoDK6svWwVaQjlncIA4Op7uvt7xiWtkTEskD8rtt--Xkthiwq-MmsfdT3mvVph-OjQxPkqrWDOJQ_Q3A7KqEwiB-JcejtKzk6Gd_X_u1y0)](build/images/diag_initialisation_RDCU.pdf){#DemarrerRisk}

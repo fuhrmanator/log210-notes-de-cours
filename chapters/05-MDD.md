@@ -58,7 +58,7 @@ Voici des points importants:
 
 ## Associations
 
-Les associations dans le MDD sont le sujet de la Section 9.14&nbsp;\faBook&nbsp;du livre du cours.
+Les associations dans le MDD sont le sujet de la section 9.14&nbsp;\faBook&nbsp;du livre du cours.
 Il faut se référer au contenu du livre pour les détails.
 Une association est une relation entre des classes (ou des instances de classes).
 Elle indique une connexion significative ou intéressante.
@@ -159,11 +159,11 @@ Joueur "1" -- "1,2,3" Dé : Jette >
 @enduml
 ```
 
-![Modèle du domaine du jeu de Risk.](build/images/diag_MDD.pdf){#MDD-jeu-de-risk}
+![Modèle du domaine du jeu de Risk. [(PlantUML)](http://www.plantuml.com/plantuml/uml/VPJDRjD04CVlbleE8r_ILab42XHXeQfLgQf29QAamAMNhJrr5gzdmtwaH0W9teRUUOEy2K_2h1tNReWgHUlOyvllltridJ3EbogoXQIvCA84wvOA-JGo3PQTZkb6f4LkjASirKeRS4QGPHEIsubwu6RI0ly4p0HbTqOwXmItcXn8Wi-ICdrd6Mm3PdWhl7818L4Yl3VI1f-BgrFchcPe4RIReR6Wj2uWDoYgODDFvx1RYe8BzGOvCovxV9N43Ic56MSrS79v2H-dPvDf9psCdkrrMzgim8ey7FHqdHTKm3lj3Gdr9FUjI3EOfaREtPFS67bKndOBwuxG6O-HJGNlPHJDP8Q0vTmjeSJoXjsYL0bhGq7e3NoF04YNaC2KTqXvz6DjVxkwhumBZiDSmbDnR6oyqK-aBPhRUAo4Gr4zYq5O64yQqrWixROiQ_E9S-AhnvgugUy4Iw3E5vvn8RT8TaiH7zBKpuMJcjRkazLzBalMbstHyGJYKGpxWm74BmxYkfu4JdcOaaauUaGSnhM5iAhXpBh1DMLo8Utgdl_nT8-Y5cW3zm_xr_Ig_vhFKPladDK_nv0Yt0SwmAFXSFy12HaMMbf9WooGwy7Mi1fKLowm1hzepsMmXZV1ZC6NSRMpXEMMAXyQwu6IEGNHomNF525jclO4oAzYYg24OGdl_ltvQozQIo8-I0xRv4sUf59CIBocjdKJHcDMVrJWTckmNzdsO3Zix2lgRKJX40_BsuZJQuUd_YVVmDXej_gT8wz7Upv4hQZeiLjTPgEs12u5fLitSqrTh1PVDWYJCzkwxn_qdpU3VnVUIsQYOtRXZ-4_)](build/images/diag_MDD.pdf){#MDD-jeu-de-risk}
 
 ## Attributs dérivés
 
-Les attributs dérivés sont expliqués en détail dans la section 9.16&nbsp;\faBook&nbsp; du livre du cours. 
+Les attributs dérivés sont expliqués en détail dans la section 9.16&nbsp;\faBook&nbsp;du livre du cours. 
 Il s'agit des attributs qui sont calculés à partir d'autres informations reliées à la classe.
 Ils sont indiqués par le symbole `/` devant leur nom.
 L'exemple à la figure&nbsp;\ref{MDD-attribut-derive} s'applique à la règle du jeu de Risk spécifiant qu'un joueur reçoit un certain nombre de renforts selon le nombre de pays occupés. La classe Joueur pourrait avoir un attribut dérivé `/nbPaysOccupés` qui est calculé selon le nombre de Pays contrôlés par le joueur.
@@ -188,11 +188,11 @@ Joueur "1" -- "1..*" Pays : Contrôle >
 @enduml
 ```
 
-![Classe d'association dans le MDD Jeu de Risk.](build/images/attributs_derives_MDD.pdf){#MDD-attribut-derive}
+![Classe d'association dans le MDD Jeu de Risk. [(PlantUML)](http://www.plantuml.com/plantuml/uml/VPBFQXmn3CRlXho3s4kIqcowroKiAQ6Kf866JFwSDHvbnemjBx9DkfG-KEvzWtsnQcQtP6XXmTWO_VJfa-NBb55o2Twatl4Q1GEalF6akpWxH8uceHfjtqeitDZeeq0MvAGXudnaZY5tBe4kX0wvUHMNCp6yHCxW69uTD_4rAVWksD0B5fy7X34GV1ENXfphXolb7ZfA135t90byZ3sqGZYALKzVuIHWhqQBa5QcpR6UZhKXxwdHgWAVRs_XiVfoNqtAm-BJwRIbVnqaR8UD3_kyvXvkOX56Vv3xqTi6AYjkdGzoTwHF9MbgRFg4MGgPP57diZ2TQmWehFC60eLQquprcD9WY8h0JmF0CS0IAfqXjtgz6CUrh7sXrJdNTxX9twqjw-rRKinnlZWVYPNvjTSQaF-L_aR7PCmkyewfxxTlhGlw3VPwIkxTp1OpE3lJOpx_CDl9Bk5A-vRjRsrdPKvsuCSnTWhp-KJTN18t-WV_0000)](build/images/attributs_derives_MDD.pdf){#MDD-attribut-derive}
 
 ## Classes d'association
 
-Les classes d'association dans le MDD sont le sujet de la Section 32.10&nbsp;\faBook&nbsp;du livre du cours (Section 26.10 de la version française).
+Les classes d'association dans le MDD sont le sujet de la section A32.10/F26.10&nbsp;\faBook&nbsp;du livre du cours.
 
 > Une classe d'association permet de traiter une association comme une classe, et de la modéliser avec des attributs...
 
@@ -232,8 +232,21 @@ Joueur "1" -- "1..*" Pays : Contrôle >
 @enduml
 ```
 
-![Classe d'association dans le MDD Jeu de Risk.](build/images/classe_association_MDD.pdf){#MDD-classe-association}
+![Classe d'association dans le MDD Jeu de Risk. [(PlantUML)](http://www.plantuml.com/plantuml/uml/VPBFIWD13CRl0xv3wALLRB5N3r8f8bL1wVhddCwckyFEP4fc5YtY0tdt3NmnirPm4ImCayFtI_9bChEKKN8Rl4cDumqA1aXvwqblSRPJ3dhI2crJIMovjD57WIp8IINYV626a6kNG0z2ZLm-YykP6DQHCpY69yTbV4uA_XOiQOsjpnt260YknQKkPt4_L-w-faGGSqsImCVOG2M4tyMAnqiO1MpKQ2kadMaxrEXO1_AUIkqgS7vp0m_5nRBejOVfoM5_fByE4bRTnVjzBhY1gzWAez_BlJIsXCAAs-Izt1tfKqdg6-i_OPQMJBAeUvcQsfK453Pv2u72IjECzPXIPuXQWLS3m370AHIwGwxCsuz-XzlqltfhRRl1x2BlcDNoyxroGLUR57QSbVpfC9WEO3pMC9aS3NPbJs6kiyZdXreyCwCTUFoj7S9aqgjkPiIb_gil)](build/images/classe_association_MDD.pdf){#MDD-classe-association}
 
+
+## Affinement du MDD
+
+Lorsqu'on modélise un domaine, il est normal de commencer avec un modèle simple (à partir d'un ou deux cas d'utilisation) et ensuite on l'affine dans les itérations suivantes, où on y intègre d'autres éléments plus subtils ou complexes du problème qu'on étudie. Les détails de cette approche sont présentés dans le chapitre F26/A32&nbsp;\faBook&nbsp;du livre du cours. Bien que la matière soit présentée plus tard dans le livre, ce sont des choses à savoir pour la modélisation d'un domaine, même dans une première itération. 
+
+Voici un résumé des points importants traités dans ce chapitre, dont quelques uns ont déjà été présentés plus haut:
+
+- Composition/Agrégation
+- Généralisation/spécialisation
+- Attribut dérivé
+- Hiérarchies dans un MDD et héritage dans l’implémentation
+- Noms de rôles
+- Organisation des classes conceptuelles en Packages
 
 ## FAQ MDD
 
@@ -241,4 +254,4 @@ Joueur "1" -- "1..*" Pays : Contrôle >
 
 **Réponse:** Selon la méthodologie du livre du cours, il n'y a qu'un seul MDD pour un domaine d'application. Une application peut avoir beaucoup de fonctionnalités (cas d'utilisation), mais il y a un seul MDD.
 
-Ceci étant dit, la notion d'une *version* de MDD existe (par exemple, une version pour chaque itération). Le MDD évoluera normalement après chaque nouvelle analyse. Le MDD au début d'un projet est plus simple, puisqu'il porte sur seulement les cas d'utilisation ciblés à la première itération. Au fur et à mesure qu'on rajoute des fonctionnalités au logiciel, le MDD devient plus riche.
+Cela dit, la notion d'une *version* de MDD existe (par exemple, une version pour chaque itération). Le MDD évoluera normalement après chaque nouvelle analyse. Le MDD au début d'un projet est plus simple, puisqu'il porte sur seulement les cas d'utilisation ciblés à la première itération. Le MDD devient plus riche au fur et à mesure qu'on avance dans les itérations, parce qu'il a de plus en plus de fonctionnalités réalisées.

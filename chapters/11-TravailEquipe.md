@@ -47,7 +47,7 @@ Une personne humble pense ainsi:
 - Je ne suis ni omniscient ni infaillible.
 - Je suis ouvert à m'améliorer.
 
-> \faWarning &nbsp;L'humilité ne veut pas dire "je n'ai pas de valeur" ou "j'accepte d'être mal traité par les autres".
+> \faWarning &nbsp;L'humilité ne veut pas dire "je n'ai pas de valeur" ou "j'accepte d'être mal traité.e par les autres".
 
 ![Éviter d'être le ["Centre de l'univers"](https://www.flickr.com/photos/diamondduste/466060240/) ([CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)) par [Diamondduste](https://www.flickr.com/people/diamondduste/).](https://farm1.static.flickr.com/171/466060240_0f1914cbb3_b.jpg){width="200px"}
 
@@ -64,7 +64,7 @@ rectangle "<size:50>Moi < Équipe</size>" #ffbbbb|bbffbb
 @enduml
 ```
 
-![Un coéquipier humble va accepter une décision prise par l'équipe, même s'il n'était pas en accord à 100%.](build/images/diag_moi_inf_equipe.pdf)
+![Un coéquipier humble va accepter une décision prise par l'équipe, même s'il n'était pas en accord à 100%. [(PlantUML)](http://www.plantuml.com/plantuml/uml/JOz12i8m54JtFSMd7a0tRgIKqguzn4_oquOcF_4dHHGluBcyc2s2T5R3pF1WkbnGoX9ybMV72GK36BAu-68Z5yP0CCIOIA3tgEVTJ4WNvD5J7yMG3D57WIB8UUs9IpKvGq0XbGS42eea_oBjH7lQaVA49juTZs3HPwh-PAYRx9vqEP_QQtJGmETzMroYvhZ5RGq7QzMgbrARgJfYitxv0W00)](build/images/diag_moi_inf_equipe.pdf)
 
 Quelques exemples concrets d'humilité dans le développement:
 

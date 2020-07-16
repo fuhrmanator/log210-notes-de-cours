@@ -17,7 +17,7 @@ Pour la modélisation de flot de données, il existe une notation pour les [diag
 
 Un exemple de diagramme d'activité utilisé dans le cadre du cours de LOG210 est dans la figure&nbsp;\ref{GitHubClassroomActivities}. Ce diagramme qui explique comment GitHub Classrooms permet à l'étudiant qui accepte un devoir (*assignment* en anglais) sur GitHub Classrooms de choisir son identité universitaire, mais seulement si l'enseignant a téléversé la liste de classe *avant* d'envoyer les invitations aux étudiants. 
 
-```{#GitHubClassroomActivitiesSource .puml frame=single caption="Code source PlantUML pour la figure&nbsp;\ref{GitHubClassroomActivities}"}
+<!-- ```{#GitHubClassroomActivitiesSource .puml frame=single caption="Code source PlantUML pour la figure&nbsp;\ref{GitHubClassroomActivities}"}
 @startuml
 skinparam style strictuml
 skinparam backgroundcolor transparent
@@ -41,7 +41,7 @@ start
 d'un membre de l'organisation);
 stop
 @enduml
-```
+``` -->
 
 
 ```{.plantuml hide-image=true plantuml-filename=build/images/GitHubClassroomActivity.pdf}
@@ -70,5 +70,5 @@ stop
 @enduml
 ```
 
-![Diagramme d'activités pour les activités séquentielles de GitHub Classrooms.](build/images/GitHubClassroomActivity.pdf){#GitHubClassroomActivities}
+![Diagramme d'activités pour les activités séquentielles de GitHub Classrooms. [(PlantUML)](http://www.plantuml.com/plantuml/uml/NP91JXmn44NtFaL9B6P62lH-PWCQ420b2eh80JnszL0QkspiCWfINo17cKrMkK5VBDMJ5Y2yyCB_-zVxbY-hs28j1bCFnDaM6w7AQq3T2xbFoiwwmxwanjwba0f8iLnLGfOFhcliRGloYB_aAj2UeyhWTCDYX4IpRzWzsV4Fuqdo2-k4NaZ6OuMSMW5Ldnj2rss3hRMa5BiEbjFaZETE7NLbXXkkgEcMvG87S-fXrjio7h70sxsDEUjxhsjz7tCgYW21gY1u13UPq2pllL9GJvfKuLjAFk1gynPrLUlSGPtibTCt6xf7j75oFUXOkrVVSk8gX645OV7pnrUjHQobh53YZHdEl9z8Xl6tD4ypzVfxHWPrltDkdn9LAa3lL3FKn3IBu_6vKKPOfWRkF-Tyf4p3BSbTssdwTSk1z2MLha_be6HQV3pcyQ-MiGrsM1Fn5x0lw2RDfPW5ZLyqXeXnLqxl51Qfx2rJFLNH0LLIDfV8Nd_7Fm00)](build/images/GitHubClassroomActivity.pdf){#GitHubClassroomActivities}
 
