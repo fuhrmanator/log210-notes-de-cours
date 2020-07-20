@@ -18,7 +18,7 @@ Le but avec GRASP (et le cours LOG210) est d'apprendre à faire du code facile �
 C'est normal au début que ça prenne plus de temps.
 Mais une fois que vous avez l'habitude à l'utiliser, vous serez aussi rapide avec votre développement, mais en plus votre design sera meilleur sur le plan de la maintenabilité.
 
-## Spectre de la conception
+## Spectre de la conception {#SpectreDeLaConception}
 
 Neal Ford a [proposé](https://www.ibm.com/developerworks/library/j-eaed1/index.html) la notion d'effort pour la conception qu'il a nommée le "Spectre de la conception".
 La figure&nbsp;\ref{Spectre_conception} illustre le principe.
@@ -64,7 +64,7 @@ hacking <-d[dashed]- Nh
 
 Au fait, dans certains contextes d'entreprise (par exemple une entreprise en démarrage qui a seulement six mois de financement), c'est une une attitude similaire. Si une solution de ["produit minimum viable" (MVP en anglais)\faWikipediaW](https://en.wikipedia.org/wiki/Minimum_viable_product) n'existe pas à la fin de la période de financement, l'entreprise n'existera plus, car il n'y aura pas une deuxième période de financement.
 Si la compagnie est financée pour une deuxième période, la conception du code aura besoin de beaucoup de soins, car elle a été négligée.
-Cette négligence à la conception est aussi nommée la ["dette technique"\faWikipediaW](https://fr.wikipedia.org/wiki/Dette_technique).
+Cette négligence à la conception est aussi nommée la \hyperref[DetteTechnique]{dette technique}.
 
 À l'autre extrémité du spectre, c'est beaucoup d'effort dépensé sur la conception, que l'on nomme "Cascade pure". Dans le cycle de vie en cascade, on met un temps fixe, par exemple plusieurs mois, à étudier la conception. Comme toute chose poussée à l'extrême, ce n'est pas idéal non plus.
 Dans le livre du cours, Larman explique en détail des problèmes posés par une approche en cascade.

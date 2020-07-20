@@ -45,7 +45,7 @@ header-includes:
 - \usepackage{longtable,booktabs}
 # https://tex.stackexchange.com/a/142319/17868
 - \usepackage{courier}
-- \lstset{basicstyle=\ttfamily\footnotesize,breaklines=true}
+- \lstset{basicstyle=\ttfamily,breaklines=true}
 - \renewcommand\lstlistingname{Code}
 
 # https://tex.stackexchange.com/questions/553408/table-captions-not-in-babel-language

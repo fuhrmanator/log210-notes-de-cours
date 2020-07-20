@@ -1,6 +1,6 @@
 # Diagrammes d'état
 
-Ce chapitre contient des informations sur les diagrammes d'état en UML. Le sujet est traité dans les chapitre A29/F25&nbsp;\faBook&nbsp;du livre du cours.
+Ce chapitre contient des informations sur les diagrammes d'état en UML. Le sujet est traité dans le chapitre A29/F25&nbsp;\faBook&nbsp;du livre du cours.
 
 Il s'agit de la modélisation. Un état est une simplification de la réalité de quelque chose qui évolue dans le temps. 
 

@@ -3,7 +3,7 @@
 Les MDD sont expliqués en détail dans le chapitre 9&nbsp;\faBook&nbsp;du livre du cours, mais voici des points importants pour LOG210:
 
 - Les classes conceptuelles ne sont pas des classes logicielles. Ainsi, selon la méthodologie de Larman, *elles n'ont pas de méthodes*.
-- Les classes ont des noms commençant avec une lettre majuscule, par exemple `Joueur` et elles ne sont jamais au pluriel, par exemple <del>`Joueurs`</del>.
+- Les classes ont des noms commençant avec une lettre majuscule, par exemple `Joueur` et elles ne sont jamais au pluriel, par exemple ~~`Joueurs`~~.
 
 ## Classes conceptuelles
 
