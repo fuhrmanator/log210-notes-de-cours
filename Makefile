@@ -6,6 +6,7 @@ BUILD = build
 MAKEFILE = Makefile
 OUTPUT_FILENAME = LOG210-notes-de-cours
 METADATA = metadata.yml
+LATEX_TEMPLATE = templates/default.latex
 CHAPTERS = chapters/*.md
 CHAPTERS_DEP = chapters/*.tex
 TOC = --toc --toc-depth=2
@@ -58,7 +59,7 @@ $(BUILD)/html/$(OUTPUT_FILENAME).html:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CSS
 	cp $(CSS_FILE) $(BUILD)/html/$(CSS_FILE)
 	@echo "$@ was built"
 
-$(BUILD)/pdf/$(OUTPUT_FILENAME).pdf:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CSS_FILE) $(IMAGES)
+$(BUILD)/pdf/$(OUTPUT_FILENAME).pdf:	$(MAKEFILE) $(METADATA) $(LATEX_TEMPLATE) $(CHAPTERS) $(CSS_FILE) $(IMAGES)
 	mkdir -p $(BUILD)/pdf
 	mkdir -p $(BUILD)/images
 	pandoc $(ARGS) $(PDF_ARGS) -o $@ $(CHAPTERS)

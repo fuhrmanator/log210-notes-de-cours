@@ -1,6 +1,6 @@
 # Diagrammes de déploiement et de composants
 
-Ce chapitre contient des informations sur les diagrammes de déploiement et de composants en UML. Les détails se trouvent dans le chapitre F31/A37&nbsp;\faBook&nbsp;du livre du cours.
+Ce chapitre&nbsp;\faIcon{truck-loading}&nbsp;contient des informations sur les diagrammes de déploiement et de composants en UML. Les détails se trouvent dans le chapitre F31/A37&nbsp;\faBook&nbsp;du livre du cours.
 
 ## Diagrammes de déploiement
 

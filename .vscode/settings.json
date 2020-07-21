@@ -1,3 +1,4 @@
 {
-    "plantuml.exportFormat": "svg"
+    "plantuml.exportFormat": "svg",
+    "latex-workshop.latex.autoBuild.run": "never"
 }
