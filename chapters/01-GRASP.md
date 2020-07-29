@@ -20,7 +20,7 @@ Mais une fois que vous avez l'habitude à l'utiliser, vous serez aussi rapide av
 
 ## Spectre de la conception {#SpectreDeLaConception}
 
-Neal Ford a [proposé](https://www.ibm.com/developerworks/library/j-eaed1/index.html) la notion d'effort pour la conception qu'il a nommée le "Spectre de la conception".
+Neal Ford [-@Ford2009] a [proposé](https://www.ibm.com/developerworks/library/j-eaed1/index.html) la notion d'effort pour la conception qu'il a nommée le "Spectre de la conception".
 La figure&nbsp;\ref{Spectre_conception} illustre le principe.
 
 ```{.plantuml hide-image=true plantuml-filename=build/images/spectre.pdf}

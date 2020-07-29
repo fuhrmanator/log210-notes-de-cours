@@ -20,7 +20,7 @@ Nous pouvons écrire un test qui appelle à une fonction qui n'existe pas encore
 Un puriste du TDD insistera que le test soit écrit toujours en premier!
 Cette discipline est parfois culturelle. 
 
-Plusieurs chercheurs ont mené des expériences ([celle-ci par exemple](https://ieeexplore.ieee.org/document/8405634)) pour voir si tester en premier avait un vrai bénéfice.
+Plusieurs chercheurs ont mené des expériences, par exemple [@Karac_TDD_2018], pour voir si tester en premier avait un vrai bénéfice.
 Les résultats de leurs analyses n'ont pas toujours montré que c'est le cas (ce genre d'expérience est difficile de faire, en partie parce qu'il n'y a pas beaucoup de développeurs en industrie qui le pratiquent).
 Les chercheurs ont trouvé que faire un petit test *après* avoir écrit le code a aussi un bénéfice sur le plan de la qualité.
 Dans tous les cas, des chercheurs ont trouvé que le fait de travailler en *petits pas* apporte *toujours* un avantage sur le plan de la qualité.

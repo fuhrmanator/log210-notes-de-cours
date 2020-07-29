@@ -1,5 +1,5 @@
 
-# Laboratoires
+# Laboratoires {#Laboratoires}
 
 Ce chapitre contient des information sur le volet technique des laboratoires.
 
@@ -21,7 +21,7 @@ Le but de cette section est de donner des tutoriels plus spécifiques.
 
 Il y a un [dépôt d'exemples avec TypeScript (utilisant `ts-node` pour les voir facilement)](https://github.com/profcfuhrmanets/exemples-ts) sur GitHub.
 
-## Contributions de l'équipe
+## Contributions de l'équipe {#ContributionsEquipe}
 
 Il existe un outil nommé `gitinspector` qui peut indiquer le niveau d'implication des membres de l'équipe dans un projet sur GitHub. Étant donné que LOG210 utilise un squelette avec les tests, les fichiers `src` de TypeScript, les modèles PlantUML et le README.md, il est possible d'utiliser `gitinspector` pour voir des rapports de contribution sur chacun des volets.
 

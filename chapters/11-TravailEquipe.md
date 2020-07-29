@@ -4,7 +4,7 @@ Le développement de logiciels se fait souvent en équipe.
 Cependant, il y a des défis pour travailler en équipe.
 Souvent, avant l'université on apprend comment s'organiser en équipe, faire des rencontres, répartir le travail, planifier, etc.
 Pourtant, il y a d'autres défis dans ce travail, des défis sur le plan humain.
-C'est le sujet du livre "Team Geek" [@fitzpatrick_team_2012] écrit par Brian W. Fitzpatrick (anciennement de Google) et Ben Collins-Sussman (Subversion, Google).
+C'est le sujet du livre "Team Geek" [-@fitzpatrick_team_2012] écrit par Brian W. Fitzpatrick (anciennement de Google) et Ben Collins-Sussman (Subversion, Google).
 
 Aujourd'hui la demande pour le talent en technologies de l'information est importante.
 Les technologies évoluent constamment.
@@ -136,10 +136,19 @@ Selon TeamGeek, le dernier point est important parce que si vous donnez trop d'i
 
 ## Scénarios
 
-Voici des situations qui risquent d'arriver dans une session de LOG210:
+Voici des situations qui pourraient arriver dans une session de LOG210:
 
 - un coéquipier se trouve à être le seul à faire de la programmation.
-  - il fait ne fait plus confiance à ses coéquipiers, car leur code est trop bogué.
+  - il ne fait plus confiance à ses coéquipiers, car leur code est trop bogué.
+  - il n'a pas la patience pour accommoder les coéquipiers moins expérimentés.
   - il croit qu'ils auraient dû apprendre mieux à programmer dans le cours préalables.
-- un coéquipier dit qu'il a "fait ses 3 heures de contribution" chaque dimanche chez lui et que ça devrait suffire pour sa partie (il a un emploi et n'a pas beaucoup de temps disponible pour l'équipe).
-- un ou deux membres d'une équipe abandonne le cours après l'examen intra, à cause du double-seuil du cours
+- un coéquipier dit qu'il a "fait ses 3 heures de contribution" chaque dimanche chez lui et que ça devrait suffire pour sa partie (il a un emploi et n'a pas beaucoup de temps disponible pour l'équipe d'un laboratoire).
+- un ou deux membres d'une équipe abandonne le cours après l'examen intra, à cause du double-seuil du cours.
+- un coéquipier prend 5 cours en même temps et n'a pas le temps adéquat pour travailler correctement dans LOG210.
+- plusieurs coéquipiers sont "expérimentés" mais ils ont de la difficulté à s'entendre sur la direction du projet.
+- l'équipe n'est pas cohésive; chacun fait avancer sa partie, mais le code ne fonctionne pas ensemble.
+
+Vous devez en parler avec votre équipe. 
+Si la situation ne s'améliore pas, vous pouvez en parler avec les chargés de laboratoire et l'enseignant.
+
+Pour mieux évaluer le travail de chacun dans l'équipe au laboratoire, il y a des conseils dans la section \nameref{ContributionsEquipe}.
