@@ -16,7 +16,7 @@ Voici le descriptif du cours, selon le plan de cours:
 
 ## Livre obligatoire
 
-Le livre obligatoire pour ce cours est indiqué dans le plan de cours. **Le présent document n'est pas un substitut pour le livre obligatoire.**
+Le livre obligatoire [@craig_uml_2005] pour ce cours est indiqué dans le plan de cours. **Le présent document n'est pas un substitut pour le livre obligatoire.**
 
 Les références au livre obligatoire seront indiquées par l'icône du livre&nbsp;\faBook.
 

@@ -4,7 +4,7 @@ Le développement de logiciels se fait souvent en équipe.
 Cependant, il y a des défis pour travailler en équipe.
 Souvent, avant l'université on apprend comment s'organiser en équipe, faire des rencontres, répartir le travail, planifier, etc.
 Pourtant, il y a d'autres défis dans ce travail, des défis sur le plan humain.
-C'est le sujet du livre "Team Geek" écrit par Brian W. Fitzpatrick (anciennement de Google) et Ben Collins-Sussman (Subversion, Google).
+C'est le sujet du livre "Team Geek" [@fitzpatrick_team_2012] écrit par Brian W. Fitzpatrick (anciennement de Google) et Ben Collins-Sussman (Subversion, Google).
 
 Aujourd'hui la demande pour le talent en technologies de l'information est importante.
 Les technologies évoluent constamment.

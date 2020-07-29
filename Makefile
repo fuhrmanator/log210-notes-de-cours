@@ -21,7 +21,8 @@ CSS_ARG = --css=$(CSS_FILE)
 METADATA_ARG = --metadata-file=$(METADATA)
 PLANTUML_FILTER = --filter filters/plantuml/plantuml.py
 ARGS = $(TOC) $(MATH_FORMULAS) $(CSS_ARG) $(METADATA_ARG) $(PLANTUML_FILTER)
-PDF_ARGS = --listing -V geometry:margin=1in --pdf-engine=pdflatex --template=$(TEMPLATES_FOLDER)/default.latex
+PDF_ARGS = --filter pandoc-citeproc --listing -V geometry:margin=1in --pdf-engine=pdflatex --template=$(TEMPLATES_FOLDER)/default.latex
+#PDF_ARGS = --filter pandoc-citeproc --listing -V geometry:margin=1in --pdf-engine=xelatex --template=$(TEMPLATES_FOLDER)/default.latex
 
 ####################################################################################################
 # Basic actions

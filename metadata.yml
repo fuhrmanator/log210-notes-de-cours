@@ -1,7 +1,6 @@
 ---
 rights: MIT License
-#language: fr-CA
-lang: fr
+lang: fr-CA
 babel-lang: french
 csquotes: true
 tags: [LOG210, analyse, conception, logiciel, GRASP, modularité]
@@ -46,6 +45,8 @@ header-includes:
 - \usepackage{longtable,booktabs}
 # https://tex.stackexchange.com/a/142319/17868
 - \usepackage{courier}
+# Bibliographies in French have raised e for the number "édition" e.g. 3e
+- \DeclareUnicodeCharacter{1D49}{$^e$}
 
 # https://tex.stackexchange.com/questions/553408/table-captions-not-in-babel-language
 babel-newcommands:
@@ -55,4 +56,16 @@ babel-newcommands:
 colorlinks: true
 linkcolor: blue
 pagestyle: headings
+
+# Bibliography
+csl: templates/ecole-de-technologie-superieure-apa.xml # See https://www.zotero.org/styles for more styles.
+bibliography: biblio.bib # See https://github.com/jgm/pandoc-citeproc/blob/master/man/pandoc-citeproc.1.md for more formats.
+suppress-bibliography: false
+link-citations: true
+color-links: true # See https://ctan.org/pkg/xcolor for colors
+#linkcolor: black
+urlcolor: blue
+citecolor: blue
+endnote: false
+
 ---
