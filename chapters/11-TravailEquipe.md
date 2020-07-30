@@ -6,18 +6,18 @@ Souvent, avant l'université on apprend comment s'organiser en équipe, faire de
 Pourtant, il y a d'autres défis dans ce travail, des défis sur le plan humain.
 C'est le sujet du livre "Team Geek" [-@fitzpatrick_team_2012] écrit par Brian W. Fitzpatrick (anciennement de Google) et Ben Collins-Sussman (Subversion, Google).
 
-Aujourd'hui la demande pour le talent en technologies de l'information est importante.
+Aujourd'hui, la demande pour le talent en technologies de l'information est importante.
 Les technologies évoluent constamment.
 Qui développe du code pour [Flash \faWikipediaW](https://fr.wikipedia.org/wiki/Adobe_Flash) ces jours-ci?
 Cette technologie est quasiment désuète.
 Cependant, une chose qui ne change pas (beaucoup) est le comportement humain.
 
 Les auteurs de "Team Geek" abordent les problèmes dus aux tendances comportementales chez les développeurs.
-Par exemple, un développeur n'a pas toujours envie de montrer son code source à ses coéquipiers pour plusieurs raisons:
+Par exemple, une personne n'a pas toujours envie de montrer son code source à ses coéquipiers pour plusieurs raisons:
 
 - Son code n'est pas fini.
-- Il a peur d'être jugé(e).
-- Il a peur que quelqu'un vole son idée.
+- Elle a peur d'être jugée.
+- Elle a peur que quelqu'un vole son idée.
 
 Dans tous ces cas, il s'agit de l'insécurité et c'est tout à fait normal.
 Par contre, ce genre de comportement augmente certains risques dans le développement:
@@ -26,14 +26,14 @@ Par contre, ce genre de comportement augmente certains risques dans le développ
 - de "réinventer la roue";
 - de terminer le travail plus tard que son compétiteur, qui, lui, a collaboré avec son équipe.
 
-Les auteurs le disent et c'est un fait: si nous sommes tous plus ou moins compétents sur le plan technique, ce qui va faire la grosse différence dans une carrière est notre habileté à collaborer avec les autres.
+Les auteurs le disent et c'est un fait: si nous sommes tous plus ou moins compétents sur le plan technique, ce qui fera la différence importante dans une carrière est notre habileté à collaborer avec les autres.
+
+![Pratiquement tout conflit social est dû à un manque d’humilité, de respect ou de confiance.](images/HRC_venn.pdf){width=40% #HRC_venn}
 
 ## Humilité, Respect, Confiance
 
 L'humilité, le respect et la confiance (voir la figure&nbsp;\ref{HRC_venn}) sont les qualités de base pour le bon travail en équipe.
 Cette section présente ces aspects en détail.
-
-![Pratiquement tout conflit social est dû à un manque d’humilité, de respect ou de confiance.](images/HRC_venn.pdf){#HRC_venn}
 
 ### Humilité
 
@@ -68,7 +68,7 @@ rectangle "<size:50>Moi < Équipe</size>" #ffbbbb|bbffbb
 
 Quelques exemples concrets d'humilité dans le développement:
 
-- Un coéquipier qui n'est pas fort en (JavaScript, git, etc.) va le reconnaître et va même faire des exercices sur Internet pour s'améliorer.
+- Un coéquipier débutant en JavaScript, git, etc. va le reconnaître et va même faire des exercices sur Internet pour s'améliorer.
 - Un coéquipier (même le chef d'équipe) qui a pris une mauvaise décision (technique ou autre) va l'avouer. Il sait que les autres ne sont pas là pour l'attaquer (ils le respectent).
 - Un coéquipier va travailler fort pour que *son équipe* réussisse.
 - Un coéquipier qui reçoit une critique ne va pas la prendre personnellement.
@@ -94,19 +94,19 @@ Le dernier point peut être extrêmement difficile si vous avez déjà été dé
 ## Redondance des compétences dans l'équipe (Bus Factor) {#Bus_Factor}
 
 Pour qu'une équipe soit robuste, il faut une redondance des compétences.
-Sinon, la perte d'un coéquipier (pour une raison quelconque) peut engendrer de graves conséquences voire arrêter carrément le développement.
+Sinon, la perte d'un coéquipier (pour une raison quelconque) peut engendrer de graves conséquences, voire arrêter carrément le développement.
 Ce principe a été nommé en anglais *Bus factor*.
 C'est le nombre minimum de coéquipiers à perdre (heurtés par un bus) pour arrêter le projet par manque de personnel bien informé ou compétent.
 Par exemple, dans un projet de stage, si c'est vous qui écrivez tout le code, alors c'est un *bus factor* de 1.
 Si vous n'êtes plus présent, le projet s'arrête.
 
-Un coéquipier peut être absent (ou moins disponible) pour des raisons moins graves, par exemple, il part en vacances, il tombe malade, il prend un congé parental, il change de boulot ou il abandonne le cours.
+Un coéquipier peut être absent (ou moins disponible) pour des raisons moins graves, par exemple, il part en vacances, il tombe malade, il prend un congé parental, il change d'emploi, ou il abandonne le cours.
 Cherchez à répartir les responsabilités dans l'équipe afin d'avoir un *bus factor* d'au moins 2.
 Partagez des compétences pour maintenir une équipe robuste.
 Vous pouvez également garder votre solution *simple* et garder la documentation de votre conception à jour.
 
 > \faWarning&nbsp;Si un coéquipier quitte en cours de la session, il n'est pas facile de maintenir le même rythme.
-Cependant, les enseignants et les chargés de laboratoire de LOG210 s'attendront à ce que vous ayez pensé à un plan B avant de perdre le coéquipier. Au moins un autre coéquipier doit être au courant de ce que faisait celui qui quitte, pour que le projet ne soit pas complètement arrêté.
+Cependant, les enseignants et les chargés de laboratoire de LOG210 s'attendront à ce que vous ayez pensé à un plan B avant de perdre le coéquipier. Au moins un autre coéquipier doit être au courant de ce que faisait l'ancien coéquipier, pour que le projet ne soit pas complètement arrêté.
 
 ## Mentorat
 
@@ -117,7 +117,7 @@ C'est une approche pédagogique reconnue par les experts.
 
 Selon TeamGeek:
 
-> Si vous avez déjà un bon baggage en programmation, ça peut être pénible de voir un coéquipier moins expérimenté tente un travail qui lui prendra beaucoup de temps lorsque vous savez que ça vous prendra juste quelques minutes.
+> Si vous avez déjà un bon bagage en programmation, ça peut être pénible de voir un coéquipier moins expérimenté tente un travail qui lui prendra beaucoup de temps lorsque vous savez que ça vous prendra juste quelques minutes.
 Apprendre à quelqu'un comment faire une tâche et lui donner l'occasion d'évoluer tout seul est un défi au début, mais cela est une caractéristique importante du leadership.
 
 Si les plus forts n'aident pas les autres, ils risquent de les éloigner de l'équipe et de se trouver seuls sur le plan des contributions techniques. Voir la section sur la \nameref{Bus_Factor}.
@@ -141,10 +141,10 @@ Voici des situations qui pourraient arriver dans une session de LOG210:
 - un coéquipier se trouve à être le seul à faire de la programmation.
   - il ne fait plus confiance à ses coéquipiers, car leur code est trop bogué.
   - il n'a pas la patience pour accommoder les coéquipiers moins expérimentés.
-  - il croit qu'ils auraient dû apprendre mieux à programmer dans le cours préalables.
+  - il croit qu'ils auraient dû apprendre mieux à programmer dans les cours préalables.
 - un coéquipier dit qu'il a "fait ses 3 heures de contribution" chaque dimanche chez lui et que ça devrait suffire pour sa partie (il a un emploi et n'a pas beaucoup de temps disponible pour l'équipe d'un laboratoire).
-- un ou deux membres d'une équipe abandonne le cours après l'examen intra, à cause du double-seuil du cours.
-- un coéquipier prend 5 cours en même temps et n'a pas le temps adéquat pour travailler correctement dans LOG210.
+- un ou deux membres d'une équipe abandonnent le cours après l'examen intra, à cause du double-seuil du cours.
+- un coéquipier suit cinq (!) cours en même temps et n'a pas le temps adéquat pour travailler correctement dans LOG210.
 - plusieurs coéquipiers sont "expérimentés" mais ils ont de la difficulté à s'entendre sur la direction du projet.
 - l'équipe n'est pas cohésive; chacun fait avancer sa partie, mais le code ne fonctionne pas ensemble.
 
