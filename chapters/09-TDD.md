@@ -76,7 +76,7 @@ Pour apprendre à faire du développement piloté par les tests (et pour apprend
 [En voici une vidéo \faYoutube](https://www.youtube.com/watch?v=DmPk_A-RU50).
 C'est un outil de transmission de techniques et de principes de combat.
 
-![Étudiante de karate faisant le kata *Basai Dai* (photo ["Karate"](https://www.flickr.com/photos/the-consortium/4507180302/) [(CC BY-SA 2.0)](https://creativecommons.org/licenses/by-sa/2.0/) par [The Consortium](https://www.flickr.com/people/the-consortium/)).](images/karate.jpg){width=40%}
+![Étudiante de karaté faisant le kata *Basai Dai* (photo ["Karate"](https://www.flickr.com/photos/the-consortium/4507180302/) [(CC BY-SA 2.0)](https://creativecommons.org/licenses/by-sa/2.0/) par [The Consortium](https://www.flickr.com/people/the-consortium/)).](images/karate.jpg){width=40%}
 
 Alors, le "kata TDD" a été proposé par Dave Thomas et le but est de développer la fluidité avec le développement piloté par les tests. 
 Un kata TDD se pratique avec un IDE (environnement de développement logiciel) et un support pour les tests (par exemple JUnit). 
@@ -95,7 +95,7 @@ Le réusinage rend le code plus facile à comprendre et à maintenir.
 
 L'inspiration de cet exercice vient de http://codingdojo.org/kata/FizzBuzz/.
 
-Dans cet exercice il faut écrire par le développement piloté par les tests un programme qui imprime les nombres de 1 à 100.
+Dans cet exercice, il faut écrire par le développement piloté par les tests un programme qui imprime les nombres de 1 à 100.
 Mais pour les multiples de trois, il faut imprimer `Fizz` au lieu du nombre et pour les multiples de cinq, il faut imprimer `Buzz`. Pour les nombres étant des multiples de trois et cinq il faut imprimer `FizzBuzz`. Voici un exemple des sorties:
 
 ```
@@ -119,7 +119,7 @@ FizzBuzz
 Fizz
 19
 Buzz
-... etc jusqu'à 100
+... etc. jusqu'à 100
 ```
 
 #### Préalables
@@ -155,8 +155,8 @@ Il s'agit de créer une classe ayant une méthode acceptant un entier et retourn
 8. Un argument de 30 retourne `FizzBuzz`
 9. Supporter des exigences qui évoluent:
 
-    a. Il faut imprimer Fizz au lieu du nombre si le nombre est un multiple de 3 ou contient un 3 (p.ex. 13 → `Fizz`).
-    b. Il faut imprimer Buzz au lieu du nombre si le nombre est un multiple de 5 ou contient un 5 (p.ex. 51 → `Fizz`).
-    c. Il faut imprimer FizzBuzz si le nombre est un multiple de 5 et de 3 ou contient un 5 et un 3 (p.ex. 53 → `FizzBuzz`).
+    a. Il faut imprimer Fizz au lieu du nombre si le nombre est un multiple de 3 ou contient un 3 (ex. 13 → `Fizz`).
+    b. Il faut imprimer Buzz au lieu du nombre si le nombre est un multiple de 5 ou contient un 5 (ex. 51 → `Fizz`).
+    c. Il faut imprimer FizzBuzz si le nombre est un multiple de 5 et de 3 ou contient un 5 et un 3 (ex. 53 → `FizzBuzz`).
 
 

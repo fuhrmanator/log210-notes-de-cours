@@ -7,17 +7,17 @@ Pour rajouter une nouvelle fonctionnalité à un système, les développeurs ont
 La dette est une forme de risque qui peut apporter des bénéfices ou des pertes. Tout dépend de la quantité d'intérêt à payer. L'inventeur du wiki, Ward Cunningham (réf), a utilisé la métaphore de la dette dans un projet de développement de logiciel de gestion de portefeuille réalisé dans une variante du langage Smalltalk:
 
 > Un autre piège plus sérieux est l'échec à consolider [un design]. 
-> Bien que le code non raffiné puisse fonctionner correctement et être totalement acceptable pour le client, des quantités excessives de ce genre de code rendront le programme impossible à maîtriser, ce qui entraînera une sur-spécialisation des programmeurs et, finalement, un produit inflexible. 
-> Livrer du code non raffiné est comme s'endetter. 
+> Bien que le code non raffiné puisse fonctionner correctement et être totalement acceptable pour le client, des quantités excessives de ce genre de code rendront le programme impossible à maîtriser, ce qui entraînera une surspécialisation des programmeurs et, finalement, un produit inflexible. 
+> Livrer du code non raffiné équivaut à s'endetter. 
 > Une petite dette accélère le développement tant qu'elle est remboursée rapidement avec une réécriture. 
 > [Le paradigme des] objets rendent le coût de cette transaction tolérable. 
 > Le danger survient lorsque la dette n'est pas remboursée. 
 > Chaque minute passée sur un code qui n'est pas tout à fait correct compte comme un intérêt sur cette dette. 
-> Des organisations entières peuvent être paralysées par l'endettement d'une implémentation non consolidée, orientée objet ou autre.
+> Des organisations entières peuvent être bloquées par l'endettement d'une implémentation non consolidée, orientée objet ou autre.
 
 Comme c'est une métaphore puissante, beaucoup de développeurs l'utilisent et c'est un terme avec une certaine popularité, comme on peut voir à la figure&nbsp;\ref{TechnicalDebtGoogleTrends}. Dans une [vidéo](https://www.youtube.com/watch?v=pqeJFYwnkjE) plus récente, Cunningham a rappelé que la notion originale de la métaphore s'inspire du code qui est incohérent par rapport à un problème complexe plutôt que du code simplement "mal écrit":
 
-> L'explication que j'ai donnée à mon patron, et c'était un logiciel financier, était une analogie financière que j'ai appelée "la métaphore de la dette". Et cela dit que si nous ne parvenions pas à aligner notre programme sur ce que nous considérions alors comme la bonne façon de penser à nos objets financiers, alors nous allions continuellement trébucher sur ce désaccord et cela nous ralentirait, ce qui était comme payer des intérêts sur un prêt.  
+> L'explication que j'ai donnée à mon patron, et c'était un logiciel financier, était une analogie financière que j'ai appelée "la métaphore de la dette". Et cela veut dire que si nous ne parvenions pas à aligner notre programme sur ce que nous considérions alors comme la bonne façon de penser à nos objets financiers, alors nous allions continuellement trébucher sur ce désaccord et cela nous ralentirait, comme payer des intérêts sur un prêt.  
 > &nbsp;  
 > [...]  
 > &nbsp;  
@@ -31,7 +31,7 @@ Fowler a également [abordé le sujet de la dette](https://martinfowler.com/blik
 > &nbsp;  
 > La distinction utile n'est donc pas entre dette ou non-dette, mais entre **dette prudente et imprudente**.  
 > &nbsp;  
-> [...] Il y a aussi une différence entre la **dette délibérée et involontaire**. L'exemple de la dette prudente est délibéré parce que l'équipe sait qu'elle s'endette et réfléchit donc à la question de savoir si le bénéfice de livrer plus tôt une version du logiciel est supérieur au coût de son remboursement. Une équipe ignorante des pratiques de conception prend sa dette imprudente sans même se rendre compte à quel point elle s'endette.  
+> [...] Il y a aussi une différence entre la **dette délibérée et involontaire**. L'exemple de la dette prudente est délibéré parce que l'équipe sait qu'elle s'endette et réfléchit donc à la question de savoir si le bénéfice de livrer plus tôt une version du logiciel est supérieur au coût de son remboursement. Une équipe ignorante des pratiques de conception prend sa dette imprudente sans même constater à quel point elle s'endette.  
 > &nbsp;  
 > La dette imprudente pourrait aussi être délibérée. Une équipe peut connaître les bonnes pratiques de conception, voire être capable de les mettre en pratique, mais décide finalement d'aller "à la va-vite" parce qu'elle pense qu'elle ne peut pas se permettre le temps nécessaire pour écrire du code propre.
 

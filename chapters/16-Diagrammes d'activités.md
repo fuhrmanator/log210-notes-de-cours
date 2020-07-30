@@ -1,6 +1,6 @@
 # Diagrammes d'activités
 
-Ce chapitre contient des informations sur les diagrammes d'activités en UML. Les détails se trouvent dans les chapitres 25 (français) et 28 (anglais)&nbsp;\faBook&nbsp;du livre du cours.
+Ce chapitre contient des informations sur les diagrammes d'activités en UML. Les détails se trouvent dans le chapitre F25/A28&nbsp;\faBook&nbsp;du livre du cours.
 
 > Les diagrammes d'activités servent à modéliser des processus d'affaires (de métier), des enchaînements d'activités (workflows), des flots de données et des algorithmes complexes.
 

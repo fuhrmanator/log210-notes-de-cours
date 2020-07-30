@@ -18,7 +18,7 @@ Les points importants:
 - La différence entre les objets
   - Un objet répondant de la même manière à un événement donné est un objet *état-indépendant* (par rapport à l'événement)
   - Un objet répondant différemment, selon son l'état, à un événement donné est un objet état-dépendant
-- Les transitions peuvent avoir des *actions* et des *conditions de guard*
+- Les transitions peuvent avoir des *actions* et des *conditions de garde*
 - Dans la notation, il y a également la possibilité de faire les *états imbriqués*
 
 La figure&nbsp;\ref{DiagrammeEtat} est un exemple tiré du livre du cours et fait en PlantUML.

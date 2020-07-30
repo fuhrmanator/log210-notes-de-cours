@@ -62,13 +62,13 @@ hacking <-d[dashed]- Nh
 
 À une extrémité il y a la notion de mettre presque zéro effort pour une conception, que l'on nomme "Hacking cowboy". C'est le cas lors d'un hackathon (un marathon de programmation durant 24 ou 48 heures où il faut produire une solution rapidement). Vous ne feriez pas un logiciel avec 10 patrons GoF ou les diagrammes UML pour réfléchir à votre architecture. Mais vous savez aussi que le code qui est produit lors d'un hackathon ne sera pas facile à maintenir. Le seul but est de faire du code qui marche.
 
-Au fait, dans certains contextes d'entreprise (par exemple une entreprise en démarrage qui a seulement six mois de financement), c'est une une attitude similaire. Si une solution de ["produit minimum viable" (MVP en anglais)\faWikipediaW](https://en.wikipedia.org/wiki/Minimum_viable_product) n'existe pas à la fin de la période de financement, l'entreprise n'existera plus, car il n'y aura pas une deuxième période de financement.
+Au fait, dans certains contextes d'entreprise (par exemple une entreprise en démarrage qui a seulement six mois de financement), c'est une attitude similaire. Si une solution de ["produit minimum viable" (MVP en anglais)\faWikipediaW](https://en.wikipedia.org/wiki/Minimum_viable_product) n'existe pas à la fin de la période de financement, l'entreprise n'existera plus, car il n'y aura pas une deuxième période de financement.
 Si la compagnie est financée pour une deuxième période, la conception du code aura besoin de beaucoup de soins, car elle a été négligée.
 Cette négligence à la conception est aussi nommée la \hyperref[DetteTechnique]{dette technique}.
 
 À l'autre extrémité du spectre, c'est beaucoup d'effort dépensé sur la conception, que l'on nomme "Cascade pure". Dans le cycle de vie en cascade, on met un temps fixe, par exemple plusieurs mois, à étudier la conception. Comme toute chose poussée à l'extrême, ce n'est pas idéal non plus.
 Dans le livre du cours, Larman explique en détail des problèmes posés par une approche en cascade.
-Dans certains domaines, par exemple les logiciels pour le contrôle d'avion ou des appareils médicaux, une approche cascade est toujours utilisée, en dépit des problèmes dus à l'approche.
+Dans certains domaines, par exemple les logiciels pour le contrôle d'avion ou des appareils médicaux, une approche en cascade est toujours utilisée, en dépit des problèmes dus à l'approche.
 La sécurité des logiciels est très importante, alors on passe beaucoup de temps à vérifier et valider la conception. Puisque les exigences sont plus stables, l'approche en cascade n'est pas si mal.
 Pourtant le coût pour produire des logiciels certifiés est énorme.
 

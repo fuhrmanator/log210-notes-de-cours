@@ -9,7 +9,7 @@ Les points importants sont les suivants (les détails se trouvent dans le livre)
 - Organiser les packages une **famille d'interface** (convention Java)
 - Créer un package par **tâche** et par **groupe de classes instables** (Branches)
 - Les packages les plus responsables sont les plus stables
-- Factoriser les type indépendants
+- Factoriser les types indépendants
 - Utiliser **fabrique** (factory) pour limiter la dépendance aux packages concrets
 - Comment rompre les cycles dans les packages
 

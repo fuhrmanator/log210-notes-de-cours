@@ -1,13 +1,13 @@
 
 # Laboratoires {#Laboratoires}
 
-Ce chapitre contient des information sur le volet technique des laboratoires.
+Ce chapitre contient des informations sur le volet technique des laboratoires.
 
 ## JavaScript/TypeScript
 
 Un tutoriel intéressant (et libre) est sur [javascript.info](https://javascript.info/). Je vous recommande de contribuer à des [traductions en français sur GitHub](https://github.com/javascript-tutorial/fr.javascript.info#readme). 
 
-Voici les points qui posent plus de problèmes pour quelqu'un ayant déjà des connaissance en Java:
+Voici les points qui posent plus de problèmes pour quelqu'un ayant déjà des connaissances en Java:
 
 - Fonctions flèche (*arrow functions* en anglais)
 - Traitement asynchrone en JavaScript
@@ -43,7 +43,7 @@ remote: Total 10 (delta 3), reused 7 (delta 2), pack-reused 0
 Unpacking objects: 100% (10/10), 2.02 KiB | 82.00 KiB/s, done.
 ```
 
-- Lancer le script sur un repo, par exemple `sga-equipe-g02-equipe-4`:
+- Lancer le script sur un dépôt de code source, par exemple `sga-equipe-g02-equipe-4`:
 ```bash
 $ cd contributions
 $ ./contributions.sh ../sga-equipe-g02-equipe-4/
@@ -72,7 +72,7 @@ Un des objectifs du bilan est d'essayer d'expliquer les gros écarts et de corri
 
 Par exemple, on peut voir à la Figure&nbsp;\ref{GitinspectorOutput} que les deux coéquipiers Anne et Justin ont fait une contribution beaucoup plus importante que les autres coéquipiers Francis et Mélanie. 
 Dans le bilan de l'itération, **on peut indiquer explicitement ce fait, même avec des pourcentages** en évitant d'écrire une phrase vague comme "certains ont travaillé plus que d'autres". 
-Ensuite, on se pose la question pourquoi il y a eu cet écart? 
+Ensuite, on se pose la question: pourquoi y a-t-il eu cet écart? 
 Est-ce que Francis et Mélanie sont à l'aise avec les technologies, ont-ils besoin de coaching? 
 Est-ce que tout le monde est à l'aise avec l'écart?
 Est-ce que Anne et Justin ont laissé suffisamment de place aux autres pour faire une contribution? 
@@ -85,7 +85,7 @@ Ainsi, vous gérez les problèmes de manière plus proactive.
 
 ### FAQ pour gitinspector
 
-**Q: Comment fusionner le travail réalisé par le même coéquipier mais avec plusieurs comptes (courriels) différents?**
+**Q: Comment fusionner le travail réalisé par le même coéquipier, mais avec plusieurs comptes (courriels) différents?**
 
 **R:** La solution est avec le fichier `.mailmap`. Vous pouvez rapidement générer un fichier de base avec la commande:  
 &nbsp;&nbsp;`git log --pretty="%an %ae" | sort | uniq > .mailmap`  

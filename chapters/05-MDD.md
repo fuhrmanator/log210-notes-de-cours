@@ -239,7 +239,7 @@ Joueur "1" -- "1..*" Pays : Contrôle >
 
 Lorsqu'on modélise un domaine, il est normal de commencer avec un modèle simple (à partir d'un ou deux cas d'utilisation) et ensuite on l'affine dans les itérations suivantes, où on y intègre d'autres éléments plus subtils ou complexes du problème qu'on étudie. Les détails de cette approche sont présentés dans le chapitre F26/A32&nbsp;\faBook&nbsp;du livre du cours. Bien que la matière soit présentée plus tard dans le livre, ce sont des choses à savoir pour la modélisation d'un domaine, même dans une première itération. 
 
-Voici un résumé des points importants traités dans ce chapitre, dont quelques uns ont déjà été présentés plus haut:
+Voici un résumé des points importants traités dans ce chapitre, dont quelques-uns ont déjà été présentés plus haut:
 
 - Composition/Agrégation
 - Généralisation/spécialisation
