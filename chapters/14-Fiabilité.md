@@ -19,7 +19,7 @@ Voici les points importants:
   Dans ce cas, il faut bien gérer les exceptions.
   - Utilisation de *Procuration (Proxy) de redirection \[GoF\]* pour basculer sur un service local en cas de panne (écriture d'information), A35.4/F30.4&nbsp;\faBook
 
-> Faire une conception pour la fiabilité nécessite de l'expérience (ou l'utilisation des patterns). Un bon livre est Hanmer R. *Patterns for Fault Tolerant Software.* 1 edition. Chichester, England ; Hoboken, NJ : Wiley, 2007. 308 p.ISBN : 9780470319796.
+> Faire une conception pour la fiabilité nécessite de l'expérience (ou l'utilisation des patterns). Un bon livre est celui de R. Hanmer [@hanmer_patterns_2007].
 
 
 > L'utilisation de services dans le nuage (infonuagique) amène une redondance de serveurs. 
