@@ -80,5 +80,57 @@ Un moyen de gérer cette dette technique est de *réusiner* (anglais refactor).
 
 Voici un extrait du livre du cours, **UML 2 et les design patterns** de Craig Larman.
 
-<!-- Note: the latex below needs longtable environment, so you must set the variable `tables: true` in the front matter to have the default.latex template load it -->
-\input{chapters/GRASP_table.tex}
++---------------+--------------------------------------------------------------------------------+
+| Pattern       | Description                                           |
++===============+================================================================================+
+| Expert en     | Un principe général de conception d'objets et d'affectation des responsabilités.\label{tab_GRASPExpert} \newline |
+| information   |  |
+|*F16.11/A17.11*| Affecter une responsabilité à l'expert – la classe qui possède les informations nécessaires pour s'en acquitter. \newline |
+| \faBook       | |
++-------------+--------------------------------------------------------+
+| Créateur      | Qui crée? \label{tab_GRASPCreateur} (Notez que Fabrique Concrète est une solution de rechange courante.) \newline\newline Affectez à la classe B la responsabilité de créer une instance de la classe A si l'une des assertions suivantes est vraie: |
+|*F16.10/A17.10*| |
+| \faBook       | 1. B contient A |
+|               | 2. B agrège A |
+|               | 3. B a les données pour initialiser A |
+|               | 4. B enregistre A |
+|               | 5. B utilise étroitement A |
++-------------+--------------------------------------------------------+
+| Contrôleur    | Quel \label{tab_GRASPControleur}est le premier objet en dehors de la couche présentation qui reçoit et coordonne ("contrôle") les opérations système? \newline\newline Affectez une responsabilité à la classe qui correspond à l'une de ces définitions: |
+|*F16.13/A17.13*| |
+| \faBook       | 1. Elle représente le système global, un "objet racine", un équipement ou un sous-système (contrôleur de façade). |
+|               | 2. Elle représente un scénario de cas d'utilisation dans lequel l'opération système se produit (*contrôleur de session* ou contrôleur de cas d'utilisation). On la nomme GestionnaireX, où X est le nom du cas d'utilisation |
++-------------+--------------------------------------------------------+
+| Faible        | Comment minimiser les dépendances? \newline\newline Affectez les responsabilités de sorte que le couplage (inutile) demeure faible. Employez ce principe pour évaluer les alternatives. |
+| Couplage      | \newline |
+| (évaluation)  |
+|*F16.12/A17.12*| |
+| \faBook       | |
++-------------+--------------------------------------------------------+
+| Forte Cohésion| Comment conserver les objets cohésifs, compréhensibles, gérables et, en conséquence, obtenir un Faible Couplage? \newline\newline Affectez les responsabilités de sorte que les classes demeurent cohésives. Employez ce principe pour évaluer les différentes solutions. |
+| (évaluation)  | \newline |
+|*F16.14/A17.14*| |
+| \faBook       | |
++-------------+--------------------------------------------------------+
+| Polymorphisme | Qui est responsable quand le comportement varie selon le type? \newline\newline Lorsqu'un comportement varie selon le type (classe), affectez la responsabilité de ce comportement — avec des opérations polymorphes — aux types pour lesquels le comportement varie. \newline |
+| *F22.1/A25.1* | |
+| \faBook       | |
++-------------+--------------------------------------------------------+
+| Fabrication   | En cas de situation désespérée, que faire quand vous ne voulez pas transgresser les principes de faible couplage et de forte cohésion? \newline\newline Affectez un ensemble très cohésif de responsabilités à une classe "comportementale" artificielle qui ne représente pas un concept du domaine — une entité fabriquée pour augmenter la cohésion, diminuer le couplage et faciliter la réutilisation.\newline |
+| Pure          | |
+| *F22.2/A25.2* | |
+| \faBook       | |
++-------------+--------------------------------------------------------+
+|Indirection    | Comment affecter les responsabilités pour éviter le couplage direct? \newline\newline Affectez la responsabilité à un objet qui sert d'intermédiaire avec les autres composants ou services.\newline |
+| *F22.3/A25.3* | |
+| \faBook       | |
++-------------+--------------------------------------------------------+
+| Protection    | Comment affecter les responsabilités aux objets, sous-systèmes et systèmes de sorte que les variations ou l'instabilité de ces éléments n'aient pas d'impact négatif sur les autres? \newline\newline Identifiez les points de variation ou d'instabilité prévisibles et affectez les responsabilités afin de créer une « interface » stable autour d'eux. |
+| \newline des  | |
+| variations    | |
+| *F22.4/A25.4* | |
+| \faBook       | |
++-------------+--------------------------------------------------------+
+
+: Patterns (principes) GRASP \label{tableGRASP}
+
