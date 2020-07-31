@@ -43,7 +43,7 @@ Ensuite, imaginez des solutions à ce problème suivantes:
 1. On peut définir un programme en langage assembleur pour générer un nombre réel entre 0.00000 et 1.00000. Le programme sera assez complexe, car les métaphores en assembleur sont des registres, des adresses, peut-être des modules, etc.
 2. On peut utiliser un langage orienté objet (comme Java ou TypeScript) pour définir une classe `GénérateurNombreAléatoire` qui a une fonction `générer()` qui retourne une valeur réelle aléatoire entre 0.000000 et 1.000000.
 Il faudra travailler un peu avec le code pour obtenir un nombre entier entre 1 et 6, mais c'est possible.
-Lorsqu’on lit le nom de la classe, il est possible de deviner à quelle partie du problème ça correspond, mais le lien n'est pas aussi évident.
+Lorsqu'on lit le nom de la classe, il est possible de deviner à quelle partie du problème ça correspond, mais le lien n'est pas aussi évident.
 3. On peut utiliser encore un langage orienté objet, mais cette fois on définit une classe `Dé` ayant une fonction `brasser` qui retourne une valeur aléatoire entière entre 1 et 6.
 
 Parmi toutes les solutions au problème, laquelle a le plus faible décalage de représentation?
@@ -61,3 +61,27 @@ La méthodologie enseignée dans LOG210 cherche à réduire le décalage des rep
 La figure&nbsp;\ref{SurvolMethodologie} présente la méthode d'analyse et de conception enseignée dans le cours. C'est une adaptation de plusieurs figures présentées dans le livre du cours.
 
 ![Survol de la méthodologie.](images/FigA.1-avec-contrats.png){#SurvolMethodologie}
+
+## Développement itératif, évolutif et agile
+
+Le chapitre 2 du livre&nbsp;\faBook&nbsp;définit un processus itératif et adaptatif ainsi que les concepts fondamentaux du Processus Unifié.
+
+Les points importants sont les suivants:
+
+- Le développement itératif et évolutif implique de programmer et de tester précocement un système partiel selon des cycles répétitifs.
+- Un cycle est nommé une itération et dure un temps fixe (par exemple, 3 semaines) comprenant les activités d'analyse, de conception, de programmation et de test, ainsi qu'une démonstration pour solliciter du feedback du client (voir la figure&nbsp;\ref{DevIteratifIncremental}). 
+- La durée d'une itération est limitée dans le temps (*timeboxed* en anglais), de 2 à 6 semaines. Il n'est pas permis d'ajouter du temps à la durée d'une itération si le projet avance plus lentement que prévu, car cela impliquerait un retard de la rétroaction du client. Si le respect des délais semble compromis, on supprime plutôt des tâches ou des spécifications et on les inclut dans l'itération suivante.
+- Les premières itérations peuvent sembler chaotiques, car elles sont loin de la "bonne voie". Avec la rétroaction du client et l'adaptation, le système à développer converge vers une solution appropriée (voir la figure&nbsp;\ref{StabiliteDansLesIterations}).
+- Il y a plusieurs avantages du développement itératif et incrémental:
+  - moins d'échecs, amélioration de la productivité et de la qualité;
+  - gestion précoce des risques élevés (risques techniques, exigences, objectifs, convivialité, etc.)
+  - progrès immédiatement visibles;
+  - rétroaction, implication des utilisateurs et adaptation précoces;
+  - complexité gérée (par itération);
+  - possibilité d'exploiter méthodiquement les leçons tirées d'une itération.
+
+![Le développement itératif et incrémental (Figure 2.1 du livre).](images/A2.1.pdf){#DevIteratifIncremental}
+
+![Rétroaction et adaptation itératives convergent vers le système souhaité (Figure 2.2 du livre).](images/F2.2.pdf){#StabiliteDansLesIterations}
+
+![Processus itératif et évolutif.](images/iteratif-evolutif.png){#IteratifEvolutif}
