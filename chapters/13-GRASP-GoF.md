@@ -1,4 +1,4 @@
-# Décortiquer les patterns GoF avec GRASP
+# Décortiquer les patterns GoF avec GRASP{#sec:GRASP-GoF}
 
 Craig Larman a proposé les GRASP pour faciliter la compréhension des forces essentielles de la conception orientée-objet. Dans ce chapitre, on examine la présence des GRASP dans les patterns GoF. C'est une excellente façon de mieux comprendre et les principes GRASP et les patterns GoF.
 

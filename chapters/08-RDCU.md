@@ -1,4 +1,4 @@
-# Réalisations de cas d'utilisation (RDCU)
+# Réalisations de cas d'utilisation (RDCU){#sec:RDCU}
 
 Les réalisations de cas d'utilisation (RDCU) sont le sujet du chapitre F17/A18&nbsp;\faBook&nbsp;du livre du cours. 
 Voici les points importants pour le cours:

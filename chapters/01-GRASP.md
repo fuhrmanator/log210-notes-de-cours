@@ -69,7 +69,7 @@ Cette négligence à la conception est aussi nommée la \hyperref[DetteTechnique
 À l'autre extrémité du spectre, c'est beaucoup d'effort dépensé sur la conception, que l'on nomme "Cascade pure". Dans le cycle de vie en cascade, on met un temps fixe, par exemple plusieurs mois, à étudier la conception. Comme toute chose poussée à l'extrême, ce n'est pas idéal non plus.
 Dans le livre du cours, Larman explique en détail des problèmes posés par une approche en cascade.
 Dans certains domaines, par exemple les logiciels pour le contrôle d'avion ou des appareils médicaux, une approche en cascade est toujours utilisée, en dépit des problèmes dus à l'approche.
-La sécurité des logiciels est très importante, alors on passe beaucoup de temps à vérifier et valider la conception. Puisque les exigences sont plus stables, l'approche en cascade n'est pas si mal.
+La sécurité des logiciels est très importante, alors on passe beaucoup de temps à vérifier et valider la conception. Puisque les exigences sont plus stables (et les développeurs ont *a priori* une meilleure compréhension du domaine), l'approche en cascade n'est pas si mal.
 Pourtant le coût pour produire des logiciels certifiés est énorme.
 
 Le spectre de la conception est très important pour LOG210, parce que c'est le contexte de l'entreprise pour laquelle vous travaillez qui déterminera combien d'effort à mettre sur la conception.
@@ -134,3 +134,12 @@ Voici un extrait du livre du cours, **UML 2 et les design patterns** de Craig La
 
 : Patterns (principes) GRASP \label{tableGRASP}
 
+## GRASP et RDCU
+
+Les principes GRASP sont utilisés dans les réalisations de cas d'utilisation (RDCU). 
+On s'en sert pour annoter des décisions de conception, pour rendre explicite (documenter) les choix. 
+Voir la section \nameref{sec:RDCU} pour plus d'informations.
+
+## GRASP et Patterns GoF
+
+On peut voir les principes GRASP comme des généralisations (principes de base) des patterns GoF. Voir la section \nameref{sec:GRASP-GoF} pour plus d'informations.
