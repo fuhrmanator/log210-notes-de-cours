@@ -137,7 +137,7 @@ Par exemple dans la figure&nbsp;\ref{RDCU_Visibilite1}, la référence à *b* pe
   - passée comme un argument dans un message antérieur, ou
   - affectée dans une variable locale de la méthode où `unMessage()` sera envoyé.
 
-Pour plus de détails, voir le chapitre sur la Visiblilté&nbsp;\faBook&nbsp;du livre du cours.
+Pour plus de détails, voir le chapitre sur la Visibilité&nbsp;\faBook&nbsp;du livre du cours.
 
 ```{.plantuml hide-image=true plantuml-filename=build/images/diag_visibilite_RDCU.pdf}
 @startuml

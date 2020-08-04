@@ -1,6 +1,6 @@
 # Conception de packages
 
-Le chapitre A13/F12&nbsp;\faBook&nbsp;du livre du cours contient des directives pour la conception de packages. 
+Le chapitre A36/F29&nbsp;\faBook&nbsp;du livre du cours contient des directives pour la conception de packages. 
 
 Les points importants sont les suivants (les détails se trouvent dans le livre):
 
