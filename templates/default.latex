@@ -339,6 +339,7 @@ $for(polyglossia-otherlangs)$
 $endfor$
 \else
   \usepackage[$for(babel-otherlangs)$$babel-otherlangs$,$endfor$main=$babel-lang$]{babel}
+%  \usepackage[shorthands=off,$for(babel-otherlangs)$$babel-otherlangs$,$endfor$main=$babel-lang$]{babel}
 $if(babel-newcommands)$
   $babel-newcommands$
 $endif$
@@ -349,7 +350,7 @@ $if(listings)$
 \newcommand{\passthrough}[1]{#1}
 \lstset{defaultdialect=[5.3]Lua}
 \lstset{defaultdialect=[x86masm]Assembler}
-\lstset{basicstyle=\ttfamily,breaklines=true}
+\lstset{basicstyle=\ttfamily,breaklines=true,extendedchars=true}
 %\renewcommand\lstlistingname{Code}
 % https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings#Encoding_issue
 \lstset{literate=
