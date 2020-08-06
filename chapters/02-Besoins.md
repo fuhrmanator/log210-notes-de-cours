@@ -10,8 +10,8 @@ Il y a beaucoup d'exemples d'exigences non fonctionnelles, par exemple sur [Wiki
 
 ## FURPS+
 
-Le chapitre 5&nbsp;\faBook&nbsp;du livre du cours traite le sujet des besoins et leur évolution.
-FURPS+ est un modèle (avec un acronyme) pour classer les exigences (besoins) d'un logiciel. Voici un résumé, mais la section 5.4&nbsp;\faBook&nbsp;du livre explique en détail:
+Le chapitre 5\ \faBook\ du livre du cours traite le sujet des besoins et leur évolution.
+FURPS+ est un modèle (avec un acronyme) pour classer les exigences (besoins) d'un logiciel. Voici un résumé, mais la section 5.4\ \faBook\ du livre explique en détail:
 
 - **Fonctionnalité** (*Functionality*). Ce sont les exigences exprimées souvent par les cas d'utilisation, par exemple, *Traiter une vente*. La sécurité est aussi considérée dans ce volet.
 - **Aptitude à l'utilisation** (*Usability*). Convivialité - les facteurs humains du logiciel, par exemple le nombre de clics que ça prend pour réaliser une fonctionnalité, à quel point une interface est facile à comprendre par un utilisateur, etc.

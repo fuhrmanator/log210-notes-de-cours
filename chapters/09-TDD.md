@@ -14,7 +14,7 @@ Au fur et à mesure qu'on développe un logiciel, on développe également quelq
 Puisque les tests sont automatiques, ils sont aussi faciles à exécuter que le compilateur.
 
 Il y a une discipline imposée dans le TDD qui nécessite d'écrire un *test en premier*, c'est-à-dire *avant* d'écrire le code.
-La démarche est illustrée par la figure&nbsp;\ref{TDD_states}.
+La démarche est illustrée par la figure\ \ref{TDD_states}.
 Beaucoup d'outils (IDE) favorisent ce genre de développement.
 Nous pouvons écrire un test qui appelle à une fonction qui n'existe pas encore et l'IDE va nous proposer un squelette de la méthode, avec les arguments et une valeur de retour même.
 Un puriste du TDD insistera que le test soit écrit toujours en premier!
@@ -131,7 +131,7 @@ Pour un exemple qui fonctionne en TypeScript, vous pouvez cloner le code à [ce 
 
 Cet exercice peut se faire individuellement ou en équipe de deux.
 En équipe, une personne écrit le test et l'autre écrit le code pour passer le test (c'est la variante ping-pong).
-Chacun réfléchit aux activités de réusinage éventuelles lorsque le projet est dans l'état vert (Figure&nbsp;\ref{TDD_states}).
+Chacun réfléchit aux activités de réusinage éventuelles lorsque le projet est dans l'état vert (figure\ \ref{TDD_states}).
 Les membres de l'équipe peuvent changer de rôle (testeur, codeur) après un certain nombre d'étapes, ou après avoir terminé le kata entier.
 
 Pour respecter la philosophie de *petits pas,* il vaut mieux:

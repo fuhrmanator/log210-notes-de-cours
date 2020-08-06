@@ -1,6 +1,6 @@
 # Modèle du domaine (MDD, modèle conceptuel)
 
-Les MDD sont expliqués en détail dans le chapitre 9&nbsp;\faBook&nbsp;du livre du cours, mais voici des points importants pour LOG210:
+Les MDD sont expliqués en détail dans le chapitre 9\ \faBook\ du livre du cours, mais voici des points importants pour LOG210:
 
 - Les classes conceptuelles ne sont pas des classes logicielles. Ainsi, selon la méthodologie de Larman, *elles n'ont pas de méthodes*.
 - Les classes ont des noms commençant avec une lettre majuscule, par exemple `Joueur` et elles ne sont jamais au pluriel, par exemple ~~`Joueurs`~~.
@@ -15,7 +15,7 @@ Il y a trois stratégies pour identifier les classes conceptuelles:
 
 ### Catégories pour identifier des classes conceptuelles
 
-:Extrait du tableau 9.1&nbsp;\faBook&nbsp;du livre du cours.
+:Extrait du tableau 9.1\ \faBook\ du livre du cours.
 
 Catégorie | Exemples
 :----------|:----------
@@ -39,10 +39,10 @@ Catégorie | Exemples
 
 ## Attributs
 
-Les attributs sont le sujet de la section 9.16&nbsp;\faBook&nbsp;du livre. 
+Les attributs sont le sujet de la section 9.16\ \faBook\ du livre. 
 Comme c'est le cas pour les classes et les associations, on fait figurer les attributs *quand les cas d'utilisation suggèrent la nécessité de mémoriser des informations*.
 
-Pour l'UML, la syntaxe complète d'un attribut est&nbsp;:
+Pour l'UML, la syntaxe complète d'un attribut est\ :
 
 **visibilité nom : type multiplicité = défaut {propriété}
 **
@@ -51,63 +51,63 @@ Voici des points importants:
 
 - *Le type d'un attribut est important et il faut les spécifier dans un MDD*, même si dans le livre du cours il y a plusieurs exemples sans type.
 - On ne se soucie pas de la visibilité des attributs dans un MDD.
-- Faites attention à l'attribut qui devrait être une classe. Si on ne pense pas un attribut *X* en termes alphanumériques dans le monde réel, alors il s'agit probablement d'une classe conceptuelle. Voir la section 9.12&nbsp;\faBook&nbsp;du livre.
-- De la même manière, faites attention aux informations qui sont mieux modélisées par des associations, par exemple dans la figure&nbsp;\ref{MDD-jeu-de-risk} la classe `Pays` n'a pas un *attribut* `joueur:Joueur` (qui contrôle le Pays), mais elle a plutôt une *association* avec la classe `Joueur` et un verbe `contrôle`. 
+- Faites attention à l'attribut qui devrait être une classe. Si on ne pense pas un attribut *X* en termes alphanumériques dans le monde réel, alors il s'agit probablement d'une classe conceptuelle. Voir la section 9.12\ \faBook\ du livre.
+- De la même manière, faites attention aux informations qui sont mieux modélisées par des associations, par exemple dans la figure\ \ref{MDD-jeu-de-risk} la classe `Pays` n'a pas un *attribut* `joueur:Joueur` (qui contrôle le Pays), mais elle a plutôt une *association* avec la classe `Joueur` et un verbe `contrôle`. 
 
-> \faWarning &nbsp;Il est vrai que dans un langage de programmation, les associations doivent être les attributs dans les classes. Cependant, dans un modèle du domaine on cherche à éviter des attributs si une association peut mieux décrire la relation. La relation relie visuellement les deux classes et elle est décrite avec un verbe.
+> \faWarning \ Il est vrai que dans un langage de programmation, les associations doivent être les attributs dans les classes. Cependant, dans un modèle du domaine on cherche à éviter des attributs si une association peut mieux décrire la relation. La relation relie visuellement les deux classes et elle est décrite avec un verbe.
 
 ## Associations
 
-Les associations dans le MDD sont le sujet de la section 9.14&nbsp;\faBook&nbsp;du livre du cours.
+Les associations dans le MDD sont le sujet de la section 9.14\ \faBook\ du livre du cours.
 Il faut se référer au contenu du livre pour les détails.
 Une association est une relation entre des classes (ou des instances de classes).
 Elle indique une connexion significative ou intéressante.
 Voici des points importants:
 
 - Il est facile de trouver beaucoup d'associations, mais il faut se limiter à celles qui doivent être conservées un certain temps.
-Pensez à la **mémorabilité** d'une association dans le contexte du logiciel à développer. Par exemple, considérez les associations de la figure&nbsp;\ref{MDD-jeu-de-risk}:
+Pensez à la **mémorabilité** d'une association dans le contexte du logiciel à développer. Par exemple, considérez les associations de la figure\ \ref{MDD-jeu-de-risk}:
   - Il existe une association entre `Joueur` et `Pays`, car il est important de savoir quel joueur contrôle quel pays dans le jeu de Risk.
   - Il n'y a pas d'association entre `JeuRisk` et `Attaque`, même si les attaques font partie du jeu. Il n'est pas essentiel de mémoriser l'historique de toutes les attaques réalisées dans le jeu.
-- Il y a des associations dérivées de la liste des associations courantes. Voir le tableau&nbsp;\ref{Tableau_associations_courantes}.
+- Il y a des associations dérivées de la liste des associations courantes. Voir le tableau\ \ref{Tableau_associations_courantes}.
 - En UML les associations sont représentées par des lignes entre classes.
   - Elles sont nommées (avec un verbe commençant par une lettre majuscule).
   - Des noms simples comme "A", "Utilise", "Possède", "Contient", etc. sont généralement des choix médiocres, car ils n'aident pas notre compréhension du domaine. Essayez de trouver des noms plus riches, si possible.
   - Une flèche (triangle) de "sens de lecture" optionnelle indique la direction dans laquelle lire l'association. Si la flèche est absente, on lit l'association de gauche à droite ou de haut en bas.
   - Les extrémités des associations ont une expression de la multiplicité indiquant une relation numérique entre les instances des classes.
-  Vous pouvez en trouver plusieurs exemples dans la figure&nbsp;\ref{MDD-jeu-de-risk}.
+  Vous pouvez en trouver plusieurs exemples dans la figure\ \ref{MDD-jeu-de-risk}.
 
-:Extrait du tableau 9.2&nbsp;\faBook&nbsp;du livre du cours.\label{Tableau_associations_courantes}
+:Extrait du tableau 9.2\ \faBook\ du livre du cours.\label{Tableau_associations_courantes}
 
 **Catégorie** | **Exemple**
 :----------|:----------
-**A est une transaction liée à une transaction B**| *PaiementEnEspèces&nbsp;--&nbsp;Vente* \
-*Réservation&nbsp;--&nbsp;Annulation*\newline
-**A est un élément d'une transaction B**| *LigneArticles&nbsp;--&nbsp;Vente*\newline
-**A est un produit pour une transaction (ou un élément de transaction) B**| *Article&nbsp;--&nbsp;LigneArticles&nbsp;(ou&nbsp;Vente)* \
-*Vol&nbsp;--&nbsp;Réservation*\newline
-**A est un rôle lié à une transaction B**| *Client&nbsp;--&nbsp;Paiement* \
-*Passager&nbsp;--&nbsp;Billet*\newline
-**A est une partie logique ou physique de B**| *Tiroir&nbsp;--&nbsp;Registre* \
-*Case&nbsp;--&nbsp;Plateau* \
-*Siège&nbsp;--&nbsp;Avion*\newline
-**A est physiquement ou logiquement contenu dans B**| *Registre&nbsp;--&nbsp;Magasin* \
-*Joueur&nbsp;--&nbsp;Monopoly* \
-*Passager&nbsp;--&nbsp;Avion*\newline
-**A est une description de B**| *DescriptionProduit&nbsp;--&nbsp;Article* \
-*DescriptionVol&nbsp;--&nbsp;Vol*\newline
-**A est connu/consigné/enregistré/saisi dans B**| *Vente&nbsp;--&nbsp;Registre* \
-*Pion&nbsp;--&nbsp;Case* \
-*Réservation&nbsp;--&nbsp;ManifesteDeVol*\newline
-**A est un membre de B**| *Caissier&nbsp;--&nbsp;Magasin* \
-*Joueur&nbsp;--&nbsp;Monopoly* \
-*Pilote&nbsp;--&nbsp;CompagnieAérienne*\newline
-**A est une sous-unité organisationnelle de B**| *Rayon&nbsp;--&nbsp;Magasin* \
-*Maintenance&nbsp;--&nbsp;CompagnieAérienne*\newline
-**A utilise, gère ou possède B**| *Caissier&nbsp;--&nbsp;Registre* \
-*Joueur&nbsp;--&nbsp;Pion* *Pilote&nbsp;--&nbsp;Avion*\newline
-**A est voisin de B**| *Article&nbsp;--&nbsp;Article* \
-*Case&nbsp;--&nbsp;Case* \
-*Ville&nbsp;--&nbsp;Ville*
+**A est une transaction liée à une transaction B**| *PaiementEnEspèces\ --\ Vente* \
+*Réservation\ --\ Annulation*\newline
+**A est un élément d'une transaction B**| *LigneArticles\ --\ Vente*\newline
+**A est un produit pour une transaction (ou un élément de transaction) B**| *Article\ --\ LigneArticles\ (ou\ Vente)* \
+*Vol\ --\ Réservation*\newline
+**A est un rôle lié à une transaction B**| *Client\ --\ Paiement* \
+*Passager\ --\ Billet*\newline
+**A est une partie logique ou physique de B**| *Tiroir\ --\ Registre* \
+*Case\ --\ Plateau* \
+*Siège\ --\ Avion*\newline
+**A est physiquement ou logiquement contenu dans B**| *Registre\ --\ Magasin* \
+*Joueur\ --\ Monopoly* \
+*Passager\ --\ Avion*\newline
+**A est une description de B**| *DescriptionProduit\ --\ Article* \
+*DescriptionVol\ --\ Vol*\newline
+**A est connu/consigné/enregistré/saisi dans B**| *Vente\ --\ Registre* \
+*Pion\ --\ Case* \
+*Réservation\ --\ ManifesteDeVol*\newline
+**A est un membre de B**| *Caissier\ --\ Magasin* \
+*Joueur\ --\ Monopoly* \
+*Pilote\ --\ CompagnieAérienne*\newline
+**A est une sous-unité organisationnelle de B**| *Rayon\ --\ Magasin* \
+*Maintenance\ --\ CompagnieAérienne*\newline
+**A utilise, gère ou possède B**| *Caissier\ --\ Registre* \
+*Joueur\ --\ Pion* *Pilote\ --\ Avion*\newline
+**A est voisin de B**| *Article\ --\ Article* \
+*Case\ --\ Case* \
+*Ville\ --\ Ville*
 
 ## Exemple de MDD pour le jeu de Risk
 
@@ -163,10 +163,10 @@ Joueur "1" -- "1,2,3" Dé : Jette >
 
 ## Attributs dérivés
 
-Les attributs dérivés sont expliqués en détail dans la section 9.16&nbsp;\faBook&nbsp;du livre du cours. 
+Les attributs dérivés sont expliqués en détail dans la section 9.16\ \faBook\ du livre du cours. 
 Il s'agit des attributs qui sont calculés à partir d'autres informations reliées à la classe.
 Ils sont indiqués par le symbole `/` devant leur nom.
-L'exemple à la figure&nbsp;\ref{MDD-attribut-derive} s'applique à la règle du jeu de Risk spécifiant qu'un joueur reçoit un certain nombre de renforts selon le nombre de pays occupés. La classe Joueur pourrait avoir un attribut dérivé `/nbPaysOccupés` qui est calculé selon le nombre de Pays contrôlés par le joueur.
+L'exemple à la figure\ \ref{MDD-attribut-derive} s'applique à la règle du jeu de Risk spécifiant qu'un joueur reçoit un certain nombre de renforts selon le nombre de pays occupés. La classe Joueur pourrait avoir un attribut dérivé `/nbPaysOccupés` qui est calculé selon le nombre de Pays contrôlés par le joueur.
 
 ```{.plantuml hide-image=true plantuml-filename=build/images/attributs_derives_MDD.pdf}
 @startuml
@@ -192,7 +192,7 @@ Joueur "1" -- "1..*" Pays : Contrôle >
 
 ## Classes d'association
 
-Les classes d'association dans le MDD sont le sujet de la section A32.10/F26.10&nbsp;\faBook&nbsp;du livre du cours.
+Les classes d'association dans le MDD sont le sujet de la section A32.10/F26.10\ \faBook\ du livre du cours.
 
 > Une classe d'association permet de traiter une association comme une classe, et de la modéliser avec des attributs...
 
@@ -202,7 +202,7 @@ Il pourrait être utile d'avoir une classe d'association dans un MDD si:
 - la durée de vie des instances de la classe d'association dépend de l'association;
 - il y a une association $N$-$N$ entre deux concepts et des informations liées a l'association elle-même.
 
-Dans l'exemple à la figure&nbsp;\ref{MDD-classe-association}, voici pourquoi il y a une classe d'association Occupation. 
+Dans l'exemple à la figure\ \ref{MDD-classe-association}, voici pourquoi il y a une classe d'association Occupation. 
 Lorsqu'un Joueur contrôle un Pays, il doit y avoir des armées dans ce dernier. 
 Le MDD pourrait avoir un attribut `nbRégiments` dans la classe Pays. 
 Cependant, l'attribut `nbRégiments` est lié à l'association entre le Joueur et le Pays qu'il contrôle, alors on décide d'utiliser une classe d'association. 
@@ -237,7 +237,7 @@ Joueur "1" -- "1..*" Pays : Contrôle >
 
 ## Affinement du MDD
 
-Lorsqu'on modélise un domaine, il est normal de commencer avec un modèle simple (à partir d'un ou deux cas d'utilisation) et ensuite on l'affine dans les itérations suivantes, où on y intègre d'autres éléments plus subtils ou complexes du problème qu'on étudie. Les détails de cette approche sont présentés dans le chapitre F26/A32&nbsp;\faBook&nbsp;du livre du cours. Bien que la matière soit présentée plus tard dans le livre, ce sont des choses à savoir pour la modélisation d'un domaine, même dans une première itération. 
+Lorsqu'on modélise un domaine, il est normal de commencer avec un modèle simple (à partir d'un ou deux cas d'utilisation) et ensuite on l'affine dans les itérations suivantes, où on y intègre d'autres éléments plus subtils ou complexes du problème qu'on étudie. Les détails de cette approche sont présentés dans le chapitre F26/A32\ \faBook\ du livre du cours. Bien que la matière soit présentée plus tard dans le livre, ce sont des choses à savoir pour la modélisation d'un domaine, même dans une première itération. 
 
 Voici un résumé des points importants traités dans ce chapitre, dont quelques-uns ont déjà été présentés plus haut:
 

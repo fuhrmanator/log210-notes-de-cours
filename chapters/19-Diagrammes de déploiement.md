@@ -1,6 +1,6 @@
 # Diagrammes de déploiement et de composants
 
-Ce chapitre&nbsp;\faIcon{truck-loading}&nbsp;contient des informations sur les diagrammes de déploiement et de composants en UML. Les détails se trouvent dans le chapitre F31/A37&nbsp;\faBook&nbsp;du livre du cours.
+Ce chapitre\ \faIcon{truck-loading}\ contient des informations sur les diagrammes de déploiement et de composants en UML. Les détails se trouvent dans le chapitre F31/A37\ \faBook\ du livre du cours.
 
 ## Diagrammes de déploiement
 
@@ -21,8 +21,8 @@ Voici les éléments importants:
     - Moteur de workflow
     - Conteneur de servlets ou conteneur d'EJB
 
-La figure&nbsp;\ref{DiagrammeDeploiement} est un exemple de diagramme de déploiement (laboratoire). 
-La figure&nbsp;\ref{iTunesDiagrammeDeploiement} est un exemple de diagramme de déploiement pour le logiciel iTunes d'Apple. 
+La figure\ \ref{DiagrammeDeploiement} est un exemple de diagramme de déploiement (laboratoire). 
+La figure\ \ref{iTunesDiagrammeDeploiement} est un exemple de diagramme de déploiement pour le logiciel iTunes d'Apple. 
 
 ```{.plantuml hide-image=true plantuml-filename=build/images/DiagrammeDeploiement.pdf}
 @startuml

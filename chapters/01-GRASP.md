@@ -10,7 +10,7 @@ En tant qu'ingénieur logiciel, vous devez décider souvent où placer une méth
 
 Alors, les GRASP sont les directives qui vous aident à prendre des décisions de conception, menant à un design avec moins de couplage inutile et des classes plus cohésives. Les classes cohésives sont plus faciles à comprendre, à maintenir et à réutiliser.
 
-> \faWarning&nbsp;Avez-vous déjà une bonne expérience en programmation?
+> \faWarning\ Avez-vous déjà une bonne expérience en programmation?
 Avez-vous l'habitude de coder rapidement des solutions qui fonctionnent?
 Si la réponse est oui, alors travailler avec les principes GRASP peut être un défi pour vous.
 Vous devez être en mesure de justifier vos choix de conception et cela va vous ralentir au début.
@@ -21,7 +21,7 @@ Mais une fois que vous avez l'habitude à l'utiliser, vous serez aussi rapide av
 ## Spectre de la conception {#SpectreDeLaConception}
 
 Neal Ford [-@Ford2009] a [proposé](https://www.ibm.com/developerworks/library/j-eaed1/index.html) la notion d'effort pour la conception qu'il a nommée le "Spectre de la conception".
-La figure&nbsp;\ref{Spectre_conception} illustre le principe.
+La figure\ \ref{Spectre_conception} illustre le principe.
 
 ```{.plantuml hide-image=true plantuml-filename=build/images/spectre.pdf}
 @startuml

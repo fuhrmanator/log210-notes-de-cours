@@ -32,7 +32,7 @@ Les auteurs le disent et c'est un fait: si nous sommes tous plus ou moins compé
 
 ## Humilité, Respect, Confiance
 
-L'humilité, le respect et la confiance (voir la figure&nbsp;\ref{HRC_venn}) sont les qualités de base pour le bon travail en équipe.
+L'humilité, le respect et la confiance (voir la figure\ \ref{HRC_venn}) sont les qualités de base pour le bon travail en équipe.
 Cette section présente ces aspects en détail.
 
 ### Humilité
@@ -47,7 +47,7 @@ Une personne humble pense ainsi:
 - Je ne suis ni omniscient ni infaillible.
 - Je suis ouvert à m'améliorer.
 
-> \faWarning &nbsp;L'humilité ne veut pas dire "je n'ai pas de valeur" ou "j'accepte d'être mal traité.e par les autres".
+> \faWarning \ L'humilité ne veut pas dire "je n'ai pas de valeur" ou "j'accepte d'être mal traité.e par les autres".
 
 ![Éviter d'être le ["Centre de l'univers"](https://www.flickr.com/photos/diamondduste/466060240/) ([CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)) par [Diamondduste](https://www.flickr.com/people/diamondduste/).](https://farm1.static.flickr.com/171/466060240_0f1914cbb3_b.jpg){width="200px"}
 
@@ -105,7 +105,7 @@ Cherchez à répartir les responsabilités dans l'équipe afin d'avoir un *bus f
 Partagez des compétences pour maintenir une équipe robuste.
 Vous pouvez également garder votre solution *simple* et garder la documentation de votre conception à jour.
 
-> \faWarning&nbsp;Si un coéquipier quitte en cours de la session, il n'est pas facile de maintenir le même rythme.
+> \faWarning\ Si un coéquipier quitte en cours de la session, il n'est pas facile de maintenir le même rythme.
 Cependant, les enseignants et les chargés de laboratoire de LOG210 s'attendront à ce que vous ayez pensé à un plan B avant de perdre le coéquipier. Au moins un autre coéquipier doit être au courant de ce que faisait l'ancien coéquipier, pour que le projet ne soit pas complètement arrêté.
 
 ## Mentorat

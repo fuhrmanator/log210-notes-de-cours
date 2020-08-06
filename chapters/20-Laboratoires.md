@@ -60,7 +60,7 @@ Les fichiers `.html` sont créés pour les contributions `Test`, `Modèles`, `Do
 1. Le nombre de soumissions par auteur (activité git)
 2. Le nombre de lignes par auteur encore présentes et intactes dans la version HEAD
 
-Vous pouvez voir un exemple du rapport à la Figure&nbsp;\ref{GitinspectorOutput}.
+Vous pouvez voir un exemple du rapport à la figure\ \ref{GitinspectorOutput}.
 
 ![Exemple de rapport généré par `gitinspector`.](images/gitinspector_output.png){#GitinspectorOutput}
 
@@ -70,7 +70,7 @@ Après l'évaluation à la fin de chaque itération, il est important de consid�
 Il est normal d'avoir un écart entre le travail prévu et le travail effectué. 
 Un des objectifs du bilan est d'essayer d'expliquer les gros écarts et de corriger ou mitiger les problèmes.
 
-Par exemple, on peut voir à la Figure&nbsp;\ref{GitinspectorOutput} que les deux coéquipiers Anne et Justin ont fait une contribution beaucoup plus importante que les autres coéquipiers Francis et Mélanie. 
+Par exemple, on peut voir à la figure\ \ref{GitinspectorOutput} que les deux coéquipiers Anne et Justin ont fait une contribution beaucoup plus importante que les autres coéquipiers Francis et Mélanie. 
 Dans le bilan de l'itération, **on peut indiquer explicitement ce fait, même avec des pourcentages** en évitant d'écrire une phrase vague comme "certains ont travaillé plus que d'autres". 
 Ensuite, on se pose la question: pourquoi y a-t-il eu cet écart? 
 Est-ce que Francis et Mélanie sont à l'aise avec les technologies, ont-ils besoin de coaching? 
@@ -88,7 +88,7 @@ Ainsi, vous gérez les problèmes de manière plus proactive.
 **Q: Comment fusionner le travail réalisé par le même coéquipier, mais avec plusieurs comptes (courriels) différents?**
 
 **R:** La solution est avec le fichier `.mailmap`. Vous pouvez rapidement générer un fichier de base avec la commande:  
-&nbsp;&nbsp;`git log --pretty="%an %ae" | sort | uniq > .mailmap`  
+\ \ `git log --pretty="%an %ae" | sort | uniq > .mailmap`  
 Ensuite, vous modifiez le fichier `.mailmap` pour que les deux (ou plusieurs) courriels du même auteur aient le même nom. 
 Le nom que vous mettez sera celui qui apparaît dans les rapports la prochaine fois qu'ils seront générés.
 

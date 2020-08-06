@@ -1,6 +1,6 @@
 # Réalisations de cas d'utilisation (RDCU){#sec:RDCU}
 
-Les réalisations de cas d'utilisation (RDCU) sont le sujet du chapitre F17/A18&nbsp;\faBook&nbsp;du livre du cours. 
+Les réalisations de cas d'utilisation (RDCU) sont le sujet du chapitre F17/A18\ \faBook\ du livre du cours. 
 Voici les points importants pour le cours:
 
 - Une RDCU est une synthèse des informations spécifiées dans le MDD, le DSS et les contrats d'opération.
@@ -16,7 +16,7 @@ Il faut alors maîtriser la notation UML pour ces diagrammes, mais on applique l
   - Il n'est pas nécessaire de faire les boîtes d'activation, car ça prend du temps à les faire correctement lorsqu'on dessine à la main un diagramme.
   - On doit se servir des annotations pour documenter les choix (GRASP).
   - On dessine à la main des diagrammes puisqu'on peut faire ça en équipe à un tableau blanc. Mais aussi, à l'examen vous devez faire des diagrammes à la main.
-  - Au lieu d'un message pointillé indiquant le retour d'une valeur à la fin de l'exécution d'une méthode, on utilise l'affectation sur le message (comme dans la programmation), par exemple `c = getClient(...)` à la figure&nbsp;\ref{RDCU_ID_en_objets}
+  - Au lieu d'un message pointillé indiquant le retour d'une valeur à la fin de l'exécution d'une méthode, on utilise l'affectation sur le message (comme dans la programmation), par exemple `c = getClient(...)` à la figure\ \ref{RDCU_ID_en_objets}
 - Le livre présente quelques RDCU qui sont des *diagrammes de communication*. Cette notation n'est pas utilisée dans le cours, car elle est plus complexe à utiliser et elle est comparable à la notation des diagrammes de séquence.
 - Faire des RDCU est plus agile que coder, car dans un diagramme on peut voir le flux de plusieurs messages à travers plusieurs classes.
 Dans le code source, il serait nécessaire d'ouvrir plusieurs fichiers en même temps et on ne peut pas voir toute la dynamique de la même manière.
@@ -27,7 +27,7 @@ On peut également se servir des structures (`List`, `Array`, `Map`, etc.) avant
 Faire une RDCU est comme faire un *plan* pour un bâtiment tandis que faire de la programmation est comme la *construction* du bâtiment.
 Si un plan contient des erreurs de conception, on va les savoir lors de la construction.
 
-Tout le processus de proposer une solution (RDCU) peut être visualisé comme un diagramme d'activités, comme dans la figure&nbsp;\ref{RDCU_Aide_Memoire}.
+Tout le processus de proposer une solution (RDCU) peut être visualisé comme un diagramme d'activités, comme dans la figure\ \ref{RDCU_Aide_Memoire}.
 
 ```{.plantuml hide-image=true plantuml-filename=build/images/rdcu-aide-memoire.pdf}
 @startuml 
@@ -85,7 +85,7 @@ Certaines postconditions concernent la création d'une instance.
 Dans votre RDCU, vous devez respecter le GRASP Créateur.
 Référez-vous à la définition dans le \nameref{tab_GRASPCreateur}.
 
-> \faWarning &nbsp;Une erreur potentielle est de donner la responsabilité de créer à un contrôleur, puisqu'*il a les données pour initialiser* l'objet. Bien que ce soit justifiable par le principe GRASP Créateur, il vaut mieux favoriser une classe qui *agrège* l'objet à créer, le cas échéant. 
+> \faWarning \ Une erreur potentielle est de donner la responsabilité de créer à un contrôleur, puisqu'*il a les données pour initialiser* l'objet. Bien que ce soit justifiable par le principe GRASP Créateur, il vaut mieux favoriser une classe qui *agrège* l'objet à créer, le cas échéant. 
 
 ### Former une association
 
@@ -95,13 +95,13 @@ Pour les postconditions où il faut former une association entre un objet *a* et
 - S'il y a une association simple, il faut considérer la navigabilité de l'association. Est-ce qu'il faut pouvoir retrouver l'objet *a* à partir de l'objet *b* ou vice-versa? Il s'agira d'une méthode `setB(b)` sur l'objet `a` (pour trouver *b* à partir de *a*), etc.
 - S'il faut former une association entre un objet et un autre "sur une base de correspondance avec" un identifiant passé comme argument, alors il faut repérer le bon objet d'abord. Voir la section \nameref{TransformerIDenObjets}.
 
-Dans la plupart des cas, la justification GRASP pour former une association est Expert, défini dans le \nameref{tab_GRASPExpert}. \faLowVision &nbsp;Il faut faire attention à la \hyperref[Visibilite]{visibilité}.
+Dans la plupart des cas, la justification GRASP pour former une association est Expert, défini dans le \nameref{tab_GRASPExpert}. \faLowVision \ Il faut faire attention à la \hyperref[Visibilite]{visibilité}.
 
 ### Modifier un attribut
 
-Pour les postconditions où il faut modifier un attribut, c'est assez évident. Il suffit de suivre le principe GRASP Expert, défini dans le \nameref{tab_GRASPExpert}. Très souvent, c'est une méthode `setX(valeur)` où `X` correspond à l'attribut qui sera modifié à `valeur`. \faLowVision &nbsp;Attention à la \hyperref[Visibilite]{visibilité}.
+Pour les postconditions où il faut modifier un attribut, c'est assez évident. Il suffit de suivre le principe GRASP Expert, défini dans le \nameref{tab_GRASPExpert}. Très souvent, c'est une méthode `setX(valeur)` où `X` correspond à l'attribut qui sera modifié à `valeur`. \faLowVision \ Attention à la \hyperref[Visibilite]{visibilité}.
 
-Lorsque l'attribut d'un objet doit être modifié juste après la création de ce dernier, ça peut se faire dans le constructeur, comme on voit dans la figure&nbsp;\ref{RDCU_Constructeur_Modification}.
+Lorsque l'attribut d'un objet doit être modifié juste après la création de ce dernier, ça peut se faire dans le constructeur, comme on voit dans la figure\ \ref{RDCU_Constructeur_Modification}.
 
 ```{.plantuml hide-image=true plantuml-filename=build/images/diag_constructeur_modification.pdf}
 @startuml
@@ -130,14 +130,14 @@ C'est-à-dire que n'importe quel objet pourrait lui envoyer un message.
 Cependant, les objets Singleton posent des problèmes de conception, notamment pour les tests.
 Il vaut mieux éviter ce choix, si possible.  
 \faStackOverflow
-&nbsp;Voir [cette réponse sur stackoverflow](https://stackoverflow.com/a/2085988/1168342).
+\ Voir [cette réponse sur stackoverflow](https://stackoverflow.com/a/2085988/1168342).
 - Sinon, il faudra que l'objet émetteur ait une référence de l'objet récepteur.
-Par exemple dans la figure&nbsp;\ref{RDCU_Visibilite1}, la référence à *b* peut être:
+Par exemple dans la figure\ \ref{RDCU_Visibilite1}, la référence à *b* peut être:
   - stockée comme un attribut de *a*,
   - passée comme un argument dans un message antérieur, ou
   - affectée dans une variable locale de la méthode où `unMessage()` sera envoyé.
 
-Pour plus de détails, voir le chapitre sur la Visibilité&nbsp;\faBook&nbsp;du livre du cours.
+Pour plus de détails, voir le chapitre sur la Visibilité\ \faBook\ du livre du cours.
 
 ```{.plantuml hide-image=true plantuml-filename=build/images/diag_visibilite_RDCU.pdf}
 @startuml
@@ -161,7 +161,7 @@ Pour initialiser les références nécessaires pour la bonne visibilité, Larman
 La directive d'utiliser les types primitifs pour les opérations système nous mène à un problème récurrent dans les RDCU : transformer un identifiant (souvent de type `String` ou `int`) en objet.
 Larman vous propose un idiome (pas vraiment un patron) nommé **Transformer identifiant en objet** qui sert à repérer la référence d'un objet qui correspond à l'identifiant.
 
-Il y a un exemple à la figure&nbsp;\ref{RDCU_ID_en_objets} provenant du chapitre sur **l'Application des patterns GoF (Figure 23.18)**&nbsp;\faBook&nbsp;du livre du cours.
+Il y a un exemple à la figure\ \ref{RDCU_ID_en_objets} provenant du chapitre sur **l'Application des patterns GoF (Figure 23.18)**\ \faBook\ du livre du cours.
 Un autre exemple du livre du cours est l'identifiant `codeArticle` transformé en objet `DescriptionProduit` par la méthode  
 `CatalogueProduits.getDescProduit(codeArticle:String):DescriptionProduit`.
 
@@ -186,11 +186,11 @@ La section \ref{UtilisationMap} explique comment implémenter la transformation 
 
 ## Utilisation de tableau associatif (`Map<clé, objet>`) {#UtilisationMap}
 
-Pour *transformer un ID en objets*, il est pratique d'utiliser un [tableau associatif (aussi appelé dictionnaire ou map en anglais)\faWikipediaW](https://fr.wikipedia.org/wiki/Tableau_associatif). L'exemple du livre du cours concerne le problème de repérer une `Case` Monopoly à partir de son nom (`String`). C'est la figure A17.7 ou F17.7&nbsp;\faBook&nbsp;du livre du cours. Voir les détails dans le livre.
+Pour *transformer un ID en objets*, il est pratique d'utiliser un [tableau associatif (aussi appelé dictionnaire ou map en anglais)\faWikipediaW](https://fr.wikipedia.org/wiki/Tableau_associatif). L'exemple du livre du cours concerne le problème de repérer une `Case` Monopoly à partir de son nom (`String`). C'est la figure A17.7 ou F17.7\ \faBook\ du livre du cours. Voir les détails dans le livre.
 
 Notez que les exemples du livre ne montrent qu'un seul *type* dans le tableau associatif, par exemple `Map<Case>`, tandis que normalement il faut spécifier aussi le type de la clé, par exemple `Map<String, Case>`.
 
-Un tableau associatif fournit une méthode `get` ou `find` pour rechercher un objet à partir de sa clé (son identifiant). La figure&nbsp;\ref{Map_Case_Monopoly} en est un exemple.
+Un tableau associatif fournit une méthode `get` ou `find` pour rechercher un objet à partir de sa clé (son identifiant). La figure\ \ref{Map_Case_Monopoly} en est un exemple.
 
 ```{.plantuml hide-image=true plantuml-filename=build/images/diag_map_monopoly_RDCU.pdf}
 @startuml
@@ -213,13 +213,13 @@ Dans la section suivante, l'initialisation des éléments utilisés dans les RDC
 ## RDCU pour l'initialisation, le scénario Démarrer {#RDCU_Demarrer}
 
 Le lancement de l'application correspond à la RDCU "Démarrer".
-La section **Initialisation et cas d'utilisation Démarrer** (Sec. 17.4, p.345 dans le livre en français) ou **Initialization and the 'Start Up' Use Case** (Sec. 18.4, p.274 dans le livre en anglais)&nbsp;\faBook&nbsp;traite ce sujet important. C'est dans cette conception où il faut mettre en place tous les éléments importants pour les hypothèses faites dans les autres RDCU, par exemple les classes de collection (Map), les références pour la visibilité, l'initialisation des contrôleurs, etc.
+La section **Initialisation et cas d'utilisation Démarrer** (Sec. 17.4, p.345 dans le livre en français) ou **Initialization and the 'Start Up' Use Case** (Sec. 18.4, p.274 dans le livre en anglais)\ \faBook\ traite ce sujet important. C'est dans cette conception où il faut mettre en place tous les éléments importants pour les hypothèses faites dans les autres RDCU, par exemple les classes de collection (Map), les références pour la visibilité, l'initialisation des contrôleurs, etc.
 
 Voici quelques points importants:
 
 - Le lancement d'une application dépend du langage de programmation et du système d'exploitation.
 - À chaque nouvelle RDCU, on doit possiblement actualiser la RDCU "Démarrer" pour tenir compte des hypothèses faites dans la dernière RDCU. Elle est assez "instable" pour cette raison. Larman recommande de faire sa conception en dernier lieu.
-- Il faut choisir l'objet du domaine initial, qui est souvent l'objet racine, mais ça dépend du domaine. Cet objet aura la responsabilité, lors de sa création, de générer ses "enfants" directs, puis chaque enfant aura à faire la même chose selon la structure. Par exemple, selon le MDD pour le jeu de Risk à la figure&nbsp;\ref{MDD-jeu-de-risk}, `JeuRisk` pourrait être l'objet racine, qui devra créer l'objet `PlateauRisk` et les cinq instances de `Dé`. L'objet `PlateauRisk`, lors de son initialisation, pourra instancier les 42 objets `Pays` et les six objets `Continent`, en passant à chaque `Continent` leurs objets `Pays` lors de son initialisation. Si `PlateauRisk` fournit une méthode `getPays(nom)` qui dépend d'un tableau associatif selon \nameref{TransformerIDenObjets}, alors c'est dans l'initialisation de cette classe où l'instance de `Map<String,Pays>` sera créée.
+- Il faut choisir l'objet du domaine initial, qui est souvent l'objet racine, mais ça dépend du domaine. Cet objet aura la responsabilité, lors de sa création, de générer ses "enfants" directs, puis chaque enfant aura à faire la même chose selon la structure. Par exemple, selon le MDD pour le jeu de Risk à la figure\ \ref{MDD-jeu-de-risk}, `JeuRisk` pourrait être l'objet racine, qui devra créer l'objet `PlateauRisk` et les cinq instances de `Dé`. L'objet `PlateauRisk`, lors de son initialisation, pourra instancier les 42 objets `Pays` et les six objets `Continent`, en passant à chaque `Continent` leurs objets `Pays` lors de son initialisation. Si `PlateauRisk` fournit une méthode `getPays(nom)` qui dépend d'un tableau associatif selon \nameref{TransformerIDenObjets}, alors c'est dans l'initialisation de cette classe où l'instance de `Map<String,Pays>` sera créée.
 - Selon l'application, les objets peuvent être chargés en mémoire à partir d'un système de persistance, par exemple une base de données ou un fichier. Pour l'exemple de Risk, `PlateauRisk` pourrait charger, à partir d'un fichier JSON, des données pour initialiser toutes les instances de `Pays`. Pour une application d'inscription de cours à l'université, il se peut que toutes les descriptions de cours soient chargées en mémoire à partir d'une base de données. Une base de données amène un lot d'avantages et d'inconvénients, et elle n'est pas toujours nécessaire. Dans LOG210, on n'aborde pas le problème de base de données (c'est le sujet d'un autre cours).
 
 ```{.plantuml hide-image=true plantuml-filename=build/images/diag_initialisation_RDCU.pdf }

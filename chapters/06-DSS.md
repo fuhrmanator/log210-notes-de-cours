@@ -1,7 +1,7 @@
 # Diagrammes de séquence système (DSS)
 
 Un diagramme de séquence système (DSS) est un diagramme UML (diagramme de séquence) limité à un acteur (provenant du scénario d'un cas d'utilisation) et le Système.
-Les DSS sont expliqués en détails dans le chapitre 10&nbsp;\faBook&nbsp;du livre du cours, mais voici des points importants pour LOG210:
+Les DSS sont expliqués en détails dans le chapitre 10\ \faBook\ du livre du cours, mais voici des points importants pour LOG210:
 
 - Le DSS a toujours un titre.
 - L'acteur est indiqué dans la notation par un bonhomme et est représenté comme une *instance* de la classe du bonhomme, comme `:Joueur` dans la figure\ \ref{DSS-attaquer-un-pays} (le ":" signifie une instance).
@@ -14,7 +14,7 @@ Les DSS sont expliqués en détails dans le chapitre 10&nbsp;\faBook&nbsp;du liv
 
 ## Exemple: DSS pour Attaquer un pays
 
-La figure&nbsp;\ref{DSS-attaquer-un-pays} est un exemple de DSS pour le cas d'utilisation *Attaquer un pays*. Vous pouvez noter tous les détails (titre, arguments, types).
+La figure\ \ref{DSS-attaquer-un-pays} est un exemple de DSS pour le cas d'utilisation *Attaquer un pays*. Vous pouvez noter tous les détails (titre, arguments, types).
 
 ```{.plantuml hide-image=true plantuml-filename=build/images/diag_DSS.pdf}
 @startuml
@@ -41,7 +41,7 @@ c->s : terminerAttaque()
 Le but du DSS est de se concentrer sur l'API (les opérations système) de la solution.
 Dans ce sens, c'est une conception de haut niveau.
 Le "Système" est modélisé comme une boîte noire.
-Par exemple, dans la figure&nbsp;\ref{DSS-abstraction} il y a l'acteur, le Système et une opération système.
+Par exemple, dans la figure\ \ref{DSS-abstraction} il y a l'acteur, le Système et une opération système.
 On ne rentre pas dans les détails, bien qu'ils existent et sont importants.
 
 ```{.plantuml hide-image=true plantuml-filename=build/images/diag_OS_DSS.pdf}
@@ -60,7 +60,7 @@ c->s : démarrerAttaque(...)
 
 Plus tard, lorsque c'est le moment d'implémenter le code, les détails importants seront à respecter.
 Il faut faire attention aux principes de la séparation des couches présentation et domaine.
-Par exemple, la figure&nbsp;\ref{DSS-details} rentre dans les détails de ce qui se passe réellement dans une opération système quand la solution fonctionne avec un service web:
+Par exemple, la figure\ \ref{DSS-details} rentre dans les détails de ce qui se passe réellement dans une opération système quand la solution fonctionne avec un service web:
 
 - D'abord, l'acteur clique sur un bouton;
 - Ce clic se transforme en service REST;
@@ -96,7 +96,7 @@ note over c, s : selon la RDCU
 
 ![Une opération système est envoyée par la couche présentation et elle est reçue dans la couche domaine par son contrôleur GRASP. Ceci est un exemple avec un navigateur web, mais d'autres possibilités existent pour la couche présentation. [(PlantUML)](http://www.plantuml.com/plantuml/uml/VLJ1RXen4Bslb7yOqKC2Ig6ebmf5gm29qgH9YrZIN7ePx06SDVPsx4r8lwYvzm_uiSwksdH1LQILlVAyUU_DZENJ495ZkRP9o8qha74D8JvPafMDgY87ZT0SLRvaNpgjlFKCaT452P6B1yaXn9K981_22fr-P1CZELXu5y4uk3DE-ySWm7-4cXPOsbX17Au9Fh49LSxbR2ousOe2WOyhuW3M-noMJ5YJPLylu6YDkHWjcKIPdWvbDquAifQqg38Chw_XDZkVPWrvwBzhDqlQTn1mMItkTP-NBeShNx93-ofkaoiDcM9Jn5Tn4v9MSMWQQxOmSab9K2XpwNVVDsT5tqjoYcueLCQ7rYmTA1a7SGCbQpJA5EZY1BKsRYbT-0_Bo6z6dZNnU7-w2Qee9ws154qbjm03t2Tplu7Ms9TgHL3mzZa84gFnhWLlj5uij4uQqf8zAcEief8zXvEJp_XWbXY5y8xcQGfxwAalurynhk1Uq_ccOAarJHDo6iJ0ZWdjrsWSrVALWJt2Aogd9kGreHB2iRIVjx-iY5nCXzb4M7SIkjrkZGqlOlVmDXNh0r3MICyucSj1Aku6y74scy35-UoRws5XUW_zdju-hv6PU1WZ2hedV8dpKQxq0t6TL9V8zQojx4T_ocid_CAhQOUaIN0CQW1VYkqprrs7y1JYzgTS9r5U66VaHoO8PrbMyqdD0-XqJeBvGOF-XtIF-KZijJkTH5NG8D1Tk-guFWnaHSaYJC_6jycfD4RUYDy0)](build/images/diag_couches_DSS.pdf){#DSS-details}
 
-> \faWarning&nbsp;La figure&nbsp;\ref{DSS-details} est à titre d'information seulement. Les DSS sont censés être simples (sans rentrer dans les détails). C'est de la conception à haut niveau. 
+> \faWarning\ La figure\ \ref{DSS-details} est à titre d'information seulement. Les DSS sont censés être simples (sans rentrer dans les détails). C'est de la conception à haut niveau. 
 
 ## FAQ DSS
 

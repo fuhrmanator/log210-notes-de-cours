@@ -4,7 +4,7 @@ Craig Larman a proposé les GRASP pour faciliter la compréhension des forces es
 
 ## Exemple avec Adaptateur
 
-Le chapitre A26/F23&nbsp;\faBook&nbsp;du livre du cours présente l'exemple du pattern Adaptateur pour les calculateurs de taxes (figure&nbsp;\ref{Fig23-1} tirée du livre de Larman, Figure A26.3/F23.3). 
+Le chapitre A26/F23\ \faBook\ du livre du cours présente l'exemple du pattern Adaptateur pour les calculateurs de taxes (figure\ \ref{Fig23-1} tirée du livre de Larman, Figure A26.3/F23.3). 
 
 ![Le pattern Adaptateur.](images/Fig23.1.png "Figure A26.1/F23.1 du livre de Larman"){#Fig23-1}
 
@@ -30,7 +30,7 @@ Pour supporter un nouveau calculateur de taxes, il faudrait coder une nouvelle b
 Même si on faisait une méthode pour encapsuler le code de chaque branche, ça ferait toujours augmenter les responsabilités de la classe Vente. 
 Elle est responsable de connaître tous les détails (l'API distinct et immuable) de chaque calculateur de taxe externe, puisqu'elle communique directement (il y a du couplage) à ces derniers.
 
-Le pattern Adaptateur comprend les principes GRASP Faible couplage, Forte cohésion, Polymorphisme, Indirection, Fabrication pure et Protection des variations. La figure&nbsp;\ref{Fig23-3} (tirée du livre de Larman, Figure A26.3/F23.3) démontre la relation entre ces principes dans le cas d'Adaptateur.
+Le pattern Adaptateur comprend les principes GRASP Faible couplage, Forte cohésion, Polymorphisme, Indirection, Fabrication pure et Protection des variations. La figure\ \ref{Fig23-3} (tirée du livre de Larman, Figure A26.3/F23.3) démontre la relation entre ces principes dans le cas d'Adaptateur.
 
 ![Adaptateur et principes GRASP.](images/Fig23.3.png "Figure A26.3/F23.3 du livre de Larman"){#Fig23-3}
 
@@ -49,7 +49,7 @@ On peut donc voir le pattern adaptateur comme *une spécialisation* de plusieurs
 
 Pour identifier les principes GRASP dans un pattern GoF comme Adaptateur, on rappelle la définition de chaque principe GRASP et on essaie d'imaginer le problème qui pourrait exister et comment le principe (et le pattern GoF) résout le problème.
 
-Référez-vous à la figure&nbsp;\ref{Fig23-1} du pattern Adaptateur pour les sections suivantes.
+Référez-vous à la figure\ \ref{Fig23-1} du pattern Adaptateur pour les sections suivantes.
 
 ### Polymorphisme
 
