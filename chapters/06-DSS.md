@@ -108,7 +108,7 @@ note over c, s : selon la RDCU
 
 **Réponse:** Il n'est pas conseillé de passer des *objets du domaine* comme argument, puisque c'est la couche présentation qui invoque l'opération système. 
 Si cette couche manipule les objets du domaine, cela ne respecte pas la séparation des couches. 
-Une solution est d'appliquer un réusinage (\nameref{Refactoring}) pour le *smell* nommé *Long Parameter List*, par exemple [Introduce Parameter Object](https://refactoring.com/catalog/introduceParameterObject.html). 
+Une solution est d'appliquer un \nameref{Refactoring} pour le *smell* nommé *Long Parameter List*, par exemple [Introduce Parameter Object](https://refactoring.com/catalog/introduceParameterObject.html). 
 Notez que l'objet que vous introduisez n'est pas un objet (classe) du domaine! 
 La distinction est importante, car la logique d'affaires est toujours en dehors de la couche de présentation. 
 
