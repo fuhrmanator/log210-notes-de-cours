@@ -347,7 +347,9 @@ $endif$
 $endif$
 $if(listings)$
 \usepackage{listings}
-\newcommand{\passthrough}[1]{#1}
+% https://tex.stackexchange.com/q/557548/17868
+\newcommand{\passthrough}{\shorthandoff{:}\passthroughtwo}
+\newcommand{\passthroughtwo}[1]{#1\shorthandon{:}}
 \lstset{defaultdialect=[5.3]Lua}
 \lstset{defaultdialect=[x86masm]Assembler}
 \lstset{basicstyle=\ttfamily,breaklines=true,extendedchars=true}
