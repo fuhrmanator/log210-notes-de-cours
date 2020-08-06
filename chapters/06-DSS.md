@@ -4,6 +4,7 @@ Un diagramme de séquence système (DSS) est un diagramme UML (diagramme de séq
 Les DSS sont expliqués en détails dans le chapitre 10&nbsp;\faBook&nbsp;du livre du cours, mais voici des points importants pour LOG210:
 
 - Le DSS a toujours un titre.
+<!-- https://tex.stackexchange.com/q/557548/17868 -->
 - L'acteur est indiqué dans la notation par un bonhomme et est représenté comme une *instance* de la classe du bonhomme, comme \shorthandoff{:}`:Joueur`\shorthandon{:} dans la figure&nbsp;\ref{DSS-attaquer-un-pays} (le ":" signifie une instance).
 - Le Système est un objet (une instance \shorthandoff{:}`:Système`\shorthandon{:}) et n'est jamais détaillé plus.
 - Le but du DSS est de définir des opérations système (Application Programming Interface) du système; il s'agit d'une conception de haut niveau.

@@ -45,7 +45,7 @@ html:	$(BUILD)/html/$(OUTPUT_FILENAME).html
 
 pdf:	$(BUILD)/pdf/$(OUTPUT_FILENAME).pdf
 
-$(BUILD)/epub/$(OUTPUT_FILENAME).epub:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CHAPTERS_DEP) templates/default.latex $(CSS_FILE) $(IMAGES) \
+$(BUILD)/epub/$(OUTPUT_FILENAME).epub:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CHAPTERS_DEP) $(CSS_FILE) $(IMAGES) \
 		$(COVER_IMAGE)
 	mkdir -p $(BUILD)/epub
 	mkdir -p $(BUILD)/images
@@ -67,7 +67,7 @@ $(BUILD)/pdf/$(OUTPUT_FILENAME).pdf:	$(MAKEFILE) $(METADATA) $(LATEX_TEMPLATE) $
 	cp $(BUILD)/pdf/$(OUTPUT_FILENAME).pdf docs/
 	@echo "$@ was built"
 
-pdfdebug:	debug.tex
+pdfdebug:	debug.tex $(LATEX_TEMPLATE) $(MAKEFILE) $(METADATA) $(CHAPTERS) $(IMAGES)
 debug.tex:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CSS_FILE) $(IMAGES)
 	pandoc $(ARGS) $(PDF_ARGS) -o $@ $(CHAPTERS)
 
