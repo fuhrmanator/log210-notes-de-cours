@@ -5,9 +5,12 @@ Ce chapitre contient des informations sur le volet technique des laboratoires.
 
 ## JavaScript/TypeScript
 
-Un tutoriel intéressant (et libre) est sur [javascript.info](https://javascript.info/). Je vous recommande de contribuer à des [traductions en français sur GitHub](https://github.com/javascript-tutorial/fr.javascript.info#readme). 
+Pour la personne ayant déjà des connaissances Java (de LOG121), il est recommandé d'apprendre les choses dans cet ordre:
 
-Voici les points qui posent plus de problèmes pour quelqu'un ayant déjà des connaissances en Java:
+- **JavaScript** - un tutoriel intéressant (et libre) est sur [javascript.info](https://javascript.info/). Je vous recommande de contribuer à des [traductions en français sur GitHub](https://github.com/javascript-tutorial/fr.javascript.info#readme). 
+- **TypeScript** - [ce tutoriel](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes-oop.html) est en anglais, mais il est adapté à des personnes ayant déjà une expérience en Java/C$\sharp$.
+
+Sinon, voici des points qui posent plus de problèmes pour quelqu'un ayant déjà des connaissances en Java:
 
 - Fonctions flèche (*arrow functions* en anglais)
 - Traitement asynchrone en JavaScript
@@ -19,7 +22,7 @@ Voici les points qui posent plus de problèmes pour quelqu'un ayant déjà des c
 Le lab0 aborde plusieurs de ces aspects, mais certaines notions sont plus complexes. 
 Le but de cette section est de donner des tutoriels plus spécifiques.
 
-Il y a un [dépôt d'exemples avec TypeScript (utilisant `ts-node` pour les voir facilement)](https://github.com/profcfuhrmanets/exemples-ts) sur GitHub.
+Il y a un [dépôt d'exemples avec TypeScript (utilisant `ts-node` pour les voir facilement)](https://github.com/profcfuhrmanets/exemples-ts) sur GitHub. Il y a un exemple qui montre comment faire des REST à partir de TypeScript avec le système SGB. 
 
 ## Contributions de l'équipe {#ContributionsEquipe}
 
