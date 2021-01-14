@@ -112,7 +112,7 @@ participant ":Plateau" as p
 participant ":Case" as c
 loop
 create c
-p ->> c : create(nom)
+p -->> c : create(nom)
 end loop
 @enduml
 ```
