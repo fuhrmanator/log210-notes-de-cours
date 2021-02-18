@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+##!/usr/bin/env python
 
 """
 Pandoc filter to process code blocks with class "plantuml" into
@@ -16,6 +16,7 @@ from pandocfilters import toJSONFilter, Para, Image, get_filename4code, get_capt
 
 
 def plantuml(key, value, format, _):
+    # print ('Loading plantuml.py with ' + key + ' ' + value + ' ' + format , file=sys.stderr)
     if key == 'CodeBlock':
         [[ident, classes, keyvals], code] = value
 
@@ -23,7 +24,7 @@ def plantuml(key, value, format, _):
             caption, typef, keyvals = get_caption(keyvals)
 
             filename = get_filename4code("plantuml", code)
-            filetype = get_extension(format, "png", html="svg", latex="pdf")
+            filetype = get_extension(format, "pdf", html="svg", latex="pdf")
 
             src = filename + '.puml'
             plantuml_output = filename + '.' + filetype
@@ -45,6 +46,7 @@ def plantuml(key, value, format, _):
                     f.write(txt)
                 # Must not let messages go to stdout, as it will corrupt JSON in filter
                 with open('plantUMLErrors.log', "w") as log_file:
+                #     check_output(["java", "-jar", "filters/plantuml/plantuml.jar", "-t" + filetype,src], shell=True, stdout=log_file)
                     call(["java", "-jar", "filters/plantuml/plantuml.jar", "-t"+filetype, src], stdout=log_file)
                 sys.stderr.write('Created image ' + plantuml_output + '\n')
                 if not dest_spec == "": 
