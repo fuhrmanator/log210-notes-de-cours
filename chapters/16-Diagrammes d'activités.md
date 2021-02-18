@@ -13,36 +13,40 @@ Voici les éléments importants:
 - débranchement et jointure (parallélisme)
 - décision et fusion (exclusion mutuelle)
 
+La figure\ \ref{ActivityDiagramExampleGitCommit} présente un exemple de diagramme d'activité décrivant de manière générale une partie du processus de travail d'une personne utilisant `git` pour la gestion de code source. 
+
+```{.plantuml hide-image=true plantuml-filename=build/images/ActivityDiagramExampleGitCommit.pdf}
+@startuml
+skinparam DefaultTextAlignment center
+skinparam style strictuml
+start
+note right : Début
+:Rediger code;
+note right : Activité
+:Code modifié]
+note right : Nœud d'objet
+
+if (Garder modifications?) then (Oui)
+    note right : Décision et fusion
+    :Ajouter code à staging;
+    :Code "Staged"]
+    :Faire "commit" au dépot git;    
+else (Non)
+    :Défaire modifications
+    au code;
+endif
+stop
+note right : Fin
+@enduml
+```
+
+![Diagramme d'activités pour un processus simple avec git. [(PlantUML)]()](build/images/ActivityDiagramExampleGitCommit.pdf){#ActivityDiagramExampleGitCommit}
+
+## Diagrammes de flot de données (DFD)
+
 Pour la modélisation de flot de données, il existe une notation pour les [diagrammes de flots de données (DFD)](https://fr.wikipedia.org/wiki/Diagramme_de_flux_de_donn%C3%A9es)\ \faWikipediaW\ . Il ne s'agit pas de l'UML, mais cette notation est encore utilisée (depuis les années 1970). 
 
 Un exemple de diagramme d'activité utilisé dans le cadre du cours de LOG210 est dans la figure\ \ref{GitHubClassroomActivities}. Ce diagramme qui explique comment GitHub Classrooms permet à l'étudiant qui accepte un devoir (*assignment* en anglais) sur GitHub Classrooms de choisir son identité universitaire, mais seulement si l'enseignant a téléversé la liste de classe *avant* d'envoyer les invitations aux étudiants. 
-
-<!-- ```{#GitHubClassroomActivitiesSource .puml frame=single caption="Code source PlantUML pour la figure\ \ref{GitHubClassroomActivities}"}
-@startuml
-skinparam style strictuml
-skinparam backgroundcolor transparent
-skinparam DefaultTextAlignment center
-title Enchaînement d'activités pour chaque //Classroom// (groupe-cours)
-|Enseignant.e|
-start
-:Créer Classroom;
-#ffdddd:Importer liste de classe
-(Identifiants Moodle);
-:Créer Assignment
-(Individual/Team);
-:Partager (courriel) l'URL d'invitation;
-|#ddffdd|Étudiant.e|
-:Open URL;
-#ffdddd:Choisir identifiant Moodle;
-:Choisir équipe (ou créer équipe);
-|GitHub|
-:Dupliquer (fork) le dépôt
-(au besoin, avec le compte
-d'un membre de l'organisation);
-stop
-@enduml
-``` -->
-
 
 ```{.plantuml hide-image=true plantuml-filename=build/images/GitHubClassroomActivity.pdf}
 @startuml
