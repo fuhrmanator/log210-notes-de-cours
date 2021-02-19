@@ -55,7 +55,8 @@ Une personne humble pense ainsi:
 
 ```{.plantuml hide-image=true plantuml-filename=build/images/diag_moi_inf_equipe.pdf}
 @startuml
-skinparam defaultfontname Cooper Black
+' pick a font in the docker's system
+skinparam defaultfontname Lato Black
 skinparam rectangleBorderColor transparent
 hide empty members
 hide circle
