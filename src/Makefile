@@ -36,21 +36,15 @@ book:	epub html pdf
 clean:
 	rm -r $(BUILD) $(PLANTUML_IMAGES)
 
-###
-# Docker 
-###
-install:	Dockerfile
-	docker build --pull --rm -f "Dockerfile" -t log210notesdecours/pandoc-latex-etc:2.11.4 "."
-
 ####################################################################################################
 # File builders
 ####################################################################################################
 
-epub:	$(BUILD)/epub/$(OUTPUT_FILENAME).epub Dockerfile
+epub:	$(BUILD)/epub/$(OUTPUT_FILENAME).epub 
 
-html:	$(BUILD)/html/$(OUTPUT_FILENAME).html Dockerfile
+html:	$(BUILD)/html/$(OUTPUT_FILENAME).html 
 
-pdf:	$(BUILD)/pdf/$(OUTPUT_FILENAME).pdf Dockerfile
+pdf:	$(BUILD)/pdf/$(OUTPUT_FILENAME).pdf 
 
 $(BUILD)/epub/$(OUTPUT_FILENAME).epub:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CHAPTERS_DEP) $(CSS_FILE) $(IMAGES) \
 		$(COVER_IMAGE)
@@ -72,7 +66,7 @@ $(BUILD)/pdf/$(OUTPUT_FILENAME).pdf:	$(MAKEFILE) $(METADATA) $(LATEX_TEMPLATE) $
 	mkdir -p $(BUILD)/images
 	$(PANDOC_COMMAND) $(PANDOC_ARGS) $(PDF_ARGS) -o $@ $(CHAPTERS)
 #	$(PANDOC_COMMAND) $(PANDOC_ARGS) $(PDF_ARGS) -o $@ "chapters/*.md"
-	cp $(BUILD)/pdf/$(OUTPUT_FILENAME).pdf docs/
+	cp $(BUILD)/pdf/$(OUTPUT_FILENAME).pdf ../docs/
 	@echo "$@ was built"
 
 pdfdebug:	debug.tex $(LATEX_TEMPLATE) $(MAKEFILE) $(METADATA) $(CHAPTERS) $(IMAGES)

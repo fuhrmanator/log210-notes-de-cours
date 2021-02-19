@@ -25,7 +25,7 @@ def plantuml(key, value, format, meta):
 
             filename = get_filename4code("plantuml", code)
             # format is not being passed, somehow...
-            filetype = get_extension(format, "png", html="svg", latex="pdf")
+            filetype = get_extension(format, "pdf", html="svg", latex="pdf")
 
             src = filename + '.puml'
             plantuml_output = filename + '.' + filetype
