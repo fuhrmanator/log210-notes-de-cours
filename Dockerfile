@@ -26,7 +26,7 @@ RUN apt-get update && apt-get install -y \
 
 # Font for handwritten
 RUN mkdir -p /usr/share/fonts/TTF
-COPY filters/plantuml/sagefont/sagesans-Regular.ttf /usr/share/fonts/TTF
+COPY src/filters/plantuml/sagefont/sagesans-Regular.ttf /usr/share/fonts/TTF
 ENV JAVA_FONTS="/usr/share/fonts/TTF"
 
 # PlantUML filter
