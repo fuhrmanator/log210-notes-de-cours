@@ -24,8 +24,7 @@ def plantuml(key, value, format, meta):
             caption, typef, keyvals = get_caption(keyvals)
 
             filename = get_filename4code("plantuml", code)
-            # format is not being passed, somehow...
-            filetype = get_extension(format, "pdf", html="svg", latex="pdf")
+            filetype = get_extension(format, "png", html="svg", latex="pdf")
 
             src = filename + '.puml'
             plantuml_output = filename + '.' + filetype
@@ -58,7 +57,7 @@ def plantuml(key, value, format, meta):
             for ind, keyval in enumerate(keyvals):
                 if keyval[0] == 'hide-image':
                     if keyval[1] == 'true':
-                        sys.stderr.write('INFO: Not showing image ' + plantuml_output + '\n')
+                        sys.stderr.write('INFO: Not showing PlantUML image ' + plantuml_output + '\n')
                         return [] # surpress image in JSON
 
             return Para([Image([ident, [], keyvals], caption, [plantuml_output, typef])])
