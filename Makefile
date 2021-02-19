@@ -5,24 +5,24 @@
 BUILD = build
 MAKEFILE = Makefile
 OUTPUT_FILENAME = LOG210-notes-de-cours
-METADATA = metadata.yml
-LATEX_TEMPLATE = templates/default.latex
-CHAPTERS = chapters/*.md
-CHAPTERS_DEP = chapters/*.tex
+METADATA = src/metadata.yml
+LATEX_TEMPLATE = src/templates/default.latex
+CHAPTERS = src/chapters/*.md
+CHAPTERS_DEP = src/chapters/*.tex
 TOC = --toc --toc-depth=2
-IMAGES_FOLDER = images
+IMAGES_FOLDER = src/images
 IMAGES = $(IMAGES_FOLDER)/*
 PLANTUML_IMAGES = plantuml-images
 COVER_IMAGE = $(IMAGES_FOLDER)/cover.png
-TEMPLATES_FOLDER = templates
+TEMPLATES_FOLDER = src/templates
 MATH_FORMULAS = --webtex
-CSS_FILE = style.css
+CSS_FILE = src/style.css
 CSS_ARG = --css=$(CSS_FILE)
 METADATA_ARG = --metadata-file="$(METADATA)"
-PLANTUML_FILTER = --filter=filters/plantuml/plantuml_filter.sh
+PLANTUML_FILTER = --filter=src/filters/plantuml/plantuml_filter.sh
 PANDOC_ARGS = $(TOC) $(MATH_FORMULAS) $(CSS_ARG) $(METADATA_ARG) $(PLANTUML_FILTER)
 PDF_ARGS = --citeproc --listing -V geometry:margin=1in --pdf-engine=pdflatex --template=$(TEMPLATES_FOLDER)/default.latex
-# move only ./src into docker container during build 
+# move only ./src into docker container during pandoc build 
 PANDOC_COMMAND = docker run --rm --volume "`pwd`/src:/pandoc" -w /pandoc --user `id -u`:`id -g` log210notesdecours/pandoc-latex-etc:2.11.4
 #PANDOC_COMMAND = pandoc
 
@@ -36,7 +36,6 @@ book:	epub html pdf
 
 clean:
 	rm -r $(BUILD) $(PLANTUML_IMAGES)
-	rm -r debug.tex debug.pdf debug.log  
 
 ###
 # Docker 
@@ -79,4 +78,5 @@ $(BUILD)/pdf/$(OUTPUT_FILENAME).pdf:	$(MAKEFILE) $(METADATA) $(LATEX_TEMPLATE) $
 pdfdebug:	debug.tex $(LATEX_TEMPLATE) $(MAKEFILE) $(METADATA) $(CHAPTERS) $(IMAGES)
 debug.tex:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CSS_FILE) $(IMAGES)
 	$(PANDOC_COMMAND) $(PANDOC_ARGS) $(PDF_ARGS) -o $@ $(CHAPTERS)
+	@echo "$@ was built"
 
