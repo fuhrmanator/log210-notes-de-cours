@@ -34,7 +34,7 @@ all:	book
 book:	epub html pdf
 
 clean:
-	rm -r $(BUILD) $(PLANTUML_IMAGES)
+	rm -rf $(BUILD) $(PLANTUML_IMAGES)
 
 ####################################################################################################
 # File builders
@@ -46,7 +46,8 @@ html:	$(BUILD)/html/$(OUTPUT_FILENAME).html
 
 pdf:	$(BUILD)/pdf/$(OUTPUT_FILENAME).pdf 
 
-$(BUILD)/epub/$(OUTPUT_FILENAME).epub:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CHAPTERS_DEP) $(CSS_FILE) $(IMAGES) \
+#$(BUILD)/epub/$(OUTPUT_FILENAME).epub:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CHAPTERS_DEP) $(CSS_FILE) $(IMAGES) \ 
+$(BUILD)/epub/$(OUTPUT_FILENAME).epub:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CSS_FILE) $(IMAGES) \
 		$(COVER_IMAGE)
 	mkdir -p $(BUILD)/epub
 	mkdir -p $(BUILD)/images
