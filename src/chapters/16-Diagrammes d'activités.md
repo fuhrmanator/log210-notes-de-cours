@@ -17,20 +17,21 @@ La figure\ \ref{ActivityDiagramExampleGitCommit} présente un exemple de diagram
 
 ```{.plantuml hide-image=true plantuml-filename=build/images/ActivityDiagramExampleGitCommit.pdf}
 @startuml
+!include ../forme.pumlinclude
 skinparam DefaultTextAlignment center
 skinparam style strictuml
 start
 note right : Début
-:Rediger code;
+:Rédiger code;
 note right : Activité
 :Code modifié]
 note right : Nœud d'objet
 
-if (Garder modifications?) then (Oui)
+if (Garder\nmodifications?) then (Oui)
     note right : Décision et fusion
     :Ajouter code à staging;
-    :Code "Staged"]
-    :Faire "commit" au dépot git;    
+    :Code "staged"]
+    :Faire "commit" au dépôt git;    
 else (Non)
     :Défaire modifications
     au code;
@@ -40,7 +41,7 @@ note right : Fin
 @enduml
 ```
 
-![Diagramme d'activités pour un processus simple avec git. [(PlantUML)]()](build/images/ActivityDiagramExampleGitCommit.pdf){#ActivityDiagramExampleGitCommit}
+![Diagramme d'activités pour un processus simple avec git. [(PlantUML)](http://localhost:8080/svg/VL9BRjj03DtFAGXlRE_QhRreZAG9ya5QH6wxoc8yGqcC98unmscIS_G2tVeSGkzLoWfGEq0j29Gmxv5yV9op93PAxbgJ6kAjZRQ39AyjQepatY4RwvegXipUXJP4a6WvAOGiPWfIKm9zBTIM_NCa4MGe0miGmmzY7vwJcVuhvx6qkPM1mRP3k8sKXfJhzRcPhcjC245gZ0dQ41ge8jfzgUBx5SmwswZ8757xukjKlyGwJDkYrvuHLdTtyAtu_50SD8UF7-Rc__sJhOR09qLUSmCt8KUsxIdQI-Cy52xILaxHlgAQ5DE1g4Fl96OyW2x6v3M-oAgbYZlr7Pm6ZAVMDspOS124I5Kji82BVhV9OXOF_SvJXH5SyBWyvgoSq4-IVcSMvuf25poLrEyUZsdtVtvb3tuQDayenb09ioiRlTOS4vmL2fm-pOSrCSo-P9eRqEUz84T9YO02PHx-zgJ5wYbaUHC8_MyTorR4rN94zy8cXPwXdpoEPvUMz2vCNEWwaWdO3BxVROD0HR8S60PRlLYp-y2Za8KsB_T9Huhtc6QFrY0hf5Q6xV7ubyJcJ44r-Yy0 "16-Diagrammes d'activités")](build/images/ActivityDiagramExampleGitCommit.pdf){#ActivityDiagramExampleGitCommit}
 
 ## Diagrammes de flot de données (DFD)
 
@@ -50,8 +51,7 @@ Un exemple de diagramme d'activité utilisé dans le cadre du cours de LOG210 es
 
 ```{.plantuml hide-image=true plantuml-filename=build/images/GitHubClassroomActivity.pdf}
 @startuml
-skinparam style strictuml
-skinparam backgroundcolor transparent
+!include ../forme.pumlinclude
 skinparam DefaultTextAlignment center
 title Enchaînement d'activités pour chaque //Classroom// (groupe-cours)
 |Enseignant.e|
