@@ -45,8 +45,8 @@ def plantuml(key, value, format, meta):
                 with open(src, "wb") as f:
                     f.write(txt)
                 # Must not let messages go to stdout, as it will corrupt JSON in filter
-                with open('plantUMLErrors.log', "w") as log_file:
-                    call(["java", "-jar", "filters/plantuml/plantuml.jar", "-t"+filetype, src], stdout=log_file)
+                with open('plantUMLErrors.log', "a+") as log_file:
+                    call(["java", "-jar", "filters/plantuml/plantuml.jar", "-t"+filetype, src], stdout=log_file, stderr=log_file)
                 sys.stderr.write('Created PlantUML image ' + plantuml_output + '\n')
                 if not dest_spec == "": 
                     sys.stderr.write('Copying PlantUML image from ' + plantuml_output + ' to ' + dest_spec + '\n')
