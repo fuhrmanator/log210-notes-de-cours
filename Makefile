@@ -22,10 +22,8 @@ METADATA_ARG = --metadata-file="$(METADATA)"
 PLANTUML_FILTER = --filter=filters/plantuml/plantuml_filter.sh
 PANDOC_ARGS = $(TOC) $(MATH_FORMULAS) $(CSS_ARG) $(METADATA_ARG) $(PLANTUML_FILTER)
 PDF_ARGS = --citeproc --listing -V geometry:margin=1in --pdf-engine=pdflatex --template=$(TEMPLATES_FOLDER)/default.latex
-#PDF_ARGS = --filter pandoc-citeproc --listing -V geometry:margin=1in --pdf-engine=xelatex --template=$(TEMPLATES_FOLDER)/default.latex
-#PANDOC_COMMAND = docker run -it --rm -v "`pwd`:/work" -w /work pandoc/latex pandoc
-#PANDOC_COMMAND = docker run -it --volume "`pwd`:/data" --user `id -u`:`id -g` pandoc/latex:2.11.4
-PANDOC_COMMAND = docker run --rm --volume "`pwd`:/pandoc" -w /pandoc --user `id -u`:`id -g` log210notesdecours/pandoc-latex-etc:2.11.4
+# move only ./src into docker container during build 
+PANDOC_COMMAND = docker run --rm --volume "`pwd`/src:/pandoc" -w /pandoc --user `id -u`:`id -g` log210notesdecours/pandoc-latex-etc:2.11.4
 #PANDOC_COMMAND = pandoc
 
 ####################################################################################################
