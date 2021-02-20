@@ -10,7 +10,7 @@ import os
 import sys
 import subprocess
 
-from pandocfilters import toJSONFilter, Para, Image
+from pandocfilters import toJSONFilter, Para, Image, RawInline
 from pandocfilters import get_filename4code, get_caption, get_extension
 
 PLANTUML_BIN = os.environ.get('PLANTUML_BIN', 'plantuml')
@@ -33,7 +33,7 @@ def plantuml(key, value, format_, _):
         [[ident, classes, keyvals], code] = value
 
         if "plantuml" in classes:
-            caption, typef, keyvals = get_caption(keyvals)
+            caption, typef, keyvals = _get_caption(keyvals, format_)
 
             filename = get_filename4code("plantuml", code)
             filetype = get_extension(format_, "png", html="svg", latex="pdf")
@@ -64,8 +64,29 @@ def plantuml(key, value, format_, _):
                     rel_mkdir_symlink(dest, link)
                     dest = link
                     break
-
+            print('Caption: ', caption, file=sys.stderr)
             return Para([Image([ident, [], keyvals], caption, [dest, typef])])
+
+
+def to_format(txt : str, fmt : str) -> str:
+    # import pypandoc
+    # return pypandoc.convert_text(txt, fmt, format='md')
+    command = ['pandoc', '-f', 'markdown', '-t', fmt]
+    p = subprocess.Popen(command, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    output = p.communicate(input=txt.encode())[0].decode()
+    print("Converted to:", output, file=sys.stderr)
+    return output
+
+def _get_caption(item, fmt : str):
+    captions, typef, keyvals = get_caption(item)
+    for caption in captions:
+        if caption['c'] is None and caption['c']:
+            continue
+        caption['t'] = 'RawInline'
+        caption['c'] = [fmt, to_format(caption['c'], fmt)]
+    print('Captions: ', captions, 'typef: ', typef, 'keyvals: ', keyvals, file=sys.stderr)
+    return captions, typef, keyvals
+
 
 
 def main():
