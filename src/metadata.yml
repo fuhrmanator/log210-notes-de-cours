@@ -1,11 +1,13 @@
 ---
-rights: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/deed.fr
+# The CC BY 4.0 is hard-coded into the default template for latex in this project.
+#rights: '\\href{https://creativecommons.org/licenses/by/4.0/deed.fr}{\\faCreativeCommons\\faCreativeCommonsBy Attribution 4.0 International (CC BY 4.0)}'
 lang: fr-CA
 babel-lang: french
 csquotes: true
 tags: [LOG210, analyse, conception, logiciel, GRASP, modularité]
 title: "LOG210 Analyse et conception de logiciels"
-subtitle: "Notes de cours \faCreativeCommons\faCreativeCommonsBy"
+#lightweight link to the CC license here (only works for LaTeX)
+subtitle: "Notes de cours"
 graphics: true
 subject: "LOG210 Analyse et conception de logiciels"
 author: 

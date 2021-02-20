@@ -464,7 +464,7 @@ $endif$
 \subtitle{$subtitle$}
 $endif$
 \author{$for(author)$$author$$sep$ \and $endfor$}
-\date{$date$}
+\date{$date$ \\ \href{https://creativecommons.org/licenses/by/4.0/deed.fr}{\faCreativeCommons\faCreativeCommonsBy (CC BY 4.0)}}
 $if(beamer)$
 $if(institute)$
 \institute{$for(institute)$$institute$$sep$ \and $endfor$}
