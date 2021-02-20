@@ -64,7 +64,7 @@ def plantuml(key, value, format_, _):
                     rel_mkdir_symlink(dest, link)
                     dest = link
                     break
-            print('Caption: ', caption, file=sys.stderr)
+            # print('Caption: ', caption, file=sys.stderr)
             return Para([Image([ident, [], keyvals], caption, [dest, typef])])
 
 
@@ -74,7 +74,7 @@ def to_format(txt : str, fmt : str) -> str:
     command = ['pandoc', '-f', 'markdown', '-t', fmt]
     p = subprocess.Popen(command, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     output = p.communicate(input=txt.encode())[0].decode()
-    print("Converted to:", output, file=sys.stderr)
+    # print("Converted to:", output, file=sys.stderr)
     return output
 
 def _get_caption(item, fmt : str):
@@ -84,7 +84,7 @@ def _get_caption(item, fmt : str):
             continue
         caption['t'] = 'RawInline'
         caption['c'] = [fmt, to_format(caption['c'], fmt)]
-    print('Captions: ', captions, 'typef: ', typef, 'keyvals: ', keyvals, file=sys.stderr)
+    # print('Captions: ', captions, 'typef: ', typef, 'keyvals: ', keyvals, file=sys.stderr)
     return captions, typef, keyvals
 
 
