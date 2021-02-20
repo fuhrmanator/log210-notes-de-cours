@@ -1,11 +1,11 @@
 ---
-rights: MIT License
+rights: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/deed.fr
 lang: fr-CA
 babel-lang: french
 csquotes: true
 tags: [LOG210, analyse, conception, logiciel, GRASP, modularité]
 title: "LOG210 Analyse et conception de logiciels"
-subtitle: "Notes de cours"
+subtitle: "Notes de cours \faCreativeCommons\faCreativeCommonsBy"
 graphics: true
 subject: "LOG210 Analyse et conception de logiciels"
 author: 
