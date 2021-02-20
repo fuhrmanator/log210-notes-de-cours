@@ -7,10 +7,14 @@ Pourtant, il y a d'autres défis dans ce travail, des défis sur le plan humain.
 C'est le sujet du livre "Team Geek" [-@fitzpatrick_team_2012] écrit par Brian W. Fitzpatrick (anciennement de Google) et Ben Collins-Sussman (Subversion, Google).
 
 Aujourd'hui, la demande pour le talent en technologies de l'information est importante.
-Les technologies évoluent constamment.
-Qui développe du code pour [Flash \faWikipediaW](https://fr.wikipedia.org/wiki/Adobe_Flash) ces jours-ci?
-Cette technologie est quasiment désuète.
-Cependant, une chose qui ne change pas (beaucoup) est le comportement humain.
+Les technologies évoluent constamment et le temps que vous investissez pour maîtriser une technologie est important.
+Pourtant, il y a des risques avec certains investissements de temps à long terme. 
+Par exemple, qui développe du code encore pour [Flash \faWikipediaW](https://fr.wikipedia.org/wiki/Adobe_Flash)?
+Cette technologie est maintenant désuète et ça ne sert à rien de mentionner cette compétence sur un CV.
+
+La bonne nouvelle est qu'une "technologie" ne changera jamais: le comportement humain.
+Donc, il est toujours rentable d'investir du temps pour mieux maîtriser cet aspect du développement.
+Les entreprises en technologies de l'information sont toujours à la recherche de développeurs qui ont également des compétences générales ("soft skills").
 
 Les auteurs de "Team Geek" abordent les problèmes dus aux tendances comportementales chez les développeurs.
 Par exemple, une personne n'a pas toujours envie de montrer son code source à ses coéquipiers pour plusieurs raisons:
@@ -99,6 +103,8 @@ C'est le nombre minimum de coéquipiers à perdre (heurtés par un bus) pour arr
 Par exemple, dans un projet de stage, si c'est vous qui écrivez tout le code, alors c'est un *bus factor* de 1.
 Si vous n'êtes plus présent, le projet s'arrête.
 
+![*Facteur de bus* (nom): le nombre de personnes qui doivent être heurtées par un bus avant que votre projet ne soit complètement condamné. [@fitzpatrick_team_2012]](images/BusFactorTeamGeek.png){width="500px"}
+
 Un coéquipier peut être absent (ou moins disponible) pour des raisons moins graves, par exemple, il part en vacances, il tombe malade, il prend un congé parental, il change d'emploi, ou il abandonne le cours.
 Cherchez à répartir les responsabilités dans l'équipe afin d'avoir un *bus factor* d'au moins 2.
 Partagez des compétences pour maintenir une équipe robuste.
@@ -135,12 +141,12 @@ Selon TeamGeek, le dernier point est important parce que si vous donnez trop d'i
 
 ## Scénarios
 
-Voici des situations qui pourraient arriver dans une session de LOG210:
+Considérez les volets HRC lorsque vous vous trouvez dans une des situations suivantes:
 
 - un coéquipier se trouve à être le seul à faire de la programmation.
   - il ne fait plus confiance à ses coéquipiers, car leur code est trop bogué.
   - il n'a pas la patience pour accommoder les coéquipiers moins expérimentés.
-  - il croit qu'ils auraient dû apprendre mieux à programmer dans les cours préalables.
+  - il croit que les autres auraient dû apprendre mieux à programmer dans les cours préalables.
 - un coéquipier dit qu'il a "fait ses 3 heures de contribution" chaque dimanche chez lui et que ça devrait suffire pour sa partie (il a un emploi et n'a pas beaucoup de temps disponible pour l'équipe d'un laboratoire).
 - un ou deux membres d'une équipe abandonnent le cours après l'examen intra, à cause du double-seuil du cours.
 - un coéquipier suit cinq (!) cours en même temps et n'a pas le temps adéquat pour travailler correctement dans LOG210.
@@ -148,6 +154,6 @@ Voici des situations qui pourraient arriver dans une session de LOG210:
 - l'équipe n'est pas cohésive; chacun fait avancer sa partie, mais le code ne fonctionne pas ensemble.
 
 Vous devez en parler avec votre équipe. 
-Si la situation ne s'améliore pas, vous pouvez en parler avec les chargés de laboratoire et l'enseignant.
+Si la situation ne s'améliore pas, vous devez en parler avec les chargés de laboratoire et l'enseignant.
 
 Pour mieux évaluer le travail de chacun dans l'équipe au laboratoire, il y a des conseils dans la section \nameref{ContributionsEquipe}.
