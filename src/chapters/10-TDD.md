@@ -35,7 +35,7 @@ L'exécution de tests peut être même faite à chaque commit du code dans un d�
 
 Il est possible de mesurer la [couverture de code \faWikipediaW](https://fr.wikipedia.org/wiki/Couverture_de_code) atteinte par les tests (mais ce sujet commence à sortir du cadre de la matière du cours). Les deux versions du squelette utilisent [Coveralls](https://coveralls.io/) pour ce faire.
 
-```{.plantuml hide-image=true plantuml-filename=build/images/diag_etats_TDD.pdf}
+```{.plantuml caption="États du développement piloté par les tests. [(PlantUML)](http://www.plantuml.com/plantuml/uml/RLJDQXin4BxhAGONwgJ43eLIYZ5B4fj0BgKqII_T7kJToLf4AsqraerxwhLlqTxgv_2Rz4awqgx_WY_BelbclX_DxXLvwNoejPYh4W7hng-WH2gSQhooHj2pCerqiWRoAutyTAf83VlAlPSURwmhqKsijWvcMXRFBm6trlYsl9mhZwVAzubYPdLvigf-8Bnz_x9qxPnT7jRxUy0KdsJGFbO_oXgXTu-LHNYyWvieiIVwNdcctFpYIGHbW7ApNg2sJOCr6W-DqjPlri3ZG2E1H_8aAFB2Pnig14dGkmvGMsKeDy4aI6usws9k0_RWbSEoQ_Y2pYVyWmsCtStBMIqHqp6wSeYcmt-Iz32TfevnaPBZMHcV0X_dvk1iJEnzzEv3Ddxjvw6U3KgxDDduCY4o7hj2hUrIV7tp3GPELNC_o3hz8vYupHfTRemD2vGXDr6KQAi3ny2aUyGXyLOuXCAMo99jSF0a-Q2JxvAPCpeVKsYoVp__Z2_ZYqZT0tr0c9lJb2ronzVvIubajv49Wk702wyMYYzbQs-NH8laDURfWPIH5NPQVhTQjXqT4rDjCpvs1oHDUpT2OuMcX89l1vqu7lTug0QEUC7qkPlNXc8hiLiePE2G16z8u-nCR_xoFie55j3jp10cs32NDFw2cxI41eCNqZcru72_1znl831pjpFGw4207fJcwmYbawAmt5Dn3t_8Up8QYkERkTE90VOC_KuAa5KUQgbZ6cpjJCKtunNpHGCpMmKy7y8qnbH4QtG1ra17p3hR6FbxIiv4ZB1DKbpnWtyV_m40)" #TDD_states }
 @startuml
 hide empty description
 skinparam style strictuml
@@ -44,7 +44,6 @@ skinparam StateFontColor white
 skinparam StateFontStyle bold
 skinparam StateFontSize 16
 skinparam StateArrowFontSize 16
-'skinparam DefaultFontName "Segoe UI Black"
 'title États du développement piloté par les tests
 state Rouge as "Au moins\nun test\néchoue" #red
 state Vert as "Tous\nles tests\npassent" #green
@@ -64,8 +63,6 @@ un bogue). Dans ce cas, on corrige le code du test.
 end legend
 @enduml
 ```
-
-![États du développement piloté par les tests. [(PlantUML)](http://www.plantuml.com/plantuml/uml/RLJDQXin4BxhAGONwgJ43eLIYZ5B4fj0BgKqII_T7kJToLf4AsqraerxwhLlqTxgv_2Rz4awqgx_WY_BelbclX_DxXLvwNoejPYh4W7hng-WH2gSQhooHj2pCerqiWRoAutyTAf83VlAlPSURwmhqKsijWvcMXRFBm6trlYsl9mhZwVAzubYPdLvigf-8Bnz_x9qxPnT7jRxUy0KdsJGFbO_oXgXTu-LHNYyWvieiIVwNdcctFpYIGHbW7ApNg2sJOCr6W-DqjPlri3ZG2E1H_8aAFB2Pnig14dGkmvGMsKeDy4aI6usws9k0_RWbSEoQ_Y2pYVyWmsCtStBMIqHqp6wSeYcmt-Iz32TfevnaPBZMHcV0X_dvk1iJEnzzEv3Ddxjvw6U3KgxDDduCY4o7hj2hUrIV7tp3GPELNC_o3hz8vYupHfTRemD2vGXDr6KQAi3ny2aUyGXyLOuXCAMo99jSF0a-Q2JxvAPCpeVKsYoVp__Z2_ZYqZT0tr0c9lJb2ronzVvIubajv49Wk702wyMYYzbQs-NH8laDURfWPIH5NPQVhTQjXqT4rDjCpvs1oHDUpT2OuMcX89l1vqu7lTug0QEUC7qkPlNXc8hiLiePE2G16z8u-nCR_xoFie55j3jp10cs32NDFw2cxI41eCNqZcru72_1znl831pjpFGw4207fJcwmYbawAmt5Dn3t_8Up8QYkERkTE90VOC_KuAa5KUQgbZ6cpjJCKtunNpHGCpMmKy7y8qnbH4QtG1ra17p3hR6FbxIiv4ZB1DKbpnWtyV_m40)](build/images/diag_etats_TDD.pdf){#TDD_states}
 
 Les activités de réusinage sont expliquées dans la section \nameref{Refactoring}.  
 

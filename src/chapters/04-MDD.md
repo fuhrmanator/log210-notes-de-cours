@@ -111,7 +111,7 @@ Pensez à la **mémorabilité** d'une association dans le contexte du logiciel �
 
 ## Exemple de MDD pour le jeu de Risk
 
-```{.plantuml hide-image=true plantuml-filename=build/images/diag_MDD.pdf}
+```{.plantuml caption="Modèle du domaine du jeu de Risk. [(PlantUML)](http://www.plantuml.com/plantuml/uml/VPJDRjD04CVlbleE8r_ILab42XHXeQfLgQf29QAamAMNhJrr5gzdmtwaH0W9teRUUOEy2K_2h1tNReWgHUlOyvllltridJ3EbogoXQIvCA84wvOA-JGo3PQTZkb6f4LkjASirKeRS4QGPHEIsubwu6RI0ly4p0HbTqOwXmItcXn8Wi-ICdrd6Mm3PdWhl7818L4Yl3VI1f-BgrFchcPe4RIReR6Wj2uWDoYgODDFvx1RYe8BzGOvCovxV9N43Ic56MSrS79v2H-dPvDf9psCdkrrMzgim8ey7FHqdHTKm3lj3Gdr9FUjI3EOfaREtPFS67bKndOBwuxG6O-HJGNlPHJDP8Q0vTmjeSJoXjsYL0bhGq7e3NoF04YNaC2KTqXvz6DjVxkwhumBZiDSmbDnR6oyqK-aBPhRUAo4Gr4zYq5O64yQqrWixROiQ_E9S-AhnvgugUy4Iw3E5vvn8RT8TaiH7zBKpuMJcjRkazLzBalMbstHyGJYKGpxWm74BmxYkfu4JdcOaaauUaGSnhM5iAhXpBh1DMLo8Utgdl_nT8-Y5cW3zm_xr_Ig_vhFKPladDK_nv0Yt0SwmAFXSFy12HaMMbf9WooGwy7Mi1fKLowm1hzepsMmXZV1ZC6NSRMpXEMMAXyQwu6IEGNHomNF525jclO4oAzYYg24OGdl_ltvQozQIo8-I0xRv4sUf59CIBocjdKJHcDMVrJWTckmNzdsO3Zix2lgRKJX40_BsuZJQuUd_YVVmDXej_gT8wz7Upv4hQZeiLjTPgEs12u5fLitSqrTh1PVDWYJCzkwxn_qdpU3VnVUIsQYOtRXZ-4_)" #MDD-jeu-de-risk}
 @startuml
 !include ../forme.pumlinclude
 scale 1
@@ -159,8 +159,6 @@ Joueur "1" -- "1,2,3" Dé : Jette >
 @enduml
 ```
 
-![Modèle du domaine du jeu de Risk. [(PlantUML)](http://www.plantuml.com/plantuml/uml/VPJDRjD04CVlbleE8r_ILab42XHXeQfLgQf29QAamAMNhJrr5gzdmtwaH0W9teRUUOEy2K_2h1tNReWgHUlOyvllltridJ3EbogoXQIvCA84wvOA-JGo3PQTZkb6f4LkjASirKeRS4QGPHEIsubwu6RI0ly4p0HbTqOwXmItcXn8Wi-ICdrd6Mm3PdWhl7818L4Yl3VI1f-BgrFchcPe4RIReR6Wj2uWDoYgODDFvx1RYe8BzGOvCovxV9N43Ic56MSrS79v2H-dPvDf9psCdkrrMzgim8ey7FHqdHTKm3lj3Gdr9FUjI3EOfaREtPFS67bKndOBwuxG6O-HJGNlPHJDP8Q0vTmjeSJoXjsYL0bhGq7e3NoF04YNaC2KTqXvz6DjVxkwhumBZiDSmbDnR6oyqK-aBPhRUAo4Gr4zYq5O64yQqrWixROiQ_E9S-AhnvgugUy4Iw3E5vvn8RT8TaiH7zBKpuMJcjRkazLzBalMbstHyGJYKGpxWm74BmxYkfu4JdcOaaauUaGSnhM5iAhXpBh1DMLo8Utgdl_nT8-Y5cW3zm_xr_Ig_vhFKPladDK_nv0Yt0SwmAFXSFy12HaMMbf9WooGwy7Mi1fKLowm1hzepsMmXZV1ZC6NSRMpXEMMAXyQwu6IEGNHomNF525jclO4oAzYYg24OGdl_ltvQozQIo8-I0xRv4sUf59CIBocjdKJHcDMVrJWTckmNzdsO3Zix2lgRKJX40_BsuZJQuUd_YVVmDXej_gT8wz7Upv4hQZeiLjTPgEs12u5fLitSqrTh1PVDWYJCzkwxn_qdpU3VnVUIsQYOtRXZ-4_)](build/images/diag_MDD.pdf){#MDD-jeu-de-risk}
-
 ## Attributs dérivés
 
 Les attributs dérivés sont expliqués en détail dans la section 9.16\ \faBook\ du livre du cours. 
@@ -168,7 +166,7 @@ Il s'agit des attributs qui sont calculés à partir d'autres informations reli�
 Ils sont indiqués par le symbole `/` devant leur nom.
 L'exemple à la figure\ \ref{MDD-attribut-derive} s'applique à la règle du jeu de Risk spécifiant qu'un joueur reçoit un certain nombre de renforts selon le nombre de pays occupés. La classe Joueur pourrait avoir un attribut dérivé `/nbPaysOccupés` qui est calculé selon le nombre de Pays contrôlés par le joueur.
 
-```{.plantuml hide-image=true plantuml-filename=build/images/attributs_derives_MDD.pdf}
+```{.plantuml caption="Classe d'association dans le MDD Jeu de Risk. [(PlantUML)](http://www.plantuml.com/plantuml/uml/VPBFQXmn3CRlXho3s4kIqcowroKiAQ6Kf866JFwSDHvbnemjBx9DkfG-KEvzWtsnQcQtP6XXmTWO_VJfa-NBb55o2Twatl4Q1GEalF6akpWxH8uceHfjtqeitDZeeq0MvAGXudnaZY5tBe4kX0wvUHMNCp6yHCxW69uTD_4rAVWksD0B5fy7X34GV1ENXfphXolb7ZfA135t90byZ3sqGZYALKzVuIHWhqQBa5QcpR6UZhKXxwdHgWAVRs_XiVfoNqtAm-BJwRIbVnqaR8UD3_kyvXvkOX56Vv3xqTi6AYjkdGzoTwHF9MbgRFg4MGgPP57diZ2TQmWehFC60eLQquprcD9WY8h0JmF0CS0IAfqXjtgz6CUrh7sXrJdNTxX9twqjw-rRKinnlZWVYPNvjTSQaF-L_aR7PCmkyewfxxTlhGlw3VPwIkxTp1OpE3lJOpx_CDl9Bk5A-vRjRsrdPKvsuCSnTWhp-KJTN18t-WV_0000)" #MDD-attribut-derive}
 @startuml
 !include ../forme.pumlinclude
 scale 1
@@ -187,8 +185,6 @@ Joueur "1" -- "1..*" Pays : Contrôle >
 (Joueur, Pays) .. Occupation
 @enduml
 ```
-
-![Classe d'association dans le MDD Jeu de Risk. [(PlantUML)](http://www.plantuml.com/plantuml/uml/VPBFQXmn3CRlXho3s4kIqcowroKiAQ6Kf866JFwSDHvbnemjBx9DkfG-KEvzWtsnQcQtP6XXmTWO_VJfa-NBb55o2Twatl4Q1GEalF6akpWxH8uceHfjtqeitDZeeq0MvAGXudnaZY5tBe4kX0wvUHMNCp6yHCxW69uTD_4rAVWksD0B5fy7X34GV1ENXfphXolb7ZfA135t90byZ3sqGZYALKzVuIHWhqQBa5QcpR6UZhKXxwdHgWAVRs_XiVfoNqtAm-BJwRIbVnqaR8UD3_kyvXvkOX56Vv3xqTi6AYjkdGzoTwHF9MbgRFg4MGgPP57diZ2TQmWehFC60eLQquprcD9WY8h0JmF0CS0IAfqXjtgz6CUrh7sXrJdNTxX9twqjw-rRKinnlZWVYPNvjTSQaF-L_aR7PCmkyewfxxTlhGlw3VPwIkxTp1OpE3lJOpx_CDl9Bk5A-vRjRsrdPKvsuCSnTWhp-KJTN18t-WV_0000)](build/images/attributs_derives_MDD.pdf){#MDD-attribut-derive}
 
 ## Classes d'association
 
@@ -213,7 +209,7 @@ Alors, la durée de vie de cette instance dépend de l'association.
 
 Voir le livre obligatoire pour plus d'exemples.
 
-```{.plantuml hide-image=true plantuml-filename=build/images/classe_association_MDD.pdf}
+```{.plantuml caption="Classe d'association dans le MDD Jeu de Risk. [(PlantUML)](http://www.plantuml.com/plantuml/uml/VPBFIWD13CRl0xv3wALLRB5N3r8f8bL1wVhddCwckyFEP4fc5YtY0tdt3NmnirPm4ImCayFtI_9bChEKKN8Rl4cDumqA1aXvwqblSRPJ3dhI2crJIMovjD57WIp8IINYV626a6kNG0z2ZLm-YykP6DQHCpY69yTbV4uA_XOiQOsjpnt260YknQKkPt4_L-w-faGGSqsImCVOG2M4tyMAnqiO1MpKQ2kadMaxrEXO1_AUIkqgS7vp0m_5nRBejOVfoM5_fByE4bRTnVjzBhY1gzWAez_BlJIsXCAAs-Izt1tfKqdg6-i_OPQMJBAeUvcQsfK453Pv2u72IjECzPXIPuXQWLS3m370AHIwGwxCsuz-XzlqltfhRRl1x2BlcDNoyxroGLUR57QSbVpfC9WEO3pMC9aS3NPbJs6kiyZdXreyCwCTUFoj7S9aqgjkPiIb_gil)" #MDD-classe-association}
 @startuml
 !include ../forme.pumlinclude
 scale 1
@@ -231,9 +227,6 @@ Joueur "1" -- "1..*" Pays : Contrôle >
 (Joueur, Pays) .. Occupation
 @enduml
 ```
-
-![Classe d'association dans le MDD Jeu de Risk. [(PlantUML)](http://www.plantuml.com/plantuml/uml/VPBFIWD13CRl0xv3wALLRB5N3r8f8bL1wVhddCwckyFEP4fc5YtY0tdt3NmnirPm4ImCayFtI_9bChEKKN8Rl4cDumqA1aXvwqblSRPJ3dhI2crJIMovjD57WIp8IINYV626a6kNG0z2ZLm-YykP6DQHCpY69yTbV4uA_XOiQOsjpnt260YknQKkPt4_L-w-faGGSqsImCVOG2M4tyMAnqiO1MpKQ2kadMaxrEXO1_AUIkqgS7vp0m_5nRBejOVfoM5_fByE4bRTnVjzBhY1gzWAez_BlJIsXCAAs-Izt1tfKqdg6-i_OPQMJBAeUvcQsfK453Pv2u72IjECzPXIPuXQWLS3m370AHIwGwxCsuz-XzlqltfhRRl1x2BlcDNoyxroGLUR57QSbVpfC9WEO3pMC9aS3NPbJs6kiyZdXreyCwCTUFoj7S9aqgjkPiIb_gil)](build/images/classe_association_MDD.pdf){#MDD-classe-association}
-
 
 ## Affinement du MDD
 

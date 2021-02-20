@@ -23,7 +23,7 @@ Les points importants:
 
 La figure\ \ref{DiagrammeEtat} est un exemple tiré du livre du cours et fait en PlantUML.
 
-```{.plantuml hide-image=true plantuml-filename=build/images/DiagrammeEtat.pdf}
+```{.plantuml caption="Diagramme d'états (figure A29.3/F25.10\ \faBook\ du livre). [(PlantUML)](http://www.plantuml.com/plantuml/uml/TL6xRiCm3Dpr5PmB6Dqz537QfKkdR4a6HQ9Z8HPbK7IGeEW7z5Fo7VwnqgbjzBbGrDtnT8HMMInB7rkJZu4wopP2bakBMZcu7ypUkkE1Kq_UfJOn25lAIY795zKJrhPlPOrdgTfmeAWqE2t8fWaU0MCd5_2O7OTEGYApkTj1KJp0CradeJRJ2GfLjwO4FrmT9zSWmpr88ji66Qwm9TZOVIBI_gIOnvsfvjdPfWIsRfeskh7WPFkwl3oynv2pPbdFrkOtT5E-z76uSb8NfTJQDQ6k6SrtV5G-QYmywwq4tJq6pVY7wZ-_PHgA_jFiX9mNrSYwCUQRMI5v_QWF)" #DiagrammeEtat }
 @startuml
 skinparam style strictuml
 skinparam backgroundcolor transparent
@@ -41,7 +41,5 @@ Connexion -u-> Conversation : connecté
 }
 @enduml
 ```
-
-![Diagramme d'états (figure A29.3/F25.10\ \faBook\ du livre). [(PlantUML)](http://www.plantuml.com/plantuml/uml/TL6xRiCm3Dpr5PmB6Dqz537QfKkdR4a6HQ9Z8HPbK7IGeEW7z5Fo7VwnqgbjzBbGrDtnT8HMMInB7rkJZu4wopP2bakBMZcu7ypUkkE1Kq_UfJOn25lAIY795zKJrhPlPOrdgTfmeAWqE2t8fWaU0MCd5_2O7OTEGYApkTj1KJp0CradeJRJ2GfLjwO4FrmT9zSWmpr88ji66Qwm9TZOVIBI_gIOnvsfvjdPfWIsRfeskh7WPFkwl3oynv2pPbdFrkOtT5E-z76uSb8NfTJQDQ6k6SrtV5G-QYmywwq4tJq6pVY7wZ-_PHgA_jFiX9mNrSYwCUQRMI5v_QWF)](build/images/DiagrammeEtat.pdf){#DiagrammeEtat}
 
 

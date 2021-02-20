@@ -34,7 +34,7 @@ Selon "Risk". 2019. Wikipédia. https://fr.wikipedia.org/w/index.php?title=Risk&
 
 La figure\ \ref{uml-uc} est un exemple de diagramme de cas d'utilisation. 
 
-```{.plantuml hide-image=true plantuml-filename=build/images/diagUC.pdf}
+```{.plantuml caption="Diagramme de cas d'utilisation. [(PlantUML)](http://www.plantuml.com/plantuml/uml/VL9BJiGm3DrNuWuMB60MCu8RW00XXbcCA9yD6zDwsgYfCpYEe4BS1yx1nN3AWeh5I94J-JtRptPEew9ewdqHEyTR5EmXwk39hBWg8tiJw1chhf6GkAw23m8goD4WOjqh3a5R5y4EGejSlufJ9OPDO0N7yEYu3g_HY7y9QzfWyfefZ3t1ZRYOOwxlpertrr8a2DgIHF0XTD08uPYiVBY2enux4vg4h38DXtOxjeQyfzgg2fojLd1VNjwMa_9mSZoRjlHVGSGc6zwjyvexM8OaZ7udxwshQYWhSLlToLkJZKhYLDXqX2g9YbYXxUMayBHHq03YcbQXTaALki2JqAsjoTeenqLckC1ARHwcc980HbWMsOtS666_7A9-V_Qq3-y5mD5YiPXbpZZtx3XJnPT4yiI9BVSGHtYvpjZ5zrUF8YGpEF1PK2Cu6B24-VoNChv-StqKfyIr_QaV)]" #uml-uc}
 @startuml
 !include ../forme.pumlinclude
 scale 1
@@ -50,8 +50,6 @@ rectangle "Système" {
 }
 @enduml
 ```
-
-![Diagramme de cas d'utilisation. [(PlantUML)](http://www.plantuml.com/plantuml/uml/VL9BJiGm3DrNuWuMB60MCu8RW00XXbcCA9yD6zDwsgYfCpYEe4BS1yx1nN3AWeh5I94J-JtRptPEew9ewdqHEyTR5EmXwk39hBWg8tiJw1chhf6GkAw23m8goD4WOjqh3a5R5y4EGejSlufJ9OPDO0N7yEYu3g_HY7y9QzfWyfefZ3t1ZRYOOwxlpertrr8a2DgIHF0XTD08uPYiVBY2enux4vg4h38DXtOxjeQyfzgg2fojLd1VNjwMa_9mSZoRjlHVGSGc6zwjyvexM8OaZ7udxwshQYWhSLlToLkJZKhYLDXqX2g9YbYXxUMayBHHq03YcbQXTaALki2JqAsjoTeenqLckC1ARHwcc980HbWMsOtS666_7A9-V_Qq3-y5mD5YiPXbpZZtx3XJnPT4yiI9BVSGHtYvpjZ5zrUF8YGpEF1PK2Cu6B24-VoNChv-StqKfyIr_QaV)](build/images/diagUC.pdf){#uml-uc}
 
 Notes:
 
