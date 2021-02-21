@@ -19,7 +19,7 @@ MATH_FORMULAS = --webtex
 CSS_FILE = style.css
 CSS_ARG = --css=$(CSS_FILE)
 METADATA_ARG = --metadata-file="$(METADATA)"
-PLANTUML_FILTER = --filter=filters/plantuml/pandoc_plantuml_filter.sh
+PLANTUML_FILTER = --filter=filters/plantuml/pandoc_plantuml_filter.py
 PANDOC_ARGS = $(TOC) $(MATH_FORMULAS) $(CSS_ARG) $(METADATA_ARG) $(PLANTUML_FILTER)
 PDF_ARGS = --citeproc --listing -V geometry:margin=1in --pdf-engine=pdflatex --template=$(TEMPLATES_FOLDER)/default.latex
 PANDOC_COMMAND = docker run --rm --volume "`pwd`:/pandoc" -w /pandoc --user `id -u`:`id -g` log210notesdecours/pandoc-latex-etc:2.11.4
