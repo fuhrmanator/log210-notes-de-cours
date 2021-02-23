@@ -28,7 +28,7 @@ Selon "Risk". 2019. Wikipédia. https://fr.wikipedia.org/w/index.php?title=Risk&
 4. Les deux Joueurs jettent le nombre de dés selon leur stratégie choisie aux étapes précédentes.
 5. Le Système compare les dés et élimine les régiments de l'attaquant ou du défenseur selon les règles et affiche le résultat.
 
-*Les Joueurs répètent l'étape 2 jusqu’à ce que l'attaquant ne puisse plus attaquer ou ne veuille plus attaquer.*
+*Les Joueurs répètent l'étape 2 jusqu'à ce que l'attaquant ne puisse plus attaquer ou ne veuille plus attaquer.*
 
 ### Diagramme de cas d'utilisation
 

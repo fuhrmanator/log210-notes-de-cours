@@ -2,7 +2,7 @@
 
 Voici le descriptif du cours, selon le plan de cours:
 
-> À la suite de ce cours, l'étudiant sera en mesure :
+> À la suite de ce cours, l'étudiant sera en mesure:
 >
 > - de maîtriser et appliquer des patrons de conception logicielle;
 > - de concevoir un logiciel orienté objet en appliquant un ensemble de principes et des méthodes heuristiques de génie logiciel;
@@ -38,7 +38,7 @@ Pour des explications de Larman, lisez la section 9.3\ \faBook\ du livre du cour
 
 Imaginez un jeu qui est joué dans la vraie vie avec un dé à six faces. Ensuite, on veut construire un logiciel pour ce jeu et donc on peut spécifier un besoin de générer un nombre aléatoire entre 1 et 6 (comme un dé à six faces). On peut aussi modéliser ce besoin (un élément du problème) par une classe conceptuelle `Dé` ayant un attribut `face` dont sa valeur est un type `int`. Les personnes travaillant sur un projet vont facilement comprendre ce modèle, car les gens comprennent les objets qui représentent des aspects de la vraie vie.
 
-Ensuite, imaginez des solutions à ce problème suivantes:
+Ensuite, imaginez des solutions à ce problème:
 
 1. On peut définir un programme en langage assembleur pour générer un nombre réel entre 0.00000 et 1.00000. Le programme sera assez complexe, car les métaphores en assembleur sont des registres, des adresses, peut-être des modules, etc.
 2. On peut utiliser un langage orienté objet (comme Java ou TypeScript) pour définir une classe `GénérateurNombreAléatoire` qui a une fonction `générer()` qui retourne une valeur réelle aléatoire entre 0.000000 et 1.000000.
@@ -69,7 +69,7 @@ Le chapitre 2 du livre\ \faBook\ définit un processus itératif et adaptatif ai
 Les points importants sont les suivants:
 
 - Le développement itératif et évolutif implique de programmer et de tester précocement un système partiel selon des cycles répétitifs.
-- Un cycle est nommé une itération et dure un temps fixe (par exemple, 3 semaines) comprenant les activités d'analyse, de conception, de programmation et de test, ainsi qu'une démonstration pour solliciter du feedback du client (voir la figure\ \ref{DevIteratifIncremental}). 
+- Un cycle est nommé une itération et dure un temps fixe (par exemple, 3 semaines) comprenant les activités d'analyse, de conception, de programmation et de test, ainsi qu'une démonstration pour solliciter des rétroactions du client (voir la figure\ \ref{DevIteratifIncremental}). 
 - La durée d'une itération est limitée dans le temps (*timeboxed* en anglais), de 2 à 6 semaines. Il n'est pas permis d'ajouter du temps à la durée d'une itération si le projet avance plus lentement que prévu, car cela impliquerait un retard de la rétroaction du client. Si le respect des délais semble compromis, on supprime plutôt des tâches ou des spécifications et on les inclut dans l'itération suivante.
 - Les premières itérations peuvent sembler chaotiques, car elles sont loin de la "bonne voie". Avec la rétroaction du client et l'adaptation, le système à développer converge vers une solution appropriée (voir la figure\ \ref{StabiliteDansLesIterations}).
 - Il y a plusieurs avantages du développement itératif et incrémental:

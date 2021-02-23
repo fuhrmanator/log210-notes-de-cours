@@ -237,7 +237,7 @@ Voici un résumé des points importants traités dans ce chapitre, dont quelques
 - Composition/Agrégation
 - Généralisation/spécialisation
 - Attribut dérivé
-- Hiérarchies dans un MDD et héritage dans l’implémentation
+- Hiérarchies dans un MDD et héritage dans l'implémentation
 - Noms de rôles
 - Organisation des classes conceptuelles en Packages
 

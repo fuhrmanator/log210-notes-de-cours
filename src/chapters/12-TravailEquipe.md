@@ -32,7 +32,7 @@ Par contre, ce genre de comportement augmente certains risques dans le développ
 
 Les auteurs le disent et c'est un fait: si nous sommes tous plus ou moins compétents sur le plan technique, ce qui fera la différence importante dans une carrière est notre habileté à collaborer avec les autres.
 
-![Pratiquement tout conflit social est dû à un manque d’humilité, de respect ou de confiance.](images/HRC_venn.pdf){width=40% #HRC_venn}
+![Pratiquement tout conflit social est dû à un manque d'humilité, de respect ou de confiance.](images/HRC_venn.pdf){width=40% #HRC_venn}
 
 ## Humilité, Respect, Confiance
 
@@ -90,7 +90,7 @@ Une personne démontrant du respect pense ainsi:
 Une personne démontrant la confiance pense ainsi:
 
 - Je crois que les autres coéquipiers sont compétents et qu'ils feront la bonne chose.
-- Je suis à l’aise lorsqu'ils prennent le volant, le cas échéant.
+- Je suis à l'aise lorsqu'ils prennent le volant, le cas échéant.
 
 Le dernier point peut être extrêmement difficile si vous avez déjà été déçu par une personne incompétente à qui vous avez délégué une tâche.
 

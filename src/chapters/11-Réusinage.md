@@ -24,7 +24,7 @@ Ils étaient satisfaits du résultat et ont constaté qu'il était devenu plus r
 > \newline\newline
 >La direction du projet n'était pas contente.
 L'échéancier était serré et il y avait beaucoup de travail à faire.
-Ces deux programmeurs avaient passé deux jours à effectuer un travail qui n’ajoutait rien aux nombreuses fonctionnalités que le système devait offrir en quelques mois.
+Ces deux programmeurs avaient passé deux jours à effectuer un travail qui n'ajoutait rien aux nombreuses fonctionnalités que le système devait offrir en quelques mois.
 L'ancien code avait très bien fonctionné.
 Oui, la conception était un peu plus "pure" et un peu plus "propre".
 Mais le projet devait expédier du code qui fonctionnait, pas du code qui plairait à un universitaire.
@@ -42,7 +42,7 @@ Le but est de savoir à quel moment il faut affecter des activités de réusinag
 
 Par exemple, le premier "smell" dans son livre est "Mysterious Name".
 Il apparaît lorsqu'on voit une variable ou une méthode dont le nom est incohérent avec son utilisation.
-Cela arrive puisqu’il n'est pas toujours facile de trouver un bon nom au moment où on est en train d'écrire du code.
+Cela arrive puisqu'il n'est pas toujours facile de trouver un bon nom au moment où on est en train d'écrire du code.
 Plutôt que de rester bloqué sur le choix, on met un nom arbitraire (ou peut-être par naïveté on se trompe carrément de nom).
 Alors, si vous observez ce problème (smell) dans un logiciel, vous n'avez qu'à appliquer l'activité de réusinage nommée [Change Function Declaration](https://refactoring.com/catalog/changeFunctionDeclaration.html), [Rename Field](https://refactoring.com/catalog/renameField.html) ou [Rename Variable](https://refactoring.com/catalog/renameVariable.html), selon le cas.
 
