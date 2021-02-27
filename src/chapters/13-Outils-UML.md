@@ -7,6 +7,9 @@ Les filtres pour supprimer les reflets sur les tableaux blancs sont impeccables.
 
 ![Office Lens peut détecter le cadre d'un dessin sur un tableau blanc ou papier et le transformer.](images/OfficeLensWhiteBoard.JPG){width="200px"}
 
+> \faWarning\ Tous les travaux demandés pour les **examens** de LOG210 doivent être faits *à la main*.
+Pour cette raison, il vaut mieux pratiquer dessiner les modèles en mode esquisse (à la main).
+
 Dans LOG210, on exploite l'outil PlantUML pour faire beaucoup de modèles. C'est un outil qui a plusieurs avantages:
 
 - il est basé sur un langage dédié simple (anglais *domain specific language* ou DSL), dont les fichiers peuvent être facilement mis sur contrôle de version (git);
@@ -17,17 +20,14 @@ Dans LOG210, on exploite l'outil PlantUML pour faire beaucoup de modèles. C'est
   - extension [PlantUML pour VisualStudio Code](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) (figure\ \ref{PlantUMLVSCode}) avec [tutoriel](https://www.youtube.com/watch?v=xkwJ9GwgZJU)\ \faYoutube;
   - extension [PlantUML Gizmo](https://gsuite.google.com/marketplace/app/plantuml_gizmo/950520042571?pann=cwsdp&hl=en) pour Google Docs et Google Slides, développée en 2014 par le professeur Christopher Fuhrman dans le cadre de son travail à l'ÉTS (figure\ \ref{PlantUMLGizmo})
 
-> \faWarning\ Tous les travaux demandés pour les **examens** de LOG210 doivent être faits *à la main*.
-Pour cette raison, il vaut mieux pratiquer dessiner les modèles en mode esquisse (à la main).
-
 ![L'extension PlantUML pour VisualStudio Code.](images/PlantUMLVSCode.png){#PlantUMLVSCode}
-
-![PlantUML Gizmo pour Google Docs et Google Slides.](images/PlantUMLGizmoSlides.png){#PlantUMLGizmo}
 
 Pour un débutant, le langage PlantUML peut sembler plus compliqué qu'utiliser un outil graphique comme Lucidchart.
 Cependant, pour beaucoup de diagrammes (comme les diagrammes de séquence), ça peut être plus long à créer ou à modifier.
 Bien que ces outils aient des gabarits ou des modes "UML", ceux-ci ne sont pas toujours conviviaux ou complets.
-C'est souvent juste des objets groupés et le vrai sens de la notation UML n'est pas considéré (par exemple, une ligne de vie dans un diagramme de séquence est toujours verticale, mais un éditeur graphique quelconque permet de l'orienter dans n'importe quel sens).
+C'est souvent juste des objets groupés et le vrai sens de la notation UML n'est pas considéré. 
+
+Par exemple, une ligne de vie dans un diagramme de séquence est toujours verticale, mais un éditeur graphique quelconque permet de l'orienter dans n'importe quel sens. 
 Ça peut prendre beaucoup de clics pour effectuer une modification et on peut obtenir des résultats intermédiaires qui n'ont aucun sens en UML (voir la figure\ \ref{LucidchartUML}).
 Il est possible de corriger le diagramme, mais en combien de clics?
 C'est très vite tannant.
@@ -60,6 +60,8 @@ La clé est en fait une représentation compressée du code source.
 ```bash
       $ java -jar plantuml.jar -metadata diagram.png > diagram.puml
 ```
+
+![PlantUML Gizmo pour Google Docs et Google Slides.](images/PlantUMLGizmoSlides.png){#PlantUMLGizmo}
 
 ![PlantUML Gizmo offre plusieurs exemples de diagramme UML.](images/SelectSampleDiagramGizmo.png){#GizmoSamples}
 
