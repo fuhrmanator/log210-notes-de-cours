@@ -17,7 +17,7 @@ RUN tlmgr update --self --all \
 
 # Font for handwritten
 RUN mkdir -p /usr/share/fonts/TTF
-COPY sagefont/sagesans-Regular.ttf /usr/share/fonts/TTF
+COPY xkcdfont/xkcd-script.ttf /usr/share/fonts/TTF
 ENV JAVA_FONTS="/usr/share/fonts/TTF"
 
 # Enable root commands later https://stackoverflow.com/a/48329093/1168342 because LaTeX wants to create fonts dynamically
