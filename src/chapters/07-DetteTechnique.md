@@ -42,7 +42,7 @@ La dette peut être classifiée dans un quadrant comme dans le tableau\ \ref{tab
 : Classification de la dette selon Fowler (2009)\label{tab:DetteQuadrant}
 
 Dette | Imprudente | Prudente
-:--|:--------|:--------
-Délibérée | *On n'a pas le temps pour la conception!* \newline Cette forme de dette est rarement rentable.  |  *Il faut livrer maintenant puis en assumer les conséquences.* \newline Exemple: La dette est due à une partie limitée du code.
-Involontaire | *C'est quoi la séparation en couches?* \newline Il s'agit de l'ignorance de bonnes pratiques. | *Maintenant on sait comment on aurait dû le faire.* \newline C'est tenter une solution malgré une compréhension limitée du problème.
+:--|:----------|:----------
+Délibérée | "*On n'a pas le temps pour la conception!*" \newline Cette forme de dette est rarement rentable.  |  "*Il faut livrer maintenant puis en assumer les conséquences.*" \newline Exemple: La dette est due à une partie limitée du code.
+Involontaire | "*C'est quoi la séparation en couches?*" \newline Il s'agit de l'ignorance de bonnes pratiques. | "*Maintenant on sait comment on aurait dû le faire.*" \newline C'est tenter une solution malgré une compréhension limitée du problème.
 
