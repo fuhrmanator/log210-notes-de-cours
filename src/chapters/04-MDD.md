@@ -111,13 +111,14 @@ Pensez à la **mémorabilité** d'une association dans le contexte du logiciel �
 
 ## Exemple de MDD pour le jeu de Risk
 
-```{.plantuml caption="Modèle du domaine du jeu de Risk. [(PlantUML)](http://www.plantuml.com/plantuml/uml/VPJDRjD04CVlbleE8r_ILab42XHXeQfLgQf29QAamAMNhJrr5gzdmtwaH0W9teRUUOEy2K_2h1tNReWgHUlOyvllltridJ3EbogoXQIvCA84wvOA-JGo3PQTZkb6f4LkjASirKeRS4QGPHEIsubwu6RI0ly4p0HbTqOwXmItcXn8Wi-ICdrd6Mm3PdWhl7818L4Yl3VI1f-BgrFchcPe4RIReR6Wj2uWDoYgODDFvx1RYe8BzGOvCovxV9N43Ic56MSrS79v2H-dPvDf9psCdkrrMzgim8ey7FHqdHTKm3lj3Gdr9FUjI3EOfaREtPFS67bKndOBwuxG6O-HJGNlPHJDP8Q0vTmjeSJoXjsYL0bhGq7e3NoF04YNaC2KTqXvz6DjVxkwhumBZiDSmbDnR6oyqK-aBPhRUAo4Gr4zYq5O64yQqrWixROiQ_E9S-AhnvgugUy4Iw3E5vvn8RT8TaiH7zBKpuMJcjRkazLzBalMbstHyGJYKGpxWm74BmxYkfu4JdcOaaauUaGSnhM5iAhXpBh1DMLo8Utgdl_nT8-Y5cW3zm_xr_Ig_vhFKPladDK_nv0Yt0SwmAFXSFy12HaMMbf9WooGwy7Mi1fKLowm1hzepsMmXZV1ZC6NSRMpXEMMAXyQwu6IEGNHomNF525jclO4oAzYYg24OGdl_ltvQozQIo8-I0xRv4sUf59CIBocjdKJHcDMVrJWTckmNzdsO3Zix2lgRKJX40_BsuZJQuUd_YVVmDXej_gT8wz7Upv4hQZeiLjTPgEs12u5fLitSqrTh1PVDWYJCzkwxn_qdpU3VnVUIsQYOtRXZ-4_)" #MDD-jeu-de-risk}
+```{.plantuml caption="Modèle du domaine du jeu de Risk. [(PlantUML)](http://www.plantuml.com/plantuml/uml/VLJRRjD047ttLupyuXObWHGe8a9Lgr9LBPM8aW8lVTdOKsVnUZRi9IL2IF0tv9q_o9_m9SpQSPscKQLedVMScNFspAoFhHF6-L95jf0q4qQKODr28Qz6fbkHYKYBt6XFMQgLDk2C8CiX91SbuARI0ly4J0LbTqOwXmItcXn8WY-ICdrdewGjb-6jyCe518aIuOEHDgHSN9z6oVKKBO9sKpGMbDO5v0P5LMhy-HpsIb6mI6-GUN6Hy5CI7qOfp9ZJmCdL5NmQdut66-JGVx7_b00hyh3Gaoelg81BxGs9JMksKT-BD8DnQkJCFLLiY6oIiHk5DhrpncDaKy7jw4TJcI5WENCBAB6SXAnK2Mk36FG6VaG0f4iOm9XRHpbldzDaA1RsOvhwsMffEIIvKp_NUUzNooffplKvlmasLT6Ff2sQRJnKmg6etiKWB0n7JIXGF6Q_BtJYdFZciKPCwftWcQZvmZiMSejaTuYeb0idDQtJHwjbBakUj_OmqN04SJ-6PzqknAyEubhF04xPOyb8E7g0E8ph266buSowxWrbSYxjQid_sFMZg0MqXJk7dHjwqtdBQxybEUVRCCD04VO17S3zNk_PFIGmpBMqahfPGAwDhS6gMprPO0tygZtBuB7U1cOCV1rNFHlm2ARAXuCbe6HEuHx8ENkAa3Q7zWJ8LpD5KCBmLE_z-_LxFrgFIWm01uF3bh-X6bJ35BZNm5q72kwOrLyLS7iri5F5zg7NssXPb6nLuHBt_TkgaxJ-gSV8Tp0qsgt-vCWTqfuNKGzLz32jbjaCt02k1AKxctD3cx1w_h9kCC_iEdtdeFEoyVuot5Z6HCUSmf_7_m00)" #MDD-jeu-de-risk}
 @startuml
 !include ../forme.pumlinclude
 scale 1
 hide empty members
 class Joueur {
   nom : String
+  /nbPaysOccupés : int
 }
 class Dé {
   valeur : int
@@ -147,7 +148,7 @@ Pays "1" -- "1..*" Pays : Est-voisin-de >
 JeuRisk "1" -l- "1" PR : Est-joué-sur >
 JeuRisk "1" -d- "5" Dé : Inclut >
 ' ligne suivante contient un espace large ( )
-Joueur "2:6" -l- "1" JeuRisk : Joue >
+Joueur "   2:6" -l- "1" JeuRisk : Joue >
 Joueur "1" -- "1..*" Pays : Contrôle >
 (Joueur, Pays) .. Occupation
 'Joueur "1" -- "*" Régiment : Contrôle >
@@ -163,10 +164,10 @@ Joueur "1" -- "1,2,3" Dé : Jette >
 
 Les attributs dérivés sont expliqués en détail dans la section 9.16\ \faBook\ du livre du cours. 
 Il s'agit des attributs qui sont calculés à partir d'autres informations reliées à la classe.
-Ils sont indiqués par le symbole `/` devant leur nom.
+Ils sont indiqués par le symbole **`/`** devant leur nom.
 L'exemple à la figure\ \ref{MDD-attribut-derive} s'applique à la règle du jeu de Risk spécifiant qu'un joueur reçoit un certain nombre de renforts selon le nombre de pays occupés. La classe Joueur pourrait avoir un attribut dérivé `/nbPaysOccupés` qui est calculé selon le nombre de Pays contrôlés par le joueur.
 
-```{.plantuml caption="`nbPaysOccupés` est un attribut dérivé et sa valeur sera calculée selon le nombre de pays de l'association. [(PlantUML)](http://www.plantuml.com/plantuml/uml/VPBFQXmn3CRlXho3s4kIqcowroKiAQ6Kf866JFwSDHvbnemjBx9DkfG-KEvzWtsnQcQtP6XXmTWO_VJfa-NBb55o2Twatl4Q1GEalF6akpWxH8uceHfjtqeitDZeeq0MvAGXudnaZY5tBe4kX0wvUHMNCp6yHCxW69uTD_4rAVWksD0B5fy7X34GV1ENXfphXolb7ZfA135t90byZ3sqGZYALKzVuIHWhqQBa5QcpR6UZhKXxwdHgWAVRs_XiVfoNqtAm-BJwRIbVnqaR8UD3_kyvXvkOX56Vv3xqTi6AYjkdGzoTwHF9MbgRFg4MGgPP57diZ2TQmWehFC60eLQquprcD9WY8h0JmF0CS0IAfqXjtgz6CUrh7sXrJdNTxX9twqjw-rRKinnlZWVYPNvjTSQaF-L_aR7PCmkyewfxxTlhGlw3VPwIkxTp1OpE3lJOpx_CDl9Bk5A-vRjRsrdPKvsuCSnTWhp-KJTN18t-WV_0000)" #MDD-attribut-derive}
+```{.plantuml caption="`nbPaysOccupés` est un attribut dérivé et sa valeur sera calculée selon le nombre de pays de l'association. [(PlantUML)](http://www.plantuml.com/plantuml/uml/VLB1QW8n4BtdAmOlsnRKUXKHYvHYArIwjZt7xEY6pKvaac2b-46zzm_yiSvQeM9123E4UNdlpKn68MgEgNOgL9RMcdKD8MuTIcHhpYeBRQeL-qI5ySupHDOKf8GKLGQnj07aQ2Wr5HksCIB1qbC4I_1kgV2ReB8_kWANEhdO84ZN24ziG_DaCX-hR5vYGF2nH0xWlAzWnQWFLFdR0rpLkXAJYL5qSPj9jYJDE8U5Q3BSJQVmcj-_v2VYqBkzlcGWw5KJwABB2LNmw1EJFXtDEUgZCWNaXkqwNYAReGo9mmdHwUmY9rJ1Q5b7JvMsGC1w7RTGOxreNXcdGsZCO6BuL03aQ-X3BgkZbLm7XpNr5oxXi4kBcTw6PsFIUlyL16Of3he7n53jZbmDv3_JJXqrMhqMjDkIEfsRrY-u3sDfXlVVOdAeHaY5_9aV)" #MDD-attribut-derive}
 @startuml
 !include ../forme.pumlinclude
 scale 1
@@ -178,11 +179,7 @@ class Joueur {
 class Pays {
   nom : String
 }
-class Occupation {
-  nbRégiments : int
-}
 Joueur "1" -- "1..*" Pays : Contrôle >
-(Joueur, Pays) .. Occupation
 @enduml
 ```
 
