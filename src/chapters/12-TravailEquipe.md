@@ -57,15 +57,15 @@ Une personne humble pense ainsi:
 
 ![["Missing"](https://www.flickr.com/photos/smkybear/2705041322/) ([CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)) par [smkybear](https://www.flickr.com/people/smkybear/).](https://farm4.static.flickr.com/3135/2705041322_d1e23d37d6_b.jpg){width="200px"}
 
-```{.plantuml caption="Un coéquipier humble va accepter une décision prise par l'équipe, même s'il n'était pas en accord à 100%. [(PlantUML)](http://www.plantuml.com/plantuml/uml/JOz12i8m54JtFSMd7a0tRgIKqguzn4_oquOcF_4dHHGluBcyc2s2T5R3pF1WkbnGoX9ybMV72GK36BAu-68Z5yP0CCIOIA3tgEVTJ4WNvD5J7yMG3D57WIB8UUs9IpKvGq0XbGS42eea_oBjH7lQaVA49juTZs3HPwh-PAYRx9vqEP_QQtJGmETzMroYvhZ5RGq7QzMgbrARgJfYitxv0W00)" #moi_inf_equipe }
+```{.plantuml caption="Un coéquipier humble va accepter une décision prise par l'équipe, même s'il n'était pas en accord à 100%. [(PlantUML)](http://www.plantuml.com/plantuml/uml/JO_1IWH134Jl_HLXFIpCHIzUP1aMFViHcUxqJfZkT9jaq1L_mE_onvn1aArJKQyegBCvgg-rX2DqZWiWv2OEBE0pGMfn8JqQsDMSQh25fQDYXKGPr-9xMR0IV2mnWKNbxZSjfUWebqBFJHFfIojDmHN5DaxYOUP4GBNx5IhLYTJ-eiWQ2zqisOoflRDS86Cn2l_BS3WPVzBJuyCu33_VRojtWX5U6m_3wNv7um7kSfusVKtJRiAP96sVVm40)" #moi_inf_equipe }
 @startuml
 ' pick a font in the docker's system
-skinparam defaultfontname Lato Black
+skinparam defaultfontname xkcd script
 skinparam rectangleBorderColor transparent
 hide empty members
 hide circle
 skinparam shadowing false
-rectangle "<size:50>Moi < Équipe</size>" #ffbbbb|bbffbb
+rectangle "<size:50>**Équipe > Moi**</size>" #ffbbbb|bbffbb
 @enduml
 ```
 
