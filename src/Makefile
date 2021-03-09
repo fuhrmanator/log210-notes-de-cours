@@ -22,7 +22,7 @@ METADATA_ARG = --metadata-file="$(METADATA)"
 PLANTUML_FILTER = --filter=filters/plantuml/pandoc_plantuml_filter.py
 PANDOC_ARGS = $(TOC) $(MATH_FORMULAS) $(CSS_ARG) $(METADATA_ARG) $(PLANTUML_FILTER)
 PDF_ARGS = --citeproc --listing -V geometry:margin=1in --pdf-engine=pdflatex --template=$(TEMPLATES_FOLDER)/default.latex
-PANDOC_COMMAND = docker run --rm --volume "`pwd`:/pandoc" -w /pandoc --user `id -u`:`id -g` log210ndc/pandoc-latex-etc:2.11.4
+PANDOC_COMMAND = docker run --rm --volume "`pwd`:/pandoc" -w /pandoc --user `id -u`:`id -g` -u root log210ndc/pandoc-latex-etc:2.11.4
 #PANDOC_COMMAND = pandoc
 
 ####################################################################################################
@@ -65,6 +65,7 @@ $(BUILD)/html/$(OUTPUT_FILENAME).html:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CSS
 $(BUILD)/pdf/$(OUTPUT_FILENAME).pdf:	$(MAKEFILE) $(METADATA) $(LATEX_TEMPLATE) $(CHAPTERS) $(CSS_FILE) $(IMAGES)
 	mkdir -p $(BUILD)/pdf
 	mkdir -p $(BUILD)/images
+	chmod a+x filters/plantuml/pandoc_plantuml_filter.py 
 	$(PANDOC_COMMAND) $(PANDOC_ARGS) $(PDF_ARGS) -o $@ $(CHAPTERS)
 #	$(PANDOC_COMMAND) $(PANDOC_ARGS) $(PDF_ARGS) -o $@ "chapters/*.md"
 	cp $(BUILD)/pdf/$(OUTPUT_FILENAME).pdf ../docs/

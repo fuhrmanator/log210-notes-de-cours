@@ -1,7 +1,15 @@
 # https://stackoverflow.com/a/54726455/1168342
 To start a container that isn't running and connect as root:
 
-docker run -ti -u root --entrypoint=/bin/bash image_id_or_name -s
+docker run -ti -u root --entrypoint=/bin/bash log210ndc/pandoc-latex-etc:2.11.4 -s
+
+
+# En mode manuel (simulation)
+chmod a+x filters/plantuml/pandoc_plantuml_filter.py 
+docker run --volume "`pwd`:/pandoc" -w /pandoc --user `id -u`:`id -g`  -ti -u root --entrypoint=/bin/bash log210ndc/pandoc-latex-etc:2.11.4 -s 
+pandoc --toc --toc-depth=2 --webtex --css=style.css --metadata-file="metadata.yml" --filter=filters/plantuml/pandoc_plantuml_filter.py --citeproc --listing -V geometry:margin=1in --pdf-engine=pdflatex --template=templates/default.latex -o build/pdf/LOG210-notes-de-cours.pdf chapters/*.md
+
+
 
 # Hiccups when updating the build environment
 

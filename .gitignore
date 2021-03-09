@@ -2,3 +2,5 @@ build/
 *.log
 plantuml-images/
 debug*
+export/
+.DS_Store
