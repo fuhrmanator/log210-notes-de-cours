@@ -22,7 +22,9 @@ METADATA_ARG = --metadata-file="$(METADATA)"
 PLANTUML_FILTER = --filter=filters/plantuml/pandoc_plantuml_filter.py
 PANDOC_ARGS = $(TOC) $(MATH_FORMULAS) $(CSS_ARG) $(METADATA_ARG) $(PLANTUML_FILTER)
 PDF_ARGS = --citeproc --listing -V geometry:margin=1in --pdf-engine=pdflatex --template=$(TEMPLATES_FOLDER)/default.latex
-PANDOC_COMMAND = docker run --rm --volume "`pwd`:/pandoc" -w /pandoc --user `id -u`:`id -g` -u root log210ndc/pandoc-latex-etc:2.11.4
+# Note MSYS_NO_PATHCONV=1 because of a bug in paths in Git Bash in windows 
+# https://stackoverflow.com/a/34386471/1168342
+PANDOC_COMMAND = MSYS_NO_PATHCONV=1 docker run --rm --volume "`pwd`:/pandoc" -w /pandoc --user `id -u`:`id -g` -u root log210ndc/pandoc-latex-etc:2.11.4
 #PANDOC_COMMAND = pandoc
 
 ####################################################################################################
@@ -31,7 +33,10 @@ PANDOC_COMMAND = docker run --rm --volume "`pwd`:/pandoc" -w /pandoc --user `id 
 
 all:	book
 
-book:	epub html pdf
+# Only PDF is working for now 
+#  The other formats break because cross references are used with LaTeX codes in the markdown
+#  and because the PlantUML filter wasn't tested with them.
+book:	pdf # epub html 
 
 clean:
 	rm -rf $(BUILD) $(PLANTUML_IMAGES)
