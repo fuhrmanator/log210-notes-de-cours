@@ -49,7 +49,7 @@ def plantuml(key, value, format_, _):
                 with open(src, "wb") as f:
                     f.write(txt)
 
-                # The PDF modules have log messages to stdout that corrupt the JSON stream
+                # The PlantUML complementary jars (PDF modules) have log messages to stdout that corrupt the JSON stream
                 with open('plantUMLErrors.log', "a+") as log_file:
                     subprocess.check_call(PLANTUML_BIN.split() +
                                       ["-t" + filetype, src], stdout=log_file, stderr=log_file)
