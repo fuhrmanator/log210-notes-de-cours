@@ -1,0 +1,77 @@
+---
+# The CC BY 4.0 is hard-coded into the default template for latex in this project.
+#rights: '\\href{https://creativecommons.org/licenses/by/4.0/deed.fr}{\\faCreativeCommons\\faCreativeCommonsBy Attribution 4.0 International (CC BY 4.0)}'
+lang: fr-CA
+babel-lang: french
+csquotes: true
+tags: [LOG210, analyse, conception, logiciel, GRASP, modularité]
+title: "LOG210 Analyse et conception de logiciels"
+#lightweight link to the CC license here (only works for LaTeX)
+subtitle: "Notes de cours"
+graphics: true
+subject: "LOG210 Analyse et conception de logiciels"
+author: 
+- Christopher Fuhrman
+- Yvan Ross
+date: \today
+# the logo is hard-coded in the default.latex template
+etstitlelogo: true
+numbersections: true 
+documentclass: scrbook
+papersize: letter
+geometry: portrait
+# XeTeX options only...
+# mainfont: Linux Libertine O
+# mainfontoptions:
+# - Ligatures=TeX
+# sansfont: Arial Rounded MT Bold
+fontfamily: libertinus
+#fontfamily: cochineal
+fontfamilyoptions: 
+- osf
+- p
+- tt=false
+fontsize: 11pt
+# https://stackoverflow.com/a/59860833/1168342 -- show listings labels correctly
+codeBlockCaptions: true
+# Note the \input{glyphtounicode} and \pdfgentounicode=1 are needed to allow PDF to be searchable despite ligatures `ff`, `fi`, etc.
+header-includes: 
+- \input{glyphtounicode}
+- \pdfgentounicode=1
+- \usepackage[style=french]{csquotes}
+- \usepackage{fontawesome5}
+- \usepackage{fontawesome}
+- \usepackage{tcolorbox}
+- \newtcolorbox{myquote}{colback=red!5!white, colframe=red!75!black}
+- \renewenvironment{quote}{\begin{myquote}}{\end{myquote}}
+- \usepackage{longtable,booktabs}
+# https://tex.stackexchange.com/a/142319/17868
+- \usepackage{courier}
+# Bibliographies in French have raised r and e for the number "édition" e.g. 1re, 3e
+- \DeclareUnicodeCharacter{1D49}{$^\text{e}$}
+- \DeclareUnicodeCharacter{02B3}{$^\text{r}$}
+# Float control
+- \usepackage{float}
+- \floatplacement{figure}{tbp}
+
+# https://tex.stackexchange.com/questions/553408/table-captions-not-in-babel-language
+babel-newcommands:
+- \addto\captionsfrench{\def\tablename{Tableau}} 
+# Need this because we use raw LaTeX needing longtable
+# tables: true  # I put this in the header-includes above, since I think order makes babel not work?
+colorlinks: true
+linkcolor: blue
+pagestyle: headings
+
+# Bibliography
+csl: templates/ecole-de-technologie-superieure-apa.xml # See https://www.zotero.org/styles for more styles.
+bibliography: biblio.bib # See https://github.com/jgm/pandoc-citeproc/blob/master/man/pandoc-citeproc.1.md for more formats.
+suppress-bibliography: false
+link-citations: true
+color-links: true # See https://ctan.org/pkg/xcolor for colors
+#linkcolor: black
+urlcolor: blue
+citecolor: blue
+endnote: false
+
+---

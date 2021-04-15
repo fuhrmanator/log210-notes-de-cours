@@ -1,0 +1,20 @@
+# https://stackoverflow.com/a/54726455/1168342
+To start a container that isn't running and connect as root:
+
+docker run -ti -u root --entrypoint=/bin/bash log210ndc/pandoc-latex-etc:2.11.4 -s
+
+
+# En mode manuel (simulation)
+chmod a+x filters/plantuml/pandoc_plantuml_filter.py 
+docker run --volume "`pwd`:/pandoc" -w /pandoc --user `id -u`:`id -g`  -ti -u root --entrypoint=/bin/bash log210ndc/pandoc-latex-etc:2.11.4 -s 
+pandoc --toc --toc-depth=2 --webtex --css=style.css --metadata-file="metadata.yml" --filter=filters/plantuml/pandoc_plantuml_filter.py --citeproc --listing -V geometry:margin=1in --pdf-engine=pdflatex --template=templates/default.latex -o build/pdf/LOG210-notes-de-cours.pdf chapters/*.md
+
+
+
+# Hiccups when updating the build environment
+
+- When Pandoc changes, the LaTeX template changes. So sometime it's necessary to back-port src/templates/default.latex (check out the git history of that file to see how it has evolved). To create the *latest* template: 
+`pandoc -D latex`.
+- The LaTeX environment is too big, because of the way packages are installed in Ubuntu (a kind of all-or-nothing approach). I didn't have enough time to get `tlmgr` to work properly in the Ubuntu docker image, so I installed the big things. But `tlmgr` is more "surgical" and would result in a much smaller docker image. I'm missing a step to get it to work...
+
+See the issues on the GitHub for other problems and solutions. 
