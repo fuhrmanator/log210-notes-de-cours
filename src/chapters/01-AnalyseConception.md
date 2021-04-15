@@ -28,7 +28,7 @@ L'**analyse** met l'accent sur une investigation du problème et des besoins plu
 
 La **conception** sous-entend l'élaboration d'une solution conceptuelle répondant aux besoins plutôt que la mise en œuvre de cette solution.
 
-Dans LOG210, c'est une modélisation objet qui est utilisée et pour l'analyse (classes conceptuelles décrivant le problème et les besoins) et pour la conception (classes logicielles proposant une la solution dont sa représentation est proche de la modélisation du problème).
+Dans LOG210, c'est une modélisation orientée objet qui est utilisée et pour l'analyse (classes conceptuelles décrivant le problème et les besoins) et pour la conception (classes logicielles proposant une la solution dont sa représentation est proche de la modélisation du problème).
 
 ## Décalage des représentations
 
@@ -76,7 +76,7 @@ Les points importants sont les suivants:
   - moins d'échecs, amélioration de la productivité et de la qualité;
   - gestion précoce des risques élevés (risques techniques, exigences, objectifs, convivialité, etc.)
   - progrès immédiatement visibles;
-  - rétroaction, implication des utilisateurs et adaptation précoces;
+  - rétroaction, implication des utilisateurs et adaptations précoces;
   - complexité gérée (par itération);
   - possibilité d'exploiter méthodiquement les leçons tirées d'une itération.
 
