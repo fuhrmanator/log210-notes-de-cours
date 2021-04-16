@@ -248,13 +248,12 @@ Cela dit, la notion d'une *version* de MDD existe (par exemple, une version pour
 
 **Question:** Est-ce qu'un **modèle du domaine** est la même chose qu'un **modèle de données** ?
 
-**Réponse:** Non. Ce sont deux choses très différentes! Voici la réponse dans de Craig Larman dans le livre obligatoire du cours:
+**Réponse:** Non. Ce sont deux choses très différentes! Voici la réponse de Craig Larman dans la section 9.2\ \faBook\ du livre du cours:
 
-*Un **modèle du domaine** n'est pas un **modèle de données** (qui représente par définition des objets persistants stockés quelque part).*
+> *Un **modèle du domaine** n'est pas un **modèle de données** (qui représente par définition des objets persistants stockés quelque part).*
 
-Il peut y avoir des concepts dans un domaine qui ne sont pas dans la base de données, par exemple une carte de crédit utilisée pour payer mais qui n'est pas stockées pour les raisons de sécurité. Avec seulement un modèle de données, cette classe conceptuelle ne serait jamais modélisée. Larman précise:
+Il peut y avoir des concepts dans un domaine qui ne sont pas dans la base de données. Considérez l'exemple de la carte de crédit utilisée pour payer mais qui n'est jamais stockée pour les raisons de sécurité. Avec seulement un modèle de données, cette classe conceptuelle ne serait jamais modélisée. Larman précise:
 
-*N'excluez donc pas une classe simplement parce que les spécifications n'indiquent pas un besoin évident de mémoriser les informations la concernant (un critère courant pour la modélisation des données quand on conçoit des bases de données relationnelles mais qui n'a pas cours en modélisation d'un domaine), ou parce que la classe conceptuelle ne possède pas d'attributs. Il est légal d'avoir une classe conceptuelle sans attribut, ou une classe conceptuelle qui joue un rôle exclusivement comportementale dans le domaine.*
+> *N'excluez donc pas une classe simplement parce que les spécifications n'indiquent pas un besoin évident de mémoriser les informations la concernant (un critère courant pour la modélisation des données quand on conçoit des bases de données relationnelles mais qui n'a pas cours en modélisation d'un domaine), ou parce que la classe conceptuelle ne possède pas d'attributs. Il est légal d'avoir une classe conceptuelle sans attribut, ou une classe conceptuelle qui joue un rôle exclusivement comportementale dans le domaine.*
 
 \faStackOverflow\ Vous pouvez aussi lire [cette question sur stackoverflow](https://stackoverflow.com/q/3507671/1168342).
-
