@@ -240,15 +240,24 @@ Voici un résumé des points importants traités dans ce chapitre, dont quelques
 
 ## FAQ MDD
 
-**Question:** Est-ce qu'il y a un MDD pour chaque cas d'utilisation?
+### Y a-t-il un MDD pour chaque cas d'utilisation?{#mddchaquecasutilisation}
 
-**Réponse:** Selon la méthodologie du livre du cours, il n'y a qu'un seul MDD pour un domaine d'application. Une application peut avoir beaucoup de fonctionnalités (cas d'utilisation), mais il y a un seul MDD.
+Selon la méthodologie du livre du cours, bien qu'une application a souvent plusieurs fonctionnalités (cas d'utilisation), il n'y a qu'un seul MDD.
 
-Cela dit, la notion d'une *version* de MDD existe (par exemple, une version pour chaque itération). Le MDD évoluera normalement après chaque nouvelle analyse. Le MDD au début d'un projet est plus simple, puisqu'il porte sur seulement les cas d'utilisation ciblés à la première itération. Le MDD devient plus riche au fur et à mesure qu'on avance dans les itérations, parce qu'il a de plus en plus de fonctionnalités réalisées.
+Cela dit, Le MDD est comme un fichier de code source.
+Sa *version* peut évoluer avec le projet.
+Le MDD évoluera normalement après chaque itération, car on fait une nouvelle analyse pour les nouvelles fonctionnalités visées dans l'itération.
+Au début du projet, le MDD est plus simple, puisqu'il porte sur seulement les cas d'utilisation ciblés à la première itération.
+Le MDD devient plus riche au fur et à mesure qu'on avance dans les itérations, parce qu'il modélise davantage de concepts reliés aux problèmes traités par les nouvelles fonctionnalités à réaliser.
 
-**Question:** Est-ce qu'un **modèle du domaine** est la même chose qu'un **modèle de données** ?
+Par exemple, dans\ \faBook\ le livre du cours la version initiale du MDD (chapitre 9) ne traite pas la fonctionnalité de paiement par carte de crédit.
+Les classes conceptuelles modélisant la problématique de paiements par carte de crédit sont absentes dans le MDD initial.
+Plus tard (après plusieurs itérations, dans le chapitre sur le raffinement du MDD), on voit un MDD beaucoup plus riche qui reflète la modélisation des concepts reliés à des fonctionnalités comme les paiements par carte de crédit, les demandes d'autorisation de paiement, etc.
 
-**Réponse:** Non. Ce sont deux choses très différentes! Voici la réponse de Craig Larman dans la section 9.2\ \faBook\ du livre du cours:
+
+### Un **modèle du domaine** est-il la même chose qu'un **modèle de données**?{#mdd_donnees}
+
+Voici la réponse de Craig Larman dans la section 9.2\ \faBook\ du livre du cours:
 
 > *Un **modèle du domaine** n'est pas un **modèle de données** (qui représente par définition des objets persistants stockés quelque part).*
 
