@@ -28,7 +28,7 @@ L'**analyse** met l'accent sur une investigation du problème et des besoins plu
 
 La **conception** sous-entend l'élaboration d'une solution conceptuelle répondant aux besoins plutôt que la mise en œuvre de cette solution.
 
-Dans LOG210, c'est une modélisation orientée objet qui est utilisée et pour l'analyse (classes conceptuelles décrivant le problème et les besoins) et pour la conception (classes logicielles proposant une la solution dont sa représentation est proche de la modélisation du problème).
+Dans LOG210, une modélisation orientée objet est utilisée et pour l'analyse (classes conceptuelles décrivant le problème et les besoins) et pour la conception (classes logicielles proposant une la solution dont sa représentation est proche de la modélisation du problème).
 
 ## Décalage des représentations
 
@@ -48,43 +48,14 @@ Lorsqu'on lit le nom de la classe, il est possible de deviner à quelle partie d
 
 Parmi toutes les solutions au problème, laquelle a le plus faible décalage de représentation?
 C'est la troisième, car elle utilise la même notion de classe `Dé` qui a été utilisée pour modéliser le problème.
-Cet exemple est trivial, mais le principe est encore plus important lorsque le problème est complexe.
+Cet exemple est trivial puisque le problème de jeu de dé est relativement simple.
+Réduire le décalage des représentations est un principe très important si le problème est complexe.
 
 Un défi dans la programmation est d'éviter d'augmenter trop l'écart des représentations.
 Sinon, la solution devient moins évidente par rapport à son problème.
 Cette notion est aussi reliée à la facilité de la traçabilité.
 C'est-à-dire que chaque élément de la solution devrait être facilement traçable au problème.
 La méthodologie enseignée dans LOG210 cherche à réduire le décalage des représentations, car c'est un bénéfice des langages orientés objet si on fait attention.
-
-## Survol de la méthodologie
-
-La figure\ \ref{SurvolMethodologie} présente la méthode d'analyse et de conception enseignée dans le cours. C'est une adaptation de plusieurs figures présentées dans le livre du cours.
-
-![Survol de la méthodologie.](images/FigA.1-avec-contrats.png){#SurvolMethodologie}
-
-## Développement itératif, évolutif et agile
-
-Le chapitre 2 du livre\ \faBook\ définit un processus itératif et adaptatif ainsi que les concepts fondamentaux du Processus Unifié.
-
-Les points importants sont les suivants:
-
-- Le développement itératif et évolutif implique de programmer et de tester précocement un système partiel selon des cycles répétitifs.
-- Un cycle est nommé une itération et dure un temps fixe (par exemple, 3 semaines) comprenant les activités d'analyse, de conception, de programmation et de test, ainsi qu'une démonstration pour solliciter des rétroactions du client (voir la figure\ \ref{DevIteratifIncremental}). 
-- La durée d'une itération est limitée dans le temps (*timeboxed* en anglais), de 2 à 6 semaines. Il n'est pas permis d'ajouter du temps à la durée d'une itération si le projet avance plus lentement que prévu, car cela impliquerait un retard de la rétroaction du client. Si le respect des délais semble compromis, on supprime plutôt des tâches ou des spécifications et on les inclut dans l'itération suivante.
-- Les premières itérations peuvent sembler chaotiques, car elles sont loin de la "bonne voie". Avec la rétroaction du client et l'adaptation, le système à développer converge vers une solution appropriée (voir la figure\ \ref{StabiliteDansLesIterations}).
-- Il y a plusieurs avantages du développement itératif et incrémental:
-  - moins d'échecs, amélioration de la productivité et de la qualité;
-  - gestion précoce des risques élevés (risques techniques, exigences, objectifs, convivialité, etc.)
-  - progrès immédiatement visibles;
-  - rétroaction, implication des utilisateurs et adaptations précoces;
-  - complexité gérée (par itération);
-  - possibilité d'exploiter méthodiquement les leçons tirées d'une itération.
-
-![Le développement itératif et incrémental (Figure 2.1 du livre).](images/A2.1.pdf){#DevIteratifIncremental}
-
-![Rétroaction et adaptation itératives convergent vers le système souhaité (Figure 2.2 du livre).](images/F2.2.pdf){#StabiliteDansLesIterations}
-
-![Processus itératif et évolutif.](images/iteratif-evolutif.png){#IteratifEvolutif}
 
 ## La complexité et ses sources
 
@@ -161,3 +132,32 @@ C --> E
 @enduml
 ```
 
+## Survol de la méthodologie
+
+La figure\ \ref{SurvolMethodologie} présente la méthode d'analyse et de conception enseignée dans le cours. C'est une adaptation de plusieurs figures présentées dans le livre du cours.
+
+![Survol de la méthodologie.](images/FigA.1-avec-contrats.png){#SurvolMethodologie}
+
+## Développement itératif, évolutif et agile
+
+Le chapitre 2 du livre\ \faBook\ définit un processus itératif et adaptatif ainsi que les concepts fondamentaux du Processus Unifié.
+
+Les points importants sont les suivants:
+
+- Le développement itératif et évolutif implique de programmer et de tester précocement un système partiel selon des cycles répétitifs.
+- Un cycle est nommé une itération et dure un temps fixe (par exemple, 3 semaines) comprenant les activités d'analyse, de conception, de programmation et de test, ainsi qu'une démonstration pour solliciter des rétroactions du client (voir la figure\ \ref{DevIteratifIncremental}). 
+- La durée d'une itération est limitée dans le temps (*timeboxed* en anglais), de 2 à 6 semaines. Il n'est pas permis d'ajouter du temps à la durée d'une itération si le projet avance plus lentement que prévu, car cela impliquerait un retard de la rétroaction du client. Si le respect des délais semble compromis, on supprime plutôt des tâches ou des spécifications et on les inclut dans l'itération suivante.
+- Les premières itérations peuvent sembler chaotiques, car elles sont loin de la "bonne voie". Avec la rétroaction du client et l'adaptation, le système à développer converge vers une solution appropriée (voir la figure\ \ref{StabiliteDansLesIterations}).
+- Il y a plusieurs avantages du développement itératif et incrémental:
+  - moins d'échecs, amélioration de la productivité et de la qualité;
+  - gestion précoce des risques élevés (risques techniques, exigences, objectifs, convivialité, etc.)
+  - progrès immédiatement visibles;
+  - rétroaction, implication des utilisateurs et adaptations précoces;
+  - complexité gérée (par itération);
+  - possibilité d'exploiter méthodiquement les leçons tirées d'une itération.
+
+![Le développement itératif et incrémental (Figure 2.1 du livre).](images/A2.1.pdf){#DevIteratifIncremental}
+
+![Rétroaction et adaptation itératives convergent vers le système souhaité (Figure 2.2 du livre).](images/F2.2.pdf){#StabiliteDansLesIterations}
+
+![Processus itératif et évolutif.](images/iteratif-evolutif.png){#IteratifEvolutif}
