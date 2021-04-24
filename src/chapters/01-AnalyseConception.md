@@ -85,3 +85,79 @@ Les points importants sont les suivants:
 ![Rétroaction et adaptation itératives convergent vers le système souhaité (Figure 2.2 du livre).](images/F2.2.pdf){#StabiliteDansLesIterations}
 
 ![Processus itératif et évolutif.](images/iteratif-evolutif.png){#IteratifEvolutif}
+
+## La complexité et ses sources
+
+Un ingénieur logiciel est constamment dans une bataille avec un adversaire dont le nom est la complexité.
+Mais qu'est-ce que la complexité? La figure\ \ref{complexity} est une image de la complexité. Reconnaissez-vous le domaine d'où vient cette image?
+
+Voici une définition de la complexité:
+
+> **Complexité**: Caractère de ce qui est complexe, difficile à comprendre, de ce qui contient plusieurs éléments.
+
+![["Complexity"](https://www.flickr.com/photos/lytfyre/6489338411/) [(CC BY-SA 2.0)](https://creativecommons.org/licenses/by-sa/2.0/) par [lytfyre](https://www.flickr.com/people/lytfyre/).](images/flickr_lytfyre_complexity.jpg){width=80% #complexity}
+
+En voici quelques exemples en développement de logiciels:
+
+- Un *problème* peut être complexe, par exemple le domaine des lois fiscales pour lequel des logiciels existes pour aider les gens à faire des déclarations d'impôts.
+- Un *projet logiciel* peut être complexe, avec plusieurs packages, chacun ayant beaucoup de classes, etc.
+- Un Framework (cadriciel) est toujours complexe. 
+Par exemple un framework comme Angular ou React pour développer un *front-end* (application frontale), car l'interaction entre l'utilisateur et une application répartie dans le nuage nécessite beaucoup de fonctionnalités supportées par le cadriciel.
+- Un *algorithme* peut être complexe, par exemple, l'algorithme de \faWikipediaW\ [tri de Shell](https://fr.wikipedia.org/wiki/Tri_de_Shell) est plus complexe qu'un simple algorithme de \faWikipediaW\ [tri à bulles](https://fr.wikipedia.org/wiki/Tri_%C3%A0_bulles). Notez que la complexité d'un algorithme peut parfois apporter des gains de performance, mais coder, déboguer et maintenir une implémentation d'un algorithme complex sera plus coûteux.
+- Un *patron de conception* peut être complexe, par exemple, les patrons Visiteur, Décorateur, Médiateur, etc.
+Un patron définit des rôles et parfois des classes et du code supplémentaires à créer. Le tout doit s'intégrer dans un design existant (qui est possiblement déjà complexe).
+- Un *environnement* peut être complexe, par exemple les applications mobiles sont plus complexes à développer et à déboguer que les applications simples sur PC, à cause de l'énvironnement sans fil, des écrans tactiles, la batterie limitée, etc.
+
+La figure\ \ref{complex-sources} présente les sources de complexité ainsi que leurs noms qu'on va utiliser dans le cours:
+
+### Complexité inhérente (provenant du problème)
+
+La complexité inhérente est au sein du problème que résout un logiciel.
+Elle se compose des parties du logiciel qui sont nécessairement des problèmes difficiles.
+N'importe quel logiciel qui tente de résoudre ces problèmes aura une manifestation de cette complexité dans son implémentation.
+Exemple: un logiciel qui aide à faire des déclarations de revenus aura une complexité inhérente due à la complexité des lois fiscales qui spécifient comment doit être préparée une déclaration.
+
+### Complexité incidentelle (provenant des choix de conception)
+
+Les choix qui font les ingénieur.e.s dans un projet amènent de la complexité incidentelle.
+En tant qu'ingénieur.e.s, nous avons un devoir de contrôler cette forme de complexité, par exemple en prenant soin avec un choix de framework Web ou architecture logicielle.
+Cette complexité peut aussi être due à des contraintes imposées sur la conception, comme une utilisation obligatoire d'une vielle base de données ou d'une bibliothèque logicielle héritée, d'un langage de programmation, etc.
+La complexité incidentelle (aussi appelée accidentelle) peut être gérée avec des technologies, par exemple les débogueurs, les patrons de conception (un Adaptateur pour les bases de données différentes), etc.
+
+### Complexité environnementale (provenant de l'environnement de l'exécution)
+
+Cette forme de complexité comprend des aspects d'une solution qui ne sont pas sous le contrôle des ingénieur.e.s.
+Dans un environnement d'exécution, il y a des dimensions comme la ramasse-miettes (*garbage collection*), l'ordonnancement des fils d'exécution (*threads*) sur un serveur, l'utilisation de *containers* (à la Docker), etc. qui peuvent affecter la qualité d'un logiciel.
+Les ingénieur.e.s doivent gérer ces formes de complexité, mais il n'y a pas beaucoup de stratégies évidentes face aux technologies qui évoluent très, très vite.
+
+```{.plantuml caption="Sources de complexité." #complex-sources}
+@startuml
+scale 0.8
+skinparam style strictuml
+skinparam backgroundColor transparent
+skinparam packageBackgroundColor transparent
+skinparam defaultFontName Arial 
+skinparam defaultTextAlignment center
+cloud "Domaine (du problème)" as P {
+ cloud "Complexité\ninhérente" as PP #red {
+ }
+}
+note right of PP: Exemple:\nLois fiscales (impôts)
+rectangle "Spécification d'exigences" as S {
+}
+cloud "Conception logicielle" as C #lightgreen {
+cloud "Complexité\nincidentelle" as CC #pink {
+}
+}
+note right of CC: Exemples:\nFramework REST,\nutilisation du patron Visiteur,\nintégration avec un logiciel "ancien"
+rectangle "Solution exécutable" as E {
+cloud "Complexité\nenvironnementale" as EE #orange {
+}
+}
+note left of EE: Exemples:\nApplication mobile,\ndéploiement dans conteneur Docker
+P --> S
+S --> C
+C --> E
+@enduml
+```
+
