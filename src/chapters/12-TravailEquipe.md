@@ -53,9 +53,9 @@ Une personne humble pense ainsi:
 
 > \faWarning \ L'humilité ne veut pas dire "je n'ai pas de valeur" ou "j'accepte d'être mal traité.e par les autres".
 
-![Éviter d'être le ["Centre de l'univers"](https://www.flickr.com/photos/diamondduste/466060240/) ([CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)) par [Diamondduste](https://www.flickr.com/people/diamondduste/).](https://farm1.static.flickr.com/171/466060240_0f1914cbb3_b.jpg){width="200px"}
+![Éviter d'être le ["Centre de l'univers"](https://www.flickr.com/photos/diamondduste/466060240/) ([CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)) par [Diamondduste](https://www.flickr.com/people/diamondduste/).](images/flickr_diamondduste_center.jpg){width="200px"}
 
-![["Missing"](https://www.flickr.com/photos/smkybear/2705041322/) ([CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)) par [smkybear](https://www.flickr.com/people/smkybear/).](https://farm4.static.flickr.com/3135/2705041322_d1e23d37d6_b.jpg){width="200px"}
+![["Missing"](https://www.flickr.com/photos/smkybear/2705041322/) ([CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)) par [smkybear](https://www.flickr.com/people/smkybear/).](images/flickr_smkybear_missing.jpg){width="200px"}
 
 ```{.plantuml caption="Un coéquipier humble va accepter une décision prise par l'équipe, même s'il n'était pas en accord à 100%. [(PlantUML)](http://www.plantuml.com/plantuml/uml/JO_1IWH134Jl_HLXFIpCHIzUP1aMFViHcUxqJfZkT9jaq1L_mE_onvn1aArJKQyegBCvgg-rX2DqZWiWv2OEBE0pGMfn8JqQsDMSQh25fQDYXKGPr-9xMR0IV2mnWKNbxZSjfUWebqBFJHFfIojDmHN5DaxYOUP4GBNx5IhLYTJ-eiWQ2zqisOoflRDS86Cn2l_BS3WPVzBJuyCu33_VRojtWX5U6m_3wNv7um7kSfusVKtJRiAP96sVVm40)" #moi_inf_equipe }
 @startuml
