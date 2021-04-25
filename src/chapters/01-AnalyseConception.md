@@ -12,8 +12,6 @@ Voici le descriptif du cours, selon le plan de cours:
 >
 > Séances de laboratoire axées sur l'application des notions d'analyse, de conception et de programmation orientées objet vues en classe. Mise en œuvre d'un modèle d'objet à partir d'une spécification de logiciel et à l'aide d'un langage orienté objet contemporain. Conception d'applications utilisant les outils UML ainsi que des techniques et des outils utiles au génie logiciel, tels qu'un environnement de développement intégré, la compilation automatique et les tests automatiques.
 
-![Nuage de mots importants du plan de cours de LOG210.](images/LOG210wordle_ordre_alph.png)
-
 ## Livre obligatoire
 
 Le livre obligatoire [@craig_uml_2005] pour ce cours est indiqué dans le plan de cours. **Le présent document n'est pas un substitut pour le livre obligatoire.**
@@ -28,34 +26,85 @@ L'**analyse** met l'accent sur une investigation du problème et des besoins plu
 
 La **conception** sous-entend l'élaboration d'une solution conceptuelle répondant aux besoins plutôt que la mise en œuvre de cette solution.
 
-Dans LOG210, une modélisation orientée objet est utilisée et pour l'analyse (classes conceptuelles décrivant le problème et les besoins) et pour la conception (classes logicielles proposant une la solution dont sa représentation est proche de la modélisation du problème).
+```{.plantuml caption="Diagramme de *classes conceptuelles* décrivant le *problème* d'un jeu de dés (adapté du Jeu de dés du Ch. 1 de Larman). Ceci est élaboré lors d'une activité d'analyse." #mdd-des}
+@startuml
+!include ../forme.pumlinclude
+'left to right direction
+hide empty members
+class Joueur {
+  nom : String
+  nbLancers : int
+  nbLancersGagnés : int
+}
+class Dé {
+  face : int
+}
+class JeuDeDés
+
+JeuDeDés "1" -- "2" Dé : inclut > 
+Joueur "*" -l- "1" JeuDeDés : joue > 
+@enduml
+```
+
+```{.plantuml caption="Diagramme de *classes logicielles* décrivant une *solution* au problème du jeu de dés. La conception s'inspire du modèle du problème, afin de faciliter sa compréhension." #ddc-des}
+@startuml
+!include ../forme.pumlinclude
+'left to right direction
+hide empty methods
+class Dé {
+    +face : int
+    brasser()
+}
+class JeuDeDés {
+    '-joueurs: Map<string, Joueur>;
+    ' -d1 : De;
+    ' -d2 : De;
+
+    getJoueurs()
+    demarrerJeu(nom: string)
+    jouer(nom: string)
+    terminerJeu(nom: string)
+}
+class Joueur {
+    +nom : string
+    +nbLancers : number
+    +nbLancersGagnés : number
+}
+JeuDeDés --> "d1" Dé
+JeuDeDés --> "d2" Dé
+JeuDeDés -r- "[nom]" Joueur : "        "
+@enduml
+```
+
+Imaginez un jeu qui est joué dans la vraie vie avec deux dés à six faces.
+Ensuite, on veut construire un logiciel pour ce jeu et donc on peut spécifier la règle du jeu, dont un de nombreux besoins est de générer un nombre aléatoire entre 1 et 6 (comme un dé à six faces).
+On peut aussi modéliser ce besoin (un élément du problème) par une classe conceptuelle `Dé` ayant un attribut `face` dont sa valeur est un type `int`.
+Les personnes travaillant sur un projet vont facilement comprendre ce modèle, car les gens comprennent les objets qui représentent des aspects de la vraie vie.
+
+Dans LOG210 une modélisation orientée objet est utilisée et pour l'analyse (classes conceptuelles décrivant le problème et les besoins comme à la figure\ \ref{mdd-des}) et pour la conception (classes logicielles proposant une solution dont sa représentation est proche de la modélisation du problème comme à la figure\ \ref{ddc-des}).
 
 ## Décalage des représentations
 
-Plus une solution (conception) ressemble à une description du problème, plus elle est facile à comprendre.
-La distance entre la représentation d'un problème et la représentation de sa solution s'appelle le *décalage des représentations*.
+Vous avez sûrement remarqué que le modèle du problème (figure\ \ref{mdd-des}) ressemble beaucoup au modèle de la solution (figure\ \ref{ddc-des}) pour notre exemple de jeu de dés.
+Cependant, il y a des différences, car une solution comporte des détails sur la dynamique du jeu qui sera codée.
+Le modèle du problème et le modèle de la solution ne sont pas identiques.
+
+> On pourrait bien imaginer une autre solution avec une seule classe `Jeu` qui contient toute la logique du jeu.
+C'est un design qui peut fonctionner.
+Avez-vous déjà codé une solution simple comme ça une fois?
+Un problème avec une telle solution serait qu'elle est plus difficile à comprendre, surtout si tout le code est dans une grosse classe.
+<!-- Par exemple, on voit une méthode `brasser()` dans la classe `Dé` qui montre que ce sera la responsabilité de cette classe de changer sa valeur quand ça sera le bon moment. -->
+
+Alors, une caractéristique souhaitable d'un design est qu'il soit facile à comprendre et à valider par rapport au problème qu'il est censé résoudre.
+Plus une solution (conception) ressemble à une description (modèle d'analyse) du problème, plus elle est facile à comprendre et à valider.
+La différence entre la représentation d'un problème et la représentation de sa solution s'appelle le *décalage des représentations*.
+C'est un terme complexe pour un principe très intuitif.
+Méfiez-vous des classes importantes dont leur nom est difficile à tracer au problème.
+Elles vont rendre votre solution plus difficile à comprendre.
 Pour des explications de Larman, lisez la section 9.3\ \faBook\ du livre du cours.
 
-Imaginez un jeu qui est joué dans la vraie vie avec un dé à six faces. Ensuite, on veut construire un logiciel pour ce jeu et donc on peut spécifier un besoin de générer un nombre aléatoire entre 1 et 6 (comme un dé à six faces). On peut aussi modéliser ce besoin (un élément du problème) par une classe conceptuelle `Dé` ayant un attribut `face` dont sa valeur est un type `int`. Les personnes travaillant sur un projet vont facilement comprendre ce modèle, car les gens comprennent les objets qui représentent des aspects de la vraie vie.
-
-Ensuite, imaginez des solutions à ce problème:
-
-1. On peut définir un programme en langage assembleur pour générer un nombre réel entre 0.00000 et 1.00000. Le programme sera assez complexe, car les métaphores en assembleur sont des registres, des adresses, peut-être des modules, etc.
-2. On peut utiliser un langage orienté objet (comme Java ou TypeScript) pour définir une classe `GénérateurNombreAléatoire` qui a une fonction `générer()` qui retourne une valeur réelle aléatoire entre 0.000000 et 1.000000.
-Il faudra travailler un peu avec le code pour obtenir un nombre entier entre 1 et 6, mais c'est possible.
-Lorsqu'on lit le nom de la classe, il est possible de deviner à quelle partie du problème ça correspond, mais le lien n'est pas aussi évident.
-3. On peut utiliser encore un langage orienté objet, mais cette fois on définit une classe `Dé` ayant une fonction `brasser` qui retourne une valeur aléatoire entière entre 1 et 6.
-
-Parmi toutes les solutions au problème, laquelle a le plus faible décalage de représentation?
-C'est la troisième, car elle utilise la même notion de classe `Dé` qui a été utilisée pour modéliser le problème.
-Cet exemple est trivial puisque le problème de jeu de dé est relativement simple.
-Réduire le décalage des représentations est un principe très important si le problème est complexe.
-
-Un défi dans la programmation est d'éviter d'augmenter trop l'écart des représentations.
-Sinon, la solution devient moins évidente par rapport à son problème.
-Cette notion est aussi reliée à la facilité de la traçabilité.
-C'est-à-dire que chaque élément de la solution devrait être facilement traçable au problème.
-La méthodologie enseignée dans LOG210 cherche à réduire le décalage des représentations, car c'est un bénéfice des langages orientés objet si on fait attention.
+L'exemple du jeu est trivial, puisque le problème est relativement simple.
+Réduire le décalage des représentations est un principe très important surtout lorsque le problème à résoudre est complexe.
 
 ## La complexité et ses sources
 
@@ -91,7 +140,7 @@ Exemple: un logiciel qui aide à faire des déclarations de revenus aura une com
 ### Complexité circonstancielle (provenant des choix de conception)
 
 Les choix qui font les ingénieur.e.s dans un projet amènent de la complexité circonstancielle.
-En tant qu'ingénieur.e.s, nous avons un devoir de contrôler cette forme de complexité, par exemple en prenant soin avec un choix de framework Web ou architecture logicielle.
+En tant qu'ingénieur.e.s, nous avons un devoir de contrôler cette forme de complexité, par exemple en prenant soin avec un choix de cadriciel Web ou architecture logicielle.
 Cette complexité peut aussi être due à des contraintes imposées sur la conception, comme une utilisation obligatoire d'une vieille base de données ou d'une bibliothèque logicielle héritée, d'un langage de programmation, etc.
 La complexité circonstancielle (aussi appelée accidentelle) peut être gérée avec des technologies, par exemple les débogueurs, les patrons de conception (un Adaptateur pour les bases de données différentes), etc.
 
@@ -161,3 +210,5 @@ Les points importants sont les suivants:
 ![Rétroaction et adaptation itératives convergent vers le système souhaité (Figure 2.2 du livre).](images/F2.2.pdf){#StabiliteDansLesIterations}
 
 ![Processus itératif et évolutif.](images/iteratif-evolutif.png){#IteratifEvolutif}
+
+![Nuage de mots importants du plan de cours de LOG210.](images/LOG210wordle_ordre_alph.png)
