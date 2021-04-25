@@ -74,14 +74,15 @@ Il est normal d'avoir un écart entre le travail prévu et le travail effectué.
 Un des objectifs du bilan est d'essayer d'expliquer les gros écarts et de corriger ou mitiger les problèmes.
 
 Par exemple, on peut voir à la figure\ \ref{GitinspectorOutput} que les deux coéquipiers Anne et Justin ont fait une contribution beaucoup plus importante que les autres coéquipiers Francis et Mélanie. 
-Dans le bilan de l'itération, **on peut indiquer explicitement ce fait, même avec des pourcentages** en évitant d'écrire une phrase vague comme "certains ont travaillé plus que d'autres". 
-Ensuite, on se pose la question: pourquoi y a-t-il eu cet écart? 
-Est-ce que Francis et Mélanie sont à l'aise avec les technologies, ont-ils besoin de coaching? 
-Est-ce que tout le monde est à l'aise avec l'écart?
-Est-ce que Anne et Justin ont laissé suffisamment de place aux autres pour faire une contribution? 
-Est-ce que tout le monde met au moins 6 heures de travail en dehors des séances encadrées?
-Est-ce que tout le monde est présent pendant les séances? 
-Etc. 
+Dans le bilan de l'itération, **on peut indiquer explicitement ce fait, même avec des pourcentages** en évitant d'écrire une phrase vague comme "certains ont travaillé plus que d'autres".
+Ensuite, on se pose la question: pourquoi y a-t-il eu cet écart?
+
+- Est-ce que Francis et Mélanie sont à l'aise avec les technologies, ont-ils besoin de coaching?
+- Est-ce que tout le monde est à l'aise avec l'écart?
+- Est-ce que Anne et Justin ont laissé suffisamment de place aux autres pour faire une contribution?
+- Est-ce que tout le monde met au moins 6 heures de travail en dehors des séances encadrées?
+- Est-ce que tout le monde est présent pendant les séances?
+- etc.
 
 Dans le bilan il faut *constater les faits* et *proposer des solutions* pour éviter des écarts importants dans les prochaines itérations. 
 Ainsi, vous gérez les problèmes de manière plus proactive.
@@ -92,7 +93,7 @@ Ainsi, vous gérez les problèmes de manière plus proactive.
 
 **R:** La solution est avec le fichier `.mailmap`. Vous pouvez rapidement générer un fichier de base avec la commande:  
 \ \ `git log --pretty="%an %ae" | sort | uniq > .mailmap`  
-Ensuite, vous modifiez le fichier `.mailmap` pour que les deux (ou plusieurs) courriels du même auteur aient le même nom. 
+Ensuite, vous modifiez le fichier `.mailmap` pour que les deux (ou plusieurs) courriels du même auteur aient le même nom.
 Le nom que vous mettez sera celui qui apparaît dans les rapports la prochaine fois qu'ils seront générés.
 
 **Q: Comment exclure le travail réalisé par un chargé de laboratoire (par exemple le clone initial dans GitHub Classroom)?**
@@ -109,8 +110,3 @@ authorsToExcludeArray=("Benjamin Le" "Yvan Ross")
 **Q: J'ai une autre question...**
 
 **R:** Il y a aussi une [FAQ sur le dépôt de gitinspector](https://github.com/ejwa/gitinspector/wiki/FAQ).
-
-## TODO
-
-- modifier le squelette pour aussi utiliser `PUT` (REST)
-- inclure exemples de `before` et `after` dans les tests, avec une référence à la doc
