@@ -254,7 +254,6 @@ Par exemple, dans\ \faBook\ le livre du cours la version initiale du MDD (chapit
 Les classes conceptuelles modélisant la problématique de paiements par carte de crédit sont absentes dans le MDD initial.
 Plus tard (après plusieurs itérations, dans le chapitre sur le raffinement du MDD), on voit un MDD beaucoup plus riche qui reflète la modélisation des concepts reliés à des fonctionnalités comme les paiements par carte de crédit, les demandes d'autorisation de paiement, etc.
 
-
 ### Un **modèle du domaine** est-il la même chose qu'un **modèle de données**?{#mdd_donnees}
 
 Voici la réponse de Craig Larman dans la section 9.2\ \faBook\ du livre du cours:
