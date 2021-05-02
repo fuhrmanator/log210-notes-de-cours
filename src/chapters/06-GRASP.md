@@ -8,15 +8,16 @@ L'acronyme d'une expression vulgarisée pourrait être POMM: "Principes pour dé
 
 En tant qu'ingénieur logiciel, vous devez décider souvent où placer une méthode (dans quelle classe) et cette décision ne devrait pas être prise de manière arbitraire, mais plutôt en suivant les directives d'ingénierie favorisant la modularité.
 
-Alors, les GRASP sont les directives qui vous aident à prendre des décisions de conception, menant à un design avec moins de couplage inutile et des classes plus cohésives. Les classes cohésives sont plus faciles à comprendre, à maintenir et à réutiliser.
+Alors, les GRASP sont les directives qui vous aident à prendre des décisions de conception, menant à un design avec moins de couplage inutile et des classes plus cohésives.
+Les classes cohésives sont plus faciles à comprendre, à maintenir et à réutiliser.
 
-> \faWarning\ Avez-vous déjà une bonne expérience en programmation?
+> \faHatCowboySide\ Avez-vous déjà une bonne expérience en programmation?
 Avez-vous l'habitude de coder rapidement des solutions qui fonctionnent?
 Si la réponse est oui, alors travailler avec les principes GRASP peut être un défi pour vous.
-Vous devez être en mesure de justifier vos choix de conception et cela va vous ralentir au début.
-Le but avec GRASP (et le cours LOG210) est d'apprendre à faire du code facile à maintenir.
-C'est normal au début que ça prenne plus de temps.
-Mais une fois que vous avez l'habitude à l'utiliser, vous serez aussi rapide avec votre développement, mais en plus votre design sera meilleur sur le plan de la maintenabilité.
+Dans LOG210, vous devez être en mesure de justifier vos choix de conception et cela va vous ralentir au début.
+Le but avec les principes GRASP est de (ré)apprendre à faire du code qui fonctionne mais qui soit également facile à maintenir.
+C'est normal au début que ça prenne plus de temps, car il faut réfléchir pour appliquer les principes.
+Une fois que vous avez l'habitude à utiliser les GRASP, vous serez encore rapide avec votre développement, mais en plus votre design sera meilleur sur le plan de la maintenabilité.
 
 ## Spectre de la conception {#SpectreDeLaConception}
 
