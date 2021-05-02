@@ -115,7 +115,7 @@ La couche présentation n'est pas censée manipuler directement les objets dans 
 
 Une solution pour réduire le nombre d'arguments sans utiliser un objet du domaine est d'appliquer un \nameref{Refactoring} pour le *smell* nommé *Long Parameter List*, par exemple [Introduce Parameter Object](https://refactoring.com/catalog/introduceParameterObject.html).
 Notez que l'objet de paramètres que vous introduisez n'est pas un objet (classe) du domaine!
-La distinction est importante, car la logique d'affaires demeure dans la couche présentation.
+La distinction est importante, car la logique d'affaires demeure dans la couche domaine.
 
 ### Ne serait-il pas plus simple de passer l'objet `body` de la page web au contrôleur GRASP?
 
