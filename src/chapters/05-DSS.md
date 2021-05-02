@@ -1,7 +1,7 @@
 # Diagrammes de séquence système (DSS)
 
 Un diagramme de séquence système (DSS) est un diagramme UML (diagramme de séquence) limité à un acteur (provenant du scénario d'un cas d'utilisation) et le Système.
-Les DSS sont expliqués en détails dans le chapitre 10\ \faBook\ du livre du cours, mais voici des points importants pour LOG210:
+Les DSS sont expliqués en détail dans le chapitre 10\ \faBook\ du livre du cours, mais voici des points importants pour LOG210:
 
 - Le DSS a toujours un titre.
 - L'acteur est indiqué dans la notation par un bonhomme et est représenté comme une *instance* de la classe du bonhomme, comme `:Joueur` dans la figure\ \ref{DSS-attaquer-un-pays} (le ":" signifie une instance).
@@ -93,25 +93,42 @@ note over c, s : selon la RDCU
 
 ## FAQ DSS
 
-**Question:** Comment faire si un cas d'utilisation a des *scénarios alternatifs?* Fait-on plusieurs DSS (un pour chaque scénario) ou utilise-t-on la notation UML (des blocs `opt` et `alt`) pour montrer des flots différents dans le même DSS?
+### Comment faire si un cas d'utilisation a des *scénarios alternatifs*?
 
-**Réponse:** Un objectif de faire un DSS est de **définir les opérations système**. Donc, on peut se poser la question suivante: les scénarios alternatifs impliquent-ils une ou plusieurs opérations système n'ayant pas encore été définies? Si la réponse est non, on peut ignorer les scénarios alternatifs dans le DSS. Par contre, si la réponse est oui, il est essentiel de définir ces opérations système dans un DSS. Quant au choix de faire des DSS séparés ou d'utiliser la notation UML pour montrer les flots différents sur le même DSS, ça dépend de la complexité de la logique des flots. Un DSS devrait être *facile à comprendre*. C'est à vous de juger si votre DSS avec des `opt` ou `alt` est assez simple ou fait du spaghetti. Utilisez un autre DSS (ou plusieurs) ayant le nom des scénarios alternatifs si cela vous semble plus clair. 
+> Fait-on plusieurs DSS (un pour chaque scénario) ou utilise-t-on la notation UML (des blocs `opt` et `alt`) pour montrer des flots différents dans le même DSS?
 
-**Question:** Puisqu'une opération système doit avoir seulement des arguments de type primitif, j'ai plusieurs opérations système avec de nombreux (plus que 5) arguments. Pourquoi il n'est pas permis de passer des objets comme argument?
+Un objectif de faire un DSS est de **définir les opérations système**.
+Donc, on peut se poser la question suivante: les scénarios alternatifs impliquent-ils une ou plusieurs opérations système n'ayant pas encore été définies?
+Si la réponse est non, on peut ignorer les scénarios alternatifs dans le DSS.
+Par contre, si la réponse est oui, il est essentiel de définir ces opérations système dans un DSS.
+Quant au choix de faire des DSS séparés ou d'utiliser la notation UML pour montrer les flots différents sur le même DSS, ça dépend de la complexité de la logique des flots.
+Un DSS devrait être *facile à comprendre*.
+C'est à vous de juger si votre DSS avec des `opt` ou `alt` est assez simple ou fait du *spaghetti*.
+Utilisez un autre DSS (ou plusieurs) ayant le nom des scénarios alternatifs si cela vous semble plus clair.
 
-**Réponse:** Il n'est pas conseillé de passer des *objets du domaine* comme argument, puisque c'est la couche présentation qui invoque l'opération système. 
-Si cette couche manipule les objets du domaine, cela ne respecte pas la séparation des couches. 
-Une solution est d'appliquer un \nameref{Refactoring} pour le *smell* nommé *Long Parameter List*, par exemple [Introduce Parameter Object](https://refactoring.com/catalog/introduceParameterObject.html). 
-Notez que l'objet que vous introduisez n'est pas un objet (classe) du domaine! 
-La distinction est importante, car la logique d'affaires est toujours en dehors de la couche de présentation. 
+### Est-ce normal d'avoir une opération système avec beaucoup d'arguments (de type primitif)?
 
-**Question:** Décortiquer toutes les informations dans un formulaire web est compliqué, puis on doit passer tout ça à un contrôleur GRASP comme des arguments de type primitif. 
+> Puisqu'une opération système doit avoir seulement des arguments de type primitif, j'ai plusieurs opérations système avec de nombreux (plus que 5) arguments. Pourquoi il n'est pas permis de passer des objets comme argument?
+
+Il n'est pas conseillé de passer des *objets du domaine* comme argument, puisque c'est la couche présentation qui invoque l'opération système.
+La couche présentation n'est pas censée manipuler directement les objets dans la couche domaine, sinon elle empiète sur les responsabilités de la couche domaine.
+
+Une solution pour réduire le nombre d'arguments sans utiliser un objet du domaine est d'appliquer un \nameref{Refactoring} pour le *smell* nommé *Long Parameter List*, par exemple [Introduce Parameter Object](https://refactoring.com/catalog/introduceParameterObject.html).
+Notez que l'objet de paramètres que vous introduisez n'est pas un objet (classe) du domaine!
+La distinction est importante, car la logique d'affaires demeure dans la couche présentation.
+
+### Ne serait-il pas plus simple de passer l'objet `body` de la page web au contrôleur GRASP?
+
+> Décortiquer toutes les informations dans un formulaire web est compliqué, puis on doit passer tout ça à un contrôleur GRASP comme des arguments de type primitif.
 Ne serait-il pas plus simple de passer l'objet `body` de la page web au contrôleur GRASP et le laisser faire le décorticage?
 
-**Réponse:** Dans un sens ça serait plus simple (pour le code de la couche de présentation). 
-Cependant, le but de séparer les couches est de favoriser l'utilisation d'autres couches présentation, par exemple à travers une application iOS ou Android. 
-Si vous mettez la logique de la couche présentation (décortiquer un formulaire web) dans la couche domaine (le contrôleur GRASP), ça ne respecte pas les responsabilités des couches. 
-Imaginez un tel contrôleur GRASP si vous avez 3 types d'application frontale (navigateur web, application iOS et application Android). 
-Le contrôleur GRASP recevra des représentations de "formulaire" de chaque couche présentation différente (`body` n'a rien à voir avec une interface Android). 
-Ce pauvre contrôleur serait obligé de connaître alors toutes les trois formes (web, iOS, Android) et ainsi sa cohésion sera beaucoup plus faible. 
-Laisser la couche présentation faire le décorticage et construire une opération système selon l'API définie dans le DSS simplifie le contrôleur GRASP et respecte les responsabilités des couches.
+Dans un sens ça serait plus simple (pour le code de la couche présentation).
+Cependant, nous voulons séparer les couches pour favoriser le remplacement de la couche présentation, par exemple à travers une application iOS ou Android.
+
+Si vous mettez la logique de la couche présentation (décortiquer un formulaire web) dans la couche domaine (le contrôleur GRASP), ça ne respecte pas les responsabilités des couches.
+Imaginez un tel contrôleur GRASP si vous aviez trois types d'application frontale (navigateur web, application iOS et application Android).
+Le contrôleur GRASP recevra des représentations de "formulaire" de chaque couche présentation différente.
+En passant, l'objet `body` n'a rien à voir avec une interface Android!
+Ce pauvre contrôleur serait obligé de connaître alors toutes les trois formes (web, iOS, Android) et ainsi sa cohésion sera beaucoup plus faible.
+Pour respecter les responsabilités, on laisser la couche présentation faire le décorticage et construire une opération système selon l'API définie dans le DSS.
+Cela simplifie aussi le contrôleur GRASP.
