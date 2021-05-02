@@ -130,5 +130,5 @@ Imaginez un tel contrôleur GRASP si vous aviez trois types d'application fronta
 Le contrôleur GRASP recevra des représentations de "formulaire" de chaque couche présentation différente.
 En passant, l'objet `body` n'a rien à voir avec une interface Android!
 Ce pauvre contrôleur serait obligé de connaître alors toutes les trois formes (web, iOS, Android) et ainsi sa cohésion sera beaucoup plus faible.
-Pour respecter les responsabilités, on laisser la couche présentation faire le décorticage et construire une opération système selon l'API définie dans le DSS.
+Pour respecter les responsabilités, on laisse la couche présentation faire le décorticage et construire une opération système selon l'API définie dans le DSS.
 Cela simplifie aussi le contrôleur GRASP.
