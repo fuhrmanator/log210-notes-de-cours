@@ -76,7 +76,7 @@ Pensez à la **mémorabilité** d'une association dans le contexte du logiciel �
   - Les extrémités des associations ont une expression de la multiplicité indiquant une relation numérique entre les instances des classes.
   Vous pouvez en trouver plusieurs exemples dans la figure\ \ref{MDD-jeu-de-risk}.
 
-:Extrait du tableau 9.2\ \faBook\ du livre du cours.\label{Tableau_associations_courantes}
+:Extrait du tableau 9.2\ \faBook\ (liste d'associations courantes) du livre du cours.\label{Tableau_associations_courantes}
 
 **Catégorie** | **Exemple**
 :----------|:----------
@@ -104,7 +104,8 @@ Pensez à la **mémorabilité** d'une association dans le contexte du logiciel �
 **A est une sous-unité organisationnelle de B**| *Rayon\ --\ Magasin* \
 *Maintenance\ --\ CompagnieAérienne*\newline
 **A utilise, gère ou possède B**| *Caissier\ --\ Registre* \
-*Joueur\ --\ Pion* *Pilote\ --\ Avion*\newline
+*Joueur\ --\ Pion* \
+*Pilote\ --\ Avion*\newline
 **A est voisin de B**| *Article\ --\ Article* \
 *Case\ --\ Case* \
 *Ville\ --\ Ville*
