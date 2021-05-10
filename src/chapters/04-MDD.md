@@ -112,6 +112,8 @@ Pensez à la **mémorabilité** d'une association dans le contexte du logiciel �
 
 ## Exemple de MDD pour le jeu de Risk
 
+La figure\ \ref{MDD-jeu-de-risk} est un MDD pour le jeu de Risk, selon [l'exemple](#exemple-jeu-de-risk) mentionné dans le chapitre sur les cas d'utilisation.
+
 ```{.plantuml caption="Modèle du domaine du jeu de Risk. [(PlantUML)](http://www.plantuml.com/plantuml/uml/VLJRRjD047ttLupyuXObWHGe8a9Lgr9LBPM8aW8lVTdOKsVnUZRi9IL2IF0tv9q_o9_m9SpQSPscKQLedVMScNFspAoFhHF6-L95jf0q4qQKODr28Qz6fbkHYKYBt6XFMQgLDk2C8CiX91SbuARI0ly4J0LbTqOwXmItcXn8WY-ICdrdewGjb-6jyCe518aIuOEHDgHSN9z6oVKKBO9sKpGMbDO5v0P5LMhy-HpsIb6mI6-GUN6Hy5CI7qOfp9ZJmCdL5NmQdut66-JGVx7_b00hyh3Gaoelg81BxGs9JMksKT-BD8DnQkJCFLLiY6oIiHk5DhrpncDaKy7jw4TJcI5WENCBAB6SXAnK2Mk36FG6VaG0f4iOm9XRHpbldzDaA1RsOvhwsMffEIIvKp_NUUzNooffplKvlmasLT6Ff2sQRJnKmg6etiKWB0n7JIXGF6Q_BtJYdFZciKPCwftWcQZvmZiMSejaTuYeb0idDQtJHwjbBakUj_OmqN04SJ-6PzqknAyEubhF04xPOyb8E7g0E8ph266buSowxWrbSYxjQid_sFMZg0MqXJk7dHjwqtdBQxybEUVRCCD04VO17S3zNk_PFIGmpBMqahfPGAwDhS6gMprPO0tygZtBuB7U1cOCV1rNFHlm2ARAXuCbe6HEuHx8ENkAa3Q7zWJ8LpD5KCBmLE_z-_LxFrgFIWm01uF3bh-X6bJ35BZNm5q72kwOrLyLS7iri5F5zg7NssXPb6nLuHBt_TkgaxJ-gSV8Tp0qsgt-vCWTqfuNKGzLz32jbjaCt02k1AKxctD3cx1w_h9kCC_iEdtdeFEoyVuot5Z6HCUSmf_7_m00)" #MDD-jeu-de-risk}
 @startuml
 !include ../forme.pumlinclude
@@ -184,6 +186,79 @@ Joueur "1" -- "1..*" Pays : Contrôle >
 @enduml
 ```
 
+\newpage
+## Classes de "description" et de catalogues
+
+Deux catégories de classes conceptuelles qui vont de pair sont les *descriptions d'entités* et les *catalogues* qui agrègent les descriptions.
+Elles sont expliquées en détail dans la section 9.13 \faBook\ du livre du cours.
+Voici des conditions pour utiliser correctement une classe de description d'une autre classe "X":
+
+- Il faut disposer de la description d'un produit ou d'un service "X" indépendamment de l'existence actuelle des "X". Par exemple, il pourrait y avoir une rupture de stocke d'un Produit (aucune instance actuelle), mais on a besoin de connaître son prix. La classe DescriptionProduit permet d'avoir cette information, même s'il n'y a plus d'instances de Produit. 
+Un autre exemple est un trimestre où le cours *LOG711* ne se donne pas (il n'y a pas de GroupeCours de LOG711 dans le trimestre actuel). 
+Alors une classe Cours (qui joue le rôle de description) sert pour spécifier le nombre de crédits, les cours préalables, etc.
+- La suppression d'instances de "X" entraîne la perte de l'information qui doit être mémorisée, mais a été incorrectement associée à l'entité en question.
+- La classe de description réduit la duplication des informations.
+
+La figure\ \ref{MDD-CoursGroupeCoursDescription} présente une classe de description pour le contexte de cours et groupe-cours.
+
+```{.plantuml caption="Cours joue le rôle de description d'entités (les groupes-cours)." #MDD-CoursGroupeCoursDescription}
+@startuml
+!include ../forme.pumlinclude
+scale 1
+hide empty members
+class "GroupeCours" as GC {
+  numéro : Entier
+  trimestre : Trimestre
+  ...
+}
+class "Cours" as C #ddffdd {
+  nom : Texte
+  nbCrédits : Entier
+  ...
+}
+class "Catalogue\nCours" as CP #ddffdd
+C "1" -- "*" GC : Décrit >
+C "1" -- "*" C : Est-préalable >
+CP "1" - "*" C : Répertorie >
+note bottom of C
+Classe de <<description>>. Une instance de Cours peut exister 
+indépendamment de l'existence d'un GroupeCours qu'elle décrit 
+(par exemple, avant qu'un cours soit donné la première fois).
+Elle réduit également la duplication des informations (le nom et 
+le nombre de crédits ne sont pas stockés dans chaque GroupeCours).
+end note
+@enduml
+```
+
+> \faWarning\ Attention de ne pas faire l'erreur naïve d'utiliser une classe de description simplement pour "décrire" une autre classe. Voir la figure\ \ref{MDD-ErreurDescription} pour un exemple.
+
+```{.plantuml caption="Erreur fréquente en LOG210 - utiliser une classe de description sans justification." #MDD-ErreurDescription}
+@startuml
+!include ../forme.pumlinclude
+scale 1
+hide empty members
+class "Client" as GC {
+}
+class "Description\nClient" as C #ffdddd {
+  nom : Texte
+  identifiant : IDClient
+  ...
+}
+class "Catalogue\nClients" as CP #ffdddd
+C "1" -- "*" GC : Décrit >
+CP "1" -r- "*" C : Répertorie >
+note bottom of C
+😩 Mauvaise classe de <<description>>. Il n'est pas nécessaire 
+d'avoir cette classe, car les clients sont décrits dans leur 
+propre classe Client. Si un client n'existe pas, il n'a pas de
+sens dans le MDD. Les informations ne seraient pas dupliquées 
+s'il n'y avait pas cette classe (chaque client a un nom et un
+identifiant unique).
+end note
+@enduml
+```
+
+\newpage
 ## Classes d'association
 
 Les classes d'association dans le MDD sont le sujet de la section A32.10/F26.10\ \faBook\ du livre du cours.

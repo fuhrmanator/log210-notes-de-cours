@@ -8,7 +8,7 @@ La notation UML inclut les diagrammes de cas d'utilisation, qui sont comme une t
 
 Dans LOG210, la théorie sur comment écrire les cas d'utilisation ne fait pas partie du cours; c'est un élément expliqué dans un autre cours (*LOG410 Analyse de besoins et spécifications*).
 
-## Exemple: jeu de Risk
+## Exemple: jeu de Risk{#exemple-jeu-de-risk}
 
 L'exemple suivant concerne le jeu de Risk.
 
