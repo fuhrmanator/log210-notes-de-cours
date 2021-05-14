@@ -245,7 +245,7 @@ class "Description\nClient" as C #ffdddd {
   ...
 }
 class "Catalogue\nClients" as CP #ffdddd
-C "1" -- "*" GC : Décrit >
+C "1" -- "1" GC : Décrit >
 CP "1" -r- "*" C : Répertorie >
 note bottom of C
 😩 Mauvaise classe de <<description>>. Il n'est pas nécessaire 
