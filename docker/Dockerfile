@@ -1,4 +1,8 @@
-FROM pandoc/ubuntu-latex:2.11.4
+# Note - latex (texlive) will update every year (around April 1?).
+# The tlmgr command below will use the latest version of texlive.
+# If the default image is not the same, there will be problems.
+# This is why I don't use a specific version.
+FROM pandoc/ubuntu-latex
 #RUN curl -L http://sourceforge.net/projects/plantuml/files/plantuml.jar/download -o /usr/bin/plantuml.jar
 # Copy the local plantuml.jar (we control the version)
 COPY plantuml.jar /usr/bin/plantuml.jar
@@ -25,6 +29,8 @@ RUN tlmgr update --self --all \
 && tlmgr install libertinus libertinus-type1 libertinus-fonts libertinus-otf libertinust1math fontawesome fontawesome5 tcolorbox fontaxes environ courier transparent \
 && tlmgr path add
 
+# create the fonts to save time each time a user will use them?
+RUN mktexpk --mfmode / --bdpi 600 --mag 1+0/600 --dpi 600 tcrm1095
 
 # Font for handwritten
 RUN mkdir -p /usr/share/fonts/TTF
