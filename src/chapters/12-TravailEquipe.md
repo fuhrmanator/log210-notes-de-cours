@@ -135,7 +135,7 @@ Voici quelques conseils pour le mentorat:
 - être capable d'expliquer des choses à quelqu'un d'autre;
 - savoir combien d'aide à donner à la personne encadrée.
 
-Selon TeamGeek, le dernier point est important parce que si vous donnez trop d'information, la personne peut vous ignorer plutôt que vous dire gentiment qu'elle a compris.
+Selon TeamGeek, le dernier point est important parce que si vous donnez trop d'informations, la personne peut vous ignorer plutôt que vous dire gentiment qu'elle a compris.
 
 ![Encadrer les coéquipiers est une habileté à mettre sur son CV ["CultureTECH BT Monster Dojo"](https://www.flickr.com/photos/24498081@N06/10081683216/) ([CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)) par [connor2nz](https://www.flickr.com/people/24498081@N06/).](https://farm8.static.flickr.com/7459/10081683216_2b02836f82_b.jpg){width="400px"}
 

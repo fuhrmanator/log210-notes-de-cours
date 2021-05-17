@@ -16,7 +16,14 @@ Voici le descriptif du cours, selon le plan de cours:
 
 Le livre obligatoire [@craig_uml_2005] pour ce cours est indiqué dans le plan de cours. **Le présent document n'est pas un substitut pour le livre obligatoire.**
 
-Les références au livre obligatoire seront indiquées par l'icône du livre\ \faBook.
+Les références au livre obligatoire sont indiquées par l'icône du livre\ \faBook.
+
+Le livre est disponible en français et en anglais, cependant les chapitres ne sont pas toujours les mêmes.
+Donc, il est parfois nécessaire d'indiquer la référence avec **F** et **A** pour la langue.
+Par exemple, **F16.10/A17.10** indique la section **16.10 du livre en français** et la section **17.10 du livre en anglais.**
+
+Toutes les références sont données pour la 3^e^ édition du livre.
+Si vous avez une autre édition, les chapitres ne sont pas toujours les mêmes et vous devez chercher le sujet dans la table des matières.
 
 ## Analyse vs Conception
 

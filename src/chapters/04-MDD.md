@@ -303,25 +303,30 @@ Joueur "1" -- "1..*" Pays : Contrôle >
 
 ## Affinement du MDD
 
-Lorsqu'on modélise un domaine, il est normal de commencer avec un modèle simple (à partir d'un ou deux cas d'utilisation) et ensuite on l'affine dans les itérations suivantes, où on y intègre d'autres éléments plus subtils ou complexes du problème qu'on étudie. Les détails de cette approche sont présentés dans le chapitre F26/A32\ \faBook\ du livre du cours. Bien que la matière soit présentée plus tard dans le livre, ce sont des choses à savoir pour la modélisation d'un domaine, même dans une première itération. 
+Lorsqu'on modélise un domaine, il est normal de commencer avec un modèle simple (à partir d'un ou deux cas d'utilisation) et ensuite on l'affine dans les itérations suivantes, où on y intègre d'autres éléments plus subtils ou complexes du problème qu'on étudie.
+Les détails de cette approche sont présentés dans le chapitre F26/A32\ \faBook\ du livre du cours.
+Bien que la matière soit présentée plus tard dans le livre, ce sont des choses à savoir pour la modélisation d'un domaine, même dans une première itération.
 
 Voici un résumé des points importants traités dans ce chapitre, dont quelques-uns ont déjà été présentés plus haut:
 
-- Composition/Agrégation
-- Généralisation/spécialisation
-- Attribut dérivé
+- Composition, par exemple, la classe Continent qui groupe les Pays dans la figure\ \ref{MDD-jeu-de-risk}. Larman propose d'utiliser la composition lorsque:
+  - la durée de vie du composant est limitée à celle du composite (lorsqu'un objet Continent est instancié ça doit grouper des instances de Pays pour être cohérent), il existe une dépendance création-suppression de la partie avec le tout (ça ne fait pas de sens de supprimer un objet Pays d'une instance de Continent dans le jeu de Risk).
+  - il existe un assemblage logique ou physique évident entre le tout est les parties (on ne peut construire un Continent sans les Pays).
+  - certaines propriétés du composite, comme son emplacement, s'étendent aux composants.
+  - les opérations que l'on peut appliquer au composite, telles que destruction, déplacement et enregistrement, se propagent aux composants.
+- Généralisation/spécialisation, voir le livre pour les exemples et les directives, notamment la règle des 100% (conformité à la définition) et la règle "est-un" (appartenance à l'ensemble).
+- Attribut dérivé, par exemple, `/nbPaysOccupés` dans la classe Joueur est un attribut dérivé de l'association entre Joueur et Pays (figure\ \ref{MDD-attribut-derive}).
 - Hiérarchies dans un MDD et héritage dans l'implémentation
 - Noms de rôles
-- Organisation des classes conceptuelles en Packages
+- Organisation des classes conceptuelles en Packages (surtout lorsque le MDD contient un nombre important de classes conceptuelles)
 
 ## FAQ MDD
 
 ### Y a-t-il un MDD pour chaque cas d'utilisation?{#mddchaquecasutilisation}
 
-Selon la méthodologie du livre du cours, bien qu'une application a souvent plusieurs fonctionnalités (cas d'utilisation), il n'y a qu'un seul MDD.
+Selon la méthodologie du livre du cours, bien qu'une application ait souvent plusieurs fonctionnalités (cas d'utilisation), il n'y a qu'un seul MDD.
 
-Cela dit, Le MDD est comme un fichier de code source.
-Sa *version* peut évoluer avec le projet.
+Cela dit, Le MDD est comme un fichier de code source, puisque sa *version* peut évoluer avec le projet.
 Le MDD évoluera normalement après chaque itération, car on fait une nouvelle analyse pour les nouvelles fonctionnalités visées dans l'itération.
 Au début du projet, le MDD est plus simple, puisqu'il porte sur seulement les cas d'utilisation ciblés à la première itération.
 Le MDD devient plus riche au fur et à mesure qu'on avance dans les itérations, parce qu'il modélise davantage de concepts reliés aux problèmes traités par les nouvelles fonctionnalités à réaliser.
