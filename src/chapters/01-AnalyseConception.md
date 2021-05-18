@@ -27,7 +27,7 @@ Si vous avez une autre édition, les chapitres ne sont pas toujours les mêmes e
 
 ## Analyse vs Conception
 
-Ce sujet est abordé en détail dans le chapitre 1\ \faBook\ du livre du cours.
+Ce sujet est abordé en détail dans le chapitre 1\ \faBook.
 
 L'**analyse** met l'accent sur une investigation du problème et des besoins plutôt que sur la recherche d'une solution.
 
@@ -108,7 +108,7 @@ La différence entre la représentation d'un problème et la représentation de 
 C'est un terme complexe pour un principe très intuitif.
 Méfiez-vous des classes importantes dont leur nom est difficile à tracer au problème.
 Elles vont rendre votre solution plus difficile à comprendre.
-Pour des explications de Larman, lisez la section 9.3\ \faBook\ du livre du cours.
+Pour des explications de Larman, lisez la section 9.3\ \faBook.
 
 L'exemple du jeu est trivial, puisque le problème est relativement simple.
 Réduire le décalage des représentations est un principe très important surtout lorsque le problème à résoudre est complexe.
@@ -130,7 +130,7 @@ En voici quelques exemples en développement de logiciels:
 - Un *projet logiciel* peut être complexe, avec plusieurs packages, chacun ayant beaucoup de classes, etc.
 - Un cadre d'applications (cadriciel, *framework*) est toujours complexe. 
 Par exemple un framework comme Angular ou React pour développer un *front-end* (application frontale), car l'interaction entre l'utilisateur et une application répartie dans le nuage nécessite beaucoup de fonctionnalités supportées par le cadriciel.
-- Un *algorithme* peut être complexe, par exemple, l'algorithme de \faWikipediaW\ [tri de Shell](https://fr.wikipedia.org/wiki/Tri_de_Shell) est plus complexe qu'un simple algorithme de \faWikipediaW\ [tri à bulles](https://fr.wikipedia.org/wiki/Tri_%C3%A0_bulles). Notez que la complexité d'un algorithme peut parfois apporter des gains de performance, mais coder, déboguer et maintenir une implémentation d'un algorithme complexe sera plus coûteux.
+- Un *algorithme* peut être complexe, par exemple, l'algorithme de [tri de Shell](https://fr.wikipedia.org/wiki/Tri_de_Shell)\ \faWikipediaW est plus complexe qu'un simple algorithme de [tri à bulles](https://fr.wikipedia.org/wiki/Tri_%C3%A0_bulles)\ \faWikipediaW. Notez que la complexité d'un algorithme peut parfois apporter des gains de performance, mais coder, déboguer et maintenir une implémentation d'un algorithme complexe sera plus coûteux.
 - Un *patron de conception* peut être complexe, par exemple, les patrons Visiteur, Décorateur, Médiateur, etc.
 Un patron définit des rôles et parfois des classes et du code supplémentaires à créer. Le tout doit s'intégrer dans un design existant (qui est possiblement déjà complexe).
 - Un *environnement* peut être complexe, par exemple les applications mobiles sont plus complexes à développer et à déboguer que les applications simples sur PC, à cause de l'environnement sans fil, des écrans tactiles, la pile limitée, etc.
@@ -201,7 +201,7 @@ Le chapitre 2 du livre\ \faBook\ définit un processus itératif et adaptatif ai
 Les points importants sont les suivants:
 
 - Le développement itératif et évolutif implique de programmer et de tester précocement un système partiel selon des cycles répétitifs.
-- Un cycle est nommé une itération et dure un temps fixe (par exemple, 3 semaines) comprenant les activités d'analyse, de conception, de programmation et de test, ainsi qu'une démonstration pour solliciter des rétroactions du client (voir la figure\ \ref{DevIteratifIncremental}). 
+- Un cycle est nommé une itération et dure un temps fixe (par exemple, 3 semaines) comprenant les activités d'analyse, de conception, de programmation et de test, ainsi qu'une démonstration pour solliciter des rétroactions du client (voir la figure\ \ref{DevIteratifIncremental}).
 - La durée d'une itération est limitée dans le temps (*timeboxed* en anglais), de 2 à 6 semaines. Il n'est pas permis d'ajouter du temps à la durée d'une itération si le projet avance plus lentement que prévu, car cela impliquerait un retard de la rétroaction du client. Si le respect des délais semble compromis, on supprime plutôt des tâches ou des spécifications et on les inclut dans l'itération suivante.
 - Les premières itérations peuvent sembler chaotiques, car elles sont loin de la "bonne voie". Avec la rétroaction du client et l'adaptation, le système à développer converge vers une solution appropriée (voir la figure\ \ref{StabiliteDansLesIterations}).
 - Il y a plusieurs avantages du développement itératif et incrémental:

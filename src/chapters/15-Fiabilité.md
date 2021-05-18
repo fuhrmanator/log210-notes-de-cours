@@ -1,7 +1,7 @@
 # Fiabilité
 
-Le chapitre A35/F30\ \faBook\ du livre du cours présente le problème de la fiabilité pour le système NextGen POS. 
-C'est le basculement sur un service local en cas d'échec d'un service distant. 
+Le chapitre A35/F30\ \faBook\ présente le problème de la fiabilité pour le système NextGen POS.
+C'est le basculement sur un service local en cas d'échec d'un service distant.
 
 ![Comment tolérer une panne de connexion ou de service?](images/PanneConnexionService.png "Comment tolérer une panne de connexion ou de service?"){width=70% #PanneConnexionService}
 
@@ -14,7 +14,7 @@ Voici les points importants:
   - **Échec.** Déni de service causé par une erreur.
 - Les solutions proposées par l'architecte système et documentées par Larman impliquent les concepts suivants:
   - Mise en cache locale d'informations recherchées au service distant, A35.2/F30.2\ \faBook
-  - Utilisation d'*Adaptateur \[GoF\]* pour réaliser le service redondant (lecture d'information), A35.2/F30.2\ \faBook\ 
+  - Utilisation d'*Adaptateur \[GoF\]* pour réaliser le service redondant (lecture d'information), A35.2/F30.2\ \faBook
   - Réalisation d'un scénario dans le cas d'utilisation pour supporter l'échec de tout (rien ne va plus) en permettant au Caissier de saisir l'information (description et prix), A35.3/F30.3\ \faBook.
   Dans ce cas, il faut bien gérer les exceptions.
   - Utilisation de *Procuration (Proxy) de redirection \[GoF\]* pour basculer sur un service local en cas de panne (écriture d'information), A35.4/F30.4\ \faBook

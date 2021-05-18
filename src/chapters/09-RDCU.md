@@ -1,6 +1,6 @@
 # Réalisations de cas d'utilisation (RDCU){#sec:RDCU}
 
-Les réalisations de cas d'utilisation (RDCU) sont le sujet du chapitre F17/A18\ \faBook\ du livre du cours. 
+Les réalisations de cas d'utilisation (RDCU) sont le sujet du chapitre F17/A18\ \faBook.
 Voici les points importants pour le cours:
 
 - Une RDCU est une synthèse des informations spécifiées dans le MDD, le DSS et les contrats d'opération.
@@ -86,7 +86,7 @@ Certaines postconditions concernent la création d'une instance.
 Dans votre RDCU, vous devez respecter le GRASP Créateur.
 Référez-vous à la définition dans le \nameref{tab_GRASPCreateur}.
 
-> \faWarning \ Une erreur potentielle est de donner la responsabilité de créer à un contrôleur, puisqu'*il a les données pour initialiser* l'objet. Bien que ce soit justifiable par le principe GRASP Créateur, il vaut mieux favoriser une classe qui *agrège* l'objet à créer, le cas échéant. 
+> \faWarning\ Une erreur potentielle est de donner la responsabilité de créer à un contrôleur, puisqu'*il a les données pour initialiser* l'objet. Bien que ce soit justifiable par le principe GRASP Créateur, il vaut mieux favoriser une classe qui *agrège* l'objet à créer, le cas échéant.
 
 ### Former une association
 
@@ -96,11 +96,11 @@ Pour les postconditions où il faut former une association entre un objet *a* et
 - S'il y a une association simple, il faut considérer la navigabilité de l'association. Est-ce qu'il faut pouvoir retrouver l'objet *a* à partir de l'objet *b* ou vice-versa? Il s'agira d'une méthode `setB(b)` sur l'objet `a` (pour trouver *b* à partir de *a*), etc.
 - S'il faut former une association entre un objet et un autre "sur une base de correspondance avec" un identifiant passé comme argument, alors il faut repérer le bon objet d'abord. Voir la section \nameref{TransformerIDenObjets}.
 
-Dans la plupart des cas, la justification GRASP pour former une association est Expert, défini dans le \nameref{tab_GRASPExpert}. \faLowVision \ Il faut faire attention à la \hyperref[Visibilite]{visibilité}.
+Dans la plupart des cas, la justification GRASP pour former une association est Expert, défini dans le \nameref{tab_GRASPExpert}. Il faut faire attention à la \hyperref[Visibilite]{visibilité}\ \faLowVision.
 
 ### Modifier un attribut
 
-Pour les postconditions où il faut modifier un attribut, c'est assez évident. Il suffit de suivre le principe GRASP Expert, défini dans le \nameref{tab_GRASPExpert}. Très souvent, c'est une méthode `setX(valeur)` où `X` correspond à l'attribut qui sera modifié à `valeur`. \faLowVision \ Attention à la \hyperref[Visibilite]{visibilité}.
+Pour les postconditions où il faut modifier un attribut, c'est assez évident. Il suffit de suivre le principe GRASP Expert, défini dans le \nameref{tab_GRASPExpert}. Très souvent, c'est une méthode `setX(valeur)` où `X` correspond à l'attribut qui sera modifié à `valeur`. Attention à la \hyperref[Visibilite]{visibilité}\ \faLowVision.
 
 Lorsque l'attribut d'un objet doit être modifié juste après la création de ce dernier, ça peut se faire dans le constructeur, comme on voit dans la figure\ \ref{RDCU_Constructeur_Modification}.
 
@@ -128,15 +128,14 @@ Il est difficile à enseigner cette démarche, mais les points suivants peuvent 
 C'est-à-dire que n'importe quel objet pourrait lui envoyer un message.
 Cependant, les objets Singleton posent des problèmes de conception, notamment pour les tests.
 Il vaut mieux éviter ce choix, si possible.  
-\faStackOverflow
-\ Voir [cette réponse sur stackoverflow](https://stackoverflow.com/a/2085988/1168342).
+Voir [cette réponse sur stackoverflow](https://stackoverflow.com/a/2085988/1168342)\ \faStackOverflow.
 - Sinon, il faudra que l'objet émetteur ait une référence de l'objet récepteur.
 Par exemple dans la figure\ \ref{RDCU_Visibilite1}, la référence à *b* peut être:
   - stockée comme un attribut de *a*,
   - passée comme un argument dans un message antérieur, ou
   - affectée dans une variable locale de la méthode où `unMessage()` sera envoyé.
 
-Pour plus de détails, voir le chapitre sur la Visibilité\ \faBook\ du livre du cours.
+Pour plus de détails, voir le chapitre sur la Visibilité (F18/A19)\ \faBook.
 
 ```{.plantuml caption="L'objet *b* doit être visible à l'objet *a* si *a* veut lui envoyer un message. [(PlantUML)](http://www.plantuml.com/plantuml/uml/VLB1JiCm3BrNsZzOksmSg9YuxO3M8eG6Gq9imDbBlJPgwWmdqTZVumua2eT9aIFxlTZFTXOXeiJKkIoqblSes468HqTgnPeU6GsWBPgs5f-uCjvvWIZ8GI7YECec41iRG0z2WrmTnCP833lF4Ip3k-NA7u8IVnDMjCFaOazXx0WUnOR-pN9pgxnDGu70nuOaWFE-XLe8JydMR_SmxR1LeKb8AzDnehTbRSWvghIgGB5QmUlwxcKzA0-pgujXI_yL1Anxm-TrBhc51v-4qPtbVRQcWhKHkuzdUS-aev8m53OSOPH4MJ2eUvdbryDTqKSYDlH4eHTUE5ipEDh5JF5eZTsZ3d-Cys8C6A3u6zxEorEup2vle80vv7cU5Q1EgKxYdwpJYwpiWz_uWhZIR_45)" #RDCU_Visibilite1 }
 @startuml
@@ -158,7 +157,7 @@ Pour initialiser les références nécessaires pour la bonne visibilité, Larman
 La directive d'utiliser les types primitifs pour les opérations système nous mène à un problème récurrent dans les RDCU : transformer un identifiant (souvent de type `String` ou `int`) en objet.
 Larman vous propose un idiome (pas vraiment un patron) nommé **Transformer identifiant en objet** qui sert à repérer la référence d'un objet qui correspond à l'identifiant.
 
-Il y a un exemple à la figure\ \ref{RDCU_ID_en_objets} provenant du chapitre sur **l'Application des patterns GoF (Figure 23.18)**\ \faBook\ du livre du cours.
+Il y a un exemple à la figure\ \ref{RDCU_ID_en_objets} provenant du chapitre sur **l'Application des patterns GoF (Figure 23.18)**\ \faBook.
 Un autre exemple du livre du cours est l'identifiant `codeArticle` transformé en objet `DescriptionProduit` par la méthode  
 `CatalogueProduits.getDescProduit(codeArticle:String):DescriptionProduit`.
 
@@ -181,7 +180,7 @@ La section \ref{UtilisationMap} explique comment implémenter la transformation 
 
 ## Utilisation de tableau associatif (`Map<clé, objet>`) {#UtilisationMap}
 
-Pour *transformer un ID en objets*, il est pratique d'utiliser un [tableau associatif (aussi appelé dictionnaire ou map en anglais)\faWikipediaW](https://fr.wikipedia.org/wiki/Tableau_associatif). L'exemple du livre du cours concerne le problème de repérer une `Case` Monopoly à partir de son nom (`String`). C'est la figure A17.7 ou F17.7\ \faBook\ du livre du cours. Voir les détails dans le livre.
+Pour *transformer un ID en objets*, il est pratique d'utiliser un [tableau associatif (aussi appelé dictionnaire ou map en anglais)](https://fr.wikipedia.org/wiki/Tableau_associatif)\ \faWikipediaW. L'exemple du livre du cours concerne le problème de repérer une `Case` Monopoly à partir de son nom (`String`). C'est la figure A17.7/F17.7\ \faBook. Voir les détails dans le livre.
 
 Notez que les exemples du livre ne montrent qu'un seul *type* dans le tableau associatif, par exemple `Map<Case>`, tandis que normalement il faut spécifier aussi le type de la clé, par exemple `Map<String, Case>`.
 
@@ -206,7 +205,7 @@ Dans la section suivante, l'initialisation des éléments utilisés dans les RDC
 ## RDCU pour l'initialisation, le scénario Démarrer {#RDCU_Demarrer}
 
 Le lancement de l'application correspond à la RDCU "Démarrer".
-La section **Initialisation et cas d'utilisation Démarrer** (Sec. 17.4, p.345 dans le livre en français) ou **Initialization and the 'Start Up' Use Case** (Sec. 18.4, p.274 dans le livre en anglais)\ \faBook\ traite ce sujet important. C'est dans cette conception où il faut mettre en place tous les éléments importants pour les hypothèses faites dans les autres RDCU, par exemple les classes de collection (Map), les références pour la visibilité, l'initialisation des contrôleurs, etc.
+La section **Initialisation et cas d'utilisation Démarrer** (F17.4, p.345) ou **Initialization and the 'Start Up' Use Case** (A18.4, p.274)\ \faBook\ traite ce sujet important. C'est dans cette conception où il faut mettre en place tous les éléments importants pour les hypothèses faites dans les autres RDCU, par exemple les classes de collection (Map), les références pour la visibilité, l'initialisation des contrôleurs, etc.
 
 Voici quelques points importants:
 
@@ -229,32 +228,40 @@ participant "p:Pays" as p
 participant "pMap\n:Map<String,\nPays>" as m
 create jr
 outside -->> jr : create
-note right: JeuRisk est l'objet racine
+note right: JeuRisk est l'objet racine. **Contrôleur** ne s'applique pas ici, car il ne s'agit pas d'une opération système
 loop i<5
 create d
 jr -->> d : dés[i] = create
-note over jr,d: par Créateur\nJeuRisk agrège Dé
+note over jr,d: par **Créateur**\nJeuRisk agrège Dé
 end loop
 create pr
 jr -->> pr : create
-note over jr,pr: par Créateur\nJeuRisk agrège PlateauRisk
+note over jr,pr: par **Créateur**\nJeuRisk agrège PlateauRisk
 create m
 pr -->> m : pMap = create
-note over pr,m: par Créateur: PlateauRisk agrège Map<String,Pays>
+note over pr,m: par **Créateur**: PlateauRisk agrège Map<String,Pays>
 pr -> pr : continentsAvecPays[] =\nchargerContinentsAvecPays
-note right : Charger les données\nd'un fichier JSON
+note right : Par **Expert**\nCharger les données d'un fichier JSON
 ' continents
 loop i<continentsAvecPays.size
 create c
 pr -->> c : create(continentsAvecPays[i].nom, ...)
-note over pr,c: par Créateur: PlateauRisk agrège Continent
+note over pr,c: par **Créateur**: PlateauRisk agrège Continent
 loop j<continentsAvecPays[i].pays.size
 create p
 pr -->> p : p = create(continentsAvecPays[i].pays[j].nom, ...)
-note over pr,p: par Créateur: PlateauRisk agrège Pays
+note over pr,p: par **Créateur**: PlateauRisk agrège Pays
 pr -> m : add(p)
+note right: Par **Expert**
 pr -> c : add(p)
+note right: Par **Expert**
 end loop
 end loop
 @enduml
 ```
+
+## Pattern "Faire soi-même" {#FaireSoiMeme}
+
+Dans la section F30.8/A33.7\ \faBook, Larman mentionne le pattern "Faire soi-même" de Peter Coad [-@coad95a]:
+
+> **Faire soi-même**: "Moi, objet logiciel, je fais moi-même ce qu'on fait normalement à l'objet réel dont je suis une abstraction"

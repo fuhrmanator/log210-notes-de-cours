@@ -66,7 +66,7 @@ Mais vous savez aussi que le code qui est produit lors d'un hackathon ne sera pa
 Le seul but est de faire du code qui marche pour montrer une idée intéressante.
 
 Au fait, dans certains contextes d'entreprise (par exemple une entreprise en démarrage qui a seulement six mois de financement), c'est une situation similaire.
-Si une solution de ["produit minimum viable" (MVP en anglais)\faWikipediaW](https://en.wikipedia.org/wiki/Minimum_viable_product) n'existe pas à la fin de la période de financement, l'entreprise n'existera plus, car il n'y aura pas une deuxième période de financement.
+Si une solution de ["produit minimum viable" (MVP en anglais)](https://en.wikipedia.org/wiki/Minimum_viable_product)\ \faWikipediaW n'existe pas à la fin de la période de financement, l'entreprise n'existera plus, car il n'y aura pas une deuxième période de financement.
 Si la compagnie est financée pour une deuxième période, la conception du code pourrait avoir besoin de beaucoup de soins, car elle a été négligée.
 Cette négligence à la conception (pour la maintenabilité) est aussi nommée la \hyperref[DetteTechnique]{dette technique}.
 

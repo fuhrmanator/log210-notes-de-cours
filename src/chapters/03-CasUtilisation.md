@@ -1,6 +1,6 @@
 # Cas d'utilisation
 
-Le chapitre 6\ \faBook\ du livre du cours présente les cas d'utilisation.
+Le chapitre 6\ \faBook\ présente les cas d'utilisation.
 Il s'agit des documents textuels décrivant l'interaction entre un système (logiciel à développer) et un ou plusieurs acteurs (les utilisateurs ou systèmes externes).
 Le cas d'utilisation décrit plusieurs scénarios, mais en général il y a un scénario principal (*"Happy Path"*) représentant ce qui se passe lorsqu'il n'y a pas d'anomalie.
 

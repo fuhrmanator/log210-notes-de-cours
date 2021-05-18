@@ -1,12 +1,12 @@
 # Diagrammes de déploiement et de composants
 
-Ce chapitre\ \faIcon{truck-loading}\ contient des informations sur les diagrammes de déploiement et de composants en UML. Les détails se trouvent dans le chapitre F31/A37\ \faBook\ du livre du cours.
+Ce chapitre\ \faIcon{truck-loading} contient des informations sur les diagrammes de déploiement et de composants en UML. Les détails se trouvent dans le chapitre F31/A37\ \faBook.
 
 ## Diagrammes de déploiement
 
 Un diagramme de déploiement présente le déploiement sur l'**architecture physique**. Il sert à documenter:
 
-1. comment les fichiers exécutables seront affectés sur les nœuds de traitement et 
+1. comment les fichiers exécutables seront affectés sur les nœuds de traitement et
 2. la communication entre composants physiques
 
 Voici les éléments importants:

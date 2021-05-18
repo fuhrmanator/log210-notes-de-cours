@@ -1,6 +1,6 @@
 # Modèle du domaine (MDD, modèle conceptuel)
 
-Les MDD sont expliqués en détail dans le chapitre 9\ \faBook\ du livre du cours, mais voici des points importants pour LOG210:
+Les MDD sont expliqués en détail dans le chapitre 9\ \faBook, mais voici des points importants pour LOG210:
 
 - Les classes conceptuelles ne sont pas des classes logicielles. Ainsi, selon la méthodologie de Larman, *elles n'ont pas de méthodes*.
 - Les classes ont des noms commençant avec une lettre majuscule, par exemple `Joueur` et elles ne sont jamais au pluriel, par exemple ~~`Joueurs`~~.
@@ -15,7 +15,7 @@ Il y a trois stratégies pour identifier les classes conceptuelles:
 
 ### Catégories pour identifier des classes conceptuelles
 
-:Extrait du tableau 9.1\ \faBook\ du livre du cours.
+:Extrait du tableau 9.1\ \faBook.
 
 Catégorie | Exemples
 :----------|:----------
@@ -39,7 +39,7 @@ Catégorie | Exemples
 
 ## Attributs
 
-Les attributs sont le sujet de la section 9.16\ \faBook\ du livre. 
+Les attributs sont le sujet de la section 9.16\ \faBook.
 Comme c'est le cas pour les classes et les associations, on fait figurer les attributs *quand les cas d'utilisation suggèrent la nécessité de mémoriser des informations*.
 
 Pour l'UML, la syntaxe complète d'un attribut est\ :
@@ -51,14 +51,14 @@ Voici des points importants:
 
 - *Le type d'un attribut est important et il faut les spécifier dans un MDD*, même si dans le livre du cours il y a plusieurs exemples sans type.
 - On ne se soucie pas de la visibilité des attributs dans un MDD.
-- Faites attention à l'attribut qui devrait être une classe. Si on ne pense pas un attribut *X* en termes alphanumériques dans le monde réel, alors il s'agit probablement d'une classe conceptuelle. Voir la section 9.12\ \faBook\ du livre.
+- Faites attention à l'attribut qui devrait être une classe. Si on ne pense pas un attribut *X* en termes alphanumériques dans le monde réel, alors il s'agit probablement d'une classe conceptuelle. Voir la section 9.12\ \faBook.
 - De la même manière, faites attention aux informations qui sont mieux modélisées par des associations, par exemple dans la figure\ \ref{MDD-jeu-de-risk} la classe `Pays` n'a pas un *attribut* `joueur:Joueur` (qui contrôle le Pays), mais elle a plutôt une *association* avec la classe `Joueur` et un verbe `contrôle`. 
 
-> \faWarning \ Il est vrai que dans un langage de programmation, les associations doivent être les attributs dans les classes. Cependant, dans un modèle du domaine on cherche à éviter des attributs si une association peut mieux décrire la relation. La relation relie visuellement les deux classes et elle est décrite avec un verbe.
+> \faWarning\ Il est vrai que dans un langage de programmation, les associations doivent être les attributs dans les classes. Cependant, dans un modèle du domaine on cherche à éviter des attributs si une association peut mieux décrire la relation. La relation relie visuellement les deux classes et elle est décrite avec un verbe.
 
 ## Associations
 
-Les associations dans le MDD sont le sujet de la section 9.14\ \faBook\ du livre du cours.
+Les associations dans le MDD sont le sujet de la section 9.14\ \faBook.
 Il faut se référer au contenu du livre pour les détails.
 Une association est une relation entre des classes (ou des instances de classes).
 Elle indique une connexion significative ou intéressante.
@@ -76,7 +76,7 @@ Pensez à la **mémorabilité** d'une association dans le contexte du logiciel �
   - Les extrémités des associations ont une expression de la multiplicité indiquant une relation numérique entre les instances des classes.
   Vous pouvez en trouver plusieurs exemples dans la figure\ \ref{MDD-jeu-de-risk}.
 
-:Extrait du tableau 9.2\ \faBook\ (liste d'associations courantes) du livre du cours.\label{Tableau_associations_courantes}
+:Extrait du tableau 9.2\ \faBook\ (liste d'associations courantes).\label{Tableau_associations_courantes}
 
 **Catégorie** | **Exemple**
 :----------|:----------
@@ -165,7 +165,7 @@ Joueur "1" -- "1,2,3" Dé : Jette >
 
 ## Attributs dérivés
 
-Les attributs dérivés sont expliqués en détail dans la section 9.16\ \faBook\ du livre du cours. 
+Les attributs dérivés sont expliqués en détail dans la section 9.16\ \faBook. 
 Il s'agit des attributs qui sont calculés à partir d'autres informations reliées à la classe.
 Ils sont indiqués par le symbole **`/`** devant leur nom.
 L'exemple à la figure\ \ref{MDD-attribut-derive} s'applique à la règle du jeu de Risk spécifiant qu'un joueur reçoit un certain nombre de renforts selon le nombre de pays occupés. La classe Joueur pourrait avoir un attribut dérivé `/nbPaysOccupés` qui est calculé selon le nombre de Pays contrôlés par le joueur.
@@ -190,7 +190,7 @@ Joueur "1" -- "1..*" Pays : Contrôle >
 ## Classes de "description" et de catalogues
 
 Deux catégories de classes conceptuelles qui vont de pair sont les *descriptions d'entités* et les *catalogues* qui agrègent les descriptions.
-Elles sont expliquées en détail dans la section 9.13 \faBook\ du livre du cours.
+Elles sont expliquées en détail dans la section 9.13 \faBook.
 Voici des conditions pour utiliser correctement une classe de description d'une autre classe "X":
 
 - Il faut disposer de la description d'un produit ou d'un service "X" indépendamment de l'existence actuelle des "X". Par exemple, il pourrait y avoir une rupture de stocke d'un Produit (aucune instance actuelle), mais on a besoin de connaître son prix. La classe DescriptionProduit permet d'avoir cette information, même s'il n'y a plus d'instances de Produit. 
@@ -261,7 +261,7 @@ end note
 \newpage
 ## Classes d'association
 
-Les classes d'association dans le MDD sont le sujet de la section A32.10/F26.10\ \faBook\ du livre du cours.
+Les classes d'association dans le MDD sont le sujet de la section A32.10/F26.10\ \faBook.
 
 > Une classe d'association permet de traiter une association comme une classe, et de la modéliser avec des attributs...
 
@@ -304,7 +304,7 @@ Joueur "1" -- "1..*" Pays : Contrôle >
 ## Affinement du MDD
 
 Lorsqu'on modélise un domaine, il est normal de commencer avec un modèle simple (à partir d'un ou deux cas d'utilisation) et ensuite on l'affine dans les itérations suivantes, où on y intègre d'autres éléments plus subtils ou complexes du problème qu'on étudie.
-Les détails de cette approche sont présentés dans le chapitre F26/A32\ \faBook\ du livre du cours.
+Les détails de cette approche sont présentés dans le chapitre F26/A32\ \faBook.
 Bien que la matière soit présentée plus tard dans le livre, ce sont des choses à savoir pour la modélisation d'un domaine, même dans une première itération.
 
 Voici un résumé des points importants traités dans ce chapitre, dont quelques-uns ont déjà été présentés plus haut:
@@ -331,13 +331,13 @@ Le MDD évoluera normalement après chaque itération, car on fait une nouvelle 
 Au début du projet, le MDD est plus simple, puisqu'il porte sur seulement les cas d'utilisation ciblés à la première itération.
 Le MDD devient plus riche au fur et à mesure qu'on avance dans les itérations, parce qu'il modélise davantage de concepts reliés aux problèmes traités par les nouvelles fonctionnalités à réaliser.
 
-Par exemple, dans\ \faBook\ le livre du cours la version initiale du MDD (chapitre 9) ne traite pas la fonctionnalité de paiement par carte de crédit.
+Par exemple, la version initiale du MDD (chapitre 9\ \faBook) ne traite pas la fonctionnalité de paiement par carte de crédit.
 Les classes conceptuelles modélisant la problématique de paiements par carte de crédit sont absentes dans le MDD initial.
 Plus tard (après plusieurs itérations, dans le chapitre sur le raffinement du MDD), on voit un MDD beaucoup plus riche qui reflète la modélisation des concepts reliés à des fonctionnalités comme les paiements par carte de crédit, les demandes d'autorisation de paiement, etc.
 
 ### Un **modèle du domaine** est-il la même chose qu'un **modèle de données**?{#mdd_donnees}
 
-Voici la réponse de Craig Larman dans la section 9.2\ \faBook\ du livre du cours:
+Voici la réponse de Craig Larman dans la section 9.2\ \faBook:
 
 > *Un **modèle du domaine** n'est pas un **modèle de données** (qui représente par définition des objets persistants stockés quelque part).*
 
@@ -345,4 +345,4 @@ Il peut y avoir des concepts dans un domaine qui ne sont pas dans la base de don
 
 > *N'excluez donc pas une classe simplement parce que les spécifications n'indiquent pas un besoin évident de mémoriser les informations la concernant (un critère courant pour la modélisation des données quand on conçoit des bases de données relationnelles mais qui n'a pas cours en modélisation d'un domaine), ou parce que la classe conceptuelle ne possède pas d'attributs. Il est légal d'avoir une classe conceptuelle sans attribut, ou une classe conceptuelle qui joue un rôle exclusivement comportementale dans le domaine.*
 
-\faStackOverflow\ Vous pouvez aussi lire [cette question sur stackoverflow](https://stackoverflow.com/q/3507671/1168342).
+Vous pouvez aussi lire [cette question](https://stackoverflow.com/q/3507671/1168342)\ \faStackOverflow.
