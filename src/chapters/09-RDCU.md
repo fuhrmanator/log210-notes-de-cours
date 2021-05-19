@@ -266,13 +266,14 @@ Le principe du \nameref{DecalageRepresentations} est la différence entre la mod
 Lorsqu'on fait l'ébauche d'une RDCU, on peut réduire le décalage des représentations principalement en s'inspirant des classes conceptuelles (du modèle du domaine) pour proposer des classes logicielles dans la solution décrite dans la RDCU.
 Plus une solution ressemble à la description du problème, plus elle sera facile à comprendre.
 
-> \faWarning\ Il est important de réaliser qu'une application de pattern GoF à la solution peut nuire à ce principe, car ces patterns rajoutent des classes qui n'ont pas de lien avec le modèle du domaine.
-Par exemple, un Visiteur ou un Itérateur sont des classes logicielles qui ne vont pas avoir de binôme dans le modèle du domaine.
-Cela ne veut pas dire qu'il est forcément mauvais d'appliquer les patterns GoF, car ils peuvent résoudre des problèmes importants dans la conception (comme vous l'avez appris dans LOG121).
-Cependant, il faut savoir que chaque fois qu'on propose des classes logicielles qui n'ont pas de liens avec la représentation du problème du domaine, on *augmente le décalage des représentations* et on rend la solution un peu plus difficile à comprendre.
-Dans le cas d'un pattern GoF, non seulement une autre personne doit connaître le pattern, mais elle devra comprendre également votre application du pattern.
-C'est un bon exemple de la qualité pernicieuse de la conception de logiciels.
-Il est très difficile de trouver un bon équilibre entre toutes les forces: la maintenabilité, la simplicité, les fonctionnalités, etc.
+> \faWarning\ Une application de pattern GoF à la solution peut nuire à ce principe, car ces patterns rajoutent souvent des classes logicielles n'ayant aucun lien avec le modèle du domaine.
+Par exemple, un Visiteur ou un Itérateur sont des classes logicielles sans binôme dans le modèle du domaine.
+Il faut vérifier avec une personne expérimentée (l'architecte du projet si possible) que l'application du pattern est justifiée, qu'elle apporte de vrais bénéfices au design en dépit des désavantages dus à des classes ajoutées.
+Chaque fois qu'on propose des classes logicielles qui n'ont pas de liens avec la représentation du problème du domaine, on *augmente le décalage des représentations* et on rend la solution un peu plus difficile à comprendre.
+C'est aussi une forme de \nameref{ComplexiteCirc}.
+Ce dilemme est un bon exemple de la nature pernicieuse de la conception de logiciels.
+Il est très difficile, même pour les experts en conception, de trouver un bon équilibre entre toutes les forces: la maintenabilité, la simplicité, les fonctionnalités, etc.
+Vous pouvez en lire plus dans [cette réponse sur StackOverflow](https://stackoverflow.com/a/18702842/1168342)\ \faStackOverflow.
 
 ## Pattern "Faire soi-même" {#FaireSoiMeme}
 
