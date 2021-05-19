@@ -90,7 +90,7 @@ Les personnes travaillant sur un projet vont facilement comprendre ce modèle, c
 
 Dans LOG210 une modélisation orientée objet est utilisée et pour l'analyse (classes conceptuelles décrivant le problème et les besoins comme à la figure\ \ref{mdd-des}) et pour la conception (classes logicielles proposant une solution dont sa représentation est proche de la modélisation du problème comme à la figure\ \ref{ddc-des}).
 
-## Décalage des représentations
+## Décalage des représentations {#DecalageRepresentations}
 
 Vous avez sûrement remarqué que le modèle du problème (figure\ \ref{mdd-des}) ressemble beaucoup au modèle de la solution (figure\ \ref{ddc-des}) pour notre exemple de jeu de dés.
 Cependant, il y a des différences, car une solution comporte des détails sur la dynamique du jeu qui sera codée.

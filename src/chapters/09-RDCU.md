@@ -260,8 +260,22 @@ end loop
 @enduml
 ```
 
+## Réduire le décalage des représentations
+
+Le principe du \nameref{DecalageRepresentations} est la différence entre la modélisation (la représentation) du problème (du domaine) et la modélisation de la solution.
+Lorsqu'on fait l'ébauche d'une RDCU, on peut réduire le décalage des représentations principalement en s'inspirant des classes conceptuelles (du modèle du domaine) pour proposer des classes logicielles dans la solution décrite dans la RDCU.
+Plus une solution ressemble à la description du problème, plus elle sera facile à comprendre.
+
+> \faWarning\ Il est important de réaliser qu'une application de pattern GoF à la solution peut nuire à ce principe, car ces patterns rajoutent des classes qui n'ont pas de lien avec le modèle du domaine.
+Par exemple, un Visiteur ou un Itérateur sont des classes logicielles qui ne vont pas avoir de binôme dans le modèle du domaine.
+Cela ne veut pas dire qu'il est forcément mauvais d'appliquer les patterns GoF, car ils peuvent résoudre des problèmes importants dans la conception (comme vous l'avez appris dans LOG121).
+Cependant, il faut savoir que chaque fois qu'on propose des classes logicielles qui n'ont pas de liens avec la représentation du problème du domaine, on *augmente le décalage des représentations* et on rend la solution un peu plus difficile à comprendre.
+Dans le cas d'un pattern GoF, non seulement une autre personne doit connaître le pattern, mais elle devra comprendre également votre application du pattern.
+C'est un bon exemple de la qualité pernicieuse de la conception de logiciels.
+Il est très difficile de trouver un bon équilibre entre toutes les forces: la maintenabilité, la simplicité, les fonctionnalités, etc.
+
 ## Pattern "Faire soi-même" {#FaireSoiMeme}
 
-Dans la section F30.8/A33.7\ \faBook, Larman mentionne le pattern "Faire soi-même" de Peter Coad [-@coad95a]:
+Dans la section F30.8/A33.7\ \faBook, Larman mentionne le pattern "Faire soi-même" de Peter Coad [-@coad95a] qui permet de réduire le \nameref{DecalageRepresentations}:
 
 > **Faire soi-même**: "Moi, objet logiciel, je fais moi-même ce qu'on fait normalement à l'objet réel dont je suis une abstraction"
