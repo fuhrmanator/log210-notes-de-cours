@@ -277,6 +277,8 @@ Vous pouvez en lire plus dans [cette réponse sur StackOverflow](https://stackov
 
 ## Pattern "Faire soi-même" {#FaireSoiMeme}
 
-Dans la section F30.8/A33.7\ \faBook, Larman mentionne le pattern "Faire soi-même" de Peter Coad [-@coad95a] qui permet de réduire le \nameref{DecalageRepresentations}:
+Dans la section F30.8/A33.7\ \faBook, Larman mentionne le pattern "Faire soi-même" de Peter Coad [-@coad97a] qui permet de réduire le \nameref{DecalageRepresentations}, même s'il ne représente pas exactement la réalité des objets (voir la figure\ \ref{main_des}):
 
 > **Faire soi-même**: "Moi, objet logiciel, je fais moi-même ce qu'on fait normalement à l'objet réel dont je suis une abstraction"
+
+![Dans la vraie vie, les dés sont lancés par une main (["Hand of chance"](https://www.flickr.com/photos/aerust/9590772048/) [(CC BY 2.0)](https://creativecommons.org/licenses/by/2.0/) par [Alexandra E Rust](https://www.flickr.com/people/aerust/)).](images/flickr_aerust_hand_of_chance.jpg){width=80% #main_des}
