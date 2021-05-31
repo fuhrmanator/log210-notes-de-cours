@@ -1,7 +1,7 @@
 # Développement piloté par les tests
 
 Si on écrivait des logiciels pouvant se tester automatiquement?
-Le développement piloté par les tests (anglais, *test-driven development, TDD*) est une pratique populaire et intéressante.
+Le développement piloté par les tests (anglais *test-driven development, TDD*) est une pratique populaire et intéressante.
 Il s'agit d'écrire des logiciels avec un composant d'autovalidation (des tests automatisés).
 Mais, écrire beaucoup de tests n'est pas toujours une tâche agréable pour des développeurs.
 Historiquement, si on attend la fin d'un projet pour écrire des tests, il ne reste plus beaucoup de temps et l'équipe laisse tomber les tests.
@@ -17,7 +17,7 @@ Il y a une discipline imposée dans le TDD qui nécessite d'écrire un *test en 
 La démarche est illustrée par la figure\ \ref{TDD_states}.
 Beaucoup d'outils (IDE) favorisent ce genre de développement.
 Nous pouvons écrire un test qui appelle à une fonction qui n'existe pas encore et l'IDE va nous proposer un squelette de la méthode, avec les arguments et une valeur de retour même.
-Un puriste du TDD insistera que le test soit écrit toujours en premier!
+Un puriste du TDD insistera sur le fait que le test soit écrit toujours en premier!
 Cette discipline est parfois culturelle. 
 
 Plusieurs chercheurs ont mené des expériences, par exemple [@Karac_TDD_2018], pour voir si tester en premier avait un vrai bénéfice.
@@ -28,12 +28,13 @@ Travailler en *petits pas* est utile, même sans faire du TDD.
 
 Sachez qu'il existe beaucoup d'intergiciels (anglais *frameworks*) pour faciliter l'exécution automatique des tests réalisés dans le cadre du TDD.
 Pour Java il y a JUnit, mais il y en a pour pratiquement tous les langages et environnements.
-En ce qui concerne le squelette pour le laboratoire de LOG210, la version TypeScript utilise [Mocha](https://mochajs.org/index.html) avec [Chai](https://www.chaijs.com/).
-La version Python utilise [PyTest](https://docs.pytest.org/en/latest/).
+En ce qui concerne le squelette pour le laboratoire de LOG210, il s'agit de [Jest](https://jestjs.io/).
+<!-- La version Python utilise [PyTest](https://docs.pytest.org/en/latest/). -->
 
-L'exécution de tests peut être même faite à chaque commit du code dans un dépôt comme GitHub. Le squelette de LOG210 utilise [Travis](https://travis-ci.org/) pour cela. Cependant, pour un dépôt privé, Travis nécessite un compte payant.
+L'exécution de tests peut être même faite à chaque commit du code dans un dépôt comme GitHub. Le squelette de LOG210 utilise [Travis](https://travis-ci.org/) pour cela. 
+Cependant, pour un dépôt privé, Travis nécessite un compte payant.
 
-Il est possible de mesurer la [couverture de code](https://fr.wikipedia.org/wiki/Couverture_de_code)\ \faWikipediaW atteinte par les tests (mais ce sujet commence à sortir du cadre de la matière du cours). Les deux versions du squelette utilisent [Coveralls](https://coveralls.io/) pour ce faire.
+Il est possible de mesurer la [couverture de code](https://fr.wikipedia.org/wiki/Couverture_de_code)\ \faWikipediaW atteinte par les tests (mais ce sujet commence à sortir du cadre de la matière du cours). Le squelette utilise [Coveralls](https://coveralls.io/) pour ce faire.
 
 ```{.plantuml caption="États du développement piloté par les tests. [(PlantUML)](http://www.plantuml.com/plantuml/uml/RLJDQXin4BxhAGONwgJ43eLIYZ5B4fj0BgKqII_T7kJToLf4AsqraerxwhLlqTxgv_2Rz4awqgx_WY_BelbclX_DxXLvwNoejPYh4W7hng-WH2gSQhooHj2pCerqiWRoAutyTAf83VlAlPSURwmhqKsijWvcMXRFBm6trlYsl9mhZwVAzubYPdLvigf-8Bnz_x9qxPnT7jRxUy0KdsJGFbO_oXgXTu-LHNYyWvieiIVwNdcctFpYIGHbW7ApNg2sJOCr6W-DqjPlri3ZG2E1H_8aAFB2Pnig14dGkmvGMsKeDy4aI6usws9k0_RWbSEoQ_Y2pYVyWmsCtStBMIqHqp6wSeYcmt-Iz32TfevnaPBZMHcV0X_dvk1iJEnzzEv3Ddxjvw6U3KgxDDduCY4o7hj2hUrIV7tp3GPELNC_o3hz8vYupHfTRemD2vGXDr6KQAi3ny2aUyGXyLOuXCAMo99jSF0a-Q2JxvAPCpeVKsYoVp__Z2_ZYqZT0tr0c9lJb2ronzVvIubajv49Wk702wyMYYzbQs-NH8laDURfWPIH5NPQVhTQjXqT4rDjCpvs1oHDUpT2OuMcX89l1vqu7lTug0QEUC7qkPlNXc8hiLiePE2G16z8u-nCR_xoFie55j3jp10cs32NDFw2cxI41eCNqZcru72_1znl831pjpFGw4207fJcwmYbawAmt5Dn3t_8Up8QYkERkTE90VOC_KuAa5KUQgbZ6cpjJCKtunNpHGCpMmKy7y8qnbH4QtG1ra17p3hR6FbxIiv4ZB1DKbpnWtyV_m40)" #TDD_states }
 @startuml
@@ -75,17 +76,17 @@ C'est un outil de transmission de techniques et de principes de combat.
 
 ![Étudiante de karaté faisant le kata *Basai Dai* (photo ["Karate"](https://www.flickr.com/photos/the-consortium/4507180302/) [(CC BY-SA 2.0)](https://creativecommons.org/licenses/by-sa/2.0/) par [The Consortium](https://www.flickr.com/people/the-consortium/)).](images/karate.jpg){width=40%}
 
-Alors, le "kata TDD" a été proposé par Dave Thomas et le but est de développer la fluidité avec le développement piloté par les tests. 
-Un kata TDD se pratique avec un IDE (environnement de développement logiciel) et un support pour les tests (par exemple JUnit). 
+Alors, le "kata TDD" a été proposé par Dave Thomas et le but est de développer la fluidité avec le développement piloté par les tests.
+Un kata TDD se pratique avec un IDE (environnement de développement logiciel) et un support pour les tests (par exemple JUnit).
 Pratiquer le même kata peut améliorer votre habileté de programmation. 
-On peut pratiquer le même kata dans un langage différent ou avec un IDE ou environnement de test différent. 
+On peut pratiquer le même kata dans un langage différent ou avec un IDE ou environnement de test différent.
 Le kata vous permet d'avoir une facilité avec les aspects techniques de développement dans plusieurs dimensions (complétion de code pour test et pour l'application, API de l'environnement de test, etc.).
 
-En plus, les activités de réusinage sont normalement intégrées dans un kata. 
+En plus, les activités de réusinage sont normalement intégrées dans un kata.
 Le fait de travailler en *petits pas* peut faire en sorte que la dette technique s'accumule.
-Les IDE facilitent l'application des activités de réusinage. 
-Un langage fortement typé comme Java permet d'avoir plus de fonctionnalités automatisées de réusinage dans un IDE qu'un langage dynamique comme JavaScript ou Python. 
-Une activité de base de réusinage est le renommage d'une variable ou d'une fonction. 
+Les IDE facilitent l'application des activités de réusinage.
+Un langage fortement typé comme Java permet d'avoir plus de fonctionnalités automatisées de réusinage dans un IDE qu'un langage dynamique comme JavaScript ou Python.
+Une activité de base de réusinage est le renommage d'une variable ou d'une fonction.
 Le réusinage rend le code plus facile à comprendre et à maintenir.
 
 ### Exemple de Kata TDD FizzBuzz
@@ -122,7 +123,7 @@ Buzz
 #### Préalables
 
 Il faut installer un IDE qui supporte les activités de réusinage (refactorings) comme VisualStudio Code, Eclipse, IntelliJ, etc. puis un framework de test (JUnit, Mocha/Chai, unittest, etc.).
-Pour un exemple qui fonctionne en TypeScript, vous pouvez cloner le code à [ce dépôt](https://github.com/profcfuhrmanets/typescript-tdd-kata).
+Pour un exemple qui fonctionne en TypeScript, vous pouvez cloner le code à [ce dépôt](https://github.com/fuhrmanator/kata_jest_ts_fizzbuzz).
 
 #### Déroulement
 
