@@ -21,14 +21,15 @@ Un contrat d'opération est un document décrivant ce qui est arrivé après l'e
 
 Le MDD décrit la vraie vie. Il y a des classes conceptuelles (comme Vente) mais aussi des *instances* de ces classes. Dans un magasin, pour chaque nouvelle vente, on imagine une nouvelle instance de la classe Vente. S'il y a eu 72 clients qui ont acheté des choses dans un magasin dans une journée, on imagine 72 instances de Vente, une pour chaque client.
 
-Dans la figure\ \ref{ContratExempleCreerNouvelleVente}, l'opération système `créerNouvelleVente()` provient d'un diagramme de séquence système lié au cas d'utilisation *Traiter Vente*. Elle correspond au moment où le caissier démarre une nouvelle vente pour un client. Avant l'exécution de cette opération, l'instance de la classe Vente indiquée dans le modèle du domaine n'existe pas. Cependant, après l'exécution de l'opération système, l'instance de Vente devrait exister. Le contrat d'opération spécifie ce fait dans une postcondition (avec le passé composé en français): "une instance *v* de Vente a été créée". 
+Dans la figure\ \ref{ContratExempleCreerNouvelleVente}, l'opération système `créerNouvelleVente()` provient d'un diagramme de séquence système lié au cas d'utilisation *Traiter Vente*. Elle correspond au moment où le caissier démarre une nouvelle vente pour un client. Avant l'exécution de cette opération, l'instance de la classe Vente indiquée dans le modèle du domaine n'existe pas. Cependant, après l'exécution de l'opération système, l'instance de Vente devrait exister. Le contrat d'opération spécifie ce fait dans une postcondition (avec le passé composé en français): "une instance *v* de Vente a été créée".
 
 Un contrat d'opération permet de spécifier tous les changements dans le MDD qui doivent avoir lieu lors de l'opération système. Les postconditions du contrat saisissent l'évolution du MDD.
 
 ![Pendant l'opération système `créerNouvelleVente`, une instance de Vente doit être créée. Le contrat d'opération le spécifie dans une postcondition.](images/SurvolContrats.pdf){#ContratExempleCreerNouvelleVente}
 
-
 ## Exemple: Contrats d'opération pour Attaquer un pays
+
+Voir la figure\ \ref{MDD-risk-objets} pour les changements dans les objets du modèle du domaine correspondant aux postconditions.
 
 ### Attaquer un pays
 
@@ -61,3 +62,16 @@ Un contrat d'opération permet de spécifier tous les changements dans le MDD qu
 
 - TODO: Handle the change of Occupation?
 
+![Les postconditions décrivent la manipulation d'objets dans un MDD (la partie inférieure ici est un diagramme d'objets)](images/MDD-Risk-contrats.drawio.pdf){#MDD-risk-objets}
+
+## Feuille de référence
+
+Pour faire des contrats, voici une démarche générale:
+
+1. Contrat pour chaque opération système
+2. Regarder toujours le MDD
+3. Rappeler les formes de postconditions
+   1. créer/supprimer instance
+   2. former/briser association
+   3. modifier attributs
+4. Ne rien oublier (marquer le MDD ou dessiner un diagramme d'objets, comme à la figure\ \ref{MDD-risk-objets} si nécessaire)
