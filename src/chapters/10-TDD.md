@@ -91,10 +91,10 @@ Le réusinage rend le code plus facile à comprendre et à maintenir.
 
 ### Exemple de Kata TDD FizzBuzz
 
-L'inspiration de cet exercice vient de http://codingdojo.org/kata/FizzBuzz/.
+L'inspiration de cet exercice vient de [codingdojo.org](http://codingdojo.org/kata/FizzBuzz/).
 
 Dans cet exercice, il faut écrire par le développement piloté par les tests un programme qui imprime les nombres de 1 à 100.
-Mais pour les multiples de trois, il faut imprimer `Fizz` au lieu du nombre et pour les multiples de cinq, il faut imprimer `Buzz`. Pour les nombres étant des multiples de trois et cinq il faut imprimer `FizzBuzz`. Voici un exemple des sorties:
+Mais pour les multiples de trois, il faut imprimer `Fizz` au lieu du nombre et pour les multiples de cinq, il faut imprimer `Buzz`. Pour les nombres étant des multiples de trois et de cinq il faut imprimer `FizzBuzz`. Voici un exemple des sorties:
 
 ```
 1
@@ -151,10 +151,8 @@ Il s'agit de créer une classe ayant une méthode acceptant un entier et retourn
 6. Un argument de 10 retourne `Buzz`
 7. Un argument de 15 retourne `FizzBuzz`
 8. Un argument de 30 retourne `FizzBuzz`
-9. Supporter des exigences qui évoluent:
+9. Supporter des exigences qui évoluent. Attention aux conflits dans les exigences:
 
     a. Il faut imprimer Fizz au lieu du nombre si le nombre est un multiple de 3 ou contient un 3 (ex. 13 → `Fizz`).
-    b. Il faut imprimer Buzz au lieu du nombre si le nombre est un multiple de 5 ou contient un 5 (ex. 51 → `Fizz`).
+    b. Il faut imprimer Buzz au lieu du nombre si le nombre est un multiple de 5 ou contient un 5 (ex. 59 → `Fizz`).
     c. Il faut imprimer FizzBuzz si le nombre est un multiple de 5 et de 3 ou contient un 5 et un 3 (ex. 53 → `FizzBuzz`).
-
-
