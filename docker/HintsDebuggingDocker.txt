@@ -1,7 +1,7 @@
 # https://stackoverflow.com/a/54726455/1168342
-To start a container that isn't running and connect as root (this doesn't work in Windows 10 under git bash...):
+To start a container that isn't running and connect as root (the MSYS_NO_PATHCONV=1 will get it to work in Windows 10 git bash.):
 
-docker run -ti -u root --entrypoint=/bin/bash log210ndc/pandoc-latex-etc:2.11.4 -s
+MSYS_NO_PATHCONV=1 docker run -ti -u root --entrypoint=/bin/bash log210ndc/pandoc-latex-etc:2.x -s
 
 
 # En mode manuel (simulation)

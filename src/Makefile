@@ -25,7 +25,8 @@ PANDOC_ARGS = $(TOC) $(MATH_FORMULAS) $(CSS_ARG) $(METADATA_ARG) $(PLANTUML_FILT
 PDF_ARGS = --citeproc --listing -V geometry:margin=1in --pdf-engine=pdflatex --template=$(TEMPLATES_FOLDER)/default.latex
 # Note MSYS_NO_PATHCONV=1 because of a bug in paths in Git Bash in windows 
 # https://stackoverflow.com/a/34386471/1168342
-PANDOC_COMMAND = MSYS_NO_PATHCONV=1 docker run -e TZ=America/Toronto --rm --volume "`pwd`:/pandoc" -w /pandoc --user `id -u`:`id -g` -u root log210ndc/pandoc-latex-etc:2.x
+# use "//" rather than "/" on the directories see https://github.com/docker/for-win/issues/6754#issuecomment-629702199
+PANDOC_COMMAND = MSYS_NO_PATHCONV=1 docker run -e TZ=America/Toronto --rm --volume "`pwd`://working_dir" -w //working_dir --user `id -u`:`id -g` -u root log210ndc/pandoc-latex-etc:2.x
 #PANDOC_COMMAND = pandoc
 
 ####################################################################################################
