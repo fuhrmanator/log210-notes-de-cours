@@ -2,9 +2,20 @@
 
 Ce chapitre contient des informations sur le concept de la [dette technique\faWikipediaW](https://fr.wikipedia.org/wiki/Dette_technique), qui n'est pas un sujet du livre du cours.
 
-Pour rajouter une nouvelle fonctionnalité à un système, les développeurs ont souvent un choix entre deux façons de procéder. La première est facile à mettre en place (le "Hacking cowboy" sur \nameref{SpectreDeLaConception}), mais elle est souvent désordonnée et rendra sûrement plus difficiles des changements au système dans le futur. L'autre est une solution élégante et donc plus difficile à rendre opérationnelle, mais elle facilitera des modifications à venir. Comment prendre la décision? La *dette technique* est une métaphore pour aider à comprendre des conséquences à long terme pour des choix de conception permettant de livrer une fonctionnalité à court terme. 
+Pour rajouter une nouvelle fonctionnalité à un système, les développeurs ont souvent un choix entre deux façons de procéder. La première est facile à mettre en place (le "hacking cowboy" sur \nameref{SpectreDeLaConception}), mais elle est souvent désordonnée et rendra sûrement plus difficiles des changements au système dans le futur.
+L'autre est une solution élégante et donc plus difficile à rendre opérationnelle, mais elle facilitera des modifications à venir.
+Comment prendre la décision?
+La *dette technique* est une métaphore pour aider à comprendre des conséquences à long terme pour des choix de conception permettant de livrer une fonctionnalité à court terme.
 
-La dette est une forme de risque qui peut apporter des bénéfices ou des pertes. Tout dépend de la quantité d'intérêt à payer. L'inventeur du wiki, Ward Cunningham (réf), a utilisé la métaphore de la dette dans un projet de développement de logiciel de gestion de portefeuille réalisé dans une variante du langage Smalltalk:
+Martin Fowler [-@fowl07a] a posé la question "Est-ce que ça vaut la peine de faire du bon design?" -- peut-on en faire moins pour développer plus vite?
+Il a proposé un pseudo-graphe comparant la fonctionnalité cumulative (élément difficile à mesurer) avec le temps (voir la figure\ \ref{FowlerDesignStaminaHypothesis}).
+Selon Fowler, le temps pour atteindre la limite de gain de conception (le temps où faire attention à la conception permet un gain de temps) est une questions de semaines plutôt que des mois.
+Mais il avoue que ce soit une hypothèse, car il est difficile de mesurer les fonctionnalités cumulatives et d'évaluer ce qu'est un bon design.
+Le graphe sert à illustrer le principe qu'à un certain moment, ignorer une conception va nuire à la performance des développeurs en ce qui concerne les nouvelles fonctionnalités.
+
+!["Le pseudo-graphique affiche des fonctionnalités (cumulatives) en fonction du temps pour deux projets stéréotypés imaginaires: l'un avec une bonne conception et l'autre sans conception. Le projet qui ne fait aucune conception ne consacre aucun effort aux activités de conception, qu'il s'agisse de conception initiale ou de techniques agiles. Comme aucun effort n'est consacré à ces activités, ce projet produit des fonctions plus rapidement au départ." [@fowl07a]](assets/../../images/FowlerPseuoGraphFunctionaltyTime.svg){#FowlerDesignStaminaHypothesis}
+
+La dette technique est une forme de risque qui peut apporter des bénéfices ou des pertes. Tout dépend de la quantité d'intérêt à payer. L'inventeur du wiki, Ward Cunningham (réf), a utilisé la métaphore de la dette dans un projet de développement de logiciel de gestion de portefeuille réalisé dans une variante du langage Smalltalk:
 
 > Un autre piège plus sérieux est l'échec à consolider [un design]. 
 > Bien que le code non raffiné puisse fonctionner correctement et être totalement acceptable pour le client, des quantités excessives de ce genre de code rendront le programme impossible à maîtriser, ce qui entraînera une surspécialisation des programmeurs et, finalement, un produit inflexible. 
