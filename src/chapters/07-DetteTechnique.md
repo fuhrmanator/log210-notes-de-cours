@@ -59,7 +59,7 @@ La dette peut être classifiée dans un quadrant comme dans le tableau\ \ref{tab
 **Dette** | \cellcolor{red!15}**Imprudente** | \cellcolor{green!15}**Prudente**
 :--|:----------|:----------
 Délibérée | \cellcolor{red!15}"*On n'a pas le temps pour la conception!*" \newline Cette forme de dette est rarement rentable.  |  \cellcolor{green!15}"*Il faut livrer maintenant puis en assumer les conséquences.*" \newline Exemple: La dette est due à une partie limitée du code.
-\midrule Involontaire | \cellcolor{red!15}"*C'est quoi la séparation en couches?*" \newline Il s'agit de l'ignorance de bonnes pratiques. | \cellcolor{green!15}"*Maintenant on sait comment on aurait dû le faire.*" \newline C'est tenter une solution malgré une compréhension limitée du problème.
+Involontaire | \cellcolor{red!15}"*C'est quoi la séparation en couches?*" \newline Il s'agit de l'ignorance de bonnes pratiques. | \cellcolor{green!15}"*Maintenant on sait comment on aurait dû le faire.*" \newline C'est tenter une solution malgré une compréhension limitée du problème.
 
 ## Résumé
 

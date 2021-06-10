@@ -2,7 +2,9 @@
 # The tlmgr command below will use the latest version of texlive.
 # If the default image is not the same, there will be problems.
 # This is why I don't use a specific version.
-FROM pandoc/ubuntu-latex
+#FROM pandoc/ubuntu-latex
+# Pandoc flaked in 2.14.0 SVGs won't convert properly?
+FROM pandoc/ubuntu-latex:2.11.2
 #RUN curl -L http://sourceforge.net/projects/plantuml/files/plantuml.jar/download -o /usr/bin/plantuml.jar
 # Copy the local plantuml.jar (we control the version)
 COPY plantuml.jar /usr/bin/plantuml.jar

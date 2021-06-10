@@ -1,6 +1,8 @@
 # Conception de packages
 
 Le chapitre A36/F29\ \faBook\ contient des directives pour la conception de packages. 
+Notez que la notion de package n'existe pas en TypeScript (et Javascript), mais le principe de *namespace* existe.
+La section \ref{NamespaceTypeScript} explique quelques pratiques pour la gestion des namespaces en TypeScript.
 
 Les points importants sont les suivants (les détails se trouvent dans le livre):
 
@@ -45,3 +47,25 @@ D -d[hidden]- ST
 
 @enduml
 ```
+
+## TypeScript n'a pas de packages {#NamespaceTypeScript}
+
+En effet TypeScript n'a pas de packages comme dans C$\sharp$ ou Java.
+Cependant, il y a des pratiques pour organiser logiquement le code et pour éviter les conflits (les collisions) de noms.
+La notion de package existe dans Java pour:
+
+  1. **Organiser logiquement le code**: `java.util.List` est un type interface disponible dans la bibliothèque `java.util`)
+  2. **Éviter les conflits de nom**: `java.util.List` et `ca.etsmtl.log121.fuhrman.projet2.List` sont dans deux packages différents et peuvent être utilisés dans le même programme.
+
+En TypeScript, on peut atteindre les mêmes objectifs.
+
+### Organisation de code
+
+L'organisation peut être réalisée grâce aux modules avec `import` et `export`. Par exemple:
+
+```javascript
+// maClasse.ts
+export class MaClasse { /* ... */ }
+```
+
+

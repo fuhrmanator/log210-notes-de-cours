@@ -5,7 +5,7 @@ Le chapitre F20/A22\ \faBook\ définit quelques termes importants pour la modél
 En mode esquisse, lorsqu'on dessine un modèle sur un tableau blanc ou un papier, un outil pratique pour numériser le tout est **Office Lens** ([Android](https://play.google.com/store/apps/details?id=com.microsoft.office.officelens&hl=fr_CA) ou [iOS](https://apps.apple.com/ca/app/microsoft-office-lens-pdf-scan/id975925059)).
 Les filtres pour supprimer les reflets sur les tableaux blancs sont impeccables.
 
-![Office Lens peut détecter le cadre d'un dessin sur un tableau blanc ou papier et le transformer.](images/OfficeLensWhiteBoard.JPG){width="200px"}
+![Office Lens peut détecter le cadre d'un dessin sur un tableau blanc ou papier et le transformer.](images/OfficeLensWhiteBoard.jpg){width="200px"}
 
 > \faWarning\ Tous les travaux demandés pour les **examens** de LOG210 doivent être faits *à la main*.
 Pour cette raison, il vaut mieux pratiquer dessiner les modèles en mode esquisse (à la main).

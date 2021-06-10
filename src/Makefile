@@ -21,12 +21,13 @@ CSS_FILE = style.css
 CSS_ARG = --css=$(CSS_FILE)
 METADATA_ARG = --metadata-file="$(METADATA)"
 PLANTUML_FILTER = --filter=filters/plantuml/pandoc_plantuml_filter.py
-PANDOC_ARGS = $(TOC) $(MATH_FORMULAS) $(CSS_ARG) $(METADATA_ARG) $(PLANTUML_FILTER)
-PDF_ARGS = --citeproc --listing -V geometry:margin=1in --pdf-engine=pdflatex --template=$(TEMPLATES_FOLDER)/default.latex
+HIGHLIGHT_STYLE = --highlight-style tango
+PANDOC_ARGS = $(TOC) $(MATH_FORMULAS) $(CSS_ARG) $(METADATA_ARG) $(PLANTUML_FILTER) $(HIGHLIGHT_STYLE) --citeproc
+PDF_ARGS = -V geometry:margin=1in --pdf-engine=pdflatex --template=$(TEMPLATES_FOLDER)/default.latex
 # Note MSYS_NO_PATHCONV=1 because of a bug in paths in Git Bash in windows 
 # https://stackoverflow.com/a/34386471/1168342
 # use "//" rather than "/" on the directories see https://github.com/docker/for-win/issues/6754#issuecomment-629702199
-PANDOC_COMMAND = MSYS_NO_PATHCONV=1 docker run -e TZ=America/Toronto --rm --volume "`pwd`://working_dir" -w //working_dir --user `id -u`:`id -g` -u root log210ndc/pandoc-latex-etc:2.x
+PANDOC_COMMAND = MSYS_NO_PATHCONV=1 docker run -e TZ=America/Toronto --rm --volume "`pwd`:/working_dir" -w /working_dir --user `id -u`:`id -g` -u root log210ndc/pandoc-latex-etc:2.x
 #PANDOC_COMMAND = pandoc
 
 ####################################################################################################
@@ -73,6 +74,9 @@ $(BUILD)/pdf/$(OUTPUT_FILENAME).pdf:	$(MAKEFILE) $(METADATA) $(LATEX_TEMPLATE) $
 	mkdir -p $(BUILD)/pdf
 	mkdir -p $(BUILD)/images
 	chmod a+x filters/plantuml/pandoc_plantuml_filter.py 
+#	$(PANDOC_COMMAND) --list-highlight-languages 
+#	$(PANDOC_COMMAND) --list-highlight-styles
+#	$(PANDOC_COMMAND) -D latex > new_default.latex
 	$(PANDOC_COMMAND) $(PANDOC_ARGS) $(PDF_ARGS) -o $@ $(CHAPTERS)
 	cp $(BUILD)/pdf/$(OUTPUT_FILENAME).pdf ../docs/
 	@echo "$@ was built"
