@@ -52,7 +52,7 @@ header-includes:
 - \DeclareUnicodeCharacter{02B3}{$^\text{r}$}
 # Float control
 - \usepackage{float}
-- \floatplacement{figure}{tbp}
+- \floatplacement{figure}{htbp}
 
 # https://tex.stackexchange.com/questions/553408/table-captions-not-in-babel-language
 babel-newcommands:
