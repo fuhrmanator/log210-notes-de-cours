@@ -21,7 +21,7 @@ CSS_FILE = style.css
 CSS_ARG = --css=$(CSS_FILE)
 METADATA_ARG = --metadata-file="$(METADATA)"
 PLANTUML_FILTER = --filter=filters/plantuml/pandoc_plantuml_filter.py
-HIGHLIGHT_STYLE = --highlight-style tango
+HIGHLIGHT_STYLE = --highlight-style kate
 PANDOC_ARGS = $(TOC) $(MATH_FORMULAS) $(CSS_ARG) $(METADATA_ARG) $(PLANTUML_FILTER) $(HIGHLIGHT_STYLE) --citeproc
 PDF_ARGS = -V geometry:margin=1in --pdf-engine=pdflatex --template=$(TEMPLATES_FOLDER)/default.latex
 # Note MSYS_NO_PATHCONV=1 because of a bug in paths in Git Bash in windows 

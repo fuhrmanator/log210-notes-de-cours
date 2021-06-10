@@ -61,11 +61,24 @@ En TypeScript, on peut atteindre les mêmes objectifs.
 
 ### Organisation de code
 
-L'organisation peut être réalisée grâce aux modules avec `import` et `export`. Par exemple:
+L'organisation peut être réalisée grâce aux modules avec les mots-clés `export` et `import`. Par exemple:
 
 ```javascript
-// maClasse.ts
-export class MaClasse { /* ... */ }
+export interface StringValidator {
+  isAcceptable(s: string): boolean;
+}
 ```
 
+
+```typescript
+// maClasse.ts
+export class MaClasse {
+  // définition
+}
+```
+
+```typescript
+// client.ts
+import { MaClasse } from 'maClasse'
+```
 
