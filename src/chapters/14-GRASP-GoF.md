@@ -15,14 +15,14 @@ Chaque principe GRASP est défini avec un énoncé d'un problème de conception 
 Alors, pour mieux comprendre l'application des patterns GoF, on doit imaginer la situation du logiciel *avant* l'application du pattern. Dans l'exemple avec l'adaptateur pour les calculateurs de taxes, imaginez le code si on n'avait aucun adaptateur. À la place d'une méthode `getTaxes()` envoyée par la classe Vente à l'adaptateur, on serait obligé de faire un branchement selon le type de calculateur de taxes externe utilisé actuellement (si on veut supporter plusieurs calculateurs). Donc, dans la classe Vente, il y aurait du code comme ceci:
 
 ```Java
-    /* calculateurTaxes est le nom du calculateur utilisé actuellement */
-    if(calculateurTaxes == "GoodAsGoldTaxPro") {
-        /* série d'instructions pour intéragir avec le calculateur */
-    } else if(calculateurTaxes == "TaxMaster") {
-        /* série d'instructions pour intéragir avec le calculateur */
-    } else if /* ainsi de suite pour chacun des calculateurs */
-        /* ... */
-    }
+/* calculateurTaxes est le nom du calculateur utilisé actuellement */
+if(calculateurTaxes == "GoodAsGoldTaxPro") {
+    /* série d'instructions pour intéragir avec le calculateur */
+} else if(calculateurTaxes == "TaxMaster") {
+    /* série d'instructions pour intéragir avec le calculateur */
+} else if /* ainsi de suite pour chacun des calculateurs */
+    /* ... */
+}
 ```
 
 Pour supporter un nouveau calculateur de taxes, il faudrait coder une nouvelle branche dans le bloc de `if/then`. 
