@@ -48,14 +48,14 @@ D -d[hidden]- ST
 @enduml
 ```
 
-## TypeScript n'a pas de packages {#NamespaceTypeScript}
+## Absense de package dans TypeScript {#NamespaceTypeScript}
 
-En effet TypeScript n'a pas de packages comme dans C$\sharp$ ou Java.
+En effet TypeScript n'a pas la notion de package comme dans C$\sharp$ ou Java.
 Cependant, il y a des pratiques pour organiser logiquement le code et pour éviter les conflits (les collisions) de noms.
-La notion de package existe dans Java pour:
+Rappelons que la notion de package existe dans Java pour:
 
   1. **Organiser logiquement le code**: `java.util.List` est un type interface disponible dans la bibliothèque `java.util`)
-  2. **Éviter les conflits de nom**: `java.util.List` et `ca.etsmtl.log121.fuhrman.projet2.List` sont dans deux packages différents et peuvent être utilisés dans le même programme.
+  2. **Éviter les conflits de nom**: les classes `java.util.List` et `ca.etsmtl.log121.fuhrman.projet2.List` ont le même nom, mais puisqu'elles sont dans deux packages différents, elles peuvent être utilisées dans le même programme.
 
 En TypeScript, on peut atteindre les mêmes objectifs.
 
@@ -64,21 +64,27 @@ En TypeScript, on peut atteindre les mêmes objectifs.
 L'organisation peut être réalisée grâce aux modules avec les mots-clés `export` et `import`. Par exemple:
 
 ```javascript
-export interface StringValidator {
-  isAcceptable(s: string): boolean;
-}
-```
-
-
-```typescript
 // maClasse.ts
 export class MaClasse {
   // définition
 }
 ```
 
-```typescript
+```javascript
 // client.ts
-import { MaClasse } from 'maClasse'
+import { MaClasse } from './maClasse'
 ```
 
+On organise les fichiers, *e.g.*, `maClasse.ts` dans les répertoires.
+
+### Noms sans conflit
+
+Dans l'exemple ci-haut, il ne serait pas possible d'avoir deux fichiers nommés `maClasse.ts` au même répertoire, alors impossible d'avoir une collision avec le nom du fichier.
+Donc, on pourrait importer la classe `MaClasse` de `maClasse.ts` et la classe `MaClasse` de `lib/projet2/maClasse.ts`.
+Cependant, pour éviter un conflit de nom dans l'utilisation, on doit utiliser le mot-clé `as` pour renommer la classe (`MaClasseP2`) lorsqu'on l'importe:
+
+```javascript
+// client.ts
+import { MaClasse } from './maClasse'
+import { MaClasse as MaClasseP2 } from './lib/projet2/maClasse'
+```
