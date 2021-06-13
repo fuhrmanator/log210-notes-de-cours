@@ -85,6 +85,8 @@ C'est le contexte de l'entreprise pour laquelle vous travaillez qui déterminera
 Mais il faudra repayer la dette technique un jour.
 Un moyen de gérer cette dette technique est de *réusiner* (anglais refactor). -->
 
+\newpage
+
 ## Tableau des principes GRASP {#GRASPTable}
 
 Voici un extrait du livre du cours, **UML 2 et les design patterns** de Craig Larman.
@@ -103,12 +105,12 @@ Voici un extrait du livre du cours, **UML 2 et les design patterns** de Craig La
 |               | 2. B agrège A |
 |               | 3. B a les données pour initialiser A |
 |               | 4. B enregistre A |
-|               | 5. B utilise étroitement A |
+|               | 5. B utilise étroitement A \newline |
 +-------------+--------------------------------------------------------+
 | Contrôleur    | Quel \label{tab_GRASPControleur}est le premier objet en dehors de la couche présentation qui reçoit et coordonne ("contrôle") les opérations système? \newline\newline Affectez une responsabilité à la classe qui correspond à l'une de ces définitions: |
 |*F16.13/A17.13*| |
 | \faBook       | 1. Elle représente le système global, un "objet racine", un équipement ou un sous-système (contrôleur de façade). |
-|               | 2. Elle représente un scénario de cas d'utilisation dans lequel l'opération système se produit (*contrôleur de session* ou contrôleur de cas d'utilisation). On la nomme GestionnaireX, où X est le nom du cas d'utilisation |
+|               | 2. Elle représente un scénario de cas d'utilisation dans lequel l'opération système se produit (*contrôleur de session* ou contrôleur de cas d'utilisation). On la nomme GestionnaireX, où X est le nom du cas d'utilisation \newline |
 +-------------+--------------------------------------------------------+
 | Faible        | Comment minimiser les dépendances? \newline\newline Affectez les responsabilités de sorte que le couplage (inutile) demeure faible. Employez ce principe pour évaluer les alternatives. |
 | Couplage      | \newline |
