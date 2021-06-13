@@ -68,10 +68,10 @@ Voir la figure\ \ref{MDD-risk-objets} pour les changements dans les objets du mo
 
 Pour faire des contrats, voici une démarche générale:
 
-1. Contrat pour chaque opération système
-2. Regarder toujours le MDD
-3. Rappeler les formes de postconditions
-   1. créer/supprimer instance
-   2. former/briser association
-   3. modifier attributs
-4. Ne rien oublier (marquer le MDD ou dessiner un diagramme d'objets, comme à la figure\ \ref{MDD-risk-objets} si nécessaire)
+1.  Faire un contrat pour chaque opération système
+1.  Regarder toujours le MDD (vocabulaire du domaine)
+1.  Rappeler les formes de postconditions
+    a)  créer/supprimer instance
+    a)  former/briser association
+    a)  modifier attributs
+1.  Ne rien oublier. Marquer le MDD ou dessiner un diagramme d'objets, comme à la figure\ \ref{MDD-risk-objets} si nécessaire.
