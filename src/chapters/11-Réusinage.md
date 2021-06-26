@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Considérez l'histoire suivante, provenant de la 2e édition du livre *Refactoring* de Martin Fowler (2019):
+Considérez l'histoire suivante, provenant de la 2e édition du livre *Refactoring* de @Fowl18a:
 
 > Il était une fois, un consultant qui a rendu visite à un projet de développement afin de regarder une partie du code qui avait été écrit.
 En parcourant la hiérarchie des classes au centre du système, le consultant l'a trouvée plutôt désordonnée.
@@ -31,9 +31,11 @@ Mais le projet devait expédier du code qui fonctionnait, pas du code qui plaira
 Le consultant a suggéré qu'un nettoyage similaire soit effectué sur d'autres parties centrales du système, ce qui pourrait interrompre le projet pendant une semaine ou deux.
 Tout cela était pour rendre le code plus beau, pas pour lui faire faire ce qu'il ne faisait pas déjà.
 
-Cette histoire est un bon exemple des deux forces constamment en jeu lors d'un développement de logiciel. D'un côté, on veut que le code fonctionne (pour satisfaire les fonctionnalités) et d'un autre côté, on veut que la conception soit acceptable puisqu'il y a d'autres exigences sur un logiciel telles que la maintenabilité, l'extensibilité, etc. La section sur le \nameref{Spectre_conception} aborde cette dynamique.
+Cette histoire est un bon exemple des deux forces constamment en jeu lors d'un développement de logiciel. D'un côté, on veut que le code fonctionne (pour satisfaire les fonctionnalités) et d'un autre côté, on veut que la conception soit acceptable puisqu'il y a d'autres exigences sur un logiciel telles que la maintenabilité, l'extensibilité, etc. La section sur le \nameref{SpectreDeLaConception} aborde cette dynamique.
 
 Le réusinage (anglais *refactoring*) est, selon Fowler, "l'amélioration de la conception du code après avoir écrit celui-ci". Il s'agit de retravailler le code source de façon à en améliorer la lisibilité ou la structure, sans en modifier le fonctionnement. C'est une manière de gérer la dette technique, car grâce au réusinage on peut transformer du code chaotique (écrit peut-être par les gens en mode "hacking cowboy") en code bien structuré. De plus, beaucoup d'IDE supportent l'automatisation d'activités de réusinage, rendant le processus plus facile et robuste. Probablement vous avez déjà "renommé" une variable dans le code source, à travers un menu "Refactoring".
+
+Le réusinage est une activité intégrale du \nameref{TDD}.
 
 ## Symptômes de la mauvaise conception - Code smells
 
@@ -51,10 +53,10 @@ Ces classes ont beaucoup d'attributs et de méthodes.
 Alors, ce "smell" s'appelle "Large class" et la solution est d'appliquer des activités de réusinage [Extract Class](https://refactoring.com/catalog/extractClass.html), ou éventuellement [Extract Superclass](https://refactoring.com/catalog/extractSuperclass.html) ou [Replace Type Code with Subclasses](https://refactoring.com/catalog/replaceTypeCodeWithSubclasses.html).
 Avec un IDE dominant et un langage populaire, vous aurez probablement des fonctionnalités pour supporter l'automatisation de ces activités de réusinage.
 
-Certaines activités traitent des sujets avancés en conception, mais c'est très intéressant pour ceux qui aiment le bon design. Voici la liste complète des "smells" ainsi que les activités de réusinage à appliquer (voir le catalogue sur le site web pour les détails).
+Certaines activités traitent des sujets avancés en conception, mais c'est très intéressant pour ceux qui aiment le bon design. Voici la liste complète des "smells" ainsi que les activités de réusinage à appliquer (voir le catalogue sur le site web https://refactoring.com/catalog/ pour les détails).
 
 Symptôme de mauvaise conception ("Smell") | Activités de réusinage à appliquer éventuellement
-:----------|:----------
+:-----|:---------------
 Mysterious Name | [Change Function Declaration](https://refactoring.com/catalog/changeFunctionDeclaration.html), [Rename Variable](https://refactoring.com/catalog/renameVariable.html), [Rename Field](https://refactoring.com/catalog/renameField.html)
 Duplicated Code | Extract Function, Slide Statements, Pull Up Method
 Long Function | Extract Function, Replace Temp with Query, Introduce Parameter Object, Preserve Whole Object, Replace Function with Command, Decompose Conditional, Replace Conditional with Polymorphism, Split Loop
