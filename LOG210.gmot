@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gemodel type="MOTLight">
+<MODEL>
+<GRAPH id="g-0">
+<NODES>
+<NODE id="v-8" type="acteur" label="&lt;html&gt;&lt;center&gt;Développeur/Développeuse&lt;/center&gt;&lt;/html&gt;" x="516.333251953125" y="74.66667938232422" width="71.0" height="67.0"/>
+<NODE id="v-10" referenceId="v-10" type="concept" label="&lt;html&gt;&lt;center&gt;Exigences&lt;/center&gt;&lt;/html&gt;" x="328.8333435058594" y="223.00001525878906"/>
+<NODE id="v-7" referenceId="v-7" type="procedure" label="&lt;html&gt;&lt;center&gt;Implémenter les classes&lt;/center&gt;&lt;/html&gt;" x="609.3333129882812" y="399.6666564941406" width="108.0" height="46.0"/>
+<NODE id="v-11" referenceId="v-11" type="concept" label="&lt;html&gt;&lt;center&gt;Système logiciel&lt;/center&gt;&lt;/html&gt;" x="710.1666259765625" y="221.6667022705078" width="91.0" height="41.0"/>
+<NODE id="v-151" referenceId="v-151" type="principe" label="&lt;html&gt;&lt;center&gt;TDD&lt;/center&gt;&lt;/html&gt;" x="799.6666259765625" y="439.83331298828125" width="60.0" height="40.0"/>
+<NODE id="v-9" referenceId="v-9" type="principe" label="&lt;html&gt;&lt;center&gt;Processus Unifié&lt;/center&gt;&lt;/html&gt;" x="373.3332824707031" y="133.0" width="90.0" height="43.0"/>
+<NODE id="v-68" referenceId="v-68" type="principe" label="&lt;html&gt;&lt;center&gt;UML&lt;/center&gt;&lt;/html&gt;" x="672.3333129882812" y="126.6666488647461" width="60.0" height="40.0"/>
+<NODE id="v-0" type="procedure" label="&lt;html&gt;&lt;center&gt;Analyser et Concevoir un logiciel (LOG210)&lt;/center&gt;&lt;/html&gt;" x="520.333251953125" y="223.00001525878906" width="180.0" height="88.0" bgColor="-154"/>
+<NODE id="v-2" referenceId="v-2" type="procedure" label="&lt;html&gt;&lt;center&gt;Analyser le domaine&lt;/center&gt;&lt;/html&gt;" x="290.0" y="312.6666564941406" width="102.0" height="57.0"/>
+<NODE id="v-4" referenceId="v-4" type="procedure" label="&lt;html&gt;&lt;center&gt;Concevoir le système&lt;/center&gt;&lt;/html&gt;" x="375.99993896484375" y="380.6666564941406" width="98.0" height="63.0"/>
+<NODE id="v-3" referenceId="v-3" type="procedure" label="&lt;html&gt;&lt;center&gt;Concevoir les classes&lt;/center&gt;&lt;/html&gt;" x="490.6667175292969" y="416.66668701171875" width="96.0" height="61.0"/>
+<NODE id="v-6" referenceId="v-6" type="procedure" label="&lt;html&gt;&lt;center&gt;Tester le système&lt;/center&gt;&lt;/html&gt;" x="745.0" y="286.0" width="88.0" height="52.0"/>
+<NODE id="v-5" referenceId="v-5" type="procedure" label="&lt;html&gt;&lt;center&gt;Tester les classes&lt;/center&gt;&lt;/html&gt;" x="702.3334350585938" y="351.33331298828125" width="84.0" height="65.0"/>
+</NODES>
+<LINKS>
+<LINK type="r" src="v-8" dest="v-0"/>
+<LINK type="r" src="v-151" dest="v-7"/>
+<LINK type="r" src="v-9" dest="v-0"/>
+<LINK type="c" src="v-0" dest="v-2"/>
+<LINK type="ip" src="v-10" dest="v-0"/>
+<LINK type="c" src="v-0" dest="v-4"/>
+<LINK type="c" src="v-0" dest="v-3"/>
+<LINK type="c" src="v-0" dest="v-6"/>
+<LINK type="c" src="v-0" dest="v-5"/>
+<LINK type="c" src="v-0" dest="v-7"/>
+<LINK type="ip" src="v-0" dest="v-11"/>
+<LINK type="r" src="v-151" dest="v-6"/>
+<LINK type="r" src="v-151" dest="v-5"/>
+<LINK type="r" src="v-68" dest="v-0"/>
+</LINKS>
+</GRAPH>
+<GRAPH id="g-2" parent="v-2">
+<NODES>
+<NODE id="v-76" referenceId="v-70" type="concept" label="&lt;html&gt;&lt;center&gt;Diagramme de classes conceptuelles (MDD)&lt;/center&gt;&lt;/html&gt;" x="865.132080078125" y="304.7618103027344" width="127.0" height="85.0"/>
+<NODE id="v-21" type="principe" label="&lt;html&gt;&lt;center&gt;Diagrammes de classes UML&lt;/center&gt;&lt;/html&gt;" x="621.8333129882812" y="205.8333282470703" width="115.0" height="43.0"/>
+<NODE id="v-65" type="principe" label="&lt;html&gt;&lt;center&gt;Complétude, Cohérence&lt;/center&gt;&lt;/html&gt;" x="770.61083984375" y="204.35377502441406" width="115.0" height="43.0"/>
+<NODE id="v-66" type="principe" label="&lt;html&gt;&lt;center&gt;Mémorabilité&lt;/center&gt;&lt;/html&gt;" x="657.4398803710938" y="472.1084899902344" width="114.0" height="40.0"/>
+<NODE id="v-30" type="principe" label="&lt;html&gt;&lt;center&gt;Généralisation, spécialisation, règle à 100 %, règle &quot;est un&quot;&lt;/center&gt;&lt;/html&gt;" x="205.69947814941406" y="497.79229736328125" width="118.0" height="76.0"/>
+<NODE id="v-20" type="procedure" label="&lt;html&gt;&lt;center&gt;Faire un modèle du domaine&lt;/center&gt;&lt;/html&gt;" x="438.16668701171875" y="306.6667175292969" width="118.0" height="73.0"/>
+<NODE id="v-31" type="principe" label="&lt;html&gt;&lt;center&gt;Information alpha-numérique&lt;/center&gt;&lt;/html&gt;" x="446.055419921875" y="591.7415161132812" width="116.0" height="53.0"/>
+<NODE id="v-18" type="procedure" label="&lt;html&gt;&lt;center&gt;Déterminer les associations&lt;/center&gt;&lt;/html&gt;" x="551.7689819335938" y="388.2542724609375" width="112.0" height="59.0"/>
+<NODE id="v-29" type="principe" label="&lt;html&gt;&lt;center&gt;Classes d&apos;association&lt;/center&gt;&lt;/html&gt;" x="335.78118896484375" y="528.9691162109375" width="114.0" height="40.0"/>
+<NODE id="v-19" referenceId="v-10" type="concept" label="&lt;html&gt;&lt;center&gt;Exigences&lt;/center&gt;&lt;/html&gt;" x="247.5" y="303.66668701171875"/>
+<NODE id="v-16" referenceId="v-16" type="principe" label="&lt;html&gt;&lt;center&gt;Catégories de classes conceptuelles&lt;/center&gt;&lt;/html&gt;" x="148.00363159179688" y="385.3394470214844" width="97.0" height="62.0"/>
+<NODE id="v-28" type="principe" label="&lt;html&gt;&lt;center&gt;Classes de données&lt;/center&gt;&lt;/html&gt;" x="556.4755249023438" y="545.6405639648438" width="114.0" height="40.0"/>
+<NODE id="v-17" type="procedure" label="&lt;html&gt;&lt;center&gt;Déterminer les attributs&lt;/center&gt;&lt;/html&gt;" x="436.51983642578125" y="428.12982177734375" width="102.0" height="62.0"/>
+<NODE id="v-14" type="concept" label="&lt;html&gt;&lt;center&gt;Modèle du domaine (Larman)&lt;/center&gt;&lt;/html&gt;" x="662.6666259765625" y="302.1666564941406" width="146.0" height="44.0"/>
+<NODE id="v-15" type="procedure" label="&lt;html&gt;&lt;center&gt;Déterminer les classes conceptuelles&lt;/center&gt;&lt;/html&gt;" x="321.5118713378906" y="386.00067138671875" width="101.0" height="72.0"/>
+<NODE id="v-12" referenceId="v-2" type="procedure" label="&lt;html&gt;&lt;center&gt;Analyser le domaine&lt;/center&gt;&lt;/html&gt;" x="454.0" y="200.00001525878906" width="102.0" height="57.0"/>
+<NODE id="v-13" type="acteur" label="&lt;html&gt;&lt;center&gt;Analyste&lt;/center&gt;&lt;/html&gt;" x="454.66668701171875" y="72.16667938232422"/>
+</NODES>
+<LINKS>
+<LINK type="ip" src="v-20" dest="v-14"/>
+<LINK type="ip" src="v-19" dest="v-20"/>
+<LINK type="r" src="v-21" dest="v-20"/>
+<LINK type="r" src="v-16" dest="v-15"/>
+<LINK type="r" src="v-30" dest="v-15"/>
+<LINK type="r" src="v-29" dest="v-15"/>
+<LINK type="r" src="v-31" dest="v-17"/>
+<LINK type="r" src="v-29" dest="v-18" ctrlx="0.5442202091217041" ctrly="67.12865019290521"/>
+<LINK type="r" src="v-28" dest="v-15" ctrlx="0.6587733030319214" ctrly="-79.98410675796558" linkColor="-6710887"/>
+<LINK type="r" src="v-28" dest="v-18"/>
+<LINK type="r" src="v-28" dest="v-17"/>
+<LINK type="s" src="v-14" dest="v-76"/>
+<LINK type="r" src="v-66" dest="v-18"/>
+<LINK type="c" src="v-12" dest="v-20"/>
+<LINK type="c" src="v-20" dest="v-18"/>
+<LINK type="r" src="v-13" dest="v-12"/>
+<LINK type="c" src="v-20" dest="v-17"/>
+<LINK type="c" src="v-20" dest="v-15"/>
+<LINK type="r" src="v-65" dest="v-14"/>
+</LINKS>
+</GRAPH>
+<GRAPH id="g-8" parent="v-3">
+<NODES>
+<NODE id="v-140" referenceId="v-94" type="principe" label="&lt;html&gt;&lt;center&gt;Patrons GOF&lt;/center&gt;&lt;/html&gt;" x="879.2846069335938" y="262.3831481933594" width="77.0" height="46.0"/>
+<NODE id="v-141" type="principe" label="&lt;html&gt;&lt;center&gt;Transformer ID en objet&lt;/center&gt;&lt;/html&gt;" x="916.818603515625" y="703.8619995117188" width="100.0" height="42.0" style="34907792-85d9-45c3-bc01-09d903125b6d"/>
+<NODE id="v-125" type="procedure" label="&lt;html&gt;&lt;center&gt;Ëcrire un contrat d&apos;opération&lt;/center&gt;&lt;/html&gt;" x="479.5907897949219" y="469.0828552246094" width="137.0" height="56.0" style="b0f75162-8364-4050-a536-2914ea19405d"/>
+<NODE id="v-126" type="concept" label="&lt;html&gt;&lt;center&gt;Contrat d&apos;opération&lt;/center&gt;&lt;/html&gt;" x="665.5758056640625" y="488.003173828125" width="114.0" height="67.0" style="b0f75162-8364-4050-a536-2914ea19405d"/>
+<NODE id="v-127" type="procedure" label="&lt;html&gt;&lt;center&gt;Créer une Réalisation de cas d&apos;utilisation (RDCU)&lt;/center&gt;&lt;/html&gt;" x="1028.4119873046875" y="451.01202392578125" width="142.0" height="75.0" style="34907792-85d9-45c3-bc01-09d903125b6d"/>
+<NODE id="v-142" type="principe" label="&lt;html&gt;&lt;center&gt;Faire soi-même&lt;/center&gt;&lt;/html&gt;" x="1000.5708618164062" y="876.425048828125" width="100.0" height="42.0" style="34907792-85d9-45c3-bc01-09d903125b6d"/>
+<NODE id="v-143" referenceId="v-83" type="principe" label="&lt;html&gt;&lt;center&gt;Faible couplage (évaluation)&lt;/center&gt;&lt;/html&gt;" x="1293.614990234375" y="776.6542358398438" width="94.0" height="57.0" style="34907792-85d9-45c3-bc01-09d903125b6d"/>
+<NODE id="v-144" referenceId="v-84" type="principe" label="&lt;html&gt;&lt;center&gt;Forte cohésion (évaluation)&lt;/center&gt;&lt;/html&gt;" x="1174.0185546875" y="808.983154296875" width="94.0" height="57.0" style="34907792-85d9-45c3-bc01-09d903125b6d"/>
+<NODE id="v-171" type="principe" label="&lt;html&gt;&lt;center&gt;Réduire le décalage des représentations&lt;/center&gt;&lt;/html&gt;" x="1008.4398803710938" y="769.9447631835938" width="119.0" height="59.0" style="34907792-85d9-45c3-bc01-09d903125b6d"/>
+<NODE id="v-77" referenceId="v-3" type="procedure" label="&lt;html&gt;&lt;center&gt;Concevoir les classes&lt;/center&gt;&lt;/html&gt;" x="717.29345703125" y="348.02459716796875" width="134.0" height="65.0"/>
+<NODE id="v-130" type="procedure" label="&lt;html&gt;&lt;center&gt;Critiquer le couplage&lt;/center&gt;&lt;/html&gt;" x="1361.7901611328125" y="651.3146362304688" width="125.0" height="66.0" style="34907792-85d9-45c3-bc01-09d903125b6d"/>
+<NODE id="v-113" type="principe" label="&lt;html&gt;&lt;center&gt;Formation ou rupture d&apos;association&lt;/center&gt;&lt;/html&gt;" x="417.17962646484375" y="826.3729248046875" width="122.0" height="64.0" style="b0f75162-8364-4050-a536-2914ea19405d"/>
+<NODE id="v-135" referenceId="v-135" type="principe" label="&lt;html&gt;&lt;center&gt;GRASP&lt;/center&gt;&lt;/html&gt;" x="1113.8623046875" y="715.4273071289062" style="34907792-85d9-45c3-bc01-09d903125b6d"/>
+<NODE id="v-114" type="principe" label="&lt;html&gt;&lt;center&gt;Modification d&apos;attributs&lt;/center&gt;&lt;/html&gt;" x="549.1658935546875" y="796.1533813476562" width="122.0" height="64.0" style="b0f75162-8364-4050-a536-2914ea19405d"/>
+<NODE id="v-136" referenceId="v-136" type="concept" label="&lt;html&gt;&lt;center&gt;RDCU&lt;/center&gt;&lt;/html&gt;" x="1192.2601318359375" y="456.20953369140625" style="34907792-85d9-45c3-bc01-09d903125b6d"/>
+<NODE id="v-137" type="principe" label="&lt;html&gt;&lt;center&gt;Annotations des justifications (GRASP, etc.)&lt;/center&gt;&lt;/html&gt;" x="1195.4793701171875" y="360.47296142578125" width="119.0" height="59.0" style="34907792-85d9-45c3-bc01-09d903125b6d"/>
+<NODE id="v-115" type="principe" label="&lt;html&gt;&lt;center&gt;Vocabulaire du MDD&lt;/center&gt;&lt;/html&gt;" x="250.98226928710938" y="658.9331665039062" width="122.0" height="64.0" style="b0f75162-8364-4050-a536-2914ea19405d"/>
+<NODE id="v-138" referenceId="v-73" type="concept" label="&lt;html&gt;&lt;center&gt;Diagramme de séquence&lt;/center&gt;&lt;/html&gt;" x="1343.7554931640625" y="374.04620361328125" width="99.0" height="49.0" style="524f6897-a647-45e0-9c7d-0b964c9e5677"/>
+<NODE id="v-116" type="procedure" label="&lt;html&gt;&lt;center&gt;Écrire une postcondition&lt;/center&gt;&lt;/html&gt;" x="478.1764221191406" y="599.08447265625" width="123.0" height="60.0" style="b0f75162-8364-4050-a536-2914ea19405d"/>
+<NODE id="v-131" type="procedure" label="&lt;html&gt;&lt;center&gt;Proposer une solution de classes avec méthodes&lt;/center&gt;&lt;/html&gt;" x="1034.660400390625" y="602.54638671875" width="137.0" height="78.0" style="34907792-85d9-45c3-bc01-09d903125b6d"/>
+<NODE id="v-132" type="concept" label="&lt;html&gt;&lt;center&gt;Problème à résoudre&lt;/center&gt;&lt;/html&gt;" x="852.96728515625" y="602.6500854492188" width="103.0" height="51.0" style="34907792-85d9-45c3-bc01-09d903125b6d"/>
+<NODE id="v-110" type="concept" label="&lt;html&gt;&lt;center&gt;Postcondition d&apos;un contrat d&apos;opération&lt;/center&gt;&lt;/html&gt;" x="666.40283203125" y="603.3167114257812" width="114.0" height="67.0" style="b0f75162-8364-4050-a536-2914ea19405d"/>
+<NODE id="v-133" type="concept" label="&lt;html&gt;&lt;center&gt;Solution candidate&lt;/center&gt;&lt;/html&gt;" x="1191.906982421875" y="598.0005493164062" width="79.0" height="49.0" style="34907792-85d9-45c3-bc01-09d903125b6d"/>
+<NODE id="v-111" type="principe" label="&lt;html&gt;&lt;center&gt;Forme de la postcondition&lt;/center&gt;&lt;/html&gt;" x="414.5470886230469" y="699.2990112304688" width="122.0" height="64.0" style="b0f75162-8364-4050-a536-2914ea19405d"/>
+<NODE id="v-112" type="principe" label="&lt;html&gt;&lt;center&gt;Création ou suppression d&apos;instance&lt;/center&gt;&lt;/html&gt;" x="277.3385009765625" y="798.3900146484375" width="122.0" height="64.0" style="b0f75162-8364-4050-a536-2914ea19405d"/>
+<NODE id="v-107" referenceId="v-107" type="concept" label="&lt;html&gt;&lt;center&gt;Exigences&lt;/center&gt;&lt;/html&gt;" x="237.9229736328125" y="352.5149841308594"/>
+<NODE id="v-129" type="procedure" label="&lt;html&gt;&lt;center&gt;Critiquer la cohésion&lt;/center&gt;&lt;/html&gt;" x="1350.2593994140625" y="545.726318359375" width="125.0" height="66.0" style="34907792-85d9-45c3-bc01-09d903125b6d"/>
+<NODE id="v-108" type="concept" label="&lt;html&gt;&lt;center&gt;Opération système&lt;/center&gt;&lt;/html&gt;" x="306.3460998535156" y="552.9360961914062" width="87.0" height="56.0" style="c719244c-9950-47a1-b1c2-ee0fa3058897"/>
+<NODE id="v-109" type="concept" label="&lt;html&gt;&lt;center&gt;Diagramme de Séquence Système (DSS)&lt;/center&gt;&lt;/html&gt;" x="102.02659606933594" y="537.8411865234375" width="123.0" height="85.0" bgColor="-6684673"/>
+</NODES>
+<LINKS>
+<LINK type="c" src="v-77" dest="v-125"/>
+<LINK type="ip" src="v-116" dest="v-126"/>
+<LINK type="ip" src="v-130" dest="v-132" ctrlx="-0.5434795022010803" ctrly="-162.04853235820536"/>
+<LINK type="r" src="v-137" dest="v-136"/>
+<LINK type="s" src="v-112" dest="v-111"/>
+<LINK type="r" src="v-144" dest="v-129"/>
+<LINK type="ip" src="v-133" dest="v-129"/>
+<LINK type="r" src="v-115" dest="v-116"/>
+<LINK type="ip" src="v-132" dest="v-131"/>
+<LINK type="s" src="v-136" dest="v-138"/>
+<LINK type="r" src="v-135" dest="v-131"/>
+<LINK type="s" src="v-110" dest="v-132"/>
+<LINK type="ip" src="v-108" dest="v-116"/>
+<LINK type="r" src="v-140" dest="v-77"/>
+<LINK type="c" src="v-109" dest="v-108"/>
+<LINK type="s" src="v-142" dest="v-171"/>
+<LINK type="c" src="v-136" dest="v-133"/>
+<LINK type="r" src="v-111" dest="v-116"/>
+<LINK type="ip" src="v-131" dest="v-133"/>
+<LINK type="r" src="v-141" dest="v-131"/>
+<LINK type="c" src="v-125" dest="v-116"/>
+<LINK type="r" src="v-171" dest="v-131"/>
+<LINK type="ip" src="v-116" dest="v-110"/>
+<LINK type="ip" src="v-129" dest="v-132" ctrlx="-0.4921228885650635" ctrly="163.4237177796282"/>
+<LINK type="s" src="v-113" dest="v-111"/>
+<LINK type="ip" src="v-107" dest="v-116"/>
+<LINK type="c" src="v-126" dest="v-110"/>
+<LINK type="s" src="v-114" dest="v-111"/>
+<LINK type="ip" src="v-133" dest="v-130"/>
+<LINK type="c" src="v-135" dest="v-144"/>
+<LINK type="c" src="v-77" dest="v-127"/>
+<LINK type="c" src="v-135" dest="v-143"/>
+<LINK type="c" src="v-127" dest="v-131"/>
+<LINK type="ip" src="v-127" dest="v-136"/>
+<LINK type="ip" src="v-126" dest="v-127"/>
+<LINK type="ip" src="v-108" dest="v-125"/>
+<LINK type="r" src="v-143" dest="v-130"/>
+</LINKS>
+<PROPERTIES>
+<PROPERTY objType="node" objId="v-141" name="attachment" value="https://learning-oreilly-com.res.banq.qc.ca/library/view/applying-uml-and/0130925691/0130925691_ch23lev1sec8.html#:~:text=Coupling-,ids%20to%20objects,-Second"/>
+<PROPERTY objType="node" objId="v-142" name="attachment" value="https://learning-oreilly-com.res.banq.qc.ca/library/view/applying-uml-and/0130925691/0130925691_ch33lev1sec8.html"/>
+</PROPERTIES>
+</GRAPH>
+<GRAPH id="g-4" parent="v-4">
+<NODES>
+<NODE id="v-32" referenceId="v-4" type="procedure" label="&lt;html&gt;&lt;center&gt;Concevoir le système&lt;/center&gt;&lt;/html&gt;" x="864.2362060546875" y="120.86222839355469" width="145.0" height="64.0"/>
+<NODE id="v-43" type="procedure" label="&lt;html&gt;&lt;center&gt;Proposer opération système&lt;/center&gt;&lt;/html&gt;" x="752.8333740234375" y="472.33331298828125" width="103.0" height="74.0"/>
+<NODE id="v-55" type="concept" label="&lt;html&gt;&lt;center&gt;Acteur&lt;/center&gt;&lt;/html&gt;" x="910.3163452148438" y="374.2879333496094" width="85.0" height="53.0" style="c719244c-9950-47a1-b1c2-ee0fa3058897"/>
+<NODE id="v-44" type="concept" label="&lt;html&gt;&lt;center&gt;Évènement système&lt;/center&gt;&lt;/html&gt;" x="613.4896240234375" y="472.33331298828125" width="98.0" height="45.0"/>
+<NODE id="v-63" type="concept" label="&lt;html&gt;&lt;center&gt;Boucle DSS&lt;/center&gt;&lt;/html&gt;" x="915.0842895507812" y="696.652099609375" width="87.0" height="56.0" style="c719244c-9950-47a1-b1c2-ee0fa3058897"/>
+<NODE id="v-64" type="principe" label="&lt;html&gt;&lt;center&gt;Cohérence avec le scénario&lt;/center&gt;&lt;/html&gt;" x="1127.921142578125" y="228.42384338378906" width="128.0" height="47.0"/>
+<NODE id="v-53" type="concept" label="&lt;html&gt;&lt;center&gt;Opération système&lt;/center&gt;&lt;/html&gt;" x="912.3802490234375" y="475.644775390625" width="87.0" height="56.0" style="c719244c-9950-47a1-b1c2-ee0fa3058897"/>
+<NODE id="v-75" referenceId="v-71" type="concept" label="&lt;html&gt;&lt;center&gt;Diagramme de Séquence Système (DSS)&lt;/center&gt;&lt;/html&gt;" x="1132.0072021484375" y="360.0100402832031" width="123.0" height="85.0" bgColor="-6684673"/>
+<NODE id="v-42" type="procedure" label="&lt;html&gt;&lt;center&gt;Faire un Diagramme Séquence Système&lt;/center&gt;&lt;/html&gt;" x="865.4999389648438" y="240.86447143554688" width="119.0" height="76.0"/>
+<NODE id="v-50" type="procedure" label="&lt;html&gt;&lt;center&gt;Reconnaître les évènements système&lt;/center&gt;&lt;/html&gt;" x="467.1459045410156" y="472.33331298828125" width="117.0" height="74.0"/>
+<NODE id="v-61" type="concept" label="&lt;html&gt;&lt;center&gt;Boucle&lt;/center&gt;&lt;/html&gt;" x="612.3510131835938" y="699.1727905273438" width="98.0" height="45.0"/>
+<NODE id="v-51" type="procedure" label="&lt;html&gt;&lt;center&gt;Proposer l&apos;acteur&lt;/center&gt;&lt;/html&gt;" x="750.105224609375" y="363.1546325683594" width="103.0" height="74.0"/>
+<NODE id="v-62" type="procedure" label="&lt;html&gt;&lt;center&gt;Reconnaître une boucle&lt;/center&gt;&lt;/html&gt;" x="467.3936767578125" y="698.4796142578125" width="117.0" height="74.0"/>
+<NODE id="v-60" type="procedure" label="&lt;html&gt;&lt;center&gt;Proposer boucle&lt;/center&gt;&lt;/html&gt;" x="751.6947631835938" y="699.1727905273438" width="103.0" height="74.0"/>
+<NODE id="v-49" referenceId="v-40" type="concept" label="&lt;html&gt;&lt;center&gt;Scénario alternatif&lt;/center&gt;&lt;/html&gt;" x="391.2137756347656" y="343.98583984375" width="89.0" height="49.0" style="ea91e9a6-9563-46ef-a212-008fc069acd7"/>
+<NODE id="v-58" type="procedure" label="&lt;html&gt;&lt;center&gt;Reconnaître les informations de retour&lt;/center&gt;&lt;/html&gt;" x="465.26165771484375" y="584.5709838867188" width="117.0" height="74.0"/>
+<NODE id="v-47" referenceId="v-38" type="concept" label="&lt;html&gt;&lt;center&gt;Scénario de succès&lt;/center&gt;&lt;/html&gt;" x="248.25790405273438" y="355.2392578125" width="89.0" height="49.0" style="ea91e9a6-9563-46ef-a212-008fc069acd7"/>
+<NODE id="v-59" type="concept" label="&lt;html&gt;&lt;center&gt;Message de retour&lt;/center&gt;&lt;/html&gt;" x="912.9522705078125" y="582.7434692382812" width="87.0" height="56.0" style="c719244c-9950-47a1-b1c2-ee0fa3058897"/>
+<NODE id="v-48" referenceId="v-39" type="concept" label="&lt;html&gt;&lt;center&gt;Étapes&lt;/center&gt;&lt;/html&gt;" x="327.4920349121094" y="473.1434326171875" style="ea91e9a6-9563-46ef-a212-008fc069acd7"/>
+<NODE id="v-45" referenceId="v-35" type="concept" label="&lt;html&gt;&lt;center&gt;Cas d&apos;utilisation&lt;/center&gt;&lt;/html&gt;" x="285.572021484375" y="211.42398071289062" width="109.0" height="46.0" style="ea91e9a6-9563-46ef-a212-008fc069acd7"/>
+<NODE id="v-56" type="procedure" label="&lt;html&gt;&lt;center&gt;Proposer message de retour&lt;/center&gt;&lt;/html&gt;" x="749.562744140625" y="585.26416015625" width="103.0" height="74.0"/>
+<NODE id="v-67" type="principe" label="&lt;html&gt;&lt;center&gt;Arguments de type primitif&lt;/center&gt;&lt;/html&gt;" x="1125.3787841796875" y="531.5164794921875" width="128.0" height="47.0"/>
+<NODE id="v-57" type="concept" label="&lt;html&gt;&lt;center&gt;Informations de retour&lt;/center&gt;&lt;/html&gt;" x="610.218994140625" y="585.26416015625" width="98.0" height="45.0"/>
+<NODE id="v-46" referenceId="v-37" type="concept" label="&lt;html&gt;&lt;center&gt;Acteur&lt;/center&gt;&lt;/html&gt;" x="467.3824462890625" y="259.92230224609375" style="ea91e9a6-9563-46ef-a212-008fc069acd7"/>
+</NODES>
+<LINKS>
+<LINK type="c" src="v-42" dest="v-51"/>
+<LINK type="ip" src="v-42" dest="v-75"/>
+<LINK type="ip" src="v-50" dest="v-44"/>
+<LINK type="ip" src="v-58" dest="v-57"/>
+<LINK type="ip" src="v-48" dest="v-62" ctrlx="0.5017391443252563" ctrly="33.46800314886241"/>
+<LINK type="ip" src="v-62" dest="v-61"/>
+<LINK type="ip" src="v-61" dest="v-60"/>
+<LINK type="c" src="v-42" dest="v-56" ctrlx="0.8996441960334778" ctrly="-70.94521759844723"/>
+<LINK type="ip" src="v-57" dest="v-56"/>
+<LINK type="ip" src="v-60" dest="v-63"/>
+<LINK type="ip" src="v-56" dest="v-59"/>
+<LINK type="ip" src="v-43" dest="v-53" ctrlx="0.5620953440666199" ctrly="-3.578672942044735"/>
+<LINK type="r" src="v-64" dest="v-75"/>
+<LINK type="c" src="v-75" dest="v-63"/>
+<LINK type="r" src="v-67" dest="v-53"/>
+<LINK type="ip" src="v-46" dest="v-51"/>
+<LINK type="c" src="v-45" dest="v-46"/>
+<LINK type="c" src="v-45" dest="v-47"/>
+<LINK type="c" src="v-42" dest="v-60" ctrlx="0.7114001512527466" ctrly="-80.7729093737613"/>
+<LINK type="c" src="v-42" dest="v-43" ctrlx="0.672258734703064" ctrly="-45.88576075354828"/>
+<LINK type="ip" src="v-48" dest="v-50"/>
+<LINK type="ip" src="v-51" dest="v-55"/>
+<LINK type="ip" src="v-44" dest="v-43"/>
+<LINK type="c" src="v-49" dest="v-48"/>
+<LINK type="c" src="v-47" dest="v-48"/>
+<LINK type="c" src="v-45" dest="v-49"/>
+<LINK type="ip" src="v-48" dest="v-58"/>
+<LINK type="c" src="v-75" dest="v-55"/>
+<LINK type="c" src="v-75" dest="v-53"/>
+<LINK type="c" src="v-75" dest="v-59"/>
+<LINK type="c" src="v-32" dest="v-42"/>
+</LINKS>
+</GRAPH>
+<GRAPH id="g-14" parent="v-5">
+<NODES>
+<NODE id="v-172" referenceId="v-172" type="procedure" label="&lt;html&gt;&lt;center&gt;Implémenter les tests unitaires&lt;/center&gt;&lt;/html&gt;" x="802.5000610351562" y="466.3333435058594" width="103.0" height="68.0"/>
+<NODE id="v-147" referenceId="v-5" type="procedure" label="&lt;html&gt;&lt;center&gt;Tester les classes&lt;/center&gt;&lt;/html&gt;" x="744.3333129882812" y="363.1666564941406" width="85.0" height="68.0"/>
+</NODES>
+<LINKS>
+<LINK type="c" src="v-147" dest="v-172"/>
+</LINKS>
+</GRAPH>
+<GRAPH id="g-15" parent="v-6">
+<NODES>
+<NODE id="v-148" referenceId="v-6" type="procedure" label="&lt;html&gt;&lt;center&gt;Tester le système&lt;/center&gt;&lt;/html&gt;" x="766.3333333333334" y="293.16666666666663" width="88.0" height="52.0"/>
+</NODES>
+</GRAPH>
+<GRAPH id="g-12" parent="v-7">
+<NODES>
+<NODE id="v-182" referenceId="v-180" type="procedure" label="&lt;html&gt;&lt;center&gt;Appliquer un réusinage&lt;/center&gt;&lt;/html&gt;" x="1015.5" y="463.0" width="104.0" height="56.0"/>
+<NODE id="v-160" type="concept" label="&lt;html&gt;&lt;center&gt;Tests unitaires&lt;/center&gt;&lt;/html&gt;" x="849.833251953125" y="517.8665771484375" width="91.0" height="41.0"/>
+<NODE id="v-161" referenceId="v-151" type="principe" label="&lt;html&gt;&lt;center&gt;TDD&lt;/center&gt;&lt;/html&gt;" x="745.8666381835938" y="362.6666564941406" width="60.0" height="40.0"/>
+<NODE id="v-162" type="concept" label="&lt;html&gt;&lt;center&gt;Classes ou modules (code source)&lt;/center&gt;&lt;/html&gt;" x="848.6666259765625" y="416.16668701171875" width="101.0" height="56.0"/>
+<NODE id="v-174" referenceId="v-172" type="procedure" label="&lt;html&gt;&lt;center&gt;Implémenter les tests unitaires&lt;/center&gt;&lt;/html&gt;" x="653.5" y="522.333251953125" width="103.0" height="68.0"/>
+<NODE id="v-168" type="principe" label="&lt;html&gt;&lt;center&gt;Collections&lt;/center&gt;&lt;/html&gt;" x="660.8333740234375" y="257.3333435058594" width="88.0" height="34.0"/>
+<NODE id="v-157" type="concept" label="&lt;html&gt;&lt;center&gt;Squelette lab0&lt;/center&gt;&lt;/html&gt;" x="480.4999694824219" y="487.66668701171875" width="70.0" height="50.0"/>
+<NODE id="v-169" type="principe" label="&lt;html&gt;&lt;center&gt;Exceptions&lt;/center&gt;&lt;/html&gt;" x="704.8333740234375" y="305.33331298828125" width="88.0" height="34.0"/>
+<NODE id="v-158" referenceId="v-136" type="concept" label="&lt;html&gt;&lt;center&gt;RDCU&lt;/center&gt;&lt;/html&gt;" x="417.1667175292969" y="406.24566650390625" style="34907792-85d9-45c3-bc01-09d903125b6d"/>
+<NODE id="v-159" referenceId="v-11" type="concept" label="&lt;html&gt;&lt;center&gt;Système logiciel&lt;/center&gt;&lt;/html&gt;" x="848.0" y="316.89996337890625" width="91.0" height="41.0"/>
+<NODE id="v-153" type="concept" label="&lt;html&gt;&lt;center&gt;TypeScript&lt;/center&gt;&lt;/html&gt;" x="340.83331298828125" y="350.7332763671875" width="87.0" height="37.0"/>
+<NODE id="v-164" type="concept" label="&lt;html&gt;&lt;center&gt;Jest&lt;/center&gt;&lt;/html&gt;" x="446.3057861328125" y="575.1019897460938"/>
+<NODE id="v-154" type="concept" label="&lt;html&gt;&lt;center&gt;Express&lt;/center&gt;&lt;/html&gt;" x="333.83331298828125" y="552.0"/>
+<NODE id="v-155" type="concept" label="&lt;html&gt;&lt;center&gt;PUG&lt;/center&gt;&lt;/html&gt;" x="353.16680908203125" y="468.6667175292969"/>
+<NODE id="v-166" type="comment" label="&lt;html&gt;&lt;center&gt;Note: certains concepts ne sont pas détallés, par exemple le modèle de conception des classes logicielles. On passe directement au code à partir de la RDCU. Selon certaines méthodologies, on aurait des modèles en UML (diagrammes de classes et de séquence) avant de passer au code, mais les outils ne supportent pas facilement le &quot;round trip engineering&quot; et donc il est difficile de l&apos;enseigner.&lt;/center&gt;&lt;/html&gt;" x="623.5" y="659.3333740234375" width="574.0" height="79.0"/>
+<NODE id="v-145" referenceId="v-7" type="procedure" label="&lt;html&gt;&lt;center&gt;Implémenter les classes&lt;/center&gt;&lt;/html&gt;" x="628.0" y="406.83331298828125" width="111.0" height="65.0"/>
+<NODE id="v-167" type="principe" label="&lt;html&gt;&lt;center&gt;Visibilité&lt;/center&gt;&lt;/html&gt;" x="609.5000610351562" y="300.66668701171875" width="65.0" height="33.0"/>
+<NODE id="v-156" type="principe" label="&lt;html&gt;&lt;center&gt;Séparation des couches (présentation et domaine)&lt;/center&gt;&lt;/html&gt;" x="495.83355712890625" y="303.0" width="146.0" height="62.0"/>
+</NODES>
+<LINKS>
+<LINK type="ip" src="v-160" dest="v-145" ctrlx="0.2637598514556885" ctrly="-27.272325984473337"/>
+<LINK type="p" src="v-174" dest="v-145" ctrlx="0.562457263469696" ctrly="-35.323234546098256"/>
+<LINK type="r" src="v-161" dest="v-174"/>
+<LINK type="ip" src="v-160" dest="v-182"/>
+<LINK type="ip" src="v-162" dest="v-174"/>
+<LINK type="ip" src="v-157" dest="v-145"/>
+<LINK type="r" src="v-168" dest="v-145"/>
+<LINK type="ip" src="v-145" dest="v-162" ctrlx="0.526602566242218" ctrly="-26.08547584127113"/>
+<LINK type="r" src="v-169" dest="v-145"/>
+<LINK type="ip" src="v-174" dest="v-160"/>
+<LINK type="r" src="v-156" dest="v-145"/>
+<LINK type="c" src="v-159" dest="v-162"/>
+<LINK type="ip" src="v-182" dest="v-162" ctrlx="0.4237912893295288" ctrly="62.53341096176585"/>
+<LINK type="ip" src="v-162" dest="v-182"/>
+<LINK type="nt" src="v-160" dest="v-162" label="valident"/>
+<LINK type="c" src="v-157" dest="v-164"/>
+<LINK type="r" src="v-161" dest="v-145"/>
+<LINK type="ip" src="v-153" dest="v-145" ctrlx="0.20690950751304626" ctrly="-15.222324996854027"/>
+<LINK type="r" src="v-167" dest="v-145"/>
+<LINK type="ip" src="v-182" dest="v-160" ctrlx="0.46731340885162354" ctrly="-65.86705774361548"/>
+<LINK type="ip" src="v-162" dest="v-145" ctrlx="0.3996747136116028" ctrly="-26.506897503635006"/>
+<LINK type="ip" src="v-157" dest="v-174"/>
+<LINK type="ip" src="v-158" dest="v-145" ctrlx="0.4312533438205719" ctrly="3.448786094299845" commentFrom="v-166"/>
+<LINK type="c" src="v-157" dest="v-155"/>
+<LINK type="c" src="v-157" dest="v-154"/>
+<LINK type="p" src="v-145" dest="v-174" ctrlx="0.406213641166687" ctrly="-22.862872515759324"/>
+<LINK type="r" src="v-156" dest="v-157"/>
+</LINKS>
+</GRAPH>
+<GRAPH id="g-16" parent="v-9">
+<NODES>
+<NODE id="v-149" referenceId="v-9" type="principe" label="&lt;html&gt;&lt;center&gt;Processus Unifié&lt;/center&gt;&lt;/html&gt;" x="384.3333333333333" y="129.16666666666666" width="90.0" height="43.0"/>
+</NODES>
+</GRAPH>
+<GRAPH id="g-5" parent="v-10">
+<NODES>
+<NODE id="v-33" referenceId="v-10" type="concept" label="&lt;html&gt;&lt;center&gt;Exigences&lt;/center&gt;&lt;/html&gt;" x="313.3333435058594" y="239.6666717529297"/>
+<NODE id="v-40" referenceId="v-40" type="concept" label="&lt;html&gt;&lt;center&gt;Scénario alternatif&lt;/center&gt;&lt;/html&gt;" x="451.86907958984375" y="417.4559020996094" width="89.0" height="49.0"/>
+<NODE id="v-38" referenceId="v-38" type="concept" label="&lt;html&gt;&lt;center&gt;Scénario de succès&lt;/center&gt;&lt;/html&gt;" x="310.9132080078125" y="427.3759765625" width="89.0" height="49.0"/>
+<NODE id="v-39" referenceId="v-39" type="concept" label="&lt;html&gt;&lt;center&gt;Étapes&lt;/center&gt;&lt;/html&gt;" x="388.14739990234375" y="519.0674438476562"/>
+<NODE id="v-37" referenceId="v-37" type="concept" label="&lt;html&gt;&lt;center&gt;Acteur&lt;/center&gt;&lt;/html&gt;" x="140.23553466796875" y="379.6073913574219"/>
+<NODE id="v-34" type="principe" label="&lt;html&gt;&lt;center&gt;FURPS+&lt;/center&gt;&lt;/html&gt;" x="144.01515197753906" y="174.57574462890625"/>
+<NODE id="v-35" referenceId="v-35" type="concept" label="&lt;html&gt;&lt;center&gt;Cas d&apos;utilisation&lt;/center&gt;&lt;/html&gt;" x="312.22723388671875" y="329.5606384277344" width="109.0" height="46.0"/>
+</NODES>
+<LINKS>
+<LINK type="c" src="v-38" dest="v-39"/>
+<LINK type="c" src="v-35" dest="v-37"/>
+<LINK type="c" src="v-35" dest="v-38"/>
+<LINK type="r" src="v-34" dest="v-33"/>
+<LINK type="s" src="v-35" dest="v-33"/>
+<LINK type="c" src="v-35" dest="v-40"/>
+<LINK type="c" src="v-40" dest="v-39"/>
+</LINKS>
+</GRAPH>
+<GRAPH id="g-17" parent="v-11">
+<NODES>
+<NODE id="v-150" referenceId="v-11" type="concept" label="&lt;html&gt;&lt;center&gt;Système logiciel&lt;/center&gt;&lt;/html&gt;" x="727.6666870117188" y="213.5" width="110.0" height="38.0"/>
+</NODES>
+</GRAPH>
+<GRAPH id="g-3" parent="v-16">
+<NODES>
+<NODE id="v-22" referenceId="v-16" type="principe" label="&lt;html&gt;&lt;center&gt;Catégories de classes conceptuelles&lt;/center&gt;&lt;/html&gt;" x="312.33233642578125" y="185.05471801757812" width="97.0" height="62.0"/>
+<NODE id="v-27" type="principe" label="&lt;html&gt;&lt;center&gt;D&apos;autres Catégories ...&lt;/center&gt;&lt;/html&gt;" x="514.0" y="246.16665649414062" width="89.0" height="54.0"/>
+<NODE id="v-25" type="principe" label="&lt;html&gt;&lt;center&gt;Description d&apos;entités&lt;/center&gt;&lt;/html&gt;" x="313.3333435058594" y="380.9999694824219" width="100.0" height="45.0"/>
+<NODE id="v-26" type="principe" label="&lt;html&gt;&lt;center&gt;Catalogue de descriptions&lt;/center&gt;&lt;/html&gt;" x="441.33331298828125" y="339.66668701171875" width="100.0" height="45.0"/>
+<NODE id="v-23" type="principe" label="&lt;html&gt;&lt;center&gt;Transaction d&apos;affaires&lt;/center&gt;&lt;/html&gt;" x="90.33333587646484" y="250.0" width="100.0" height="45.0"/>
+<NODE id="v-24" type="principe" label="&lt;html&gt;&lt;center&gt;Ligne d&apos;une transaction&lt;/center&gt;&lt;/html&gt;" x="204.00003051757812" y="337.66668701171875" width="100.0" height="45.0"/>
+</NODES>
+<LINKS>
+<LINK type="c" src="v-22" dest="v-26"/>
+<LINK type="c" src="v-22" dest="v-25"/>
+<LINK type="r" src="v-25" dest="v-26"/>
+<LINK type="r" src="v-23" dest="v-24"/>
+<LINK type="r" src="v-22" dest="v-27"/>
+<LINK type="c" src="v-22" dest="v-24"/>
+<LINK type="c" src="v-22" dest="v-23"/>
+</LINKS>
+</GRAPH>
+<GRAPH id="g-7" parent="v-68">
+<NODES>
+<NODE id="v-74" type="concept" label="&lt;html&gt;&lt;center&gt;Diagramme de communication&lt;/center&gt;&lt;/html&gt;" x="1058.6666259765625" y="378.3333435058594" width="127.0" height="85.0" style="524f6897-a647-45e0-9c7d-0b964c9e5677"/>
+<NODE id="v-72" type="concept" label="&lt;html&gt;&lt;center&gt;Diagramme d&apos;interaction&lt;/center&gt;&lt;/html&gt;" x="966.6666870117188" y="252.33334350585938" width="127.0" height="85.0" style="524f6897-a647-45e0-9c7d-0b964c9e5677"/>
+<NODE id="v-73" referenceId="v-73" type="concept" label="&lt;html&gt;&lt;center&gt;Diagramme de séquence&lt;/center&gt;&lt;/html&gt;" x="904.0" y="377.0000305175781" width="127.0" height="85.0" style="524f6897-a647-45e0-9c7d-0b964c9e5677"/>
+<NODE id="v-70" referenceId="v-70" type="concept" label="&lt;html&gt;&lt;center&gt;Diagramme de classes conceptuelles (MDD)&lt;/center&gt;&lt;/html&gt;" x="695.3333129882812" y="94.00000762939453" width="127.0" height="85.0" style="524f6897-a647-45e0-9c7d-0b964c9e5677"/>
+<NODE id="v-71" referenceId="v-71" type="concept" label="&lt;html&gt;&lt;center&gt;Diagramme de Séquence Système (DSS)&lt;/center&gt;&lt;/html&gt;" x="896.6666870117188" y="138.33334350585938" width="127.0" height="85.0" style="524f6897-a647-45e0-9c7d-0b964c9e5677"/>
+<NODE id="v-69" referenceId="v-68" type="principe" label="&lt;html&gt;&lt;center&gt;UML&lt;/center&gt;&lt;/html&gt;" x="696.6666870117188" y="233.3333282470703" width="60.0" height="40.0" style="524f6897-a647-45e0-9c7d-0b964c9e5677"/>
+</NODES>
+<LINKS>
+<LINK type="r" src="v-69" dest="v-70"/>
+<LINK type="r" src="v-69" dest="v-71"/>
+<LINK type="r" src="v-69" dest="v-72"/>
+<LINK type="r" src="v-69" dest="v-73"/>
+<LINK type="c" src="v-72" dest="v-73"/>
+<LINK type="c" src="v-72" dest="v-74"/>
+<LINK type="r" src="v-69" dest="v-74"/>
+</LINKS>
+</GRAPH>
+<GRAPH id="g-11" parent="v-94">
+<NODES>
+<NODE id="v-139" referenceId="v-94" type="principe" label="&lt;html&gt;&lt;center&gt;Patrons GOF&lt;/center&gt;&lt;/html&gt;" x="1486.666748046875" y="63.166656494140625" width="77.0" height="46.0"/>
+</NODES>
+</GRAPH>
+<GRAPH id="g-10" parent="v-107">
+<NODES>
+<NODE id="v-117" referenceId="v-107" type="concept" label="&lt;html&gt;&lt;center&gt;Exigences&lt;/center&gt;&lt;/html&gt;" x="313.3333435058594" y="239.6666717529297"/>
+<NODE id="v-118" type="concept" label="&lt;html&gt;&lt;center&gt;Scénario alternatif&lt;/center&gt;&lt;/html&gt;" x="451.86907958984375" y="417.4559020996094" width="89.0" height="49.0"/>
+<NODE id="v-119" type="concept" label="&lt;html&gt;&lt;center&gt;Scénario de succès&lt;/center&gt;&lt;/html&gt;" x="310.9132080078125" y="427.3759765625" width="89.0" height="49.0"/>
+<NODE id="v-120" type="concept" label="&lt;html&gt;&lt;center&gt;Étapes&lt;/center&gt;&lt;/html&gt;" x="388.14739990234375" y="519.0674438476562"/>
+<NODE id="v-121" type="concept" label="&lt;html&gt;&lt;center&gt;Acteur&lt;/center&gt;&lt;/html&gt;" x="140.23553466796875" y="379.6073913574219"/>
+<NODE id="v-122" type="principe" label="&lt;html&gt;&lt;center&gt;FURPS+&lt;/center&gt;&lt;/html&gt;" x="144.01515197753906" y="174.57574462890625"/>
+<NODE id="v-123" type="concept" label="&lt;html&gt;&lt;center&gt;Cas d&apos;utilisation&lt;/center&gt;&lt;/html&gt;" x="312.22723388671875" y="329.5606384277344" width="109.0" height="46.0"/>
+</NODES>
+<LINKS>
+<LINK type="c" src="v-123" dest="v-118"/>
+<LINK type="r" src="v-122" dest="v-117"/>
+<LINK type="c" src="v-118" dest="v-120"/>
+<LINK type="c" src="v-123" dest="v-121"/>
+<LINK type="s" src="v-123" dest="v-117"/>
+<LINK type="c" src="v-119" dest="v-120"/>
+<LINK type="c" src="v-123" dest="v-119"/>
+</LINKS>
+</GRAPH>
+<GRAPH id="g-9" parent="v-135">
+<NODES>
+<NODE id="v-87" type="principe" label="&lt;html&gt;&lt;center&gt;Indirection&lt;/center&gt;&lt;/html&gt;" x="1284.519775390625" y="385.0330505371094" width="81.0" height="49.0"/>
+<NODE id="v-88" type="principe" label="&lt;html&gt;&lt;center&gt;Créateur&lt;/center&gt;&lt;/html&gt;" x="912.3333129882812" y="368.6666259765625" width="81.0" height="49.0"/>
+<NODE id="v-85" type="principe" label="&lt;html&gt;&lt;center&gt;Polymorphisme&lt;/center&gt;&lt;/html&gt;" x="1300.14794921875" y="216.6997528076172" width="111.0" height="55.0"/>
+<NODE id="v-86" type="principe" label="&lt;html&gt;&lt;center&gt;Fabrication pure&lt;/center&gt;&lt;/html&gt;" x="1289.55517578125" y="301.10809326171875" width="81.0" height="49.0"/>
+<NODE id="v-83" referenceId="v-83" type="principe" label="&lt;html&gt;&lt;center&gt;Faible couplage (évaluation)&lt;/center&gt;&lt;/html&gt;" x="922.9999389648438" y="491.3333435058594" width="94.0" height="57.0"/>
+<NODE id="v-94" referenceId="v-94" type="principe" label="&lt;html&gt;&lt;center&gt;Patrons GOF&lt;/center&gt;&lt;/html&gt;" x="1473.445556640625" y="96.63417053222656" width="77.0" height="46.0"/>
+<NODE id="v-84" referenceId="v-84" type="principe" label="&lt;html&gt;&lt;center&gt;Forte cohésion (évaluation)&lt;/center&gt;&lt;/html&gt;" x="1037.0" y="489.9999694824219" width="94.0" height="57.0"/>
+<NODE id="v-81" type="principe" label="&lt;html&gt;&lt;center&gt;Contrôleur&lt;/center&gt;&lt;/html&gt;" x="917.0" y="216.6666717529297"/>
+<NODE id="v-82" type="principe" label="&lt;html&gt;&lt;center&gt;Protection des variations&lt;/center&gt;&lt;/html&gt;" x="1293.484619140625" y="505.2549133300781" width="96.0" height="59.0"/>
+<NODE id="v-80" type="principe" label="&lt;html&gt;&lt;center&gt;Expert&lt;/center&gt;&lt;/html&gt;" x="912.3333129882812" y="288.6666564941406" width="81.0" height="49.0"/>
+<NODE id="v-79" referenceId="v-135" type="principe" label="&lt;html&gt;&lt;center&gt;GRASP&lt;/center&gt;&lt;/html&gt;" x="1117.6666259765625" y="214.16665649414062"/>
+</NODES>
+<LINKS>
+<LINK type="r" src="v-87" dest="v-82"/>
+<LINK type="r" src="v-85" dest="v-82" ctrlx="0.4295859932899475" ctrly="-191.92526156903904"/>
+<LINK type="r" src="v-86" dest="v-82" ctrlx="0.298091858625412" ctrly="-132.60412469934462"/>
+<LINK type="c" src="v-79" dest="v-80"/>
+<LINK type="c" src="v-79" dest="v-81"/>
+<LINK type="c" src="v-79" dest="v-82"/>
+<LINK type="c" src="v-79" dest="v-83"/>
+<LINK type="c" src="v-79" dest="v-84"/>
+<LINK type="r" src="v-83" dest="v-88"/>
+<LINK type="c" src="v-79" dest="v-85"/>
+<LINK type="c" src="v-79" dest="v-86"/>
+<LINK type="c" src="v-79" dest="v-87"/>
+<LINK type="r" src="v-83" dest="v-81" ctrlx="0.5441044569015503" ctrly="-173.74937251170783"/>
+<LINK type="c" src="v-79" dest="v-88"/>
+<LINK type="r" src="v-84" dest="v-80" ctrlx="0.1494438797235489" ctrly="53.4660796152285"/>
+<LINK type="r" src="v-79" dest="v-94" ctrlx="0.29273882508277893" ctrly="-85.62124330392052"/>
+</LINKS>
+</GRAPH>
+<GRAPH id="g-18" parent="v-151">
+<NODES>
+<NODE id="v-183" type="principe" label="&lt;html&gt;&lt;center&gt;Catalogue de réusinages&lt;/center&gt;&lt;/html&gt;" x="985.6666870117188" y="599.833251953125" width="102.0" height="50.0"/>
+<NODE id="v-152" referenceId="v-151" type="principe" label="&lt;html&gt;&lt;center&gt;TDD&lt;/center&gt;&lt;/html&gt;" x="885.0" y="406.8333435058594" width="60.0" height="40.0"/>
+<NODE id="v-180" referenceId="v-180" type="procedure" label="&lt;html&gt;&lt;center&gt;Appliquer un réusinage&lt;/center&gt;&lt;/html&gt;" x="983.0" y="503.8333435058594" width="104.0" height="56.0"/>
+<NODE id="v-181" type="principe" label="&lt;html&gt;&lt;center&gt;Réusinages automatisés dans les IDE&lt;/center&gt;&lt;/html&gt;" x="1164.0" y="504.1666564941406" width="118.0" height="60.0"/>
+<NODE id="v-179" type="principe" label="&lt;html&gt;&lt;center&gt;Faire le minimum pour &quot;passer&quot; un test&lt;/center&gt;&lt;/html&gt;" x="1075.0" y="398.66668701171875" width="111.0" height="62.0"/>
+<NODE id="v-177" type="principe" label="&lt;html&gt;&lt;center&gt;Écrire test en premier&lt;/center&gt;&lt;/html&gt;" x="915.6666870117188" y="279.66668701171875" width="92.0" height="54.0"/>
+<NODE id="v-178" type="principe" label="&lt;html&gt;&lt;center&gt;Petits pas&lt;/center&gt;&lt;/html&gt;" x="1019.0" y="313.33331298828125" width="68.0" height="39.0"/>
+</NODES>
+<LINKS>
+<LINK type="r" src="v-179" dest="v-152"/>
+<LINK type="r" src="v-178" dest="v-152"/>
+<LINK type="r" src="v-181" dest="v-180"/>
+<LINK type="r" src="v-183" dest="v-180"/>
+<LINK type="r" src="v-177" dest="v-152"/>
+<LINK type="r" src="v-152" dest="v-180"/>
+</LINKS>
+</GRAPH>
+<CHANGES>
+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
+</CHANGES>
+<STYLES>
+<STYLE id="c719244c-9950-47a1-b1c2-ee0fa3058897" name="DSS" bgColor="-6684673" textColor="-16777216" fontFamily="SansSerif" fontSize="12" fontStyle="0" alpha="255" borderColor="-16777216" />
+<STYLE id="c719244c-9950-47a1-b1c2-ee0fa3058897" name="DSS" bgColor="-6684673" textColor="-16777216" fontFamily="SansSerif" fontSize="12" fontStyle="0" alpha="255" borderColor="-16777216" />
+<STYLE id="34907792-85d9-45c3-bc01-09d903125b6d" name="RDCU" bgColor="-3342388" textColor="-16777216" fontFamily="SansSerif" fontSize="12" fontStyle="0" alpha="255" borderColor="-16777216" />
+<STYLE id="ea91e9a6-9563-46ef-a212-008fc069acd7" name="Cas d'utilisation" bgColor="-6697729" textColor="-16777216" fontFamily="SansSerif" fontSize="12" fontStyle="0" alpha="255" borderColor="-16777216" />
+<STYLE id="524f6897-a647-45e0-9c7d-0b964c9e5677" name="UML" bgColor="-52" textColor="-16777216" fontFamily="SansSerif" fontSize="12" fontStyle="0" alpha="255" borderColor="-16777216" />
+<STYLE id="b0f75162-8364-4050-a536-2914ea19405d" name="Contrat d'opération" bgColor="-26368" textColor="-16777216" fontFamily="SansSerif" fontSize="12" fontStyle="0" alpha="255" borderColor="-16777216" />
+<STYLE id="c719244c-9950-47a1-b1c2-ee0fa3058897" name="DSS" bgColor="-6684673" textColor="-16777216" fontFamily="SansSerif" fontSize="12" fontStyle="0" alpha="255" borderColor="-16777216" />
+<STYLE id="34907792-85d9-45c3-bc01-09d903125b6d" name="RDCU" bgColor="-3342388" textColor="-16777216" fontFamily="SansSerif" fontSize="12" fontStyle="0" alpha="255" borderColor="-16777216" />
+<STYLE id="b0f75162-8364-4050-a536-2914ea19405d" name="Contrat d'opération" bgColor="-26368" textColor="-16777216" fontFamily="SansSerif" fontSize="12" fontStyle="0" alpha="255" borderColor="-16777216" />
+<STYLE id="ea91e9a6-9563-46ef-a212-008fc069acd7" name="Cas d'utilisation" bgColor="-6697729" textColor="-16777216" fontFamily="SansSerif" fontSize="12" fontStyle="0" alpha="255" borderColor="-16777216" />
+<STYLE id="c719244c-9950-47a1-b1c2-ee0fa3058897" name="DSS" bgColor="-6684673" textColor="-16777216" fontFamily="SansSerif" fontSize="12" fontStyle="0" alpha="255" borderColor="-16777216" />
+<STYLE id="b0f75162-8364-4050-a536-2914ea19405d" name="Contrat d'opération" bgColor="-26368" textColor="-16777216" fontFamily="SansSerif" fontSize="12" fontStyle="0" alpha="255" borderColor="-16777216" />
+<STYLE id="34907792-85d9-45c3-bc01-09d903125b6d" name="RDCU" bgColor="-3342388" textColor="-16777216" fontFamily="SansSerif" fontSize="12" fontStyle="0" alpha="255" borderColor="-16777216" />
+<STYLE id="b0f75162-8364-4050-a536-2914ea19405d" name="Contrat d'opération" bgColor="-26368" textColor="-16777216" fontFamily="SansSerif" fontSize="12" fontStyle="0" alpha="255" borderColor="-16777216" />
+<STYLE id="c719244c-9950-47a1-b1c2-ee0fa3058897" name="DSS" bgColor="-6684673" textColor="-16777216" fontFamily="SansSerif" fontSize="12" fontStyle="0" alpha="255" borderColor="-16777216" />
+<STYLE id="ea91e9a6-9563-46ef-a212-008fc069acd7" name="Cas d'utilisation" bgColor="-6697729" textColor="-16777216" fontFamily="SansSerif" fontSize="12" fontStyle="0" alpha="255" borderColor="-16777216" />
+<STYLE id="524f6897-a647-45e0-9c7d-0b964c9e5677" name="UML" bgColor="-52" textColor="-16777216" fontFamily="SansSerif" fontSize="12" fontStyle="0" alpha="255" borderColor="-16777216" />
+<STYLE id="ea91e9a6-9563-46ef-a212-008fc069acd7" name="Cas d'utilisation" bgColor="-6697729" textColor="-16777216" fontFamily="SansSerif" fontSize="12" fontStyle="0" alpha="255" borderColor="-16777216" />
+<STYLE id="524f6897-a647-45e0-9c7d-0b964c9e5677" name="UML" bgColor="-52" textColor="-16777216" fontFamily="SansSerif" fontSize="12" fontStyle="0" alpha="255" borderColor="-16777216" />
+<STYLE id="ea91e9a6-9563-46ef-a212-008fc069acd7" name="Cas d'utilisation" bgColor="-6697729" textColor="-16777216" fontFamily="SansSerif" fontSize="12" fontStyle="0" alpha="255" borderColor="-16777216" />
+<STYLE id="524f6897-a647-45e0-9c7d-0b964c9e5677" name="UML" bgColor="-52" textColor="-16777216" fontFamily="SansSerif" fontSize="12" fontStyle="0" alpha="255" borderColor="-16777216" />
+<STYLE id="34907792-85d9-45c3-bc01-09d903125b6d" name="RDCU" bgColor="-3342388" textColor="-16777216" fontFamily="SansSerif" fontSize="12" fontStyle="0" alpha="255" borderColor="-16777216" />
+</STYLES>
+</MODEL>
+</gemodel>
