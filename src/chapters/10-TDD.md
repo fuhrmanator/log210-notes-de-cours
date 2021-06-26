@@ -20,11 +20,11 @@ Nous pouvons écrire un test qui appelle à une fonction qui n'existe pas encore
 Un puriste du TDD insistera sur le fait que le test soit écrit toujours en premier!
 Cette discipline est parfois culturelle. 
 
-Plusieurs chercheurs ont mené des expériences, par exemple [@Karac_TDD_2018], pour voir si tester en premier avait un vrai bénéfice.
+Plusieurs chercheurs ont mené des expériences, par exemple @Karac_TDD_2018, pour voir si *tester en premier* avait un vrai bénéfice.
 Les résultats de leurs analyses n'ont pas toujours montré que c'est le cas (ce genre d'expérience est difficile de faire, en partie parce qu'il n'y a pas beaucoup de développeurs en industrie qui le pratiquent).
 Les chercheurs ont trouvé que faire un petit test *après* avoir écrit le code a aussi un bénéfice sur le plan de la qualité.
 Dans tous les cas, des chercheurs ont trouvé que le fait de travailler en *petits pas* apporte *toujours* un avantage sur le plan de la qualité.
-Travailler en *petits pas* est utile, même sans faire du TDD.
+Travailler en *petits pas* est utile, même sans faire du TDD de manière dogmatique.
 
 Sachez qu'il existe beaucoup d'intergiciels (anglais *frameworks*) pour faciliter l'exécution automatique des tests réalisés dans le cadre du TDD.
 Pour Java il y a JUnit, mais il y en a pour pratiquement tous les langages et environnements.
@@ -34,7 +34,7 @@ En ce qui concerne le squelette pour le laboratoire de LOG210, il s'agit de [Jes
 L'exécution de tests peut être même faite à chaque commit du code dans un dépôt comme GitHub. Le squelette de LOG210 utilise [Travis](https://travis-ci.org/) pour cela. 
 Cependant, pour un dépôt privé, Travis nécessite un compte payant.
 
-Il est possible de mesurer la [couverture de code](https://fr.wikipedia.org/wiki/Couverture_de_code)\ \faWikipediaW atteinte par les tests (mais ce sujet commence à sortir du cadre de la matière du cours). Le squelette utilise [Coveralls](https://coveralls.io/) pour ce faire.
+Il est possible de mesurer la [couverture de code](https://fr.wikipedia.org/wiki/Couverture_de_code)\ \faWikipediaW\ atteinte par les tests (mais ce sujet commence à sortir du cadre de la matière du cours). Le squelette utilise [Coveralls](https://coveralls.io/) pour ce faire.
 
 ```{.plantuml caption="États du développement piloté par les tests. [(PlantUML)](http://www.plantuml.com/plantuml/uml/RLJDQXin4BxhAGONwgJ43eLIYZ5B4fj0BgKqII_T7kJToLf4AsqraerxwhLlqTxgv_2Rz4awqgx_WY_BelbclX_DxXLvwNoejPYh4W7hng-WH2gSQhooHj2pCerqiWRoAutyTAf83VlAlPSURwmhqKsijWvcMXRFBm6trlYsl9mhZwVAzubYPdLvigf-8Bnz_x9qxPnT7jRxUy0KdsJGFbO_oXgXTu-LHNYyWvieiIVwNdcctFpYIGHbW7ApNg2sJOCr6W-DqjPlri3ZG2E1H_8aAFB2Pnig14dGkmvGMsKeDy4aI6usws9k0_RWbSEoQ_Y2pYVyWmsCtStBMIqHqp6wSeYcmt-Iz32TfevnaPBZMHcV0X_dvk1iJEnzzEv3Ddxjvw6U3KgxDDduCY4o7hj2hUrIV7tp3GPELNC_o3hz8vYupHfTRemD2vGXDr6KQAi3ny2aUyGXyLOuXCAMo99jSF0a-Q2JxvAPCpeVKsYoVp__Z2_ZYqZT0tr0c9lJb2ronzVvIubajv49Wk702wyMYYzbQs-NH8laDURfWPIH5NPQVhTQjXqT4rDjCpvs1oHDUpT2OuMcX89l1vqu7lTug0QEUC7qkPlNXc8hiLiePE2G16z8u-nCR_xoFie55j3jp10cs32NDFw2cxI41eCNqZcru72_1znl831pjpFGw4207fJcwmYbawAmt5Dn3t_8Up8QYkERkTE90VOC_KuAa5KUQgbZ6cpjJCKtunNpHGCpMmKy7y8qnbH4QtG1ra17p3hR6FbxIiv4ZB1DKbpnWtyV_m40)" #TDD_states }
 @startuml
