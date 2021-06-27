@@ -85,7 +85,7 @@ Dans le bilan de l'itération, **on doit indiquer explicitement ce fait, même a
 Une inégalité importante dans les contributions est un signal d'alarme. On doit agir, mais on commence par poser des questions, par exemple:
 
 - Est-ce que Francis et Mélanie sont à l'aise avec les technologies utilisées dans le lab, ont-ils besoin de coaching?
-Sont-ils des "parasites" ou "mollassons" [@oakley_coping_2004]? 
+- Sont-ils des "parasites" ou "mollassons" [@oakley_coping_2004] ([traduction française de l'article](https://docs.google.com/document/d/e/2PACX-1vRWTtdcGjUg34gqB6CW_EMt0H28Cgunq09_7HxMUoTLGERjUcQXBHlrYyB76PYJGjtaoYJhhsHS1Tjj/pub))? 
 Le plan de cours vous permet d'exclure leurs noms du rapport (et ils auront une note de zéro pour la remise), mais **seulement s'ils n'ont rien fait du tout** (ce qui n'est pas le cas dans l'exemple ci-dessus).
 Une personne exclue de cette manière va probablement abandonner le cours et vous perdrez définitivement un coéquipier.
 - Est-ce que Anne et Justin ont laissé suffisamment de liberté aux autres pour faire une contribution importante? Font-ils assez confiance aux autres? 
@@ -101,8 +101,6 @@ Il y a aussi un risque sur le plan de la \nameref{Bus_Factor}, surtout si un co�
 
 Dans le bilan il faut *constater les faits* et *proposer des solutions* pour éviter des inégalités importantes sur le plan de la contribution dans les prochaines itérations. 
 Ainsi, vous gérez les problèmes de manière plus proactive.
-
-Voir l'article (en anglais) *[Faire face aux "parasites" et aux "mollassons" dans une équipe](https://www2.stat.duke.edu/courses/Spring12/sta101.1/hitchhikers.pdf)* de @oakley_coping_2004.
 
 ### FAQ pour gitinspector
 
