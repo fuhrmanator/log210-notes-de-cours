@@ -51,7 +51,7 @@ Une personne humble pense ainsi:
 - Je ne suis ni omniscient ni infaillible.
 - Je suis ouvert à m'améliorer.
 
-> \faWarning \ L'humilité ne veut pas dire "je n'ai pas de valeur" ou "j'accepte d'être mal traité.e par les autres".
+> \faWarning \ L'humilité ne veut pas dire "je n'ai pas de valeur" ou "j'accepte d'être mal traité.e par les autres". Voir la section \nameref{solution_problemes_equipes}.
 
 ![Éviter d'être le ["Centre de l'univers"](https://www.flickr.com/photos/diamondduste/466060240/) ([CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)) par [Diamondduste](https://www.flickr.com/people/diamondduste/).](images/flickr_diamondduste_center.jpg){width="200px"}
 
