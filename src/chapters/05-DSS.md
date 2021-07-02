@@ -93,6 +93,17 @@ note over c, s : selon la RDCU
 
 ## FAQ DSS
 
+### Faut-il une opération système après une boucle?
+
+> Dans l'exemple pour *Attaquer un pays*, à l'extérieur de la boucle il y a une opération système `terminerAttaque`.
+> Est-ce obligatoire d'avoir une opération système après une boucle?
+
+L'opération système `terminerAttaque` sert pour signaler la fin de la boucle.
+Le système saura que l'acteur ne veut plus répéter les actions dans la boucle.
+Mais elle permet aussi de faire des calculs concernant ce qui s'est passé dans la boucle, p. ex. pour déterminer qui contrôle quel pays après les attaques.
+
+Cependant, si vous avez une boucle pour indiquer la possibilité de répéter une action (p. ex. ajouter des produits dans un système d'inventaire) et vous n'avez pas besoin de faire un calcul à la fin, alors une opération système pour terminer une telle boucle n'est pas nécessaire (surtout avec une application web).
+
 ### Comment faire si un cas d'utilisation a des *scénarios alternatifs*?
 
 > Fait-on plusieurs DSS (un pour chaque scénario) ou utilise-t-on la notation UML (des blocs `opt` et `alt`) pour montrer des flots différents dans le même DSS?
