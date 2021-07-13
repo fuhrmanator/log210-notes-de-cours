@@ -65,12 +65,12 @@ $(BUILD)/epub/$(OUTPUT_FILENAME).epub:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CSS
 	$(PANDOC_COMMAND) $(PANDOC_ARGS) --epub-cover-image=$(COVER_IMAGE) -o $@ $(CHAPTERS)
 	@echo "$@ was built"
 
-$(BUILD)/html/$(OUTPUT_FILENAME).html:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CSS_FILE) $(IMAGES) $(BIBLIOGRAPHY)
+$(BUILD)/html/$(OUTPUT_FILENAME).html:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CSS_FILE) $(IMAGES) $(BIBLIOGRAPHY) $(HTML_TEMPLATE)
 	mkdir -p $(BUILD)/html
 	mkdir -p $(BUILD)/images
 	$(PANDOC_COMMAND) $(PANDOC_ARGS) $(HTML_ARGS) -o $@ $(CHAPTERS)
-	cp -R $(IMAGES_FOLDER)/ $(BUILD)/html/$(IMAGES_FOLDER)/
-	cp -R $(PLANTUML_IMAGES)/ $(BUILD)/html/$(PLANTUML_IMAGES)
+	cp -R $(IMAGES_FOLDER)/ $(BUILD)/html/
+	cp -R $(PLANTUML_IMAGES)/ $(BUILD)/html/
 	cp $(CSS_FILE) $(BUILD)/html/$(CSS_FILE)
 	@echo "$@ was built"
 

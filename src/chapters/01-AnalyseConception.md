@@ -212,9 +212,9 @@ Les points importants sont les suivants:
   - complexité gérée (par itération);
   - possibilité d'exploiter méthodiquement les leçons tirées d'une itération.
 
-![Le développement itératif et incrémental (Figure 2.1 du livre).](images/A2.1.pdf){#DevIteratifIncremental}
+![Le développement itératif et incrémental (Figure 2.1 du livre).](images/A2.1.svg){#DevIteratifIncremental}
 
-![Rétroaction et adaptation itératives convergent vers le système souhaité (Figure 2.2 du livre).](images/F2.2.pdf){#StabiliteDansLesIterations}
+![Rétroaction et adaptation itératives convergent vers le système souhaité (Figure 2.2 du livre).](images/F2.2.svg){#StabiliteDansLesIterations}
 
 ![Processus itératif et évolutif.](images/iteratif-evolutif.png){#IteratifEvolutif}
 

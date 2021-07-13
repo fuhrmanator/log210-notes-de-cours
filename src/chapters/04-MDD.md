@@ -269,7 +269,7 @@ Il pourrait être utile d'avoir une classe d'association dans un MDD si:
 
 - un attribut est lié à une association;
 - la durée de vie des instances de la classe d'association dépend de l'association;
-- il y a une association $N$-$N$ entre deux concepts et des informations liées a l'association elle-même.
+- il y a une association *N*-*N* entre deux concepts et des informations liées a l'association elle-même.
 
 Dans l'exemple à la figure\ \ref{MDD-classe-association}, voici pourquoi il y a une classe d'association Occupation. 
 Lorsqu'un Joueur contrôle un Pays, il doit y avoir des armées dans ce dernier. 

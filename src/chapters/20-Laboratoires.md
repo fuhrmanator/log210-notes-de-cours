@@ -8,7 +8,7 @@ Ce chapitre contient des informations sur le volet technique des laboratoires.
 Pour la personne ayant déjà des connaissances Java (de LOG121), il est recommandé d'apprendre les choses dans cet ordre:
 
 - **JavaScript** - un tutoriel intéressant (et libre) est sur [javascript.info](https://javascript.info/). Je vous recommande de contribuer à des [traductions en français sur GitHub](https://github.com/javascript-tutorial/fr.javascript.info#readme). 
-- **TypeScript** - [ce tutoriel](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes-oop.html) est en anglais, mais il est adapté à des personnes ayant déjà une expérience en Java/C$\sharp$.
+- **TypeScript** - [ce tutoriel](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes-oop.html) est en anglais, mais il est adapté à des personnes ayant déjà une expérience en Java/C\#.
 
 Sinon, voici des points qui posent plus de problèmes pour quelqu'un ayant déjà des connaissances en Java:
 
@@ -16,7 +16,7 @@ Sinon, voici des points qui posent plus de problèmes pour quelqu'un ayant déj�
 - Traitement asynchrone en JavaScript
   - Promesses et `async`/`await` : [Tutoriel](https://javascript.info/async)
 - REST (GET vs PUT)
-- Environnement de test (Mocha/Chai)
+- Environnement de test (Jest)
 - Les templates PUG (anciennement Jade) : [Tutoriel](https://www.youtube.com/watch?v=DSp9ExFw3Ig)
 
 Le lab0 aborde plusieurs de ces aspects, mais certaines notions sont plus complexes. 

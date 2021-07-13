@@ -42,23 +42,23 @@ Dans le menu "Select sample diagram" de PlantUML Gizmo (Google Docs), il y a plu
 - Le serveur de PlantUML.com génère un diagramme à partir d'un URL:  
 `https://plantuml.com/plantuml/{forme}/{clé}` qui contient une clé comme  
 `Syp9J4vLqBLJSCfFib9mB2t9ICqhoKnEBCdCprC8IYqiJIqkuGBAAUW2rJY256DHLLoGdrUS2W00`.  
-La clé est en fait une représentation compressée du code source. 
-- On peut changer la forme du diagramme en changeant la partie `{forme}` de l'URL: 
-  - `{forme}` $\rightarrow$ `png`, `img` ou `svg` : représentation graphique correspondante;  
-  - `{forme}` $\rightarrow$ `uml` : récupération du code source PlantUML (ça marche avec `http:` seulement); 
-- On peut également récupérer le code source d'un URL avec l'outil PlantUML localement avec l'option `-decodeurl {clé}` de la ligne de commande: 
+La clé est en fait une représentation compressée du code source.
+- On peut changer la forme du diagramme en changeant la partie `{forme}` de l'URL:
+  - `{forme}` → `png`, `img` ou `svg` : représentation graphique correspondante;
+  - `{forme}` → `uml` : récupération du code source PlantUML (ça marche avec `http:` seulement);
+- On peut également récupérer le code source d'un URL avec l'outil PlantUML localement avec l'option `-decodeurl {clé}` de la ligne de commande:
 ```bash
-      $ java -jar plantuml.jar -decodeurl Syp9J4vLqBLJSCfFib9mB2t9ICqhoKnEBCdCprC8IYqiJIqkuGBAAUW2rJY256DHLLoGdrUS2W00
-      @startuml
-      Alice -> Bob: Authentication Request
-      Bob --> Alice: Authentication Response
-      @enduml
+$ java -jar plantuml.jar -decodeurl Syp9J4vLqBLJSCfFib9mB2t9ICqhoKnEBCdCprC8IYqiJIqkuGBAAUW2rJY256DHLLoGdrUS2W00
+@startuml
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+@enduml
 ```
 - Les images `png` générées par le serveur ou par l'outil contiennent une copie du code source dans les meta-données PNG. 
   - On peut [récupérer le code source PlantUML à partir d'une image PNG](https://twitter.com/thefuhrmanator/status/1193565869227556868) avec un outil sur le Web comme [ceci](http://exif.regex.info/exif.cgi).
   - On peut également utiliser l'option `-metadata` de la ligne de commande PlantUML:
 ```bash
-      $ java -jar plantuml.jar -metadata diagram.png > diagram.puml
+$ java -jar plantuml.jar -metadata diagram.png > diagram.puml
 ```
 
 ![PlantUML Gizmo pour Google Docs et Google Slides.](images/PlantUMLGizmoSlides.png){#PlantUMLGizmo}

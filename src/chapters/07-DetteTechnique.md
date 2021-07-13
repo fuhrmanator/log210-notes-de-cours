@@ -28,7 +28,7 @@ La dette technique est une forme de risque qui peut apporter des bénéfices ou 
 > Chaque minute passée sur un code qui n'est pas tout à fait correct compte comme un intérêt sur cette dette. 
 > Des organisations entières peuvent être bloquées par l'endettement d'une implémentation non consolidée, orientée objet ou autre.
 
-![Tendances Google (trends.google.com) pour le terme "dette technique" (anglais *technical debt*)](images/TechnicalDebtGoogleTrends.pdf){#TechnicalDebtGoogleTrends}
+![Tendances Google (trends.google.com) pour le terme "dette technique" (anglais *technical debt*)](images/TechnicalDebtGoogleTrends.svg){#TechnicalDebtGoogleTrends}
 
 Comme c'est une métaphore puissante, beaucoup de développeurs l'utilisent et c'est un terme avec une certaine popularité (voir à la figure\ \ref{TechnicalDebtGoogleTrends}). Dans une [vidéo](https://www.youtube.com/watch?v=pqeJFYwnkjE) plus récente, Cunningham a rappelé que l'origine de la métaphore s'inspire du code qui est incohérent par rapport à un problème complexe plutôt que du code simplement "mal écrit":
 

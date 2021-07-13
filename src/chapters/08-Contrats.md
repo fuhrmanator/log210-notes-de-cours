@@ -25,7 +25,7 @@ Dans la figure\ \ref{ContratExempleCreerNouvelleVente}, l'opération système `c
 
 Un contrat d'opération permet de spécifier tous les changements dans le MDD qui doivent avoir lieu lors de l'opération système. Les postconditions du contrat saisissent l'évolution du MDD.
 
-![Pendant l'opération système `créerNouvelleVente`, une instance de Vente doit être créée. Le contrat d'opération le spécifie dans une postcondition.](images/SurvolContrats.pdf){#ContratExempleCreerNouvelleVente}
+![Pendant l'opération système `créerNouvelleVente`, une instance de Vente doit être créée. Le contrat d'opération le spécifie dans une postcondition.](images/SurvolContrats.svg){#ContratExempleCreerNouvelleVente}
 
 ## Exemple: Contrats d'opération pour Attaquer un pays
 
@@ -62,7 +62,7 @@ Voir la figure\ \ref{MDD-risk-objets} pour les changements dans les objets du mo
 
 - TODO: Handle the change of Occupation?
 
-![Les postconditions décrivent la manipulation d'objets dans un MDD (la partie inférieure ici est un diagramme d'objets)](images/MDD-Risk-contrats.drawio.pdf){#MDD-risk-objets}
+![Les postconditions décrivent la manipulation d'objets dans un MDD (la partie inférieure ici est un diagramme d'objets)](images/MDD-Risk-contrats.drawio.svg){#MDD-risk-objets}
 
 ## Feuille de référence
 

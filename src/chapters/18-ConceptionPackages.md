@@ -51,7 +51,7 @@ D -d[hidden]- ST
 
 ## Absense de package dans TypeScript {#NamespaceTypeScript}
 
-En effet TypeScript n'a pas la notion de package comme dans C$\sharp$ ou Java.
+En effet TypeScript n'a pas la notion de package comme dans C\# ou Java.
 Cependant, il y a des pratiques pour organiser logiquement le code et pour éviter les conflits (les collisions) de noms.
 Rappelons que la notion de package existe dans Java pour:
 
