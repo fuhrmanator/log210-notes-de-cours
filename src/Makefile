@@ -7,6 +7,7 @@ MAKEFILE = Makefile
 OUTPUT_FILENAME = LOG210-notes-de-cours
 METADATA = metadata.yml
 LATEX_TEMPLATE = templates/default.latex
+HTML_TEMPLATE = templates/default.html5
 CHAPTERS = chapters/*.md
 CHAPTERS_DEP = chapters/*.tex
 TOC = --toc --toc-depth=2
@@ -24,6 +25,8 @@ PLANTUML_FILTER = --filter=filters/plantuml/pandoc_plantuml_filter.py
 HIGHLIGHT_STYLE = --highlight-style templates/my_kate.theme --syntax-definition templates/typescript_javascript.xml
 PANDOC_ARGS = $(TOC) $(MATH_FORMULAS) $(CSS_ARG) $(METADATA_ARG) $(PLANTUML_FILTER) $(HIGHLIGHT_STYLE) --citeproc
 PDF_ARGS = -V geometry:margin=1in --pdf-engine=pdflatex --template=$(TEMPLATES_FOLDER)/default.latex
+HTML_ARGS = --template=$(HTML_TEMPLATE) --standalone --to=html5
+
 # Note MSYS_NO_PATHCONV=1 because of a bug in paths in Git Bash in windows 
 # https://stackoverflow.com/a/34386471/1168342
 # use "//" rather than "/" on the directories see https://github.com/docker/for-win/issues/6754#issuecomment-629702199
@@ -65,8 +68,9 @@ $(BUILD)/epub/$(OUTPUT_FILENAME).epub:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CSS
 $(BUILD)/html/$(OUTPUT_FILENAME).html:	$(MAKEFILE) $(METADATA) $(CHAPTERS) $(CSS_FILE) $(IMAGES) $(BIBLIOGRAPHY)
 	mkdir -p $(BUILD)/html
 	mkdir -p $(BUILD)/images
-	$(PANDOC_COMMAND) $(PANDOC_ARGS) --standalone --to=html5 -o $@ $(CHAPTERS)
+	$(PANDOC_COMMAND) $(PANDOC_ARGS) $(HTML_ARGS) -o $@ $(CHAPTERS)
 	cp -R $(IMAGES_FOLDER)/ $(BUILD)/html/$(IMAGES_FOLDER)/
+	cp -R $(PLANTUML_IMAGES)/ $(BUILD)/html/$(PLANTUML_IMAGES)
 	cp $(CSS_FILE) $(BUILD)/html/$(CSS_FILE)
 	@echo "$@ was built"
 
