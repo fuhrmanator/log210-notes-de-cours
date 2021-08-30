@@ -7,22 +7,87 @@ Ce chapitre contient des informations sur le volet technique des laboratoires.
 
 Pour la personne ayant déjà des connaissances Java (de LOG121), il est recommandé d'apprendre les choses dans cet ordre:
 
-- **JavaScript** - un tutoriel intéressant (et libre) est sur [javascript.info](https://javascript.info/). Je vous recommande de contribuer à des [traductions en français sur GitHub](https://github.com/javascript-tutorial/fr.javascript.info#readme). 
+- **JavaScript** - un tutoriel intéressant (et libre) est sur [fr.javascript.info](https://fr.javascript.info/). Je vous recommande de contribuer à des [traductions en français sur GitHub](https://github.com/javascript-tutorial/fr.javascript.info#readme). 
 - **TypeScript** - [ce tutoriel](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes-oop.html) est en anglais, mais il est adapté à des personnes ayant déjà une expérience en Java/C\#.
 
-Sinon, voici des points qui posent plus de problèmes pour quelqu'un ayant déjà des connaissances en Java:
+Voici des points importants pour le projet de laboratoire, organisés pour quelqu'un ayant déjà des connaissances en Java:
 
-- Fonctions flèche (*arrow functions* en anglais)
-- Traitement asynchrone en JavaScript
-  - Promesses et `async`/`await` : [Tutoriel](https://javascript.info/async)
-- REST (GET vs PUT)
+- TypeScript se traduit ("emit") en JavaScript, alors il faut comprendre le moteur d'exécution JavaScript. 
+- Pour convertir une chaîne en nombre, pour lire ou écrire un fichier sur disque, etc., on utilise des opérations en JavaScript.
+- Un *type* en TypeScript est comme *un ensemble de valeurs* plutôt qu'une définition hiérarchique.
+En Java, il n'est pas possible d'avoir un type pouvant être soit une chaîne soit un nombre.
+Mais en TypeScript, c'est facile de déclarer un type comme une *union* de plusieurs types, p. ex. `string | number`. 
+- JavaScript a des notions de "truthy" et "falsy" (conversion d'une expression à une valeur booléenne) permettant de vérifier avec moins de code si une variable est définie ou initialisée, etc.
+- [L'opérateur d'égalité stricte (`===`)](https://fr.javascript.info/comparison#egalite-stricte) (sans conversion de type)
+- [Les fonctions fléchées](https://fr.javascript.info/arrow-functions-basics) (*fat arrow functions* en anglais)
+- [Le traitement asynchrone en JavaScript](https://fr.javascript.info/callbacks)
+  - Promesses et [`async`/`await`](https://fr.javascript.info/async-await)
+- Les services REST (GET vs PUT)
 - Environnement de test (Jest)
-- Les templates PUG (anciennement Jade) : [Tutoriel](https://www.youtube.com/watch?v=DSp9ExFw3Ig)
+- Les gabarits (templates) PUG (anciennement Jade) : [Tutoriel](https://www.youtube.com/watch?v=DSp9ExFw3Ig)
 
-Le lab0 aborde plusieurs de ces aspects, mais certaines notions sont plus complexes. 
+Le **`lab 0`** aborde plusieurs de ces aspects, mais certaines notions sont plus complexes et nécessitent une étude approfondie. 
 Le but de cette section est de donner des tutoriels plus spécifiques.
+Enseigner la syntaxe ou les principes du langage TypeScript n'est pas le but du cours, mais apprendre à trouver l'information soi-même est essentiel pour une personne travaillant dans les technologies de l'information.
 
-Il y a un [dépôt d'exemples avec TypeScript (utilisant `ts-node` pour les voir facilement)](https://github.com/profcfuhrmanets/exemples-ts) sur GitHub. Il y a un exemple qui montre comment faire des REST à partir de TypeScript avec le système SGB. 
+Il y a un [dépôt d'exemples avec TypeScript (utilisant `ts-node` pour les voir facilement)](https://github.com/profcfuhrmanets/exemples-ts) sur GitHub.
+Il y a un exemple qui montre comment faire des REST à partir de TypeScript avec le système SGB. 
+
+## JavaScript: Truthy et Falsy (conversion en valeur booléenne)
+
+JavaScript offre un mécanisme simple pour vérifier des valeurs dans une expression `if`.
+Imaginez l'exemple suivant:
+
+```Javascript
+let maVariable;
+
+// d'autres instructions...
+
+if (maVariable != undefined 
+    && maVariable != null 
+    && maVariable != '') {
+  // on peut faire quelque chose avec maVariable ...
+}
+```
+
+On vérifie trois possibilités pour `maVariable` avant de l'utiliser. 
+Ce genre de situation arrive souvent en JavaScript, puisque les objets peuvent prendre les valeurs différentes selon le contexte. 
+Il serait bien de pouvoir réduire la quantité de code dans ces cas.
+
+Grâce à la notion de conversion de valeur selon la règle de "truthy" et "falsy", JavaScript permet de simplifier les instructions en une seule condition, sans ET (`&&`), en convertissant la valeur de `maVariable` en booléenne `true` ou `false`:
+
+```Javascript
+// conversion booléenne selon la règle de "truthy" et "falsy"
+if (maVariable) {
+  // on peut faire quelque chose avec maVariable ...
+}
+```
+
+Il faut comprendre la règle de conversion en valeur booléenne selon "truthy" et "falsy". En fait, il est plus simple de commencer par les valeurs se traduisant en `false` ("falsy"), car tout ce qui ne l'est pas est donc `true` ("truthy").
+
+### Falsy
+
+Les valeurs suivantes se convertissent en `false` dans une condition:
+
+- `false`
+- `null`
+- `undefined`
+- `0` (attention, c'est parfois un piège)
+- `NaN` (not a number)
+- `''` ou `""` (chaîne vide)
+
+### Truthy
+
+Tout ce qui n'est pas converti en `false` (expliqué ci-dessus) est converti en `true`. En voici quelques exemples:
+
+- `{}` (objet vide)
+- `[]` (tableau vide)
+- `-20` 
+- etc.
+
+> N'oubliez pas que la valeur de `0` est "falsy" dans une condition. 
+C'est souvent un piège en JavaScript quand on considère les variables qui peuvent avoir une valeur numérique.
+Par exemple, si on fait `if (maVariable)` pour tester si une variable est définie, si la variable est définie et a sa valeur est `0`, la condition sera `false`.
 
 ## Évaluer les contributions des membres de l'équipe {#ContributionsEquipe}
 
