@@ -24,7 +24,8 @@ Mais en TypeScript, c'est facile de déclarer un type comme une *union* de plusi
   - Promesses et [`async`/`await`](https://fr.javascript.info/async-await)
 - Les services REST (GET vs PUT)
 - Environnement de test (Jest)
-- Les gabarits (templates) PUG (anciennement Jade) : [Tutoriel](https://www.youtube.com/watch?v=DSp9ExFw3Ig)
+- Les gabarits (templates) PUG (anciennement Jade) : [Tutoriel (court)](https://www.youtube.com/watch?v=DSp9ExFw3Ig), [Tutoriel (plus complet)](https://www.youtube.com/watch?v=kt3cEjjkCZA)
+- Bootstrap (mise en page avec CSS) : [Tutoriel (attention, il faut appliquer les éléments dans les gabarits PUG)](https://www.youtube.com/watch?v=MrgGq3fob4o)
 
 Le **`lab 0`** aborde plusieurs de ces aspects, mais certaines notions sont plus complexes et nécessitent une étude approfondie. 
 Le but de cette section est de donner des tutoriels plus spécifiques.
