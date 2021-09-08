@@ -127,6 +127,20 @@ La couche présentation n'est pas censée manipuler directement les objets dans 
 Une solution pour réduire le nombre d'arguments sans utiliser un objet du domaine est d'appliquer un \nameref{Refactoring} pour le *smell* nommé *Long Parameter List*, par exemple [Introduce Parameter Object](https://refactoring.com/catalog/introduceParameterObject.html).
 Notez que l'objet de paramètres que vous introduisez n'est pas un objet (classe) du domaine!
 La distinction est importante, car la logique d'affaires demeure dans la couche domaine.
+En TypeScript, une fonction peut être définie avec un objet de paramètre. Cet exemple montre même comment on peut "déstructurer" l'objet pour déclarer les variables utilisées dans la fonction:
+
+```typescript
+// inspiré de https://leanpub.com/essentialtypescript/read
+function compteARebours({ initial: number, final: final = 0,
+                          increment: increment = 1, initial: actuel }) {
+    while (actuel >= final) {
+        console.log(actuel);
+        actuel -= increment
+    }
+}
+compteARebours({ initial: 20 });
+compteARebours({ initial: 20, increment: 2, final: 4 });
+```
 
 ### Ne serait-il pas plus simple de passer l'objet `body` de la page web au contrôleur GRASP?
 
