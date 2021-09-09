@@ -15,6 +15,10 @@ Selon Fowler, le temps pour atteindre la limite de gain de conception (le temps 
 Mais il avoue que c'est une hypothèse, car il est difficile de mesurer les fonctionnalités cumulatives et d'évaluer ce qu'est un bon design.
 Le graphe sert à illustrer le principe qu'à un certain moment, ignorer une conception va nuire à la performance des développeurs en ce qui concerne les nouvelles fonctionnalités.
 
+Voici une courte définition complémentaire de la dette technique [@avge16a]:
+
+> Un ensemble de constructions ou de mises en œuvre de conception qui sont utiles à court terme, mais qui mettent en place un contexte technique qui peut rendre les changements futurs plus coûteux ou impossibles.
+
 ## Origine
 
 La dette technique est une forme de risque qui peut apporter des bénéfices ou des pertes. Tout dépend de la quantité d'intérêt à payer. L'inventeur du wiki, Ward Cunningham, a utilisé la métaphore de la dette dans un projet de développement de logiciel de gestion de portefeuille réalisé dans une variante du langage Smalltalk:
