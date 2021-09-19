@@ -173,20 +173,48 @@ Ainsi, vous gérez les problèmes de manière plus proactive.
 **Q: Comment fusionner le travail réalisé par le même coéquipier, mais avec plusieurs comptes (courriels) différents?**
 
 **R:** La solution est avec le fichier `.mailmap`. Vous pouvez rapidement générer un fichier de base avec la commande:
+
 ```bash
-git log --pretty="%an %ae" | sort | uniq > .mailmap
+git shortlog -se | sed "s/^.*\\t//"  > .mailmap
 ```
-Ensuite, vous modifiez le fichier `.mailmap` pour que les deux (ou plusieurs) courriels du même auteur aient le même nom.
+
+Ensuite, modifiez le fichier `.mailmap` pour respecter ce format:
+
+```email
+Prénom Nom Désirés <courriel> Prénom Nom Non-Désirés <courriel>
+```
+
+Par exemple, soit le `.mailmap` initial qui contient quatres entrées pour le même auteur:
+
+```email
+C. Fuhrman <christopher.fuhrman@etsmtl.ca>
+Christopher (Cris) Fuhrman <christopher.fuhrman@etsmtl.ca>
+Christopher Fuhrman <christopher.fuhrman@etsmtl.ca>
+Cris Fuhrman <fuhrmanator+git@gmail.com>
+```
+
+On décide de garder l'alias `C. Fuhrman <christopher.fuhrman@etsmtl.ca>` pour chaque nom:
+
+\scriptsize
+```email
+C. Fuhrman <christopher.fuhrman@etsmtl.ca>
+C. Fuhrman <christopher.fuhrman@etsmtl.ca> Christopher (Cris) Fuhrman <christopher.fuhrman@etsmtl.ca>
+C. Fuhrman <christopher.fuhrman@etsmtl.ca> Christopher Fuhrman <christopher.fuhrman@etsmtl.ca>
+C. Fuhrman <christopher.fuhrman@etsmtl.ca> Cris Fuhrman <fuhrmanator+git@gmail.com>
+```
+\normalsize
+
 Le nom que vous mettez sera celui qui apparaît dans les rapports la prochaine fois qu'ils seront générés.
 
 **Q: Comment exclure le travail réalisé par un chargé de laboratoire (par exemple le clone initial dans GitHub Classroom)?**
 
 **R:** La solution est d'ajouter le nom de l'auteur dans le tableau du script `contributions.sh` à la ligne suivante avec `authorsToExcludeArray`. Attention:
 
-- Il n'y a pas de `,` entre les éléments des tableaux en bash. 
+- Il n'y a pas de `,` entre les éléments des tableaux en bash.
 - Le nom d'un auteur ayant un accent ne sera pas reconnu. Il faut changer le nom dans le `.mailmap` pour qu'il n'y ait pas d'accents, ou utiliser une chaîne partielle comme `"Benjamin Le"` pour exclure les contributions de `"Benjamin Le Dû"`.
+
 ```bash
-authorsToExcludeArray=("Benjamin Le" "Yvan Ross")
+authorsToExcludeArray=("C. Fuhrman" "Benjamin Le" "Yvan Ross")
 ```
 
 **Q: J'ai une autre question...**
