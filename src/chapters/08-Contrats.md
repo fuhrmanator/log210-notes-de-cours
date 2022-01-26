@@ -62,7 +62,8 @@ Voir la figure\ \ref{MDD-risk-objets} pour les changements dans les objets du mo
 
 - TODO: Handle the change of Occupation?
 
-![Les postconditions décrivent la manipulation d'objets dans un MDD (la partie inférieure ici est un diagramme d'objets)](images/MDD-Risk-contrats.drawio.svg){#MDD-risk-objets}
+<!-- Draw.io svg contient du texte en SVG 1.1 qui pose problème. Alors j'exporte manuellement en PDF avec l'outil draw.io sur le web. -->
+![Les postconditions décrivent la manipulation d'objets dans un MDD (la partie inférieure ici est un diagramme d'objets)](images/MDD-Risk-contrats.export_as.advanced.drawio.pdf){#MDD-risk-objets}
 
 ## Feuille de référence
 

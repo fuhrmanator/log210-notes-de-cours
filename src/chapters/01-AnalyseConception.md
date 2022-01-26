@@ -115,7 +115,7 @@ Réduire le décalage des représentations est un principe très important surto
 
 ## La complexité et ses sources
 
-Un ingénieur logiciel est constamment dans une bataille avec un adversaire dont le nom est la complexité.
+Un.e ingénieur.e logiciel est constamment dans une bataille avec un adversaire dont le nom est la complexité.
 Mais qu'est-ce que la complexité? La figure\ \ref{complexity} est une image de la complexité. Reconnaissez-vous le domaine d'où vient cette image?
 
 Voici une définition de la complexité:
@@ -146,9 +146,9 @@ Exemple: un logiciel qui aide à faire des déclarations de revenus aura une com
 
 ### Complexité circonstancielle (provenant des choix de conception) {#ComplexiteCirc}
 
-Les choix qui font les ingénieur.e.s dans un projet amènent de la complexité circonstancielle.
-En tant qu'ingénieur.e.s, nous avons un devoir de contrôler cette forme de complexité, par exemple en prenant soin avec un choix de cadriciel Web ou architecture logicielle.
-Cette complexité peut aussi être due à des contraintes imposées sur la conception, comme une utilisation obligatoire d'une vieille base de données ou d'une bibliothèque logicielle héritée, d'un langage de programmation, etc.
+Les choix que font les ingénieur.e.s dans un projet peuvent amener de la complexité circonstancielle.
+En tant qu'ingénieur.e.s, nous avons un devoir de contrôler cette forme de complexité, par exemple en prenant soin avec un choix de cadriciel Web ou d'architecture logicielle.
+La complexité circonstancielle peut aussi être due à des contraintes imposées sur la conception, comme une utilisation obligatoire d'une vieille base de données ou d'une bibliothèque logicielle héritée, d'un langage de programmation, etc.
 La complexité circonstancielle (aussi appelée accidentelle) peut être gérée avec des technologies, par exemple les débogueurs, les patrons de conception (un Adaptateur pour les bases de données différentes), etc.
 
 ### Complexité environnementale (provenant de l'environnement d'exécution)
@@ -211,10 +211,13 @@ Les points importants sont les suivants:
   - rétroaction, implication des utilisateurs et adaptations précoces;
   - complexité gérée (par itération);
   - possibilité d'exploiter méthodiquement les leçons tirées d'une itération.
+- Dans une itération, la modélisation avec l'UML se fait au début et devrait prendre beaucoup moins de temps (quelques heures) que la programmation, qui n'est pas triviale (voir la figure \ref{AnalyseConceptionDansLesIterations}).
 
 ![Le développement itératif et incrémental (Figure 2.1 du livre).](images/A2.1.svg){#DevIteratifIncremental}
 
 ![Rétroaction et adaptation itératives convergent vers le système souhaité (Figure 2.2 du livre).](images/F2.2.svg){#StabiliteDansLesIterations}
+
+![Analyse et conception évolutives, majoritairement effectuées dans les premières itérations (Figure 2.4 du livre).](images/F2.4.svg){#AnalyseConceptionDansLesIterations}
 
 ![Processus itératif et évolutif.](images/iteratif-evolutif.png){#IteratifEvolutif}
 
