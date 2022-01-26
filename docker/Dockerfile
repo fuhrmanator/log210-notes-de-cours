@@ -4,7 +4,8 @@
 # This is why I don't use a specific version.
 #FROM pandoc/ubuntu-latex
 # Pandoc flaked in 2.14.0 SVGs won't convert properly?
-FROM pandoc/ubuntu-latex:2.11.2
+# FROM pandoc/ubuntu-latex:2.11.2
+FROM pandoc/ubuntu-latex
 #RUN curl -L http://sourceforge.net/projects/plantuml/files/plantuml.jar/download -o /usr/bin/plantuml.jar
 # Copy the local plantuml.jar (we control the version)
 COPY plantuml.jar /usr/bin/plantuml.jar
@@ -14,6 +15,8 @@ RUN apt-get update && apt-get install -y \
 #    plantuml \
     default-jre \
     graphviz \
+    # to maybe fix rsvg-convert problems https://github.com/pandoc/dockerfiles/issues/117
+#    ttf-liberation \
     texlive-lang-french \
     # Enable root commands later https://stackoverflow.com/a/48329093/1168342 because LaTeX wants to create fonts dynamically
     sudo \
