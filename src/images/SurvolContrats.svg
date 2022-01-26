@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/"
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    sodipodi:docname="SurvolContrats.svg"
    id="svg745"
    version="1.1"
@@ -18,17 +9,26 @@
    xml:space="preserve"
    viewBox="0 0 256.45817 222.6341"
    height="3.0921402in"
-   width="3.561919in"><metadata
+   width="3.561919in"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/"><metadata
    id="metadata749"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><sodipodi:namedview
    inkscape:current-layer="g743"
    inkscape:window-maximized="1"
    inkscape:window-y="-8"
    inkscape:window-x="1272"
-   inkscape:cy="124.81862"
-   inkscape:cx="203.74247"
-   inkscape:zoom="1.5067999"
+   inkscape:cy="149.46478"
+   inkscape:cx="67.341273"
+   inkscape:zoom="2.1309369"
    fit-margin-bottom="0"
    fit-margin-right="0"
    fit-margin-left="0"
@@ -47,7 +47,9 @@
    pagecolor="#ffffff"
    inkscape:document-rotation="0"
    inkscape:snap-text-baseline="true"
-   showguides="false" />
+   showguides="false"
+   inkscape:pagecheckerboard="0"
+   inkscape:document-units="in" />
 	<v:documentProperties
    v:viewMarkup="false"
    v:langID="1033">
@@ -209,7 +211,29 @@
    height="72.144852"
    width="68.850571"
    y="285.61414"
-   x="324.78372" /></defs>
+   x="324.78372" />
+			
+			
+			
+			
+			
+					
+				
+				
+				
+				
+				
+							
+			
+			
+			
+		
+			
+			
+			
+			
+			
+					</defs>
 	<g
    transform="translate(-228.91304,-309.27535)"
    id="g743"
@@ -227,49 +251,19 @@
 		<v:layer
    v:index="0"
    v:name="Connector" />
-		<g
-   style="opacity:0.5"
-   v:groupContext="group"
-   v:mID="3"
-   transform="translate(276.64837,-419.80464)"
-   id="group3-1">
-			<title
-   id="title28">Two.23</title>
-			<g
-   transform="translate(0,-27.2)"
-   v:groupContext="shape"
-   v:mID="24"
-   id="shape24-2">
-				<title
-   id="title30">Sheet.24</title>
-				<desc
-   id="desc32">Vente</desc>
-				<v:textBlock
-   v:margins="rect(4,4,4,4)" />
-				<v:textRect
-   height="18"
-   width="52.88"
-   cy="783"
-   cx="26.4375" />
-				<rect
+		<rect
    id="rect34"
    class="st1"
    height="18"
    width="52.875"
-   y="774"
-   x="0" />
-				<text
-   id="text36"
-   v:langID="1033"
-   class="st2"
-   y="785.40002"
-   x="16.75"><v:paragraph
-   v:horizAlign="1" /><v:tabList />Vente</text>			</g>
-			<g
-   transform="translate(0,0.00352676)"
+   y="326.99536"
+   x="276.64838"
+   style="opacity:0.5" /><g
+   transform="translate(276.64837,-419.80111)"
    v:groupContext="shape"
    v:mID="25"
-   id="shape25-5">
+   id="shape25-5"
+   style="opacity:0.5">
 				<title
    id="title39">Sheet.25</title>
 				<desc
@@ -293,13 +287,19 @@
    v:langID="1033"
    class="st2"
    y="776"
-   x="4.7199998"><v:paragraph
-   v:indentLeft="0.72" /><v:tabList />dateHeure<v:newlineChar /><tspan
-   id="tspan45"
-   class="st3"
-   dy="1.2em"
-   x="4.7199998">. . .</tspan></text>			</g>
-		</g>
+   x="4.7199998"
+   style="font-size:7.99997px;font-family:Calibri;fill:#000000"><tspan
+     sodipodi:role="line"
+     id="tspan39126"
+     x="4.7199998"
+     y="776"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.99997px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       id="tspan37341"
+       dy="0 0 0 0 0 0 0 0 0">dateHeure</tspan></tspan><tspan
+     sodipodi:role="line"
+     x="4.7199998"
+     y="785.99994"
+     id="tspan39134">. . .</tspan></text>			</g>
 		<g
    v:groupContext="group"
    v:mID="26"
@@ -335,8 +335,11 @@
    v:langID="1033"
    class="st2"
    y="785.40002"
-   x="13.19"><v:paragraph
-   v:horizAlign="1" /><v:tabList />Registre</text>			</g>
+   x="25.74659"
+   style="text-align:center;text-anchor:middle;font-size:7.99997px;font-family:Calibri;fill:#000000"><v:paragraph
+     v:horizAlign="1" /><v:tabList /><tspan
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.99997px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+     id="tspan24791">Registre</tspan></text>			</g>
 			<g
    v:groupContext="shape"
    v:mID="28"
@@ -404,7 +407,8 @@
    v:langID="1033"
    class="st2"
    y="802.60999"
-   x="-7.6500001"><v:paragraph
+   x="-7.6500001"
+   style="-inkscape-font-specification:'Arial, Normal';font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:7.99997px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000"><v:paragraph
    v:horizAlign="1" /><v:tabList />1</text>		</g>
 		<g
    transform="translate(329.52337,-442.40464)"
@@ -431,43 +435,20 @@
    v:langID="1033"
    class="st2"
    y="783.09998"
-   x="3.04"><v:paragraph
+   x="3.04"
+   style="-inkscape-font-specification:'Arial, Normal';font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:7.99997px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000"><v:paragraph
    v:horizAlign="1" /><v:tabList />1</text>		</g>
 		
 		
-		<g
-   transform="translate(242.89837,-415.10464)"
-   v:groupContext="shape"
-   v:mID="13"
-   id="shape13-37">
-			<title
-   id="title121">Sheet.13</title>
-			<desc
-   id="desc123">Modèle du Domaine</desc>
-			<v:textBlock
-   v:verticalAlign="0"
-   v:margins="rect(4,4,4,4)" />
-			<v:textRect
-   height="67.5"
-   width="377.14"
-   cy="758.25"
-   cx="188.568" />
-			<rect
+		<rect
    id="rect125"
    class="st6"
-   ry="18.013311"
+   ry="17.292063"
    rx="11.283064"
-   height="67.549911"
+   height="64.845222"
    width="236.40276"
-   y="724.47504"
-   x="-0.02495724" />
-			<text
-   id="text127"
-   v:langID="1033"
-   class="st7"
-   y="734.20001"
-   x="82.620003"><v:paragraph
-   v:horizAlign="1" /><v:tabList />Modèle du Domaine</text>		</g>
+   y="312.07507"
+   x="242.87341" />
 		
 		
 		
@@ -491,36 +472,13 @@
    class="st9"
    d="M 0,792 H 73.86" />
 		</g>
-		<g
-   transform="translate(317.22504,-358.47072)"
-   v:groupContext="shape"
-   v:mID="6"
-   id="shape6-86">
-			<title
-   id="title222">Sheet.6</title>
-			<desc
-   id="desc224">: Système</desc>
-			<v:textBlock
-   v:margins="rect(4,4,4,4)" />
-			<v:textRect
-   height="15.435"
-   width="45"
-   cy="784.283"
-   cx="22.5" />
-			<rect
+		<rect
    id="rect226"
    class="st6"
    height="15.435"
    width="45"
-   y="776.565"
-   x="0" />
-			<text
-   id="text228"
-   v:langID="1033"
-   class="st12"
-   y="786.67999"
-   x="4.7199998"><v:paragraph
-   v:horizAlign="1" /><v:tabList />: Système</text>		</g>
+   y="418.09427"
+   x="317.22504" />
 		
 		<g
    transform="translate(228.91304,-261.59472)"
@@ -684,37 +642,7 @@
 		
 		
 		
-		<g
-   style="opacity:0.5"
-   transform="translate(328.39837,-426.40464)"
-   v:groupContext="shape"
-   v:mID="150"
-   id="shape150-263">
-			<title
-   id="title604">Sheet.150</title>
-			<desc
-   id="desc606">Capturée-dans</desc>
-			<v:textBlock
-   v:margins="rect(4,4,4,4)" />
-			<v:textRect
-   height="20"
-   width="59.35"
-   cy="782"
-   cx="29.6719" />
-			<rect
-   id="rect608"
-   class="st13"
-   height="20"
-   width="59.3438"
-   y="772"
-   x="0" />
-			<text
-   id="text610"
-   v:langID="1033"
-   class="st2"
-   y="785.59998"
-   x="5.8000002"><v:paragraph
-   v:horizAlign="1" /><v:tabList />Capturée-dans</text>		</g>
+		
 		
 		
 		<g
@@ -742,13 +670,23 @@
    id="text647"
    v:langID="1033"
    class="st2"
-   y="778.46997"
-   x="28.299999"><v:paragraph
-   v:horizAlign="1" /><v:tabList />créer<v:lf /><tspan
-   id="tspan645"
-   class="st3"
-   dy="1.223em"
-   x="10.22">NouvelleVente()</tspan></text>		</g>
+   y="778.64594"
+   x="38.862156"
+   style="font-size:7.99997px;font-family:Calibri;text-align:center;text-anchor:middle;fill:#000000"><tspan
+     sodipodi:role="line"
+     id="tspan53131"
+     x="38.862156"
+     y="778.64594"><v:paragraph
+       v:horizAlign="1" /><v:tabList /><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.99997px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle"
+       id="tspan51482"
+       dy="0 0 0 0 0">créer</tspan><v:lf /></tspan><tspan
+     sodipodi:role="line"
+     id="tspan53133"
+     x="38.862156"
+     y="788.85193"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.99997px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle"
+       id="tspan53135">NouvelleVente()</tspan></tspan></text>		</g>
 		
 		
 		
@@ -784,16 +722,23 @@
    id="text726"
    v:langID="1033"
    class="st2"
-   y="778.46997"
-   x="17.91"><v:paragraph
-   v:horizAlign="1" /><v:tabList />saisirArticle<v:lf /><tspan
-   id="tspan722"
-   class="st3"
-   dy="1.223em"
-   x="10.73">(code, quantit</tspan><tspan
-   id="tspan724"
-   v:langID="3084"
-   class="st3">é)</tspan></text>		</g>
+   y="780.05377"
+   x="38.750042"
+   style="font-size:7.99997px;font-family:Calibri;text-align:center;text-anchor:middle;fill:#000000"><tspan
+     sodipodi:role="line"
+     id="tspan56128"
+     x="38.750042"
+     y="780.05377"><v:paragraph
+       v:horizAlign="1" /><v:tabList /><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.99997px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle"
+       id="tspan54659"
+       dy="0 0 0 0 0 0 0 0 0 0 0 0 0">saisirArticle</tspan><v:lf /></tspan><tspan
+     sodipodi:role="line"
+     id="tspan56130"
+     x="38.750042"
+     y="790.25977"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.99997px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle"
+       id="tspan56132">(code, quantité)</tspan></tspan></text>		</g>
 		<g
    transform="translate(264.91304,-295.07572)"
    v:groupContext="shape"
@@ -822,48 +767,71 @@
    y="412.64645"
    x="394.55573"
    style="fill:#ffffff;stroke:#000000;stroke-width:0.272119;stroke-linecap:round;stroke-linejoin:round" /><text
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect462-7);fill:#000000;fill-opacity:1;stroke:none;"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect462-7);fill:#000000;fill-opacity:1;stroke:none"
    id="text460-2"
    xml:space="preserve"
    transform="translate(75.663325,130.28293)"><tspan
      x="324.7832"
-     y="292.61328"><tspan
-       style="font-weight:bold">Opération: 
+     y="292.61328"
+     id="tspan94754"><tspan
+       style="font-weight:bold;font-size:7px;font-family:Arial;-inkscape-font-specification:'Arial, Bold'"
+       id="tspan94752">Opération: 
 </tspan></tspan><tspan
      x="324.7832"
-     y="302.61328"><tspan
-       style="font-weight:bold">   créerNouvelle
+     y="302.61328"
+     id="tspan94758"><tspan
+       style="font-weight:bold;font-size:7px;font-family:Arial;-inkscape-font-specification:'Arial, Bold'"
+       id="tspan94756">   créerNouvelle
 </tspan></tspan><tspan
      x="324.7832"
-     y="312.61328"><tspan
-       style="font-weight:bold">     Vente(...)</tspan><tspan
-       style="font-style:italic">
+     y="312.61328"
+     id="tspan94764"><tspan
+       style="font-weight:bold;font-size:7px;font-family:Arial;-inkscape-font-specification:'Arial, Bold'"
+       id="tspan94760">     Vente(...)</tspan><tspan
+       style="font-style:italic"
+       id="tspan94762">
 </tspan></tspan><tspan
      x="324.7832"
-     y="322.61328"><tspan
-       style="font-style:italic">
+     y="322.61328"
+     id="tspan94768"><tspan
+       style="font-style:italic"
+       id="tspan94766">
 </tspan></tspan><tspan
      x="324.7832"
-     y="332.61328"><tspan
-       style="font-weight:bold">Postconditions:
+     y="332.61328"
+     id="tspan94774"><tspan
+       style="font-weight:bold;font-size:7px;font-family:Arial;-inkscape-font-specification:'Arial, Bold'"
+       id="tspan94770">Postconditions:</tspan><tspan
+       style="font-weight:bold"
+       id="tspan94772">
 </tspan></tspan><tspan
      x="324.7832"
-     y="342.61328"><tspan
-       style="font-style:italic">  - une instance </tspan><tspan
-       style="font-style:normal">v </tspan><tspan
-       style="font-style:italic">de
+     y="342.61328"
+     id="tspan94782"><tspan
+       style="font-style:italic;font-size:7px;font-family:Arial;-inkscape-font-specification:'Arial, Italic'"
+       id="tspan94776">  - une instance </tspan><tspan
+       style="font-style:italic;font-size:7px;font-family:Arial;-inkscape-font-specification:'Arial, Italic'"
+       id="tspan94778">v </tspan><tspan
+       style="font-style:italic;font-size:7px;font-family:Arial;-inkscape-font-specification:'Arial, Italic'"
+       id="tspan94780">de
 </tspan></tspan><tspan
      x="324.7832"
-     y="352.61328"><tspan
-       style="font-style:italic">      Vente a été
+     y="352.61328"
+     id="tspan94786"><tspan
+       style="font-style:italic;font-size:7px;font-family:Arial;-inkscape-font-specification:'Arial, Italic'"
+       id="tspan94784">      Vente a été
 </tspan></tspan><tspan
      x="324.7832"
-     y="362.61328"><tspan
-       style="font-style:italic">      créée.
+     y="362.61328"
+     id="tspan94790"><tspan
+       style="font-style:italic;font-size:7px;font-family:Arial;-inkscape-font-specification:'Arial, Italic'"
+       id="tspan94788">      créée.
 </tspan></tspan><tspan
      x="324.7832"
-     y="372.61328"><tspan
-       style="font-style:italic"> - ...</tspan></tspan></text><g
+     y="372.61328"
+     id="tspan94794"><tspan
+       style="font-style:italic;font-size:7px;font-family:Arial;-inkscape-font-specification:'Arial, Italic'"
+       id="tspan94792">  - ...</tspan></tspan></text><g
    id="shape20-89-9"
    v:mID="20"
    v:groupContext="shape"
@@ -887,13 +855,7 @@
      class="st12"
      v:langID="1033"
      id="text237-9">Contrats d'opération<v:paragraph
-   v:horizAlign="1" /><v:tabList /></text></g><ellipse
-   style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.706226;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.706226, 4.23736;stroke-dashoffset:0;stroke-opacity:1"
-   id="path591"
-   cx="304.09009"
-   cy="449.92603"
-   rx="40.886169"
-   ry="12.271379" /><g
+   v:horizAlign="1" /><v:tabList /></text></g><g
    id="g1456"
    v:mID="162"
    v:groupContext="shape"
@@ -905,5 +867,51 @@
    class="st14"
    id="path1454"
    sodipodi:nodetypes="cc" />
-		</g></g>
+		</g><text
+   xml:space="preserve"
+   style="font-size:8.00003px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;stroke-width:0.75"
+   x="339.42783"
+   y="427.88513"
+   id="text75015"><tspan
+     sodipodi:role="line"
+     id="tspan75013"
+     style="fill:#000000;stroke-width:0.75"
+     x="339.42783"
+     y="427.88513">: Système</tspan></text><text
+   xml:space="preserve"
+   style="font-size:8.00003px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;stroke-width:0.75"
+   x="358.59021"
+   y="321.20047"
+   id="text75015-9"><tspan
+     sodipodi:role="line"
+     id="tspan75013-9"
+     style="fill:#000000;stroke-width:0.75;font-weight:bold"
+     x="358.59021"
+     y="321.20047">Modèle du Domaine</tspan></text><text
+   xml:space="preserve"
+   style="font-size:8.00003px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#999999;stroke-width:0.75"
+   x="357.72964"
+   y="357.49356"
+   id="text90830"><tspan
+     sodipodi:role="line"
+     id="tspan90828"
+     style="fill:#999999;stroke-width:0.75"
+     x="357.72964"
+     y="357.49356">Capturée-dans</tspan></text><text
+   xml:space="preserve"
+   style="font-size:8.00003px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#999999;stroke-width:0.75"
+   x="302.42731"
+   y="338.84528"
+   id="text90830-5"><tspan
+     sodipodi:role="line"
+     id="tspan90828-6"
+     style="fill:#999999;stroke-width:0.75"
+     x="302.42731"
+     y="338.84528">Vente</tspan></text><ellipse
+   style="fill:#999999;fill-opacity:0.501961;stroke:#000000;stroke-width:0.72971;stroke-opacity:0;-inkscape-stroke:none;stop-color:#000000"
+   id="path92749"
+   cx="303.88007"
+   cy="452.17026"
+   rx="34.502018"
+   ry="12.680628" /></g>
 </svg>
