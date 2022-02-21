@@ -1,5 +1,4 @@
-# Nom du projet  
-Plan d'itération[^1]
+# *[Nom du projet]*<br>Plan d'itération[^1]
 
 Ce gabarit est inspiré du [gabarit "Iteration plan"](https://download.eclipse.org/technology/epf/OpenUP/published/openup_published_1.5.1.5_20121212/openup/practice.mgmt.iterative_dev.base/guidances/templates/iteration_plan_AC521266.html) du projet [Eclipse OpenUP](https://www.eclipse.org/epf/general/OpenUP.pdf) selon l'[Eclipse Public License - v 1.0](https://www.eclipse.org/org/documents/epl-v10.html)
 
@@ -87,9 +86,9 @@ Les éléments de travail suivants seront abordés dans cette itération *[exemp
 
 *[Documentez d'autres domaines qui ont été évalués, tels que la finance, ou type de programme, ainsi que la rétroaction des intervenants qui n'a pas été saisie ailleurs.]*
 
-[1](#sdfootnote1anc) Voici des instructions pour planifier une itération selon le processus unifié : [https://docs.google.com/a/etsmtl.net/document/d/1xeCCdR4-sTznTPaSKYIl4l\_bQi-gE5stPWSA5VArRlY/edit?usp=sharing](https://docs.google.com/a/etsmtl.net/document/d/1xeCCdR4-sTznTPaSKYIl4l_bQi-gE5stPWSA5VArRlY/edit?usp=sharing)
+[^1]: Voici des instructions pour planifier une itération selon le processus unifié : [https://docs.google.com/a/etsmtl.net/document/d/1xeCCdR4-sTznTPaSKYIl4l\_bQi-gE5stPWSA5VArRlY/edit?usp=sharing](https://docs.google.com/a/etsmtl.net/document/d/1xeCCdR4-sTznTPaSKYIl4l_bQi-gE5stPWSA5VArRlY/edit?usp=sharing)
 
-[2](#sdfootnote2anc) Voici comment faire des estimations de la taille et des heures restantes : [https://docs.google.com/a/etsmtl.net/document/d/1bDy0chpWQbK9bZ82zdsBweuAgNYni3T2k79xihr6CuU/edit?usp=sharing](https://docs.google.com/a/etsmtl.net/document/d/1bDy0chpWQbK9bZ82zdsBweuAgNYni3T2k79xihr6CuU/edit?usp=sharing)
+[^2]: Voici comment faire des estimations de la taille et des heures restantes : [https://docs.google.com/a/etsmtl.net/document/d/1bDy0chpWQbK9bZ82zdsBweuAgNYni3T2k79xihr6CuU/edit?usp=sharing](https://docs.google.com/a/etsmtl.net/document/d/1bDy0chpWQbK9bZ82zdsBweuAgNYni3T2k79xihr6CuU/edit?usp=sharing)
 
-[3](#sdfootnote3anc) Les états utilisés sont les mêmes recommandés par Eclipse pour leurs bogues : Nouveau, Assigné, Résolu, Vérifié, et Fermé. Vous devrez peut-être définir vos propres états.
+[^3]: Les états utilisés sont les mêmes recommandés par Eclipse pour leurs bogues : Nouveau, Assigné, Résolu, Vérifié, et Fermé. Vous devrez peut-être définir vos propres états.
 
