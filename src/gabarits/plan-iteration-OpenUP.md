@@ -86,9 +86,8 @@ Les éléments de travail suivants seront abordés dans cette itération *[exemp
 
 *[Documentez d'autres domaines qui ont été évalués, tels que la finance, ou type de programme, ainsi que la rétroaction des intervenants qui n'a pas été saisie ailleurs.]*
 
-[^1]: Voici des instructions pour planifier une itération selon le processus unifié : [https://docs.google.com/a/etsmtl.net/document/d/1xeCCdR4-sTznTPaSKYIl4l\_bQi-gE5stPWSA5VArRlY/edit?usp=sharing](https://docs.google.com/a/etsmtl.net/document/d/1xeCCdR4-sTznTPaSKYIl4l_bQi-gE5stPWSA5VArRlY/edit?usp=sharing)
+[^1]: [Voici](https://docs.google.com/a/etsmtl.net/document/d/1xeCCdR4-sTznTPaSKYIl4l_bQi-gE5stPWSA5VArRlY/edit?usp=sharing) des instructions pour planifier une itération selon le processus unifié.
 
-[^2]: Voici comment faire des estimations de la taille et des heures restantes : [https://docs.google.com/a/etsmtl.net/document/d/1bDy0chpWQbK9bZ82zdsBweuAgNYni3T2k79xihr6CuU/edit?usp=sharing](https://docs.google.com/a/etsmtl.net/document/d/1bDy0chpWQbK9bZ82zdsBweuAgNYni3T2k79xihr6CuU/edit?usp=sharing)
+[^2]: [Voici](https://docs.google.com/a/etsmtl.net/document/d/1bDy0chpWQbK9bZ82zdsBweuAgNYni3T2k79xihr6CuU/edit?usp=sharing) comment faire des estimations de la taille et des heures restantes.
 
 [^3]: Les états utilisés sont les mêmes recommandés par Eclipse pour leurs bogues : Nouveau, Assigné, Résolu, Vérifié, et Fermé. Vous devrez peut-être définir vos propres états.
-
